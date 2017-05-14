@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/mPullRefreshView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/gray0" >
+
+        <ListView
+            android:id="@+id/lv_fault_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/transparent"
+            android:listSelector="#00000000" />
+    </com.ab.view.pullview.AbPullToRefreshView>
+
+</LinearLayout>

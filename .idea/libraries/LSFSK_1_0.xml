@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="LSFSK_1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/LSFSK_1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

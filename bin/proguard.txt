@@ -1,0 +1,306 @@
+# view res/layout/activity_baoxiuguanli.xml #generated:111
+# view res/layout/activity_main.xml #generated:7
+# view res/layout/activity_workerbaoxiu.xml #generated:101
+# view res/layout/fragment_mywy.xml #generated:23
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:494
+-keep class cn.jpush.android.service.AlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:443
+-keep class cn.jpush.android.service.DaemonService { <init>(...); }
+
+# view AndroidManifest.xml #generated:488
+-keep class cn.jpush.android.service.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:455
+-keep class cn.jpush.android.service.PushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:429
+-keep class cn.jpush.android.service.PushService { <init>(...); }
+
+# view res/layout/jpush_webview_layout.xml #generated:2
+-keep class cn.jpush.android.ui.FullScreenView { <init>(...); }
+
+# view AndroidManifest.xml #generated:476
+-keep class cn.jpush.android.ui.PushActivity { <init>(...); }
+
+# view res/layout/crop_image.xml #generated:14
+-keep class com.ab.view.cropimage.CropImageView { <init>(...); }
+
+# view res/layout/activity_gonggao.xml #generated:40
+# view res/layout/activity_jiaofei_fenlei.xml #generated:41
+# view res/layout/activity_jiaofei_list.xml #generated:62
+# view res/layout/activity_jiaofeijilu.xml #generated:116
+# view res/layout/activity_yezhubaoxiu.xml #generated:50
+# view res/layout/fragment_baoxiuguanli.xml #generated:7
+-keep class com.ab.view.pullview.AbPullToRefreshView { <init>(...); }
+
+# view res/layout/activity_gonggao.xml #generated:54
+-keep class com.ab.view.sliding.AbSlidingPlayView { <init>(...); }
+
+# view res/layout/activity_chakandatu.xml #generated:7
+-keep class com.aim.shanghaiwuye.duotushangchuan.ViewPagerFixed { <init>(...); }
+
+# view AndroidManifest.xml #generated:577
+-keep class com.baidu.android.pushservice.CommandService { <init>(...); }
+
+# view AndroidManifest.xml #generated:568
+-keep class com.baidu.android.pushservice.PushService { <init>(...); }
+
+# view AndroidManifest.xml #generated:538
+-keep class com.baidu.android.pushservice.PushServiceReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:554
+-keep class com.baidu.android.pushservice.RegistrationReceiver { <init>(...); }
+
+# view res/layout/activity_inform_item.xml #generated:5
+-keep class com.loopj.android.image.SmartImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:402
+-keep class com.property.activity.AnnouncementInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:407
+-keep class com.property.activity.AnnouncementListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:355
+-keep class com.property.activity.BaoxiuguanliActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:360
+-keep class com.property.activity.BaoxiushenqingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:362
+-keep class com.property.activity.BaoxiuxiangqingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:367
+-keep class com.property.activity.ChakandatuActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:372
+-keep class com.property.activity.FaultDeleteActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:377
+-keep class com.property.activity.FaultProgressActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:350
+-keep class com.property.activity.InformActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:382
+-keep class com.property.activity.JiaofeiDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:387
+-keep class com.property.activity.JiaofeiListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:392
+-keep class com.property.activity.JiaofeifenleiActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:397
+-keep class com.property.activity.JiaofeijiluActivity { <init>(...); }
+
+# view res/layout/activity_baoxiushenqing.xml #generated:125
+-keep class com.property.view.MyGridView { <init>(...); }
+
+# view res/layout/activity_baoxiuxiangqing.xml #generated:170
+# view res/layout/activity_gonggao.xml #generated:59
+-keep class com.property.view.NoScrollListView { <init>(...); }
+
+# view res/layout/activity_gonggao.xml #generated:45
+-keep class com.property.view.ObservableScrollView { <init>(...); }
+
+# view AndroidManifest.xml #generated:284
+-keep class com.showmo.demo.account.AccountActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:280
+-keep class com.showmo.demo.account.ModifyPswActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:304
+-keep class com.showmo.demo.adddevice.AddDeviceConfigSearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:296
+-keep class com.showmo.demo.adddevice.AddDeviceSetNetworkActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:292
+-keep class com.showmo.demo.adddevice.AddDeviceUserEnsure { <init>(...); }
+
+# view AndroidManifest.xml #generated:300
+-keep class com.showmo.demo.adddevice.AddDeviceUserTipClose { <init>(...); }
+
+# view AndroidManifest.xml #generated:312
+-keep class com.showmo.demo.login.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:316
+-keep class com.showmo.demo.login.RegisterActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:308
+-keep class com.showmo.demo.login.ResetDeviceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:278
+-keep class com.showmo.demo.maincotent.MainContentActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:288
+-keep class com.showmo.demo.play.DeviceslistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:320
+-keep class com.showmo.demo.play.PlayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:274
+-keep class com.tencent.connect.common.AssistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:261
+-keep class com.tencent.tauth.AuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:110
+-keep class com.way.MainActivity { <init>(...); }
+
+# view res/layout/fragment_mywy.xml #generated:58
+-keep class com.way.main.DraggableGridView { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class com.way.tabui.GosApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:147
+-keep class com.way.tabui.actity.AddOcdeviceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:117
+-keep class com.way.tabui.actity.EsptouchDemoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:423
+-keep class com.way.tabui.actity.GizService { <init>(...); }
+
+# view AndroidManifest.xml #generated:121
+-keep class com.way.tabui.actity.IntelligentSocketActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:112
+-keep class com.way.tabui.actity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:134
+-keep class com.way.tabui.actity.PreviewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:129
+-keep class com.way.tabui.actity.SmartLightActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:185
+-keep class com.way.tabui.actity.SmartOCActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:125
+-keep class com.way.tabui.actity.TcpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:189
+-keep class com.way.tabui.actity.UpdataActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:176
+-keep class com.way.tabui.cevicemodule.GosDeviceListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:584
+-keep class com.way.tabui.commonmodule.BaiDuPushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:497
+-keep class com.way.tabui.commonmodule.JPushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:218
+-keep class com.way.tabui.configmodule.GosAirlinkChooseDeviceWorkWiFiActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:226
+-keep class com.way.tabui.configmodule.GosAirlinkConfigCountdownActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:222
+-keep class com.way.tabui.configmodule.GosAirlinkReadyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:205
+-keep class com.way.tabui.configmodule.GosCheckDeviceWorkWiFiActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:164
+-keep class com.way.tabui.configmodule.GosChooseDeviceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:168
+-keep class com.way.tabui.configmodule.GosConfigCountdownActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:172
+-keep class com.way.tabui.configmodule.GosConfigFailedActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:156
+-keep class com.way.tabui.configmodule.GosDeviceReadyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:160
+-keep class com.way.tabui.configmodule.GosDeviceResetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:214
+-keep class com.way.tabui.configmodule.GosModeListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:230
+-keep class com.way.tabui.controlmodule.GosColorsListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:209
+-keep class com.way.tabui.controlmodule.GosDeviceControlActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:243
+-keep class com.way.tabui.gokit.AirConBrandActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:238
+-keep class com.way.tabui.gokit.AirConMesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:248
+-keep class com.way.tabui.gokit.AirMateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:234
+-keep class com.way.tabui.gokit.AlertmesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:329
+-keep class com.way.tabui.gokit.AllMessageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:324
+-keep class com.way.tabui.gokit.PromailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:334
+-keep class com.way.tabui.gokit.SetMailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:339
+-keep class com.way.tabui.gokit.SmartAirConditionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:254
+-keep class com.way.tabui.gokit.SmartCurtainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:197
+-keep class com.way.tabui.settingsmodule.GosAboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:201
+-keep class com.way.tabui.settingsmodule.GosSettiingsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:344
+-keep class com.way.tabui.settingsmodule.SetBundMesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:152
+-keep class com.way.tabui.usermodule.GosForgetPasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:143
+-keep class com.way.tabui.usermodule.GosRegisterUserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:139
+-keep class com.way.tabui.usermodule.GosUserLoginActivity { <init>(...); }
+
+# view res/layout/activity_gos_user_login.xml #generated:177
+-keep class com.way.tabui.view.DotView { <init>(...); }
+
+# view res/layout/actvity_gos_airlink_ready.xml #generated:68
+# view res/layout/actvity_gos_device_reset.xml #generated:55
+-keep class com.way.tabui.view.GifView { <init>(...); }
+
+# view res/layout/activity_gos_airlink_config_countdown.xml #generated:14
+# view res/layout/activity_gos_config_countdown.xml #generated:14
+-keep class com.way.tabui.view.RoundProgressBar { <init>(...); }
+
+# view res/layout/item_air_con_mes.xml #generated:7
+# view res/layout/view_gos_title_listview.xml #generated:40
+-keep class com.way.tabui.view.SlideListView2 { <init>(...); }
+
+# view res/layout/activity_play.xml #generated:6
+-keep class com.xmcamera.core.view.decoderView.XmGlView { <init>(...); }
+
+# view AndroidManifest.xml #generated:194
+-keep class zxing.CaptureActivity { <init>(...); }
+
+# onClick res/layout/activity_smart_light.xml #generated:18
+-keepclassmembers class * { *** onClick(...); }
+
+# onClick res/layout/activity_main.xml #generated:13
+-keepclassmembers class * { *** switchPage(...); }
+

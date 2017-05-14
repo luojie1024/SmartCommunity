@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_line_gray" >
+
+    <TextView
+        android:id="@+id/mywy_title"
+        android:layout_width="match_parent"
+        android:layout_height="46.0dip"
+        android:background="@color/color_red"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="@color/white"
+        android:textSize="20.0dip" />
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/mywy_title"
+        android:layout_height="wrap_content" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="bottom"
+            android:gravity="right|bottom"
+            android:layout_marginBottom="5dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:gravity="bottom" >
+
+                <View
+                    android:id="@+id/v_dot0"
+                    style="@style/dot_style"
+                    android:background="@drawable/dot_focused" />
+
+                <View
+                    android:id="@+id/v_dot1"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot2"
+                    style="@style/dot_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.way.main.DraggableGridView
+        android:id="@+id/vgv"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/fl" >
+    </com.way.main.DraggableGridView>
+
+</RelativeLayout>

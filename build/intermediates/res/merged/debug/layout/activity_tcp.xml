@@ -1,0 +1,171 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.democlienttcpip.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/id_mainbody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <!-- 1.IP 地址和其输入框 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="IP地址:"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/id_edt_inputIP"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:text="192.168.0.104" />
+                </LinearLayout>
+                <!-- 2.端口号和其输入框 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="端口号:"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/id_edt_inputport"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text="8080" />
+                </LinearLayout>
+                <!-- 3.连接、关闭按钮和其指示灯. -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/id_btn_connClose"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="连接" />
+
+                    <ImageView
+                        android:id="@+id/id_imgv_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:src="@drawable/ic_launcher" />
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:scrollbars="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/id_edt_jieshou"
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:focusable="false"
+                            android:gravity="top"
+                            android:hint="接收区" />
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/id_edt_sendArea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.0"
+                        android:focusable="true"
+                        android:gravity="top"
+                        android:hint="发送区"
+                        android:minLines="3" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/id_btn_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="发送" />
+
+                        <CheckBox
+                            android:id="@+id/id_checkBox_timer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="定时发送" />
+
+                        <EditText
+                            android:id="@+id/id_edt_timerCycle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:hint="定时周期：ms"
+                            android:inputType="number" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

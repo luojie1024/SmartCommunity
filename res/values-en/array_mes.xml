@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message">
+        <item>开关1</item>
+        <item>开关2</item>
+        <item>开关3</item>
+        <item>空调1</item>
+        <item>空调2</item>
+        <item>空调3</item>
+        <item>插座1</item>
+        <item>插座2</item>
+        <item>插座3</item>
+        <item>插座4</item>
+        <item>插座5</item>
+    </string-array>
+    
+</resources>

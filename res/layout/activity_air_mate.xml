@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="设备需要时间来响应您的操作，\n还请您操作后适当等待一下"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="请将红外设备对准空调按住红色按钮，\n空调响应时请立即松手"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="测试按键（0/0）"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/ib_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="5dp"
+            android:adjustViewBounds="false"
+            android:background="@drawable/btn_pre_v5_normal" />
+
+        <ImageButton
+            android:id="@+id/ib_ceshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             android:layout_marginRight="5dp"
+            android:adjustViewBounds="false"
+            android:background="@drawable/controller_jd_btn_power" />
+
+        <ImageButton
+            android:id="@+id/ib_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="1dp"
+           android:layout_gravity="right"
+            android:adjustViewBounds="false"
+            android:background="@drawable/btn_next_v5_normal" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/tv_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="当前测试遥控码：xx"/>
+        <Button 
+             android:id="@+id/bt_diybrand"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/alert_blue"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="自定义码库范围" />
+    </LinearLayout>
+ 
+
+</LinearLayout>

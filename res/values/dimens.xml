@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="addressbox_height_size">30.0dip</dimen>
+    <dimen name="autotextview_min_width">133.0dip</dimen>
+    <dimen name="autotextview_drop_width">280.0dip</dimen>
+    <dimen name="margin_top">10.0dip</dimen>
+    <dimen name="verifycodeimg_width">70.0dip</dimen>
+    <dimen name="verifycodeimg_height">40.0dip</dimen>
+    <dimen name="checkbox_magin_bottom">100.0dip</dimen>
+    <dimen name="imagepager_title_layout_heigth">45.0dip</dimen>
+    <dimen name="imagepager_bottons_paddingbottom">6.0dip</dimen>
+    <dimen name="imagepager_title_paddind">6.0dip</dimen>
+    <dimen name="imagepager_title_back_padding">2.0dip</dimen>
+    <dimen name="toast_padding_top">3.0dip</dimen>
+    <dimen name="toast_padding_bottom">3.0dip</dimen>
+    <dimen name="toast_padding_left">10.0dip</dimen>
+    <dimen name="toast_padding_right">10.0dip</dimen>
+    <dimen name="toast_margin_left">53.0dip</dimen>
+    <dimen name="toast_margin_right">53.0dip</dimen>
+    <dimen name="toast_text_size">15.0dip</dimen>
+    <dimen name="voice_seekbar_width">60.0dip</dimen>
+    <dimen name="voice_seekbar_height">140.0dip</dimen>
+    <dimen name="quality_box_width">40.0dip</dimen>
+    <dimen name="quality_box_height">70.0dip</dimen>
+    <dimen name="popwindow_bottom_gap">5.0dip</dimen>
+    <dimen name="numeric_keyboard_border">7.0dip</dimen>
+    <dimen name="numeric_editetext_title_padding">10.0dip</dimen>
+    <dimen name="codedlock_prompt_title_padding">40.0dip</dimen>
+    <dimen name="numeric_editetext_bg_padding">5.0dip</dimen>
+    <dimen name="numeric_edite_text_size">25.0dip</dimen>
+    <dimen name="set_padding">10.0dip</dimen>
+    <dimen name="set_item_padding">16.0dip</dimen>
+    <dimen name="set_item_icon_title_padding">10.0dip</dimen>
+    <dimen name="set_item_icon_padding">5.0dip</dimen>
+    <dimen name="set_item_height_large">68.0dip</dimen>
+    <dimen name="set_item_height">64.0dip</dimen>
+    <dimen name="set_item_height_small">58.0dip</dimen>
+    <dimen name="set_item_height_huge">60.0dip</dimen>
+    <dimen name="mobile_search_padding_huge">111.0dip</dimen>
+    <dimen name="mobile_search_line_item_padding">6.0dip</dimen>
+    <dimen name="wideo_widget_introduction_height">300.0dip</dimen>
+    <dimen name="text_size_amazing_large">25.0dip</dimen>
+    <dimen name="text_size_super_large">22.0dip</dimen>
+    <dimen name="text_size_large">18.0dip</dimen>
+    <dimen name="text_size_middle">16.0dip</dimen>
+    <dimen name="text_size_small">14.0dip</dimen>
+    <dimen name="text_size_smaller">12.0dip</dimen>
+    <dimen name="text_size_least">10.0dip</dimen>
+    <dimen name="text_size_tiny">9.0dip</dimen>
+    <dimen name="video_player_plugin_rightcontroler_item_paddingtop">12.0dip</dimen>
+    <dimen name="file_sort_popupwindow_padding">-25.0dip</dimen>
+    <dimen name="file_sort_popupwindow_vertical_padding">10.0dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+  
+    <dimen name="item_deivce_height">70dip</dimen>    
+    <dimen name="item_title_height">40dip</dimen>
+
+</resources>

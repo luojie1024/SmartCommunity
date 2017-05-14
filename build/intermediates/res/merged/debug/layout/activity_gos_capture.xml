@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <SurfaceView
+        android:id="@+id/capture_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/capture_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/llCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/capture_crop_view"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:background="@drawable/barcode_frame" >
+
+                <ImageView
+                    android:id="@+id/capture_scan_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/barcode_laser_line" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llCenter"
+                android:gravity="center_horizontal"
+                android:background="@color/transparent_half"
+                android:paddingBottom="20dp"
+                android:paddingTop="50dp"
+                android:text="@string/qr_code_tips"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/llCenter"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparent_half" />
+
+        <ImageView
+            android:id="@+id/ivBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/llCenter"
+            android:background="@color/transparent_half" />
+
+        <ImageView
+            android:id="@+id/ivLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ivBottom"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/ivTop"
+            android:layout_toLeftOf="@id/llCenter"
+            android:background="@color/transparent_half" />
+
+        <ImageView
+            android:id="@+id/ivRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ivBottom"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ivTop"
+            android:layout_toRightOf="@id/llCenter"
+            android:background="@color/transparent_half" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/ButtonBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp"
+            android:text="@string/cancel"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:src="@drawable/return_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

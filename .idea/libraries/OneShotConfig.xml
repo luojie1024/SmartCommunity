@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="OneShotConfig">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/OneShotConfig.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black" >
+    
+    <RadioGroup
+        android:id="@id/rg_tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@android:id/icon"
+        android:background="@color/bg_white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="0.0dip"
+        android:paddingLeft="50.0dip"
+        android:paddingRight="0.0dip"
+        android:paddingTop="4.0dip" >
+
+        <RadioButton
+            android:id="@+id/rb_feedlist"
+            style="@style/NetDisk.Unified.Smaller.Red2TabBarGray"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_feedlist"
+            android:gravity="center"
+            android:paddingTop="4.0dip"
+            android:text="@string/tab_feedlist" />
+
+        <RadioButton
+            android:id="@+id/rb_resource"
+            style="@style/NetDisk.Unified.Smaller.Red2TabBarGray"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_hotresouce"
+            android:gravity="center"
+            android:paddingTop="4.0dip"
+            android:text="@string/resource_launcher_title" />
+
+        <RadioButton
+            android:id="@+id/rb_transferlist_left"
+            style="@style/NetDisk.Unified.Smaller.Red2TabBarGray"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_transferlist_personal_selector"
+            android:gravity="center"
+            android:paddingTop="4.0dip"
+            android:text="@string/video_widget_title" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/sliding_layer_frame_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg_tabs"
+        android:background="@color/black" />
+
+    <ImageView
+        android:id="@+id/iv_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="169.0dip"
+        android:src="@drawable/ic_swipe_guide_left"
+        android:visibility="gone" />
+
+</RelativeLayout>

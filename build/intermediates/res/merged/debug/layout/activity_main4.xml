@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 日志记录模块（IXmLogConfig）的接口 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="日志记录模块（IXmLogConfig）的接口"/>
+    <Button
+        android:id="@+id/setFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置日志所在路径(/sdcard/zzj/logcat/logcat.log)" />
+    <Button
+        android:id="@+id/getLogFilename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取日志文件所在路径" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/registerOnLogListener"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="注册日志监听设置" />
+        <Button
+            android:id="@+id/unregisterOnLogListener"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="反注册日志监听设置" />
+    </LinearLayout>
+
+    <!-- 查看日志打印 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看日志打印"/>
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="false"
+        android:background="#dddddd">
+        <TextView
+            android:id="@+id/show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#dddddd"
+            android:textColor="#000000"/>
+    </ScrollView>
+</LinearLayout>

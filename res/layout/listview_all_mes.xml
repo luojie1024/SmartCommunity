@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <ImageView 
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_video"
+             android:id="@+id/im_mes_ic"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名字"
+            android:textSize="20sp"
+            android:id="@+id/tv_text1"
+            android:layout_toRightOf="@+id/im_mes_ic"
+             android:textColor="@color/alert_blue"/>
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备名称"
+             android:id="@+id/tv_text2"
+              android:layout_toRightOf="@+id/im_mes_ic"
+             android:layout_below="@+id/tv_text1"
+             android:textColor="@color/color_blue"
+             
+            />
+          <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="状态信息"
+             android:id="@+id/tv_stuas"
+              android:layout_toRightOf="@+id/im_mes_ic"
+             android:layout_below="@+id/tv_text2"
+             android:textColor="@color/color_blue"
+             android:layout_marginRight="15dp"
+             android:gravity="right"
+             android:textSize="20sp"
+            />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ppview_cli">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/ppview_cli.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

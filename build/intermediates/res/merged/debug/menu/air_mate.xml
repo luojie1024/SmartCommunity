@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.way.tabui.gokit.AirMateActivity" >
+
+    <item
+        android:id="@+id/diyforself"
+        android:orderInCategory="100"
+        android:showAsAction="withText"
+        android:title="自定义"/>
+
+</menu>

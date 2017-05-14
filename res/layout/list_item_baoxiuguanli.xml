@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_baoxiuguanli_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_textview_color_white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/tv_baoxiu_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="修走廊灯"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_baoxiu_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:text="待分配"
+                android:textColor="@color/theme_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_baoxiu_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_baoxiu_title"
+                android:text="报修时间：2016-2-19"
+                android:textColor="@color/gray5"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray3" />
+
+        <TextView
+            android:id="@+id/tv_baoxiu_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="福鼎大厦3层走廊灯不亮了，麻烦尽快派人来维修！！"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/hsv_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:background="@color/white"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/hot_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray3" />
+
+        <LinearLayout
+            android:id="@+id/ll_operation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_shanchudingdan"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_textview_login_red"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="删除订单"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_fenpeigongren"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_textview_theme_color"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="分配工人"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_worker_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="10dp"
+            android:text="已分配给维修工人王明"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

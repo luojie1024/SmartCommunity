@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="GizWifiSDK">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/GizWifiSDK.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

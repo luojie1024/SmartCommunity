@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/top_gray"
+    android:orientation="vertical">
+  
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/top_gray"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/png_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="实时播放"
+            android:textColor="#5e5e5e"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/dev_id"
+        android:hint="输入设备ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/dev_pass"
+        android:hint="输入设备密码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:layout_width="320dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="4dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start_preview"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="开始实时预览"/>
+
+    <Button
+        android:id="@+id/stop_preview"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="停止实时预览"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_starttalk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="开启对讲" />
+
+        <Button
+            android:id="@+id/btn_stoptalk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="关闭对讲" />
+
+        <Button
+            android:id="@+id/btn_downtalk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="按住对讲" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_ptzup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="云台上" />
+
+        <Button
+            android:id="@+id/btn_ptzdown"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="云台下" />
+
+        <Button
+            android:id="@+id/btn_ptzleft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="云台左" />
+        <Button
+            android:id="@+id/btn_ptzright"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="云台右" />
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black"/>
+
+    <ImageView
+        android:id="@+id/iv_catchpic"
+        android:layout_width="320dp"
+        android:layout_height="240dp"
+        android:background="#ff5e5e5e"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/snap_pic"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="实时预览截图"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/main_ll2"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="4dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_startrec"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="开启录像" />
+
+        <Button
+            android:id="@+id/btn_stoprec"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="停止录像" />
+
+        <Button
+            android:id="@+id/btn_startrecplay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="开始播放录像" />
+        <Button
+            android:id="@+id/btn_stoprecplay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="停止播放录像" />
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

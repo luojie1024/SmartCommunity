@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="普通用户"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:background="#cccccc"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/bt_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设备列表  GO TO >>"
+            android:textSize="16sp"/>
+        <Button
+            android:id="@+id/bt_binder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绑定设备  GO TO >>"
+            android:textSize="16sp"/>
+        <Button
+            android:id="@+id/bt_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="账号管理  GO TO >>"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>

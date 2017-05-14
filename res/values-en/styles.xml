@@ -1,0 +1,111 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+
+
+        -->
+    </style>
+
+    <!-- Application thianeme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:actionBarStyle">@style/my_actionbar_style</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="my_actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/transparent_half</item>
+        <item name="android:titleTextStyle">@style/AcBar_titleStyle</item>
+    </style>
+
+    <style name="AcBar_titleStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="LinearlayoutStyle">
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <style name="Widget_GifView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/gifview_background</item>
+    </style>
+
+    <style name="ButtonBlue">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/button_blue_long</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="Controlitem">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="NetDisk" />
+
+    <style name="NetDisk.Unified" parent="@style/NetDisk" />
+
+    <style name="NetDisk.Unified.Smaller" parent="@style/NetDisk.Unified">
+        <item name="android:textSize">@dimen/text_size_smaller</item>
+    </style>
+
+    <style name="NetDisk.Unified.Smaller.Red2TabBarGray" parent="@style/NetDisk.Unified.Smaller">
+        <item name="android:textColor">@drawable/red_tabbargray_reverse_drawable</item>
+    </style>
+
+    <style name="NetDisk.Unified.Smaller.Blue2TabBarGray" parent="@style/NetDisk.Unified.Smaller">
+        <item name="android:textColor">@drawable/blue_tabbargray_reverse_drawable</item>
+    </style>
+
+    <style name="dot_style">
+        <item name="android:layout_width">5dip</item>
+        <item name="android:layout_height">5dip</item>
+        <item name="android:background">@drawable/dot_normal</item>
+        <item name="android:layout_marginLeft">1.5dip</item>
+        <item name="android:layout_marginRight">1.5dip</item>
+    </style>
+    
+    
+
+</resources>

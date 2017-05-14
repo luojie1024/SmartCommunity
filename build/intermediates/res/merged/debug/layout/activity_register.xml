@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="注册"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="#cccccc"
+        android:gravity="center"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号码/邮箱"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="验证码（六位数字）"
+        android:textSize="16sp"/>
+    <Button
+        android:id="@+id/btn_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取验证码"/>
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步" />
+</LinearLayout>

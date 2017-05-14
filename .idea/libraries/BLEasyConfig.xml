@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="BLEasyConfig">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/BLEasyConfig.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

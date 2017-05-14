@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- IXmAccountManager  负责账号的管理，比如注册，修改密码等 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="账号管理模块（IXmAccountManager）的接口"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入用户名"/>
+        <EditText
+            android:id="@+id/oldpsw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:hint="输入旧密码"/>
+        <EditText
+            android:id="@+id/newpsw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:hint="输入新密码"/>
+        <Button
+            android:id="@+id/ResetPswByOldPsw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="修改密码"/>
+    </LinearLayout>
+
+
+    <!-- 查看日志打印 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看日志打印"/>
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="false"
+        android:background="#dddddd">
+        <TextView
+            android:id="@+id/show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#dddddd"
+            android:textColor="#000000"/>
+    </ScrollView>
+
+</LinearLayout>

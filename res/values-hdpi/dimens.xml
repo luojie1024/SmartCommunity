@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="checkbox_magin_bottom">100.0dip</dimen>
+    <dimen name="imagepager_bottons_paddingbottom">5.0dip</dimen>
+    <dimen name="toast_margin_left">53.0dip</dimen>
+    <dimen name="toast_margin_right">53.0dip</dimen>
+    <dimen name="codedlock_prompt_title_padding">40.0dip</dimen>
+    <dimen name="numeric_edite_text_size">25.0dip</dimen>
+    <dimen name="mobile_search_padding_huge">111.0dip</dimen>
+    <dimen name="wideo_widget_introduction_height">120.0dip</dimen>
+    <dimen name="video_player_plugin_rightcontroler_item_paddingtop">12.0dip</dimen>
+    <dimen name="file_sort_popupwindow_padding">-25.0dip</dimen>
+    <dimen name="about_button_magin_bottom">99.0dip</dimen>
+    <dimen name="about_text_magin_bottom">27.0dip</dimen>
+    <dimen name="numeric_keyboard_button_padding">3.0dip</dimen>
+    <dimen name="wap_2_netdisk_info_margin_top">65.0dip</dimen>
+    <dimen name="imagepager_bottonAndText_heigth">60.0dip</dimen>
+    <dimen name="numeric_keyboard_button_text">20.0dip</dimen>
+    <dimen name="numeric_keyboard_button_cancle_text">17.0dip</dimen>
+</resources>

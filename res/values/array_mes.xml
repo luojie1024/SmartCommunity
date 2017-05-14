@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message">
+        <item>开关1</item>
+        <item>开关2</item>
+        <item>开关3</item>
+        <item>空调1</item>
+        <item>空调2</item>
+        <item>空调3</item>
+        <item>插座1</item>
+        <item>插座2</item>
+        <item>插座3</item>
+        <item>插座4</item>
+        <item>插座5</item>
+    </string-array>
+    
+     <string-array name="airbrand">
+        <item>自定义匹配</item>
+        <item>格力</item>
+        <item>海尔</item>
+        <item>美的</item>
+        <item>长虹</item>
+        <item>志高</item>
+        <item>华宝</item>
+        <item>科龙</item>
+        <item>TCL</item>
+        <item>格兰仕</item>
+        <item>华凌</item>
+        <item>春兰</item>
+        <item>奥克斯</item>
+        <item>三钻</item>
+        <item>长风</item>
+        <item>新科</item>
+        <item>澳柯玛</item>
+    </string-array>
+    
+</resources>

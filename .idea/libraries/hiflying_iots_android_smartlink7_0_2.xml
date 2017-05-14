@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hiflying-iots-android-smartlink7.0.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/hiflying-iots-android-smartlink7.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

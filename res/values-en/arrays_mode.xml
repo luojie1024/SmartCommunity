@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="mode">
+        <item>乐鑫</item>
+        <item>汉枫</item>
+        <item>庆科</item>
+        <item>瑞昱</item>
+        <item>联盛德</item>
+        <item>高通</item>
+        <item>TI</item>
+        <item>古北</item>
+        <item>宇音天下</item>
+    </string-array> 
+   
+    <integer-array name="taskResultCount">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+    
+</resources>

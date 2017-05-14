@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="网络设置"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="#cccccc"
+        android:gravity="center"/>
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="在下面输入框输入wifi和密码"/>
+    <EditText
+        android:layout_marginTop="50dp"
+        android:id="@+id/et_wifissid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入wifi"
+        />
+    <EditText
+        android:id="@+id/et_wifipsw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入密码"
+        android:password="true"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"/>
+</LinearLayout>

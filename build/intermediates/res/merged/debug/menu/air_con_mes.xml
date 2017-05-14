@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.way.tabui.gokit.AirConMesActivity" >
+
+    <item
+        android:id="@+id/add_air_con"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/btn_increase_v5_normal"
+        android:title="添加"/>
+
+</menu>

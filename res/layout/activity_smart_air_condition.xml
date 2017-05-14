@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray_e7"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_tem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_tem"
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="22"
+                android:textSize="100sp" />
+
+            <TextView
+                android:id="@+id/tv_temsign"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="℃"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp" >
+
+            <ImageView
+                android:id="@+id/im_mod"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_mod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="制冷"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+             android:id="@+id/ll_wsd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:gravity="bottom" 
+                android:layout_gravity="bottom">
+
+                <ImageView
+                    android:id="@+id/im_ws"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"                 
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="风速 " />
+
+                <TextView
+                    android:id="@+id/tv_ws"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="自动" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"              
+                android:layout_gravity="bottom"
+                android:gravity="bottom|right" >
+
+                <ImageView
+                    android:id="@+id/im_wd"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+           
+                    />
+
+                <TextView
+                    android:id="@+id/tv_wd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="自动风向" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_open_close"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="开关" />
+
+            <Button
+                android:id="@+id/bt_mod"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="模式" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_sub"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="-" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:hint="温度" />
+
+            <Button
+                android:id="@+id/bt_add"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="+" />
+        </LinearLayout>
+        
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_wind_speed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="风速" />
+
+            <Button
+                android:id="@+id/bt_wind_direction"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                 android:layout_marginLeft="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="风向" />
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

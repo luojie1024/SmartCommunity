@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xmcameracore">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/xmcameracore.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

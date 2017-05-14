@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pushservice-5.0.0.66">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/pushservice-5.0.0.66.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="checkbox_magin_bottom">100.0dip</dimen>
+    <dimen name="imagepager_bottons_paddingbottom">2.0dip</dimen>
+    <dimen name="codedlock_prompt_title_padding">20.0dip</dimen>
+    <dimen name="mobile_search_padding_huge">111.0dip</dimen>
+    <dimen name="wideo_widget_introduction_height">60.0dip</dimen>
+    <dimen name="video_player_plugin_rightcontroler_item_paddingtop">5.0dip</dimen>
+    <dimen name="file_sort_popupwindow_padding">-20.0dip</dimen>
+    <dimen name="about_button_magin_bottom">60.0dip</dimen>
+    <dimen name="about_text_magin_bottom">30.0dip</dimen>
+    <dimen name="numeric_keyboard_button_padding">3.0dip</dimen>
+    <dimen name="wap_2_netdisk_info_margin_top">40.0dip</dimen>
+    <dimen name="numeric_editetext_padding">18.0dip</dimen>
+    <dimen name="numeric_editetext_padding_half">9.0dip</dimen>
+    <dimen name="single_share_file_fragment_margin_top">60.0dip</dimen>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="checkbox_magin_bottom">100.0dip</dimen>
+    <dimen name="imagepager_bottons_paddingbottom">7.0dip</dimen>
+    <dimen name="toast_margin_left">30.0dip</dimen>
+    <dimen name="toast_margin_right">30.0dip</dimen>
+    <dimen name="codedlock_prompt_title_padding">60.0dip</dimen>
+    <dimen name="numeric_edite_text_size">40.0dip</dimen>
+    <dimen name="mobile_search_padding_huge">131.0dip</dimen>
+    <dimen name="mobile_search_line_item_padding">10.0dip</dimen>
+    <dimen name="about_button_magin_bottom">99.0dip</dimen>
+    <dimen name="about_text_magin_bottom">47.0dip</dimen>
+    <dimen name="numeric_keyboard_button_padding">3.0dip</dimen>
+    <dimen name="wap_2_netdisk_info_margin_top">65.0dip</dimen>
+    <dimen name="numeric_editetext_padding">16.0dip</dimen>
+    <dimen name="numeric_editetext_padding_half">8.0dip</dimen>
+    <dimen name="single_share_file_fragment_margin_top">90.0dip</dimen>
+    <dimen name="numeric_keyboard_button_text">25.0dip</dimen>
+    <dimen name="numeric_keyboard_button_cancle_text">20.0dip</dimen>
+    <dimen name="personal_homepage_title_info_height">78.0dip</dimen>
+    <dimen name="personal_homepage_title_info_margin_top">48.0dip</dimen>
+    <dimen name="rotate_progress_rectangle_width">35.0dip</dimen>
+    <dimen name="rotate_progress_rectangle_height">35.0dip</dimen>
+    <dimen name="rotate_progress_width">2.0dip</dimen>
+</resources>

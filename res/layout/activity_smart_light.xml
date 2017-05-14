@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+   >
+    <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="输入网络地址"
+       android:id="@+id/text_url"
+        />
+     <EditText
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:hint="输入端口号"
+       android:id="@+id/text_port"
+       android:layout_below="@+id/text_url"
+        />
+     <Button 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="连接"
+       android:id="@+id/btn_con"
+       android:layout_toRightOf="@+id/text_port"
+       android:layout_below="@+id/text_url"
+       android:layout_marginLeft="50dp"
+       android:onClick="onClick"
+         />
+     <TextView  
+        android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/ceshi"
+       android:text="1"
+       android:layout_below="@+id/btn_con"/>
+     
+    <ListView 
+        android:id="@+id/smart_light_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ceshi"></ListView>
+
+</RelativeLayout>

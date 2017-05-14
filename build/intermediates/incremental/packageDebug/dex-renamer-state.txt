@@ -1,0 +1,7 @@
+#Sun May 14 10:06:42 CST 2017
+base.0=D\:\\space\\NO7\\SmartCommunity\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_33a2909b180e00252bdd1edf987982f50a51fafd
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\space\\NO7\\SmartCommunity\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_5d4b754204475b24701c2e8a91411e16e388f322\\classes.dex
+base.1=D\:\\space\\NO7\\SmartCommunity\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_5d4b754204475b24701c2e8a91411e16e388f322
+file.0=D\:\\space\\NO7\\SmartCommunity\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_33a2909b180e00252bdd1edf987982f50a51fafd\\classes.dex

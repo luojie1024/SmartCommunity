@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="open_sdk_r5756">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/open_sdk_r5756.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

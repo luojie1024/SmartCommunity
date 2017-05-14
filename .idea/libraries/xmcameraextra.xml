@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xmcameraextra">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/xmcameraextra.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

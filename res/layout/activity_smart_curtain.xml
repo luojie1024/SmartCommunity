@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/li_main_curtain"
+    android:orientation="vertical"
+    android:background="@drawable/bg_smart_curtain1"
+    tools:context="com.way.tabui.gokit.SmartCurtainActivity" >
+    <TextView 
+	    android:id="@+id/tv_mes"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="状态：开"
+	    android:gravity="center"
+	     android:visibility="invisible"
+	    android:textColor="@color/golden"
+	  android:layout_marginBottom="10dp"
+	    />
+<LinearLayout 
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+   <Button 
+       android:id="@+id/btn_open"
+       android:layout_width="80dp"
+       android:layout_height="80dp"
+       android:background="@drawable/main_menu_btnshape"
+       android:text="开启"
+       android:textColor="@color/color_blue"
+       android:alpha="50"/>
+    <Button 
+       android:id="@+id/btn_stop"
+       android:layout_width="80dp"
+       android:layout_height="80dp"
+       android:layout_marginTop="5dp"
+        android:textColor="@color/color_blue"
+       android:background="@drawable/main_menu_btnshape"
+       android:text="停止"
+       android:alpha="50"/>
+     <Button 
+       android:id="@+id/btn_redic"
+       android:layout_width="80dp"
+       android:layout_height="80dp"
+       android:layout_marginTop="5dp"
+        android:textColor="@color/color_blue"
+       android:background="@drawable/main_menu_btnshape"
+       android:text="换向"
+       android:alpha="50"/>
+   
+    <Button 
+       android:id="@+id/btn_colse"
+       android:layout_width="80dp"
+       android:layout_height="80dp"
+       android:layout_marginTop="5dp"
+        android:textColor="@color/color_blue"
+       android:background="@drawable/main_menu_btnshape"
+       android:text="关闭"
+       android:alpha="50"/>
+    
+    </LinearLayout>
+    
+	
+</LinearLayout>

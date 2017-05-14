@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_main_bg" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black" />
+
+    <ImageButton
+        android:id="@+id/switch_btn"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/bg_white"
+        android:onClick="switchPage"
+        android:src="@drawable/ic_viewpager_switch_fsystem" />
+
+    <ImageView
+        android:id="@+id/anim_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/switch_btn"
+        android:layout_alignTop="@id/switch_btn"
+        android:layout_gravity="bottom|left|center"
+        android:background="@drawable/viewpager_indicator_background"
+        android:src="@drawable/ic_viewpager_switch_feedlist_indecator"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_new"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@android:id/button1"
+        android:layout_alignTop="@android:id/button1"
+        android:layout_marginRight="-30.0dip"
+        android:src="@drawable/new_quota_task_img"
+        android:visibility="gone" />
+
+</RelativeLayout>

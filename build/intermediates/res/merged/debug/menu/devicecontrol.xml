@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_getStatu"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/getStatu"/>
+    <item
+        android:id="@+id/action_setDeviceInfo"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/setDeviceInfo"/>
+    <!-- <item
+        android:id="@+id/action_Cancle"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/cancel"/> -->
+
+</menu>

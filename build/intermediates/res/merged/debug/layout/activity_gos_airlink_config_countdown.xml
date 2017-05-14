@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center_vertical" >
+
+        <com.way.tabui.view.RoundProgressBar
+            android:id="@+id/rpbConfig"
+            android:layout_width="120dip"
+            android:layout_centerInParent="true"
+            android:layout_height="120dip"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp" />
+    </RelativeLayout>
+
+    <TextView     
+        android:id="@+id/tvTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/search_join" />
+    
+    
+     <Button
+        android:id="@+id/btn_next"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="听到“叮咚”提示音,下一步"
+        android:visibility="gone"/>
+
+
+</LinearLayout>
