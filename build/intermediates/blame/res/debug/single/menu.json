@@ -4,8 +4,100 @@
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\setting.xml"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\alertmes.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\alertmes.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\air_con_brand.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\air_con_brand.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\set_bund_mes.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\set_bund_mes.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\updata.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\updata.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\devicecontrol_lan.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\devicecontrol_lan.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\air_mate.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\air_mate.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\smart_air_condition.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\smart_air_condition.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\devicelist_login.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\devicelist_login.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\alertmes.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\alertmes.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\devicelist.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\devicelist.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\devicelist_logout.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\devicelist_logout.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\devicelist_login.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\devicelist_login.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\alert_mes.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\alert_mes.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\devicecontrol.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\devicecontrol.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\set_mail.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\set_mail.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\air_mate.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\air_mate.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\devicelist.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\devicelist.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\all_message.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\all_message.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\add_ocdevice.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\add_ocdevice.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\smart_air_condition.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\smart_air_condition.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\smart_oc.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\smart_oc.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\air_con_mes.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\air_con_mes.xml"
+    },
+    {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\air_con_mes.xml",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\air_con_mes.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\updata.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\updata.xml"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\all_message.xml",
@@ -16,24 +108,40 @@
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\smart_curtain.xml"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\set_mail.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\set_mail.xml"
+    },
+    {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\devicecontrol_lan.xml",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\devicecontrol_lan.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\updata.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\updata.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\devicelist_logout.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\devicelist_logout.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\add_ocdevice.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\add_ocdevice.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\setting.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\setting.xml"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\smart_oc.xml",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\smart_oc.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\air_mate.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\air_mate.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\intelligent_socket.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\intelligent_socket.xml"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\set_bund_mes.xml",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\set_bund_mes.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\smart_curtain.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\smart_curtain.xml"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\alert_mes.xml",
@@ -52,35 +160,11 @@
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\intelligent_socket.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\devicelist_login.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\devicelist_login.xml"
-    },
-    {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\alertmes.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\alertmes.xml"
-    },
-    {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\devicelist_logout.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\devicelist_logout.xml"
-    },
-    {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\devicecontrol.xml",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\devicecontrol.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\set_mail.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\set_mail.xml"
-    },
-    {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\devicelist.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\devicelist.xml"
-    },
-    {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\add_ocdevice.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\add_ocdevice.xml"
-    },
-    {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\smart_air_condition.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\menu\\smart_air_condition.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\promail.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\promail.xml"
     }
 ]

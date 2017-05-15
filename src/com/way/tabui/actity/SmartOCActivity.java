@@ -1,29 +1,13 @@
 package com.way.tabui.actity;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.concurrent.ConcurrentHashMap;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import zxing.CaptureActivity;
-
 import android.app.AlertDialog;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.DialogInterface;
-import android.content.IntentFilter;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.opengl.Visibility;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -31,32 +15,27 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.AdapterView.OnItemLongClickListener;
-import android.widget.BaseAdapter;
 import android.widget.ListView;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.ToggleButton;
-
-import cn.jpush.android.api.JPushInterface;
 
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
-import com.gizwits.gizwifisdk.enumration.GizWifiDeviceNetStatus;
-import com.gizwits.gizwifisdk.enumration.GizWifiErrorCode;
 import com.way.adapter.DatabaseAdapter;
 import com.way.adapter.DatebaseHelper;
 import com.way.adapter.SmartOCAdapter;
-import com.way.main.MyClickListener;
-import com.way.tabui.actity.MainActivity.MyReceiver;
-import com.way.tabui.cevicemodule.GosDeviceListActivity;
-import com.way.tabui.configmodule.GosAirlinkChooseDeviceWorkWiFiActivity;
 import com.way.tabui.controlmodule.GosControlModuleBaseActivity;
-import com.way.tabui.controlmodule.GosDeviceControlActivity;
 import com.way.tabui.gokit.R;
 import com.way.tabui.settingsmodule.GosSettiingsActivity;
 import com.way.util.GizMetaData;
 import com.way.util.Gizinfo;
+
+import org.json.JSONException;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
+
+import zxing.CaptureActivity;
 
 public class SmartOCActivity extends GosControlModuleBaseActivity {
 
@@ -198,9 +177,6 @@ public class SmartOCActivity extends GosControlModuleBaseActivity {
 		// 参数说明(是否去除重复记录,表明,要查询的列，查询条件，查询条件的值，分组条件，分组条件的值，排序，排序条件)
 		Cursor c = db.query(true, GizMetaData.GizTable.TABLE_NAME, columns,
 				whereClause, whereArgs, null, null, null, null);
-		// 参数说明(是否去除重复记录,表明,要查询的列，查询条件，查询条件的值，分组条件，分组条件的值，排序，排序条件)
-		// Cursor c = db.query(true, GizMetaData.GizTable.TABLE_NAME, columns,
-		// null, null, null, null, null, null);
 		if (c.getCount() == 0) {
 			tv_nodevice.setVisibility(View.VISIBLE);
 		} else {
@@ -257,29 +233,6 @@ public class SmartOCActivity extends GosControlModuleBaseActivity {
 		adapter = new SmartOCAdapter(SmartOCActivity.this, giz);
 		adapter.setHandler(handler);
 		smart_oc_listview.setAdapter(adapter);
-//		adapter.setOnClickListener(new MyClickListener() {
-//			@Override
-//			public void onTogButton(BaseAdapter adapter, View view, int position) {
-//				// TODO Auto-generated method stub
-//				//
-//				try {
-//					if (((Switch) view).isChecked())
-//						sendJson(KEY_Sendcom, Integer.parseInt(giz
-//								.get(position).getAddress()));
-//					else
-//						sendJson(KEY_Sendcom, Integer.parseInt(giz
-//								.get(position).getAddress()) + 1);
-//					Toast.makeText(getApplicationContext(), "已发送指令...",
-//							Toast.LENGTH_SHORT).show();
-//				} catch (JSONException e) {
-//					// TODO Auto-generated catch block
-//					Toast.makeText(getApplicationContext(), "指令发送失败",
-//							Toast.LENGTH_SHORT).show();
-//				}
-//
-//			}
-//		});
-
 		progressDialog.cancel();
 
 	}
