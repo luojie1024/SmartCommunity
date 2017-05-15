@@ -3,6 +3,69 @@
 
     <item
         is-multidex="true"
+        jar="D:\space\NO7\SmartCommunity\libs\BLEasyConfig.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="44b2a7b4c787693373bbdbb9dce61f25766a8899">
+        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\BLEasyConfig_ba241af0b501add5d5e049a453f7f9fdd365373e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\space\NO7\SmartCommunity\libs\commons-email-1.3.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c1a7133db9008fa1eae082e6158c3f4c128ec27e">
+        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\commons-email-1.3.3_1e028e85c1582fb2a01893e953a8f470d6b25ce9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\space\NO7\SmartCommunity\libs\easylink2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="639dd107e503051da416656cadc74e36ccc30f5d">
+        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\easylink2.0_db30c7a2bacbbf235d54714626114508ee27f0aa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\space\NO7\SmartCommunity\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_e5e4c1b53214639faed50219c9efefbcfd38e561\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\space\NO7\SmartCommunity\libs\mail.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="428e267abff0d10802ccde86b915da2c20471160">
+        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\mail_cbcaf26db60c03b8e6192c9441aa6c3065a52bdd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\space\NO7\SmartCommunity\libs\andbase.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="46d30e070bcd2e3b4ba8ce9e3773f95f37daedbf">
+        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\andbase_6801091b917b9f9812f23f91204d804d1fad9b69\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\space\NO7\SmartCommunity\libs\Lark7618SDK_noudp1606031910_0101.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9edeb9e389e2f4423152b9d8053ca53c4e3da121">
+        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\Lark7618SDK_noudp1606031910_0101_d35a07c779e80ec65f1fdbd52fdbadfd3fb47710\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\space\NO7\SmartCommunity\libs\ppview_cli.jar"
         jumboMode="true"
         optimize="true"
@@ -21,11 +84,29 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\space\NO7\SmartCommunity\libs\activation.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\activation_2e6db52c3e1419c67b15ae780310b23d6487215a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\space\NO7\SmartCommunity\libs\jpush-android-2.1.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0f26f97f6d6c7cb02247e1ec35034732f234badb">
+        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\jpush-android-2.1.5_a587baf7366bb8bf47876fd780b82cf0d9b6f39f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\space\NO7\SmartCommunity\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="423419bd2f8d94d6ee171671705414400c0edb27">
+        sha1="dfe3009c07f8cabbffe56c54108ec55bf21ab8a0">
         <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_5d4b754204475b24701c2e8a91411e16e388f322\classes.dex" />
     </item>
     <item
@@ -57,114 +138,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\space\NO7\SmartCommunity\libs\additionnal.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
-        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\additionnal_23b839183464942114cc7b74c88ba3ec4b46c9b1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\space\NO7\SmartCommunity\libs\OneShotConfig.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="768977ab6a04843973ab9f06113c2ece4e4890bf">
-        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\OneShotConfig_618175db59eba1e28e5c126bd5d311b0aaff7eed\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\space\NO7\SmartCommunity\libs\xUtils-2.6.14.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
-        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\xUtils-2.6.14_ec1c46d0ad0ef7899bfa3ec0f6b06460b01abd72\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\space\NO7\SmartCommunity\libs\pushservice-5.0.0.66.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="9afe4817302f358bdd51cc7c4c88f5ede2e70168">
-        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\pushservice-5.0.0.66_8b07747036498c31c9543d921663274824ecf7d2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\space\NO7\SmartCommunity\libs\BLEasyConfig.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="44b2a7b4c787693373bbdbb9dce61f25766a8899">
-        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\BLEasyConfig_ba241af0b501add5d5e049a453f7f9fdd365373e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\space\NO7\SmartCommunity\libs\commons-email-1.3.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="c1a7133db9008fa1eae082e6158c3f4c128ec27e">
-        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\commons-email-1.3.3_1e028e85c1582fb2a01893e953a8f470d6b25ce9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\space\NO7\SmartCommunity\libs\easylink2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="639dd107e503051da416656cadc74e36ccc30f5d">
-        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\easylink2.0_db30c7a2bacbbf235d54714626114508ee27f0aa\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\space\NO7\SmartCommunity\libs\mail.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="428e267abff0d10802ccde86b915da2c20471160">
-        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\mail_cbcaf26db60c03b8e6192c9441aa6c3065a52bdd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\space\NO7\SmartCommunity\libs\andbase.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="46d30e070bcd2e3b4ba8ce9e3773f95f37daedbf">
-        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\andbase_6801091b917b9f9812f23f91204d804d1fad9b69\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\space\NO7\SmartCommunity\libs\Lark7618SDK_noudp1606031910_0101.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="9edeb9e389e2f4423152b9d8053ca53c4e3da121">
-        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\Lark7618SDK_noudp1606031910_0101_d35a07c779e80ec65f1fdbd52fdbadfd3fb47710\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\space\NO7\SmartCommunity\libs\activation.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
-        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\activation_2e6db52c3e1419c67b15ae780310b23d6487215a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\space\NO7\SmartCommunity\libs\jpush-android-2.1.5.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="0f26f97f6d6c7cb02247e1ec35034732f234badb">
-        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\jpush-android-2.1.5_a587baf7366bb8bf47876fd780b82cf0d9b6f39f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\space\NO7\SmartCommunity\libs\LSFSK_1.0.jar"
         jumboMode="true"
         optimize="true"
@@ -183,12 +156,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\space\NO7\SmartCommunity\libs\additionnal.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\additionnal_23b839183464942114cc7b74c88ba3ec4b46c9b1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\space\NO7\SmartCommunity\libs\xmcameracore.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="1dc73f7939677d70a98ca6e00dd18da4e3e9d666">
         <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\xmcameracore_1a53391320c0acf79bfd762d760e05dc3d7309e4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\space\NO7\SmartCommunity\libs\OneShotConfig.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="768977ab6a04843973ab9f06113c2ece4e4890bf">
+        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\OneShotConfig_618175db59eba1e28e5c126bd5d311b0aaff7eed\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -219,6 +210,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\space\NO7\SmartCommunity\libs\mysql-connector-java-5.0.8-bin.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7b9bfb6c4e4885660378a9c13330915c321f6cca">
+        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\mysql-connector-java-5.0.8-bin_9d529c580b67279118a0c3ca90b74301e24d05d2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\space\NO7\SmartCommunity\libs\xUtils-2.6.14.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\xUtils-2.6.14_ec1c46d0ad0ef7899bfa3ec0f6b06460b01abd72\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\space\NO7\SmartCommunity\libs\GizWifiSDK.jar"
         jumboMode="true"
         optimize="true"
@@ -241,7 +250,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="dd7d6287da183c4e0f564d9122dc81bd5d60a34b">
+        sha1="fb3b28740e0f3f52cad83a5f32d473b8b4d95270">
         <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_33a2909b180e00252bdd1edf987982f50a51fafd\classes.dex" />
     </item>
     <item
@@ -252,6 +261,15 @@
         revision="24.0.3"
         sha1="c5dc3c2ab75a56e606040805e2c33ea4c6c01880">
         <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\hiflying-iots-android-smartlink7.0.2_d0a0c597f882d6f303167db1f887713bc85ce6d6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\space\NO7\SmartCommunity\libs\pushservice-5.0.0.66.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9afe4817302f358bdd51cc7c4c88f5ede2e70168">
+        <dex dex="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\pushservice-5.0.0.66_8b07747036498c31c9543d921663274824ecf7d2\classes.dex" />
     </item>
 
 </items>

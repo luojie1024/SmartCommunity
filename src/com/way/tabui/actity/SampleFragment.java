@@ -1,13 +1,5 @@
 package com.way.tabui.actity;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-
-import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -25,7 +17,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,29 +25,23 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.Toast;
 import android.widget.ImageView.ScaleType;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
 import com.property.activity.AnnouncementListActivity;
 import com.property.activity.BaoxiushenqingActivity;
 import com.property.activity.JiaofeifenleiActivity;
-import com.showmo.demo.login.LoginActivity;
-import com.showmo.demo.maincotent.MainContentActivity;
-import com.showmo.demo.util.spUtil;
 import com.way.main.DraggableGridView;
 import com.way.main.OnRearrangeListener;
-import com.way.tabui.actity.MainActivity.MyReceiver;
 import com.way.tabui.cevicemodule.GosDeviceListActivity;
 import com.way.tabui.commonmodule.GosConstant;
-import com.way.tabui.controlmodule.GosDeviceControlActivity;
 import com.way.tabui.gokit.AirConMesActivity;
 import com.way.tabui.gokit.AlertmesActivity;
 import com.way.tabui.gokit.AllMessageActivity;
 import com.way.tabui.gokit.PromailActivity;
 import com.way.tabui.gokit.R;
-import com.way.tabui.gokit.SmartAirConditionActivity;
 import com.way.tabui.gokit.SmartCurtainActivity;
 import com.way.tabui.settingsmodule.GosAboutActivity;
 import com.way.tabui.settingsmodule.GosSettiingsActivity;
@@ -64,10 +49,14 @@ import com.way.util.DataCache;
 import com.way.util.ScreenInfo;
 import com.xmcamera.core.model.XmAccount;
 import com.xmcamera.core.model.XmErrInfo;
-import com.xmcamera.core.sys.XmSystem;
-import com.xmcamera.core.sysInterface.IXmSystem;
 import com.xmcamera.core.sysInterface.OnXmListener;
-import com.xmcamera.core.sysInterface.OnXmSimpleListener;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 每个Tab中的fragment
@@ -763,7 +752,6 @@ public class SampleFragment extends Fragment {
 		 * 作者：Jacky 时间：2017/1/14 16:35
 		 */
 		private void pro_inform() {
-//			Intent intent = new Intent(context, InformActivity.class);
 			Intent intent = new Intent(context, AnnouncementListActivity.class);
 			startActivity(intent);
 

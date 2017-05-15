@@ -1,7 +1,5 @@
 package com.property.activity;
 
-import org.kymjs.kjframe.ui.BindView;
-
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -12,10 +10,12 @@ import android.widget.Toast;
 import com.ab.http.AbHttpUtil;
 import com.ab.http.AbRequestParams;
 import com.ab.http.AbStringHttpResponseListener;
+import com.google.gson.Gson;
 import com.property.base.BaseActivity;
 import com.property.utils.UrlConnector;
 import com.way.tabui.gokit.R;
-import com.google.gson.Gson;
+
+import org.kymjs.kjframe.ui.BindView;
 
 public class JiaofeiDetailActivity extends BaseActivity {
 
@@ -64,16 +64,16 @@ public class JiaofeiDetailActivity extends BaseActivity {
 		case 2:
 			tvType.setText("电费缴费");
 			break;
-		case 5:
+		case 3:
 			tvType.setText("房租费缴费");
 			break;
-		case 6:
+		case 4:
 			tvType.setText("物业费缴费");
 			break;
-		case 7:
+		case 5:
 			tvType.setText("停车费缴费");
 			break;
-		case 8:
+		case 6:
 			tvType.setText("其他费用缴费");
 			break;
 		default:

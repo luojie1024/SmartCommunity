@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.way.tabui.gokit.test">
+    package="com.way.tabui.gokit.test" >
 
-    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="22" />
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+
+    <instrumentation
+        android:name="com.android.test.runner.MultiDexTestRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for com.way.tabui.gokit"
+        android:targetPackage="com.way.tabui.gokit" />
 
     <application>
         <uses-library android:name="android.test.runner" />
     </application>
 
-    <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.way.tabui.gokit"
-                     android:handleProfiling="false"
-                     android:functionalTest="false"
-                     android:label="Tests for com.way.tabui.gokit"/>
 </manifest>

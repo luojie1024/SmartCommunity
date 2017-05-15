@@ -5,29 +5,43 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="5166384818649"
+    timestamp="33702808383999"
     token="4896816399420100906"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1888" />
+        duration="744" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="2170" />
+        duration="30" />
     <task
         name="verifier"
-        duration="1640" />
+        duration="4" />
 
     <artifact
-        location="D:\space\NO7\SmartCommunity\build\outputs\apk\SmartCommunity-debug.apk"
-        type="MAIN" />
+        location="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="5166384818649"
+        timestamp="31417291837994"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="D:\space\NO7\SmartCommunity\build\outputs\apk\SmartCommunity-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="33702808383999"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\space\NO7\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="45725826808771"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\space\NO7\SmartCommunity\build\outputs\apk\SmartCommunity-debug.apk"
