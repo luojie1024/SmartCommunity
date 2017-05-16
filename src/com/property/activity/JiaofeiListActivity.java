@@ -1,5 +1,6 @@
 package com.property.activity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Handler;
@@ -19,7 +20,6 @@ import com.ab.view.pullview.AbPullToRefreshView.OnHeaderRefreshListener;
 import com.google.gson.Gson;
 import com.property.activity.JiaofeiListEntity.pay_record;
 import com.property.base.BaseActivity;
-import com.property.utils.QueryAll;
 import com.property.utils.SharedpfTools;
 import com.way.tabui.gokit.R;
 
@@ -48,6 +48,8 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
           @BindView(id = R.id.lv_jiaofei_list)
           private ListView lvJiaofeiList;
 
+          //等待框
+          private ProgressDialog pd;
           private AbHttpUtil http;
           private Gson gson;
           private JiaofeiListEntity jiaofeiListEntity;
@@ -57,7 +59,8 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
           private SharedpfTools sharedpfTools;
           private String type;
           private int pay_status = 1;
-          private QueryAll queryAll;
+
+
           private Handler handler=new Handler() {
 
                     @Override
@@ -65,9 +68,14 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                               super.handleMessage(msg);
                               switch (msg.arg1) {
                                         case 0:
+                                                  //关闭等待框
+                                                  pd.dismiss();
                                                   Toast.makeText(JiaofeiListActivity.this,"没有查询到数据！",Toast.LENGTH_SHORT).show();
                                                   break;
-                                        case 1:sendpost();//更新UI
+                                        case 1:
+                                                  //关闭等待框
+                                                  pd.dismiss();
+                                                  sendpost();//更新UI
                                                   break;
                               }
 
@@ -148,6 +156,7 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
            * 连接数据库，获取数据并生成JiaofeiListEntity,数据集合
            */
           public void intidata() {
+                    pd = ProgressDialog.show(JiaofeiListActivity.this,"正在获取数据", "加载中，请稍后……");
                     new Thread() {
                               @Override
                               public void run() {

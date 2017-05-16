@@ -161,7 +161,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/button_back"
         android:padding="10dp"
-        android:text="下载"
+        android:text="缴费"
         android:textColor="#fff"
         android:textSize="16sp" />
 

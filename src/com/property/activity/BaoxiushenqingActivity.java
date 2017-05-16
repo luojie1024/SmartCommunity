@@ -207,7 +207,9 @@ public class BaoxiushenqingActivity extends BaseActivity {
 //					}
 //				});
 	}
-	
+
+
+	//图片上传
 	public void sendPost() {			
 		AbDialogUtil.showProgressDialog(this, 0, "正在提交...");
 		tvFabu.setClickable(false);
