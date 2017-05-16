@@ -176,11 +176,14 @@
         <activity
             android:name="com.way.tabui.cevicemodule.GosDeviceListActivity"
             android:theme="@android:style/Theme.Holo.Light" >
+
+            <!--TODO -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name="com.way.tabui.actity.SmartOCActivity"
@@ -347,11 +350,11 @@
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <!-- 物业报修 -->
-        <activity
-            android:name="com.property.activity.InformActivity"
-            android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light" >
-        </activity>
+        <!--<activity-->
+            <!--android:name="com.property.activity.InformActivity"-->
+            <!--android:label="@string/title_activity_inform"-->
+            <!--android:theme="@android:style/Theme.Holo.Light" >-->
+        <!--</activity>-->
         <activity
             android:name="com.property.activity.BaoxiuguanliActivity"
             android:label="@string/title_activity_inform"
@@ -392,7 +395,14 @@
         <activity
             android:name="com.property.activity.JiaofeifenleiActivity"
             android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light" >
+            android:theme="@android:style/Theme.Holo.Light">
+
+            <!--TODO 物业-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
         <activity
             android:name="com.property.activity.JiaofeijiluActivity"

@@ -19,6 +19,9 @@ import java.sql.Statement;
  */
 public class QueryAll {
 
+          public static String mysqlUrl="jdbc:mysql://192.168.31.210:3306/wysql?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false";
+          public static String mysqlRoot="root";
+          public static String mysqlpass="123456";
           private static JiaofeiListEntity jiaofeiListEntity;
           private static Handler handler=new Handler(){
                     @Override
