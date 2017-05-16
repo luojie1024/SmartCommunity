@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="24"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="15110597076411"
+    token="4896816399420100906"
+    verifier="MANIFEST_FILE_CHANGE" >
+
+    <task
+        name="javac"
+        duration="0" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="0" />
+    <task
+        name="verifier"
+        duration="0" />
+
+    <artifact
+        location="D:\space\NO7\SmartCommunity\build\outputs\apk\SmartCommunity-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="15110597076411"
+        verifier="MANIFEST_FILE_CHANGE" >
+        <artifact
+            location="D:\space\NO7\SmartCommunity\build\outputs\apk\SmartCommunity-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>
