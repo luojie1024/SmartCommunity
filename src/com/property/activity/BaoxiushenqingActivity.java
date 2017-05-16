@@ -2,6 +2,7 @@ package com.property.activity;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -34,7 +35,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.ab.util.AbDialogUtil;
 import com.property.base.BaseActivity;
 import com.property.duotushangchuan.AlbumActivity;
 import com.property.duotushangchuan.Bimp;
@@ -45,18 +45,17 @@ import com.property.duotushangchuan.PublicWay;
 import com.property.duotushangchuan.Res;
 import com.property.utils.ScreenUtil;
 import com.property.utils.SharedpfTools;
-import com.property.utils.UrlConnector;
 import com.property.view.MyGridView;
 import com.way.tabui.gokit.R;
 
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.kymjs.kjframe.KJHttp;
-import org.kymjs.kjframe.http.HttpCallBack;
 import org.kymjs.kjframe.http.HttpParams;
 import org.kymjs.kjframe.ui.BindView;
 
-import java.io.File;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -96,12 +95,36 @@ public class BaoxiushenqingActivity extends BaseActivity {
 	private List<ImageItem> list;
 	private int listSize = 1;
 	private FaultUserInfo faultUserInfo;
-	
+
+	//等待框
+	private ProgressDialog pd;
 	private String user_id;	//int 用户id
 	private String title;	//string 报障标题
 	private String content;	//string 报障内容
 	private String village_id = "0";	//int 小区id
-	
+
+	private Handler handler=new Handler() {
+
+		@Override
+		public void handleMessage(Message msg) {
+			super.handleMessage(msg);
+			switch (msg.arg1) {
+				case 0:
+					//关闭等待框
+					pd.dismiss();
+					Toast.makeText(BaoxiushenqingActivity.this,"服务器正忙！请稍后重试！",Toast.LENGTH_SHORT).show();
+					break;
+				case 1:
+					//关闭等待框
+					pd.dismiss();
+					Toast.makeText(BaoxiushenqingActivity.this,"报修成功！已提交维修信息至服务器！",Toast.LENGTH_SHORT).show();
+					break;
+			}
+
+		}
+	};
+
+
 	@Override
 	public void setRootView() {
 		setContentView(R.layout.activity_baoxiushenqing);
@@ -184,9 +207,9 @@ public class BaoxiushenqingActivity extends BaseActivity {
 		HttpParams params = new HttpParams();		
 		params.put("uid", user_id);	
 		
-		tvName.setText("姓名：小明");
-		tvMobile.setText("电话：8888888");
-		tvBerth.setText("铺位:E3-420");
+		tvName.setText("小明");
+		tvMobile.setText("18307366666");
+		tvBerth.setText("E3-420");
 		
 //		http.post(UrlConnector.FAULT_USER_INFO, params, false,
 //				new HttpCallBack() {
@@ -210,42 +233,86 @@ public class BaoxiushenqingActivity extends BaseActivity {
 
 
 	//图片上传
-	public void sendPost() {			
-		AbDialogUtil.showProgressDialog(this, 0, "正在提交...");
-		tvFabu.setClickable(false);
-		HttpParams params = new HttpParams();		
-		params.put("user_id", user_id);
-		params.put("title", title);		
-		params.put("content", content);
-		params.put("village_id", village_id);		
-		for (int i = 0; i < Bimp.getBimp().tempSelectBitmap.size(); i++) {
-			params.put("file"+i, new File(Bimp.getBimp().tempSelectBitmap.get(i).getImagePath()));
-		}
+	public void sendPost() {
+		pd = ProgressDialog.show(BaoxiushenqingActivity.this,"正在提交数据", "加载中，请稍后……");
+		new Thread() {
+			@Override
+			public void run() {
+				super.run();
+				try {
+					// 1.注册驱动
+					Class.forName("com.mysql.jdbc.Driver");
+					// 2.获取连接
+					Connection conn = null;
+					conn = DriverManager.getConnection("jdbc:mysql://192.168.31.210:3306/wysql","root", "123456");
+					// 3.创建执行sql语句的对象
+					Statement stmt = null;
+					stmt = conn.createStatement();
+					// 4.书写一个sql语句
+					String sql;
+					//获取当前系统时间
+					SimpleDateFormat sDateFormat    =   new    SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+					String    date  = sDateFormat.format(new    java.util.Date());
+					//支付时间默认为0，
+					sql = "INSERT INTO fix_record (DATE,NAME,mobile,berth,title,detailed) VALUES ('"+date+"','"+tvName.getText()+"','"+tvMobile.getText()+"','"+tvBerth.getText()+"','"+etTitle.getText()+"','"+etContent.getText()+"')";
+					// 5.执行sql语句
+					stmt.execute(sql);
+					//关闭不需要的资源
+					if (stmt != null)
+						stmt.close();
+					if (conn != null)
+						conn.close();
+					//查询完毕,通知UI更新
+					Message msg = handler.obtainMessage();
+					msg.arg1 = 1;
+					handler.sendMessage(msg);
+				} catch (Exception e) {
+					Message msg = handler.obtainMessage();
+					msg.arg1 = 0;
+					handler.sendMessage(msg);
+					System.out.println("连接数据库错误！");
+					e.printStackTrace();
+				}
+			}
+		}.start();
 
-		http.post(UrlConnector.FAULT_ADD, params, false,
-				new HttpCallBack() {
-					@Override
-					public void onFailure(int errorNo, String strMsg) {
-						super.onFailure(errorNo, strMsg);
-						Toast.makeText(getApplication(), "请求失败",
-								Toast.LENGTH_LONG).show();
-					}
 
-					@Override
-					public void onSuccess(String t) {
-						super.onSuccess(t);
-						try {
-							JSONObject object = new JSONObject(t);
-							String msg = object.getString("msg");
-							Toast.makeText(getApplication(), msg,
-									Toast.LENGTH_LONG).show();
-							finish();
-						} catch (JSONException e) {
-							e.printStackTrace();
-						}
-
-					}
-				});
+//
+//		AbDialogUtil.showProgressDialog(this, 0, "正在提交...");
+//		tvFabu.setClickable(false);
+//		HttpParams params = new HttpParams();
+//		params.put("user_id", user_id);
+//		params.put("title", title);
+//		params.put("content", content);
+//		params.put("village_id", village_id);
+//		for (int i = 0; i < Bimp.getBimp().tempSelectBitmap.size(); i++) {
+//			params.put("file"+i, new File(Bimp.getBimp().tempSelectBitmap.get(i).getImagePath()));
+//		}
+//
+//		http.post(UrlConnector.FAULT_ADD, params, false,
+//				new HttpCallBack() {
+//					@Override
+//					public void onFailure(int errorNo, String strMsg) {
+//						super.onFailure(errorNo, strMsg);
+//						Toast.makeText(getApplication(), "请求失败",
+//								Toast.LENGTH_LONG).show();
+//					}
+//
+//					@Override
+//					public void onSuccess(String t) {
+//						super.onSuccess(t);
+//						try {
+//							JSONObject object = new JSONObject(t);
+//							String msg = object.getString("msg");
+//							Toast.makeText(getApplication(), msg,
+//									Toast.LENGTH_LONG).show();
+//							finish();
+//						} catch (JSONException e) {
+//							e.printStackTrace();
+//						}
+//
+//					}
+//				});
 	}	
 
 	//初始化照片
