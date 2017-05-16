@@ -31,6 +31,34 @@
             android:layout_marginRight="10dp"
             android:src="@drawable/right_icon" />
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llQRcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tx_Qrcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="分享当前设备"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageViewx"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/right_icon" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/llsetbund"

@@ -58,7 +58,6 @@
         <item>5</item>
     </integer-array>
     <color name="activity_view_bg">#fff8f8f8</color>
-    <color name="albumback">#E1E0DE</color>
     <color name="alert_blue">#2db4e3</color>
     <color name="anonymous_filelist_content">#ff6a6a6a</color>
     <color name="anonymous_filelist_title">#ff363636</color>
@@ -131,13 +130,11 @@
     <color name="login_other_auth">#ff757575</color>
     <color name="menu_item_text">#ffdfdfdf</color>
     <color name="mobile_search_warning">#ff937a58</color>
-    <color name="none_color">#00000000</color>
     <color name="normal">#ff474747</color>
     <color name="notification_content_color">#ffbbbbbb</color>
     <color name="notification_line_color">#ff57595b</color>
     <color name="numeric_text_prompt_text">#ff5c5c5c</color>
     <color name="offline_download_url_example">#ff666666</color>
-    <color name="plugin_camera_black">#000000</color>
     <color name="popup_menu_selector_color">#ff357ed7</color>
     <color name="progress_app_deepgreen">#ff3ca746</color>
     <color name="progress_bg_color">#ffb6b6b6</color>
@@ -161,7 +158,6 @@
     <color name="small">#ff7c7c7c</color>
     <color name="sms_main_bottom_bg">#ff686a74</color>
     <color name="smsmms_button_gray">#ffc4c4c4</color>
-    <color name="style_red">#ff4c41</color>
     <color name="tab_normal_color">#ff333333</color>
     <color name="tab_pressed_color">#ff3289cb</color>
     <color name="tab_text">#ff545963</color>
@@ -314,7 +310,6 @@
     <string name="agree_tip">点击注册表示已阅读并同意</string>
     <string name="airlink_ready_message">接通电源，长按[KEY2]直到[RGB LED]亮绿灯</string>
     <string name="airlink_ready_title">确认设备处于待连接状态</string>
-    <string name="album">相册</string>
     <string name="album_auto_sync_dialog_title">相册自动备份(仅WiFi)</string>
     <string name="album_auto_sync_good_time">随时随地收藏你的美好时光</string>
     <string name="album_backup">相册备份</string>
@@ -412,7 +407,6 @@
     <string name="button_install">安装</string>
     <string name="button_update">升级</string>
     <string name="byteShort">B</string>
-    <string name="camera_cancel">取消</string>
     <string name="can_not_delete_apps">(无法删除 “我的应用数据” 文件夹)</string>
     <string name="can_not_open">无法打开</string>
     <string name="cancel">取消</string>
@@ -621,7 +615,6 @@
     <string name="filling">补填中…</string>
     <string name="filluname">填写用户名</string>
     <string name="filluname_tip">此用户名用于展示，填写后无法修改。</string>
-    <string name="finish">完成</string>
     <string name="finished">已完成上述操作</string>
     <string name="five_wifi">注: 暂不支持5G频道的Wi-Fi网络</string>
     <string name="folder_empty">"这里是空的哦…快点上传文件吧~"</string>
@@ -676,7 +669,6 @@
     <string name="install_video_player_plug_subtitle">各种格式，点开就能看</string>
     <string name="install_video_player_plug_title">百度媒体云系统设置器</string>
     <string name="internal_server_error">服务器异常，请稍后再试</string>
-    <string name="invalidSD">sdcard无效或没有插入！</string>
     <string name="invalid_source_url">链接失效</string>
     <string name="invalid_torrent">下载地址无效，请核对</string>
     <string name="is_deleting">正在删除…</string>
@@ -793,7 +785,6 @@
     <string name="no_devices">暂无设备,请添加</string>
     <string name="no_getcode">验证码输入有误</string>
     <string name="no_lan">远程</string>
-    <string name="no_photo">相册没有图片</string>
     <string name="no_result">无匹配结果</string>
     <string name="no_save_resource">没有历史记录，快去找资源吧！</string>
     <string name="no_saving_offline_task">没有正在保存的任务</string>
@@ -845,7 +836,6 @@
     <string name="on_wifi_dialog_know">仅WiFi传输</string>
     <string name="on_wifi_dialog_to_change_setting">通过2G/3G传输</string>
     <string name="on_wifi_dialog_to_turn_on">通过2G/3G传输</string>
-    <string name="only_choose_num">超出可选图片张数</string>
     <string name="onoff_LED">开启／关闭红色灯</string>
     <string name="open_app_failed">打开程序失败</string>
     <string name="open_file">正在尝试打开，请稍候…</string>
@@ -936,7 +926,6 @@
     <string name="please_check">设备连接网络不成功,请检查:</string>
     <string name="please_select_one_album">请选择至少一个相册</string>
     <string name="pluginbox_info">环泰智慧社区功能</string>
-    <string name="preview">预览</string>
     <string name="prompt">提示</string>
     <string name="protocol_text">用户协议</string>
     <string name="psw_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
@@ -1026,7 +1015,6 @@
     <string name="select_file_type_to_upload">选择上传文件类型</string>
     <string name="select_folder">选定：%s</string>
     <string name="select_move_path">选择移动位置</string>
-    <string name="select_photo">选择相册</string>
     <string name="select_upload_path">选择上传位置</string>
     <string name="selecte_default_download_position">选择默认下载位置</string>
     <string name="selected_file_to_edit">已选定%d个</string>
@@ -1303,7 +1291,6 @@
     <string name="type_video">视频</string>
     <string name="unbind">未绑定</string>
     <string name="unbound_failed">解绑失败</string>
-    <string name="unfinished">完成</string>
     <string name="unknown_error">未知错误</string>
     <string name="unnamed_file">未命名</string>
     <string name="unsupported_file_to_open">不支持该类型文件预览</string>

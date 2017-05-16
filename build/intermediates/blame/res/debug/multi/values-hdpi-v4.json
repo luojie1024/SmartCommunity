@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+        "outputFile": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\values-hdpi-v4\\values-hdpi-v4.xml",
         "map": [
             {
                 "to": {
@@ -11,13 +11,13 @@
                     "endOffset": 110
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 686,
+                        "startOffset": 698,
                         "endColumn": 59,
-                        "endOffset": 741
+                        "endOffset": 753
                     }
                 }
             },
@@ -30,13 +30,13 @@
                     "endOffset": 168
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 746,
+                        "startOffset": 759,
                         "endColumn": 57,
-                        "endOffset": 799
+                        "endOffset": 812
                     }
                 }
             },
@@ -49,13 +49,13 @@
                     "endOffset": 225
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 55,
+                        "startOffset": 57,
                         "endColumn": 56,
-                        "endOffset": 107
+                        "endOffset": 109
                     }
                 }
             },
@@ -68,13 +68,13 @@
                     "endOffset": 290
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 283,
+                        "startOffset": 289,
                         "endColumn": 64,
-                        "endOffset": 343
+                        "endOffset": 349
                     }
                 }
             },
@@ -87,13 +87,13 @@
                     "endOffset": 355
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 621,
+                        "startOffset": 632,
                         "endColumn": 64,
-                        "endOffset": 681
+                        "endOffset": 692
                     }
                 }
             },
@@ -106,13 +106,13 @@
                     "endOffset": 421
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 933,
+                        "startOffset": 949,
                         "endColumn": 65,
-                        "endOffset": 994
+                        "endOffset": 1010
                     }
                 }
             },
@@ -125,13 +125,13 @@
                     "endOffset": 487
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 112,
+                        "startOffset": 115,
                         "endColumn": 65,
-                        "endOffset": 173
+                        "endOffset": 176
                     }
                 }
             },
@@ -144,13 +144,13 @@
                     "endOffset": 549
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 406,
+                        "startOffset": 414,
                         "endColumn": 61,
-                        "endOffset": 463
+                        "endOffset": 471
                     }
                 }
             },
@@ -163,13 +163,13 @@
                     "endOffset": 607
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 348,
+                        "startOffset": 355,
                         "endColumn": 57,
-                        "endOffset": 401
+                        "endOffset": 408
                     }
                 }
             },
@@ -182,13 +182,13 @@
                     "endOffset": 677
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 1062,
+                        "startOffset": 1080,
                         "endColumn": 69,
-                        "endOffset": 1127
+                        "endOffset": 1145
                     }
                 }
             },
@@ -201,13 +201,13 @@
                     "endOffset": 742
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 804,
+                        "startOffset": 818,
                         "endColumn": 64,
-                        "endOffset": 864
+                        "endOffset": 878
                     }
                 }
             },
@@ -220,13 +220,13 @@
                     "endOffset": 805
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 999,
+                        "startOffset": 1016,
                         "endColumn": 62,
-                        "endOffset": 1057
+                        "endOffset": 1074
                     }
                 }
             },
@@ -239,13 +239,13 @@
                     "endOffset": 857
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 178,
+                        "startOffset": 182,
                         "endColumn": 51,
-                        "endOffset": 225
+                        "endOffset": 229
                     }
                 }
             },
@@ -258,13 +258,13 @@
                     "endOffset": 910
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 230,
+                        "startOffset": 235,
                         "endColumn": 52,
-                        "endOffset": 278
+                        "endOffset": 283
                     }
                 }
             },
@@ -277,13 +277,13 @@
                     "endOffset": 995
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 536,
+                        "startOffset": 546,
                         "endColumn": 84,
-                        "endOffset": 616
+                        "endOffset": 626
                     }
                 }
             },
@@ -296,13 +296,13 @@
                     "endOffset": 1059
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 869,
+                        "startOffset": 884,
                         "endColumn": 63,
-                        "endOffset": 928
+                        "endOffset": 943
                     }
                 }
             },
@@ -315,13 +315,13 @@
                     "endOffset": 1127
                 },
                 "from": {
-                    "file": "D:\\space\\NO7\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
+                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 468,
+                        "startOffset": 477,
                         "endColumn": 67,
-                        "endOffset": 531
+                        "endOffset": 540
                     }
                 }
             }

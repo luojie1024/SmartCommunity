@@ -1,482 +1,454 @@
 [
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_adddev2.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_adddev2.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register2.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_register2.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_gos_mode_list.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\item_gos_mode_list.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_play.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_play.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_air_con_mes.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_air_con_mes.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_adddev1.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_adddev1.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\play_view_item.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\play_view_item.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_config_failed.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_config_failed.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_air_con_brand.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_air_con_brand.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_air_mate.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_air_mate.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\alert_diy_air_brand.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\alert_diy_air_brand.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_jiaofeixiangqing.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_jiaofeixiangqing.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_choose_device.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_choose_device.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_gos_wifi_list.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\item_gos_wifi_list.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_inform_item.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_inform_item.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_yezhubaoxiu.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_yezhubaoxiu.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_airlink_config_countdown.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_airlink_config_countdown.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\crop_image.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\crop_image.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_play.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_play.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_published_grida1.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\item_published_grida1.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_adddev3.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_adddev3.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_chakandatu.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_chakandatu.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\esptouch_demo_activity.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\esptouch_demo_activity.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main2.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_main2.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tcp.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_tcp.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_colorlist.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_colorlist.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baoxiu_progress.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_baoxiu_progress.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_all_message.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_all_message.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main7.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_main7.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_all_mes.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\listview_all_mes.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_aircon_mes.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\listview_aircon_mes.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\alert_gos_set_device_info.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\alert_gos_set_device_info.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_air_mate.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_air_mate.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main3.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_main3.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_all_mes.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\listview_all_mes.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_device_ready.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_device_ready.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_maincontent.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_maincontent.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_settings.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_settings.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_intelligent_socket.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_intelligent_socket.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\view_gos_notification.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\view_gos_notification.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_select_folder.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\plugin_camera_select_folder.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_popupwindows.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\item_popupwindows.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_air_con_brand.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\listview_air_con_brand.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_adddev2.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_adddev2.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_set_bund_mes.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_set_bund_mes.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_smart_light.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_smart_light.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_updata.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_updata.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_jiaofeijilu.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_jiaofeijilu.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_chakandatu.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_chakandatu.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_register.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_device_ready.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_device_ready.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_user_login.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_user_login.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listitem.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\listitem.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_reset.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_reset.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_modelist.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_modelist.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\jpush_popwin_layout.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\jpush_popwin_layout.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_device_control.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_device_control.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\alert_diy_air_brand.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\alert_diy_air_brand.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_jiaofeixiangqing.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_jiaofeixiangqing.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\popupwindow_shifouyifukuan.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\popupwindow_shifouyifukuan.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fault_delete.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_fault_delete.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_preview.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_preview.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_album.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\plugin_camera_album.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\actvity_gos_device_reset.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\actvity_gos_device_reset.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\popupwindows_pingjia.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\popupwindows_pingjia.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_set_bund_mes.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_set_bund_mes.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\alert_gos_new_device.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\alert_gos_new_device.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_config_countdown.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_config_countdown.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_workerbaoxiu.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_workerbaoxiu.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gonggao_detail.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gonggao_detail.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_mywy.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\fragment_mywy.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_gonggao.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\list_item_gonggao.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_deviceslist.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_deviceslist.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_alertmes.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_alertmes.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_worker_baoxiu.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\list_item_worker_baoxiu.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_modelist.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_modelist.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_smart.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\listview_smart.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_air_con_brand.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\listview_air_con_brand.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\view_gos_title_listview.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\view_gos_title_listview.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\aim_layout_selecticon.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\aim_layout_selecticon.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_capture.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_capture.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fault_delete.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_fault_delete.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_user_login.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_user_login.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_alert_info.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\listview_alert_info.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_show_all_photo.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\plugin_camera_show_all_photo.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_about.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_about.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_select_imageview.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\plugin_camera_select_imageview.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_yezhubaoxiu.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\list_item_yezhubaoxiu.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_register_user.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_register_user.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main5.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_main5.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main6.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_main6.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_capture.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_capture.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baoxiuguanli.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_baoxiuguanli.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_airlink_config_countdown.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_airlink_config_countdown.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_image_file.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\plugin_camera_image_file.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\main_personal_page.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\main_personal_page.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_jiaofei_list.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_jiaofei_list.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_jiaofeifenlei.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\list_item_jiaofeifenlei.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_gonggao.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\list_item_gonggao.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_deviceslist.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_deviceslist.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\alert_gos_wifi_list.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\alert_gos_wifi_list.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_device_control.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_device_control.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_alertmes.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_alertmes.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_adddev3.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_adddev3.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_yezhubaoxiu.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_yezhubaoxiu.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_maincontent.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_maincontent.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_adddev1.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_adddev1.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_account.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_account.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\main_fsystem.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\main_fsystem.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listitem.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\listitem.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baoxiuxiangqing.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_baoxiuxiangqing.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baoxiuguanli.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_baoxiuguanli.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_register.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_intelligent_socket.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_intelligent_socket.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_gos_wifi_list.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\item_gos_wifi_list.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\popupwindows_pingjia.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\popupwindows_pingjia.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_config_countdown.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_config_countdown.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baoxiu_progress.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_baoxiu_progress.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_no_image_file.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\plugin_camera_no_image_file.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_adddev4.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_adddev4.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_history.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\list_item_history.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gonggao.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gonggao.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tcp.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_tcp.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_baoxiuguanli.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\fragment_baoxiuguanli.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_jiaofei_fenlei.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_jiaofei_fenlei.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_smart_oc.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_smart_oc.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_air_con_mes.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\item_air_con_mes.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_smart_light.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_smart_light.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_promail.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_promail.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\main_personal_page.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\main_personal_page.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main6.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_main6.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\crop_image.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\crop_image.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\play_view_item.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\play_view_item.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_gos_colors_list.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\item_gos_colors_list.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baoxiuxiangqing.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_baoxiuxiangqing.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_jiaofei_fenlei.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_jiaofei_fenlei.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_ocdevice.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_add_ocdevice.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_promail.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_promail.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\alert_air_con_set_mes.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\alert_air_con_set_mes.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_alert_info.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\listview_alert_info.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_smart_oc.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_smart_oc.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_about.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_about.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_inform.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_inform.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_jiaofeijilu.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_jiaofeijilu.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_mywy.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\fragment_mywy.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main2.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_main2.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\main_fsystem.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\main_fsystem.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_gallery.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\plugin_camera_gallery.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_airlink_choose_device_workwifi.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_airlink_choose_device_workwifi.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main3.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_main3.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_forget_password.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_forget_password.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_set_mail.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_set_mail.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\alert_gos_wifi_list.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\alert_gos_wifi_list.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_jiaofeifenlei.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\list_item_jiaofeifenlei.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_modifypsw.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_modifypsw.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main4.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_main4.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baoxiushenqing.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_baoxiushenqing.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_preview.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_preview.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_jiaofei_list.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_jiaofei_list.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_air_con_mes.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\item_air_con_mes.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_inform.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_inform.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_choose_device.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_choose_device.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_modifypsw.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_modifypsw.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_air_con_brand.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_air_con_brand.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_config_failed.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_config_failed.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\alert_gos_new_device.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\alert_gos_new_device.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_ocdevice.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_add_ocdevice.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main4.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_main4.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\view_gos_notification.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\view_gos_notification.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_adddev4.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_adddev4.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baoxiushenqing.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_baoxiushenqing.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_updata.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_updata.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_published_grida1.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\item_published_grida1.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gonggao.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gonggao.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_gos_device_list.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\item_gos_device_list.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_baoxiuguanli.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\list_item_baoxiuguanli.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\actvity_gos_airlink_ready.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\actvity_gos_airlink_ready.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_inform_item.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_inform_item.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_history.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\list_item_history.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_published_grida.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\item_published_grida.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_device_list.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_device_list.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_set_mail.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_set_mail.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_all_message.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_all_message.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_smart.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\listview_smart.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\jpush_popwin_layout.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\jpush_popwin_layout.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_worker_baoxiu.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\list_item_worker_baoxiu.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main5.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_main5.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_device_list.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_device_list.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_settings.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_settings.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_air_con_mes.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_air_con_mes.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_reset.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_reset.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_gos_device_list.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\item_gos_device_list.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_account.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_account.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_aircon_mes.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\listview_aircon_mes.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_check_device_workwifi.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_check_device_workwifi.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_sample.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\fragment_sample.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_smart_air_condition.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_smart_air_condition.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_smart_air_condition.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_smart_air_condition.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\jpush_webview_layout.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\jpush_webview_layout.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_baoxiuguanli.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\fragment_baoxiuguanli.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_colorlist.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_colorlist.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_gos_colors_list.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\item_gos_colors_list.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_main.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_check_device_workwifi.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_check_device_workwifi.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_login.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_gos_mode_list.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\item_gos_mode_list.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\actvity_gos_device_reset.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\actvity_gos_device_reset.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\actvity_gos_airlink_ready.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\actvity_gos_airlink_ready.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_forget_password.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_forget_password.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\esptouch_demo_activity.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\esptouch_demo_activity.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register2.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_register2.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_workerbaoxiu.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_workerbaoxiu.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_yezhubaoxiu.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\list_item_yezhubaoxiu.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\view_gos_title_listview.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\view_gos_title_listview.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\popupwindow_shifouyifukuan.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\popupwindow_shifouyifukuan.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_register_user.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_register_user.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_popupwindows.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\item_popupwindows.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main7.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_main7.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\alert_gos_set_device_info.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\alert_gos_set_device_info.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_jiaofei_list.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\list_item_jiaofei_list.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\alert_air_con_set_mes.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\alert_air_con_set_mes.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_smart_curtain.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_smart_curtain.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_smart_curtain.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_smart_curtain.xml"
-    },
-    {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_airlink_choose_device_workwifi.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_airlink_choose_device_workwifi.xml"
-    },
-    {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_published_grida.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\item_published_grida.xml"
-    },
-    {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gonggao_detail.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gonggao_detail.xml"
-    },
-    {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_jiaofei_list.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\list_item_jiaofei_list.xml"
-    },
-    {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_baoxiuguanli.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\list_item_baoxiuguanli.xml"
-    },
-    {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_sample.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\fragment_sample.xml"
-    },
-    {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\aim_layout_selecticon.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\aim_layout_selecticon.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\jpush_webview_layout.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\jpush_webview_layout.xml"
     }
 ]
