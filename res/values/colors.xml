@@ -162,11 +162,4 @@
     
     <!-- 金色 -->
     <color name="golden"> #FFFF00</color>
-
-
-    <!-- 上传图片添加的颜色 -->
-    <color name="none_color">#00000000</color>
-    <color name="plugin_camera_black">#000000</color>
-    <color name="albumback">#E1E0DE</color>
-    <color name="style_red">#ff4c41</color>
 </resources>

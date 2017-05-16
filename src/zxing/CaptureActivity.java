@@ -15,13 +15,6 @@
  */
 package zxing;
 
-import java.io.IOException;
-import java.lang.reflect.Field;
-
-import zxing.camera.CameraManager;
-import zxing.decoding.DecodeThread;
-import zxing.utils.CaptureActivityHandler;
-import zxing.utils.InactivityTimer;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -50,11 +43,20 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.gizwits.gizwifisdk.api.GizWifiSDK;
+import com.gizwits.gizwifisdk.enumration.GizWifiErrorCode;
 import com.gizwits.gizwifisdk.listener.GizWifiSDKListener;
 import com.google.zxing.Result;
 import com.way.adapter.DatabaseAdapter;
 import com.way.tabui.gokit.R;
 import com.way.util.Gizinfo;
+
+import java.io.IOException;
+import java.lang.reflect.Field;
+
+import zxing.camera.CameraManager;
+import zxing.decoding.DecodeThread;
+import zxing.utils.CaptureActivityHandler;
+import zxing.utils.InactivityTimer;
 
 /**
  * This activity opens the camera and does the actual scanning on a background
@@ -89,14 +91,42 @@ public final class CaptureActivity extends Activity implements
 
 	private GizWifiSDKListener gizWifiSDKListener = new GizWifiSDKListener() {
 
-		/** 用于设备绑定 */
-		public void didBindDevice(int error, String errorMessage, String did) {
-			CaptureActivity.this.didBindDevice(error, errorMessage, did);
-		};
+        public void didBindDevice(int error, String errorMessage, String did) {
+            CaptureActivity.this.didBindDevice(error,errorMessage, did);
+        }
+
+        public void didBindDevice(GizWifiErrorCode result, String did) {
+            CaptureActivity.this.didBindDevice(result, did);
+        }
 
 	};
 
-	/**
+//    GizWifiSDKListener gizWifiSDKListener = new GizWifiSDKListener() {
+//        @Override
+//        public void didBindDevice(GizWifiErrorCode result, String did) {
+//            if (result ==GizWifiErrorCode.GIZ_SDK_SUCCESS ) {
+//                mHandler.sendEmptyMessage(handler_key.SUCCESS.ordinal());
+//            } else {
+//                Message message = new Message();
+//                message.what = handler_key.FAILED.ordinal();
+//                message.obj = result;
+//                mHandler.sendMessage(message);
+//            }
+//        }
+//    };
+
+    private void didBindDevice(GizWifiErrorCode result, String did) {
+        if (result ==GizWifiErrorCode.GIZ_SDK_SUCCESS ) {
+            mHandler.sendEmptyMessage(handler_key.SUCCESS.ordinal());
+        } else {
+            Message message = new Message();
+            message.what = handler_key.FAILED.ordinal();
+            message.obj = result;
+            mHandler.sendMessage(message);
+        }
+    }
+
+    /**
 	 * 设备绑定回调
 	 * 
 	 * @param result
@@ -155,13 +185,9 @@ public final class CaptureActivity extends Activity implements
 				break;
 
 			case SUCCESS:
-				// Toast.makeText(CaptureActivity.this, R.string.add_successful,
-				// Toast.LENGTH_SHORT).show();
-				// Intent intent = new Intent(CaptureActivity.this,
-				// DeviceListActivity.class);
-				// startActivity(intent);
 				finish();
-				break;
+                Toast.makeText(CaptureActivity.this, "返回前一界面中", Toast.LENGTH_SHORT).show();
+                break;
 			case ADD_DATA:
 				Gizinfo gizinfo = new Gizinfo(name, address, bindgiz, "NULL", 0);
 				dbAdapter.add(gizinfo);
@@ -183,10 +209,13 @@ public final class CaptureActivity extends Activity implements
 		GizWifiSDK.sharedInstance().bindDevice(spf.getString("Uid", ""),
 				spf.getString("Token", ""), did, passcode, null);
 	}
+
 	private void startBind(String uid, String token, String mac,
 			String productKey, String productSecret) {
 		GizWifiSDK.sharedInstance().bindRemoteDevice(uid, token, mac,
 				productKey, productSecret);
+
+
 	}
 
 	private Rect mCropRect = null;
@@ -342,12 +371,10 @@ public final class CaptureActivity extends Activity implements
 		String text = rawResult.getText();
 		if ((!isfromoc) && text.contains("product_key=")
 				&& text.contains("did=") && text.contains("passcode=")) {
-
 			inactivityTimer.onActivity();
 			product_key = getParamFomeUrl(text, "product_key");
 			did = getParamFomeUrl(text, "did");
 			passcode = getParamFomeUrl(text, "passcode");
-
 			Toast.makeText(CaptureActivity.this, R.string.scanning_successful,
 					Toast.LENGTH_SHORT).show();
 			mHandler.sendEmptyMessage(handler_key.START_BIND.ordinal());

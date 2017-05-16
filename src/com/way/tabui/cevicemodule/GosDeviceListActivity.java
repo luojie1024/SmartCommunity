@@ -1,14 +1,6 @@
 package com.way.tabui.cevicemodule;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
-
-import zxing.CaptureActivity;
 import android.annotation.SuppressLint;
-import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.BroadcastReceiver;
@@ -38,34 +30,36 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import cn.jpush.android.api.JPushInterface;
-
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
 import com.gizwits.gizwifisdk.api.GizWifiSDK;
 import com.gizwits.gizwifisdk.enumration.GizPushType;
 import com.gizwits.gizwifisdk.enumration.GizWifiDeviceNetStatus;
 import com.gizwits.gizwifisdk.enumration.GizWifiErrorCode;
 import com.gizwits.gizwifisdk.listener.GizWifiDeviceListener;
-import com.way.tabui.GosApplication;
 import com.way.tabui.actity.GizService;
 import com.way.tabui.actity.MainActivity;
-import com.way.tabui.actity.GizService.MyReceiver;
 import com.way.tabui.commonmodule.GosConstant;
 import com.way.tabui.commonmodule.NetUtils;
 import com.way.tabui.configmodule.GosAirlinkChooseDeviceWorkWiFiActivity;
 import com.way.tabui.configmodule.GosCheckDeviceWorkWiFiActivity;
-import com.way.tabui.controlmodule.GosDeviceControlActivity;
 import com.way.tabui.gokit.R;
 import com.way.tabui.pushmodule.GosPushManager;
 import com.way.tabui.settingsmodule.GosSettiingsActivity;
 import com.way.tabui.view.SlideListView2;
-import com.way.util.ExitAppReceiver;
 import com.xmcamera.core.model.XmAccount;
 import com.xmcamera.core.model.XmErrInfo;
 import com.xmcamera.core.sys.XmSystem;
 import com.xmcamera.core.sysInterface.IXmSystem;
 import com.xmcamera.core.sysInterface.OnXmListener;
 import com.xmcamera.core.sysInterface.OnXmSimpleListener;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import cn.jpush.android.api.JPushInterface;
+import zxing.CaptureActivity;
 
 @SuppressLint("HandlerLeak")
 public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implements OnClickListener {
@@ -191,6 +185,9 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 			switch (msg.what) {
 			case GETLIST:
 				GizWifiSDK.sharedInstance().getBoundDevices(uid, token, GosConstant.ProductKeyList);
+                Log.i("xxs", "uid:" + uid + "---" +token );
+                spf.edit().putString("Uid", uid).commit();
+                spf.edit().putString("Token", token).commit();
 				if (loginStatus == 0) {
 					loginStatus = 3;
 					GizWifiSDK.sharedInstance().userLoginAnonymous();

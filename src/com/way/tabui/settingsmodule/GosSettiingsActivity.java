@@ -1,42 +1,52 @@
 package com.way.tabui.settingsmodule;
 
-import java.util.HashMap;
-import java.util.concurrent.ConcurrentHashMap;
-
-import org.json.JSONException;
-
 import android.app.ActionBar;
-import android.app.Activity;
-import android.app.AlarmManager;
-import android.app.PendingIntent;
-import android.content.Context;
+import android.app.AlertDialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
-import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import com.gizwits.gizwifisdk.api.GizDeviceSharing;
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
-import com.gizwits.gizwifisdk.api.GizWifiSDK;
-import com.gizwits.gizwifisdk.enumration.GizPushType;
+import com.gizwits.gizwifisdk.enumration.GizDeviceSharingUserRole;
+import com.gizwits.gizwifisdk.enumration.GizDeviceSharingWay;
+import com.gizwits.gizwifisdk.enumration.GizWifiErrorCode;
+import com.gizwits.gizwifisdk.listener.GizDeviceSharingListener;
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.EncodeHintType;
+import com.google.zxing.MultiFormatWriter;
+import com.google.zxing.WriterException;
+import com.google.zxing.common.BitMatrix;
+import com.google.zxing.qrcode.QRCodeWriter;
 import com.way.tabui.commonmodule.GosBaseActivity;
 import com.way.tabui.commonmodule.GosConstant;
 import com.way.tabui.gokit.R;
-import com.way.tabui.pushmodule.GosPushManager;
+
+import org.json.JSONException;
+
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.concurrent.ConcurrentHashMap;
+
+import static android.graphics.Color.BLACK;
 
 public class GosSettiingsActivity extends GosBaseActivity implements
 		OnClickListener {
 
-	/** The ll About */
-	private LinearLayout llAbout, llexit,llsetbund,llSetLed,llSetSafe;
+    private static final int QR_WIDTH = 1000;
+    private static final int QR_HEIGHT = 1000;
+    /** The ll About */
+	private LinearLayout llAbout, llexit,llsetbund,llSetLed,llSetSafe,llQrcode;
 
 	private Switch sw_red,sw_sf;
 	/** led红灯开关 0=关 1=开. */
@@ -65,9 +75,12 @@ public class GosSettiingsActivity extends GosBaseActivity implements
 		if (device==null) {
 			llSetLed.setVisibility(View.GONE);
 			llSetSafe.setVisibility(View.GONE);
+            llQrcode.setVisibility(View.GONE);
+
 		}else{
 			llSetLed.setVisibility(View.VISIBLE);
 			llSetSafe.setVisibility(View.VISIBLE);
+            llQrcode.setVisibility(View.VISIBLE);
 		}
 	}
 
@@ -83,6 +96,7 @@ public class GosSettiingsActivity extends GosBaseActivity implements
 		llexit = (LinearLayout) findViewById(R.id.llexit);
 		llsetbund= (LinearLayout) findViewById(R.id.llsetbund);
 		llSetSafe=(LinearLayout) findViewById(R.id.llSetSafe);
+        llQrcode=(LinearLayout) findViewById(R.id.llQRcode);
 		sw_red=(Switch) findViewById(R.id.sw_red);
 		sw_sf=(Switch) findViewById(R.id.sw_sf);
 		sw_sf.setChecked(spf.getBoolean("issafe", true));
@@ -174,6 +188,10 @@ public class GosSettiingsActivity extends GosBaseActivity implements
 			eintent.setAction("com.way.util.exit_app");
 			sendBroadcast(eintent);
 			break;
+            case R.id.llQRcode:
+//                makeQRCode();
+                sharing();
+                break;
 
 		default:
 			break;
@@ -188,8 +206,118 @@ public class GosSettiingsActivity extends GosBaseActivity implements
 		Log.v("==",""+hashMap.get(key));
 	//	Log.i("Apptest", hashMap.toString());
 	}
-	
-	/**
+    ImageView ImageView;
+    GizDeviceSharingListener mListener = new GizDeviceSharingListener() {
+        // 实现设备分享的回调
+        @Override
+        public void didSharingDevice(GizWifiErrorCode result, String deviceID, int sharingID, Bitmap QRCodeImage) {
+            if (result == GizWifiErrorCode.GIZ_SDK_SUCCESS) {
+                ImageView = new ImageView(GosSettiingsActivity.this);
+                ImageView.setImageBitmap(QRCodeImage);
+                AlertDialog.Builder builder = new AlertDialog.Builder(GosSettiingsActivity.this);
+                builder.setTitle("二维码"+device.getPasscode());
+                builder.setView(ImageView);
+                builder.setMessage(sharingID);
+                builder.show();
+            } else {
+                Toast.makeText(GosSettiingsActivity.this, "分享失败"+result.toString(), Toast.LENGTH_SHORT).show();
+            }
+        }
+    };
+
+    String token;
+    String uid;
+    public void sharing(){
+        uid = spf.getString("Uid",null);
+        token =spf.getString("Token",null);
+    GizDeviceSharing.setListener(mListener);
+// 在设备列表中找到可以分享的设备
+// 二维码分享设备
+       if( (device.getSharingRole()).equals(GizDeviceSharingUserRole.GizDeviceSharingNormal)
+               ||(device.getSharingRole()).equals(GizDeviceSharingUserRole.GizDeviceSharingGuest)){
+        Toast.makeText(this, "没有分享权限", Toast.LENGTH_SHORT).show();
+           return;
+       }
+    GizDeviceSharing.sharingDevice(token,device.getDid(), GizDeviceSharingWay.GizDeviceSharingByQRCode, null, null);
+    }
+
+
+
+
+    private void makeQRCode(){
+         uid = spf.getString("Uid",null);
+        token =spf.getString("Token",null);
+
+        String mac=device.getMacAddress();
+
+//        String text = "http://blog.csdn.net/gao36951";
+        String url = "uid="+uid+"&token="+token+"&mac="+mac+"&productKey="+ GosConstant.device_ProductKey
+                +"&productSecret="+GosConstant.Product_Secret;
+
+        Log.i("xxs", "url::::"+url);
+        try {
+            // 判断URL合法性
+            if (url == null || "".equals(url) || url.length() < 1) {
+                return ;
+            }
+            Hashtable<EncodeHintType, String> hints = new Hashtable<EncodeHintType, String>();
+            hints.put(EncodeHintType.CHARACTER_SET, "utf-8");
+            // 图像数据转换，使用了矩阵转换
+            BitMatrix bitMatrix = new QRCodeWriter().encode(url,
+                    BarcodeFormat.QR_CODE, QR_WIDTH, QR_HEIGHT, hints);
+            int[] pixels = new int[QR_WIDTH * QR_HEIGHT];
+            // 下面这里按照二维码的算法，逐个生成二维码的图片，
+            // 两个for循环是图片横列扫描的结果
+            for (int y = 0; y < QR_HEIGHT; y++) {
+                for (int x = 0; x < QR_WIDTH; x++) {
+                    if (bitMatrix.get(x, y)) {
+                        pixels[y * QR_WIDTH + x] = 0xff000000;
+                    } else {
+                        pixels[y * QR_WIDTH + x] = 0xffffffff;
+                    }
+                }
+            }
+            // 生成二维码图片的格式，使用ARGB_8888
+            Bitmap bitmap = Bitmap.createBitmap(QR_WIDTH, QR_HEIGHT,
+                    Bitmap.Config.ARGB_8888);
+            bitmap.setPixels(pixels, 0, QR_WIDTH, 0, 0, QR_WIDTH, QR_HEIGHT);
+            ImageView ImageView = new ImageView(this);
+            ImageView.setImageBitmap(bitmap);
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("二维码"+device.getPasscode());
+            builder.setView(ImageView);
+            builder.setMessage(url);
+            builder.show();
+            // 显示到一个ImageView上面
+            // sweepIV.setImageBitmap(bitmap);
+
+        } catch (WriterException e) {
+            Log.i("log", "生成二维码错误" + e.getMessage());
+        }
+    }
+
+    public static Bitmap createQRCode(String str, int widthAndHeight)
+            throws WriterException {
+        Hashtable<EncodeHintType, String> hints = new Hashtable<EncodeHintType, String>();
+        hints.put(EncodeHintType.CHARACTER_SET, "utf-8");
+        BitMatrix matrix = new MultiFormatWriter().encode(str,
+                BarcodeFormat.QR_CODE, widthAndHeight, widthAndHeight);
+        int width = matrix.getWidth();
+        int height = matrix.getHeight();
+        int[] pixels = new int[width * height];
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                if (matrix.get(x, y)) {
+                    pixels[y * width + x] = BLACK;
+                }
+            }
+        }
+        Bitmap bitmap = Bitmap.createBitmap(width, height,
+                Bitmap.Config.ARGB_8888);
+        bitmap.setPixels(pixels, 0, width, 0, 0, width, height);
+        return bitmap;
+    }
+    /**
 	 * 设置ActionBar（工具方法*开发用*）
 	 * 
 	 * @param HBE

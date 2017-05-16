@@ -13,6 +13,8 @@ public class GosConstant  {
 	// 在机智云开发者账号下创建的产品ProductKey330b43e5cd9b4aa9a03fc97c5f6f52a4
 	public static String device_ProductKey = "";
 
+    public static String Product_Secret="e4426f0aa0e446a3a34260ec2064d609";
+
 	// Gokit设备热点默认前缀
 	public static final String SoftAP_Start = "XPG-GAgent";
 

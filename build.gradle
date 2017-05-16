@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.android.tools.build:gradle:2.1.3'
     }
 }
 apply plugin: 'android'
@@ -11,12 +11,22 @@ apply plugin: 'android'
 
 
 dependencies {
-    compile fileTree(dir: 'libs', include: '*.jar')
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
 }
 
 android {
     compileSdkVersion 16
     buildToolsVersion "24.0.3"
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    defaultConfig {
+
+        multiDexEnabled true
+    }
+
 
 
     task nativeLibsToJar(type: Zip, description: "create a jar archive of the native libs") {
@@ -30,9 +40,8 @@ android {
     aaptOptions.cruncherEnabled = false
     aaptOptions.useNewCruncher = false
 
-    defaultConfig {
-        multiDexEnabled true
-    }
+
+
 
     tasks.withType(JavaCompile) {
         compileTask -> compileTask.dependsOn(nativeLibsToJar)
