@@ -121,9 +121,7 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                                         tvLeft.setTextColor(Color.parseColor("#c0d355"));
                                         tvRight.setTextColor(Color.WHITE);
                                         pay_status = 1;
-                                        //刷新数据，更新UI
-//                                        sendpost();
-                                        intidata();
+                                        sendpost();
                                         break;
                               case R.id.tv_jiaofei_title_right:
                                         tvLeft.setBackgroundResource(R.drawable.rounded_linearlayout_left_unpress);
@@ -131,18 +129,13 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                                         tvLeft.setTextColor(Color.WHITE);
                                         tvRight.setTextColor(Color.parseColor("#c0d355"));
                                         pay_status = 2;
-                                        //刷新数据，更新UI
-//                                        sendpost();
-                                        initData();
+                                        sendpost();
                                         break;
                               default:
                                         break;
                     }
           }
 
-          /**
-           * 连接数据库，获取数据并生成JiaofeiListEntity,数据集合
-           */
           public void intidata() {
                     new Thread() {
                               @Override
@@ -153,21 +146,11 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                                                   Class.forName("com.mysql.jdbc.Driver");
                                                   // 2.获取连接
                                                   Connection conn = null;
-                                                  //jdbc:mysql://192.168.31.210:3306/wysql?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false
-                                                  //conn = DriverManager.getConnection(QueryAll.mysqlUrl, QueryAll.mysqlRoot, QueryAll.mysqlpass);
-                                                  conn = DriverManager.getConnection("jdbc:mysql://192.168.31.210:3306/wysql","root", "123456");
+                                                  conn = DriverManager.getConnection("jdbc:mysql://192.168.31.210:3306/wysql?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false", "root", "123456");
                                                   // 3.创建执行sql语句的对象
                                                   Statement stmt = null;
-                                                  stmt = conn.createStatement();
-                                                  // 4.书写一个sql语句
-                                                  String sql;
-                                                  //支付时间默认为0，
-                                                  if (pay_status == 1) {
-                                                            sql = "SELECT * FROM pay_record WHERE pay_time='0'";
-
-                                                  } else {
-                                                            sql = "SELECT * FROM pay_record WHERE LENGTH(pay_time)>1";
-                                                  }
+                                                  stmt = conn.createStatement();                    // 4.书写一个sql语句
+                                                  String sql = "SELECT * FROM pay_record";
                                                   // 5.执行sql语句
                                                   ResultSet rs = null;
                                                   rs = stmt.executeQuery(sql);
@@ -195,12 +178,9 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                                                                       //设置ID
                                                                       p_record.setId("" + rs.getInt(1));
                                                                       p_record.setType("" + rs.getInt(2));
-                                                                      if (pay_status==1)
-                                                                                p_record.setPay_time("未缴费！");
-                                                                      else
-                                                                                p_record.setPay_time(rs.getString(3));
-                                                                      p_record.setPay_amount("" + rs.getFloat(4));
-                                                                      p_record.setMonth(rs.getInt(5)+"月份");
+                                                                      p_record.setPay_time(rs.getString(3));
+                                                                      p_record.setPay_amount("" + rs.getInt(4));
+                                                                      p_record.setMonth("" + rs.getInt(5));
                                                                       //设置每条数据
                                                                       list.add(p_record);
                                                             }

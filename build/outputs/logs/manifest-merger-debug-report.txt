@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:2:1-611:12
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:2:1-601:12
 	package
 		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:3:5-34
 	android:versionName
@@ -183,7 +183,7 @@ ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:102:5-75
 	android:name
 		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:102:22-72
 application
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:104:5-609:24
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:104:5-599:24
 	android:label
 		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:108:9-41
 	android:allowBackup
@@ -297,620 +297,628 @@ ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:172:9-175:20
 	android:name
 		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:173:13-78
 activity#com.way.tabui.cevicemodule.GosDeviceListActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:176:9-187:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:176:9-184:20
 	android:theme
 		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:178:13-60
 	android:name
 		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:177:13-76
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:181:13-185:29
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:179:13-183:29
 action#android.intent.action.MAIN
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:182:17-69
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:180:17-69
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:182:25-66
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:180:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:184:17-77
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:182:17-77
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:184:27-74
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:182:27-74
 activity#com.way.tabui.actity.SmartOCActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:188:9-191:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:185:9-188:20
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:190:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:187:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:189:13-64
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:186:13-64
 activity#com.way.tabui.actity.UpdataActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:192:9-196:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:189:9-193:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:194:13-58
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:191:13-58
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:195:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:192:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:193:13-63
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:190:13-63
 activity#zxing.CaptureActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:197:9-199:63
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:194:9-196:63
+	android:theme
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:196:13-60
+	android:name
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:195:13-49
+activity#com.way.tabui.settingsmodule.GosAboutActivity
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:197:9-200:20
 	android:theme
 		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:199:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:198:13-49
-activity#com.way.tabui.settingsmodule.GosAboutActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:200:9-203:20
-	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:202:13-60
-	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:201:13-73
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:198:13-73
 activity#com.way.tabui.settingsmodule.GosSettiingsActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:204:9-207:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:201:9-204:20
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:206:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:203:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:205:13-77
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:202:13-77
 activity#com.way.tabui.configmodule.GosCheckDeviceWorkWiFiActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:208:9-211:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:205:9-208:20
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:210:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:207:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:209:13-85
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:206:13-85
 activity#com.way.tabui.controlmodule.GosDeviceControlActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:212:9-216:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:209:9-213:20
 	android:windowSoftInputMode
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:215:13-72
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:212:13-72
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:214:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:211:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:213:13-80
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:210:13-80
 activity#com.way.tabui.configmodule.GosModeListActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:217:9-220:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:214:9-217:20
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:219:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:216:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:218:13-74
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:215:13-74
 activity#com.way.tabui.configmodule.GosAirlinkChooseDeviceWorkWiFiActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:221:9-224:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:218:9-221:20
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:223:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:220:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:222:13-93
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:219:13-93
 activity#com.way.tabui.configmodule.GosAirlinkReadyActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:225:9-228:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:222:9-225:20
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:227:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:224:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:226:13-78
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:223:13-78
 activity#com.way.tabui.configmodule.GosAirlinkConfigCountdownActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:229:9-232:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:226:9-229:20
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:231:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:228:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:230:13-88
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:227:13-88
 activity#com.way.tabui.controlmodule.GosColorsListActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:233:9-236:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:230:9-233:20
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:235:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:232:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:234:13-77
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:231:13-77
 activity#com.way.tabui.gokit.AlertmesActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:237:9-240:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:234:9-237:20
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:239:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:236:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:238:13-45
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:235:13-45
 activity#com.way.tabui.gokit.AirConMesActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:241:9-245:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:238:9-242:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:243:13-63
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:240:13-63
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:244:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:241:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:242:13-46
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:239:13-46
 activity#com.way.tabui.gokit.AirConBrandActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:246:9-250:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:243:9-247:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:248:13-65
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:245:13-65
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:249:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:246:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:247:13-48
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:244:13-48
 activity#com.way.tabui.gokit.AirMateActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:251:9-255:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:248:9-252:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:253:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:250:13-60
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:254:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:251:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:252:13-44
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:249:13-44
 activity#com.way.tabui.gokit.SmartCurtainActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:257:12-261:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:254:12-258:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:259:13-65
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:256:13-65
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:260:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:257:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:258:13-49
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:255:13-49
 activity#com.tencent.tauth.AuthActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:264:9-276:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:261:9-273:20
 	android:launchMode
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:266:13-44
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:263:13-44
 	android:noHistory
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:267:13-37
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:264:13-37
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:265:13-58
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:262:13-58
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:268:13-275:29
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:265:13-272:29
 action#android.intent.action.VIEW
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:269:17-69
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:266:17-69
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:269:25-66
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:266:25-66
 category#android.intent.category.DEFAULT
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:271:17-76
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:268:17-76
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:271:27-73
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:268:27-73
 category#android.intent.category.BROWSABLE
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:272:17-78
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:269:17-78
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:272:27-75
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:269:27-75
 data
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:274:17-60
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:271:17-60
 	android:scheme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:274:23-57
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:271:23-57
 activity#com.tencent.connect.common.AssistActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:277:9-280:75
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:274:9-277:75
 	android:configChanges
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:279:13-74
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:276:13-74
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:280:13-72
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:277:13-72
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:278:13-69
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:275:13-69
 activity#com.showmo.demo.maincotent.MainContentActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:281:9-282:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:278:9-279:20
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:281:19-80
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:278:19-80
 activity#com.showmo.demo.account.ModifyPswActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:283:9-286:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:280:9-283:20
 	android:screenOrientation
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:285:13-49
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:282:13-49
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:284:13-69
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:281:13-69
 activity#com.showmo.demo.account.AccountActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:287:9-290:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:284:9-287:20
 	android:screenOrientation
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:289:13-49
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:286:13-49
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:288:13-67
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:285:13-67
 activity#com.showmo.demo.play.DeviceslistActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:291:9-294:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:288:9-291:20
 	android:screenOrientation
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:293:13-49
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:290:13-49
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:292:13-68
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:289:13-68
 activity#com.showmo.demo.adddevice.AddDeviceUserEnsure
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:295:9-298:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:292:9-295:20
 	android:screenOrientation
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:297:13-49
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:294:13-49
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:296:13-73
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:293:13-73
 activity#com.showmo.demo.adddevice.AddDeviceSetNetworkActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:299:9-302:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:296:9-299:20
 	android:screenOrientation
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:301:13-49
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:298:13-49
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:300:13-81
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:297:13-81
 activity#com.showmo.demo.adddevice.AddDeviceUserTipClose
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:303:9-306:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:300:9-303:20
 	android:screenOrientation
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:305:13-49
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:302:13-49
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:304:13-75
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:301:13-75
 activity#com.showmo.demo.adddevice.AddDeviceConfigSearchActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:307:9-310:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:304:9-307:20
 	android:screenOrientation
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:309:13-49
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:306:13-49
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:308:13-83
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:305:13-83
 activity#com.showmo.demo.login.ResetDeviceActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:311:9-314:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:308:9-311:20
 	android:screenOrientation
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:313:13-49
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:310:13-49
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:312:13-69
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:309:13-69
 activity#com.showmo.demo.login.RegisterActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:315:9-318:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:312:9-315:20
 	android:screenOrientation
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:317:13-49
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:314:13-49
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:316:13-66
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:313:13-66
 activity#com.showmo.demo.login.RegisterActivity2
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:319:9-322:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:316:9-319:20
 	android:screenOrientation
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:321:13-49
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:318:13-49
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:320:13-67
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:317:13-67
 activity#com.showmo.demo.play.PlayActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:323:9-326:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:320:9-323:20
 	android:screenOrientation
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:325:13-49
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:322:13-49
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:324:13-61
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:321:13-61
 activity#com.way.tabui.gokit.PromailActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:327:9-331:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:324:9-328:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:329:13-59
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:326:13-59
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:330:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:327:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:328:13-44
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:325:13-44
 activity#com.way.tabui.gokit.AllMessageActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:332:9-336:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:329:9-333:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:334:13-63
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:331:13-63
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:335:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:332:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:333:13-47
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:330:13-47
 activity#com.way.tabui.gokit.SetMailActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:337:9-341:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:334:9-338:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:339:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:336:13-60
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:340:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:337:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:338:13-44
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:335:13-44
 activity#com.way.tabui.gokit.SmartAirConditionActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:342:9-346:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:339:9-343:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:344:13-71
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:341:13-71
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:345:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:342:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:343:13-54
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:340:13-54
 activity#com.way.tabui.settingsmodule.SetBundMesActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:347:9-351:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:344:9-348:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:349:13-64
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:346:13-64
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:350:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:347:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:348:13-75
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:345:13-75
+activity#com.property.activity.InformActivity
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:350:9-354:20
+	android:label
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:352:13-58
+	android:theme
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:353:13-60
+	android:name
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:351:13-64
 activity#com.property.activity.BaoxiuguanliActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:358:9-362:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:355:9-359:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:360:13-58
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:357:13-58
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:361:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:358:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:359:13-70
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:356:13-70
 activity#com.property.activity.BaoxiushenqingActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:363:9-364:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:360:9-361:20
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:363:19-78
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:360:19-78
 activity#com.property.activity.BaoxiuxiangqingActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:365:9-369:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:362:9-366:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:367:13-58
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:364:13-58
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:368:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:365:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:366:13-73
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:363:13-73
 activity#com.property.activity.ChakandatuActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:370:9-374:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:367:9-371:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:372:13-58
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:369:13-58
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:373:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:370:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:371:13-68
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:368:13-68
 activity#com.property.activity.FaultDeleteActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:375:9-379:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:372:9-376:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:377:13-58
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:374:13-58
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:378:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:375:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:376:13-69
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:373:13-69
 activity#com.property.activity.FaultProgressActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:380:9-384:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:377:9-381:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:382:13-58
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:379:13-58
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:383:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:380:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:381:13-71
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:378:13-71
 activity#com.property.activity.JiaofeiDetailActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:385:9-389:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:382:9-386:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:387:13-58
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:384:13-58
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:388:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:385:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:386:13-71
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:383:13-71
 activity#com.property.activity.JiaofeiListActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:390:9-394:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:387:9-391:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:392:13-58
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:389:13-58
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:393:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:390:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:391:13-69
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:388:13-69
 activity#com.property.activity.JiaofeifenleiActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:395:9-406:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:392:9-396:20
 	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:397:13-58
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:394:13-58
 	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:398:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:395:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:396:13-71
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:393:13-71
 activity#com.property.activity.JiaofeijiluActivity
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:397:9-401:20
+	android:label
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:399:13-58
+	android:theme
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:400:13-60
+	android:name
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:398:13-69
+activity#com.property.activity.AnnouncementInfoActivity
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:402:9-406:20
+	android:label
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:404:13-58
+	android:theme
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:405:13-60
+	android:name
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:403:13-74
+activity#com.property.activity.AnnouncementListActivity
 ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:407:9-411:20
 	android:label
 		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:409:13-58
 	android:theme
 		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:410:13-60
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:408:13-69
-activity#com.property.activity.AnnouncementInfoActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:412:9-416:20
-	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:414:13-58
-	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:415:13-60
-	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:413:13-74
-activity#com.property.activity.AnnouncementListActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:417:9-421:20
-	android:label
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:419:13-58
-	android:theme
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:420:13-60
-	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:418:13-74
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:408:13-74
 meta-data#PW_CONFIG_SDK_IDENTIFIER_CODE
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:426:9-428:33
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:416:9-418:33
 	android:value
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:428:13-30
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:418:13-30
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:427:13-57
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:417:13-57
 meta-data#PW_CONFIG_SDK_IDENTIFIER_STRING
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:429:9-431:32
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:419:9-421:32
 	android:value
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:431:13-29
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:421:13-29
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:430:13-59
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:420:13-59
 service#com.way.tabui.actity.GizService
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:433:9-434:19
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:423:9-424:19
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:433:18-64
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:423:18-64
 service#cn.jpush.android.service.PushService
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:439:9-449:19
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:429:9-439:19
 	android:enabled
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:441:13-35
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:431:13-35
 	android:exported
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:442:13-37
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:432:13-37
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:440:13-64
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:430:13-64
 intent-filter#cn.jpush.android.intent.PUSH_TIME+cn.jpush.android.intent.PushService+cn.jpush.android.intent.REGISTER+cn.jpush.android.intent.REPORT
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:443:13-448:29
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:433:13-438:29
 action#cn.jpush.android.intent.REGISTER
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:444:17-75
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:434:17-75
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:444:25-72
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:434:25-72
 action#cn.jpush.android.intent.REPORT
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:445:17-73
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:435:17-73
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:445:25-70
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:435:25-70
 action#cn.jpush.android.intent.PushService
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:446:17-78
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:436:17-78
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:446:25-75
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:436:25-75
 action#cn.jpush.android.intent.PUSH_TIME
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:447:17-76
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:437:17-76
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:447:25-73
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:437:25-73
 service#cn.jpush.android.service.DaemonService
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:453:9-462:19
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:443:9-452:19
 	android:enabled
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:455:13-35
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:445:13-35
 	android:exported
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:456:13-36
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:446:13-36
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:454:13-66
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:444:13-66
 intent-filter#cn.jpush.android.intent.DaemonService+com.way
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:457:13-461:29
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:447:13-451:29
 action#cn.jpush.android.intent.DaemonService
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:458:17-80
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:448:17-80
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:458:25-77
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:448:25-77
 category#com.way
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:460:17-52
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:450:17-52
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:460:27-49
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:450:27-49
 receiver#cn.jpush.android.service.PushReceiver
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:465:9-484:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:455:9-474:20
 	android:enabled
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:467:13-35
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:457:13-35
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:466:13-65
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:456:13-65
 intent-filter#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY+com.way
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:468:13-472:29
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:458:13-462:29
 	android:priority
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:468:28-51
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:458:28-51
 action#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:469:17-94
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:459:17-94
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:469:25-91
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:459:25-91
 intent-filter#android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:473:13-476:29
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:463:13-466:29
 action#android.intent.action.USER_PRESENT
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:474:17-77
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:464:17-77
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:474:25-74
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:464:25-74
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:475:17-79
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:465:17-79
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:475:25-76
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:465:25-76
 intent-filter#android.intent.action.PACKAGE_ADDED+android.intent.action.PACKAGE_REMOVED
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:478:13-483:29
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:468:13-473:29
 action#android.intent.action.PACKAGE_ADDED
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:479:17-78
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:469:17-78
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:479:25-75
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:469:25-75
 action#android.intent.action.PACKAGE_REMOVED
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:480:17-80
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:470:17-80
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:480:25-77
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:470:25-77
 activity#cn.jpush.android.ui.PushActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:486:9-496:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:476:9-486:20
 	android:exported
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:489:13-37
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:479:13-37
 	android:configChanges
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:488:13-63
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:478:13-63
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:487:13-60
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:477:13-60
 intent-filter#android.intent.category.DEFAULT+cn.jpush.android.ui.PushActivity+com.way
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:490:13-495:29
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:480:13-485:29
 action#cn.jpush.android.ui.PushActivity
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:491:17-75
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:481:17-75
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:491:25-72
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:481:25-72
 service#cn.jpush.android.service.DownloadService
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:498:9-502:19
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:488:9-492:19
 	android:enabled
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:500:13-35
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:490:13-35
 	android:exported
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:501:13-37
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:491:13-37
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:499:13-68
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:489:13-68
 receiver#cn.jpush.android.service.AlarmReceiver
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:504:9-75
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:494:9-75
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:504:19-72
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:494:19-72
 receiver#com.way.tabui.commonmodule.JPushReceiver
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:507:9-527:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:497:9-517:20
 	android:enabled
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:509:13-35
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:499:13-35
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:508:13-68
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:498:13-68
 intent-filter#cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK+cn.jpush.android.intent.CONNECTION+cn.jpush.android.intent.MESSAGE_RECEIVED+cn.jpush.android.intent.NOTIFICATION_OPENED+cn.jpush.android.intent.NOTIFICATION_RECEIVED+cn.jpush.android.intent.REGISTRATION+com.way
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:510:13-526:29
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:500:13-516:29
 action#cn.jpush.android.intent.REGISTRATION
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:513:17-79
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:503:17-79
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:513:25-76
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:503:25-76
 action#cn.jpush.android.intent.MESSAGE_RECEIVED
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:515:17-83
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:505:17-83
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:515:25-80
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:505:25-80
 action#cn.jpush.android.intent.NOTIFICATION_RECEIVED
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:517:17-88
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:507:17-88
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:517:25-85
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:507:25-85
 action#cn.jpush.android.intent.NOTIFICATION_OPENED
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:519:17-86
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:509:17-86
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:519:25-83
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:509:25-83
 action#cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:521:17-91
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:511:17-91
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:521:25-88
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:511:25-88
 action#cn.jpush.android.intent.CONNECTION
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:523:17-77
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:513:17-77
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:523:25-74
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:513:25-74
 meta-data#JPUSH_CHANNEL
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:535:9-537:49
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:525:9-527:49
 	android:value
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:537:13-46
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:527:13-46
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:536:13-41
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:526:13-41
 meta-data#JPUSH_APPKEY
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:539:9-541:56
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:529:9-531:56
 	android:value
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:541:13-53
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:531:13-53
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:540:13-40
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:530:13-40
 receiver#com.baidu.android.pushservice.PushServiceReceiver
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:548:9-562:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:538:9-552:20
 	android:process
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:550:13-44
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:540:13-44
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:549:13-77
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:539:13-77
 intent-filter#android.intent.action.ACTION_POWER_CONNECTED+android.intent.action.ACTION_POWER_DISCONNECTED+android.intent.action.BOOT_COMPLETED+android.intent.action.MEDIA_MOUNTED+android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE+com.baidu.android.pushservice.action.media.CLICK+com.baidu.android.pushservice.action.notification.SHOW
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:551:13-561:29
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:541:13-551:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:552:17-79
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:542:17-79
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:552:25-76
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:542:25-76
 action#com.baidu.android.pushservice.action.notification.SHOW
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:554:17-97
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:544:17-97
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:554:25-94
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:544:25-94
 action#com.baidu.android.pushservice.action.media.CLICK
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:555:17-91
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:545:17-91
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:555:25-88
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:545:25-88
 action#android.intent.action.MEDIA_MOUNTED
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:557:17-78
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:547:17-78
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:557:25-75
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:547:25-75
 action#android.intent.action.ACTION_POWER_CONNECTED
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:559:17-87
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:549:17-87
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:559:25-84
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:549:25-84
 action#android.intent.action.ACTION_POWER_DISCONNECTED
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:560:17-90
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:550:17-90
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:560:25-87
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:550:25-87
 receiver#com.baidu.android.pushservice.RegistrationReceiver
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:564:9-576:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:554:9-566:20
 	android:process
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:566:13-44
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:556:13-44
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:565:13-78
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:555:13-78
 intent-filter#com.baidu.android.pushservice.action.BIND_SYNC+com.baidu.android.pushservice.action.METHOD
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:567:13-570:29
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:557:13-560:29
 action#com.baidu.android.pushservice.action.METHOD
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:568:17-86
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:558:17-86
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:568:25-83
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:558:25-83
 action#com.baidu.android.pushservice.action.BIND_SYNC
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:569:17-89
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:559:17-89
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:569:25-86
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:559:25-86
 intent-filter#android.intent.action.PACKAGE_REMOVED
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:571:13-575:29
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:561:13-565:29
 service#com.baidu.android.pushservice.PushService
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:578:9-585:19
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:568:9-575:19
 	android:process
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:581:13-44
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:571:13-44
 	android:exported
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:580:13-36
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:570:13-36
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:579:13-69
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:569:13-69
 intent-filter#com.baidu.android.pushservice.action.PUSH_SERVICE
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:582:13-584:29
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:572:13-574:29
 action#com.baidu.android.pushservice.action.PUSH_SERVICE
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:583:17-92
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:573:17-92
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:583:25-89
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:573:25-89
 service#com.baidu.android.pushservice.CommandService
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:587:9-589:39
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:577:9-579:39
 	android:exported
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:589:13-36
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:579:13-36
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:588:13-72
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:578:13-72
 receiver#com.way.tabui.commonmodule.BaiDuPushReceiver
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:594:9-604:20
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:584:9-594:20
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:594:19-78
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:584:19-78
 intent-filter#com.baidu.android.pushservice.action.MESSAGE+com.baidu.android.pushservice.action.RECEIVE+com.baidu.android.pushservice.action.notification.CLICK
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:595:13-603:29
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:585:13-593:29
 action#com.baidu.android.pushservice.action.MESSAGE
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:598:17-87
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:588:17-87
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:598:25-84
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:588:25-84
 action#com.baidu.android.pushservice.action.RECEIVE
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:600:17-87
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:590:17-87
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:600:25-84
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:590:25-84
 action#com.baidu.android.pushservice.action.notification.CLICK
-ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:602:17-98
+ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:592:17-98
 	android:name
-		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:602:25-95
+		ADDED from D:\space\NO7\SmartCommunity\AndroidManifest.xml:592:25-95
