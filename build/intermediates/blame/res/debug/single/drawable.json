@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_ok_btn_state.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable\\plugin_camera_ok_btn_state.xml"
+    },
+    {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_nobgd.xml",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable\\bt_nobgd.xml"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\airlink.gif",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable\\airlink.gif"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_albumbackground.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable\\plugin_camera_albumbackground.xml"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_curtain_shape1.xml",
@@ -96,8 +104,16 @@
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable\\dot_focused.xml"
     },
     {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_del_state.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable\\plugin_camera_del_state.xml"
+    },
+    {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\alert_top_shape.xml",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable\\alert_top_shape.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_title_btn_preview.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable\\plugin_camera_title_btn_preview.xml"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\checkbox_hook_selector.xml",
@@ -110,6 +126,14 @@
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_linearlayout_right_unpress.xml",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable\\rounded_linearlayout_right_unpress.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_pic_choose_selector.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable\\plugin_camera_pic_choose_selector.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_title_btn_cancel.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable\\plugin_camera_title_btn_cancel.xml"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\png_left.png",
@@ -146,6 +170,10 @@
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_transferlist.xml",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable\\tab_transferlist.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_title_btn_back.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable\\plugin_camera_title_btn_back.xml"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\alert_bottom_right_shape.xml",

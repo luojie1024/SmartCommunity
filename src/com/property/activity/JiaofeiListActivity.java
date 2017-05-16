@@ -10,6 +10,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ab.http.AbHttpUtil;
 import com.ab.view.pullview.AbPullToRefreshView;
@@ -63,6 +64,9 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                     public void handleMessage(Message msg) {
                               super.handleMessage(msg);
                               switch (msg.arg1) {
+                                        case 0:
+                                                  Toast.makeText(JiaofeiListActivity.this,"没有查询到数据！",Toast.LENGTH_SHORT).show();
+                                                  break;
                                         case 1:sendpost();//更新UI
                                                   break;
                               }
@@ -121,7 +125,9 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                                         tvLeft.setTextColor(Color.parseColor("#c0d355"));
                                         tvRight.setTextColor(Color.WHITE);
                                         pay_status = 1;
-                                        sendpost();
+                                        //刷新数据，更新UI
+//                                        sendpost();
+                                        intidata();
                                         break;
                               case R.id.tv_jiaofei_title_right:
                                         tvLeft.setBackgroundResource(R.drawable.rounded_linearlayout_left_unpress);
@@ -129,13 +135,18 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                                         tvLeft.setTextColor(Color.WHITE);
                                         tvRight.setTextColor(Color.parseColor("#c0d355"));
                                         pay_status = 2;
-                                        sendpost();
+                                        //刷新数据，更新UI
+//                                        sendpost();
+                                        initData();
                                         break;
                               default:
                                         break;
                     }
           }
 
+          /**
+           * 连接数据库，获取数据并生成JiaofeiListEntity,数据集合
+           */
           public void intidata() {
                     new Thread() {
                               @Override
@@ -146,11 +157,21 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                                                   Class.forName("com.mysql.jdbc.Driver");
                                                   // 2.获取连接
                                                   Connection conn = null;
-                                                  conn = DriverManager.getConnection("jdbc:mysql://192.168.31.210:3306/wysql?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false", "root", "123456");
+                                                  //jdbc:mysql://192.168.31.210:3306/wysql?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false
+                                                  //conn = DriverManager.getConnection(QueryAll.mysqlUrl, QueryAll.mysqlRoot, QueryAll.mysqlpass);
+                                                  conn = DriverManager.getConnection("jdbc:mysql://192.168.31.210:3306/wysql","root", "123456");
                                                   // 3.创建执行sql语句的对象
                                                   Statement stmt = null;
-                                                  stmt = conn.createStatement();                    // 4.书写一个sql语句
-                                                  String sql = "SELECT * FROM pay_record";
+                                                  stmt = conn.createStatement();
+                                                  // 4.书写一个sql语句
+                                                  String sql;
+                                                  //支付时间默认为0，
+                                                  if (pay_status == 1) {
+                                                            sql = "SELECT * FROM pay_record WHERE pay_time='0' and type="+type;
+
+                                                  } else {
+                                                            sql = "SELECT * FROM pay_record WHERE LENGTH(pay_time)>1 and type="+type;
+                                                  }
                                                   // 5.执行sql语句
                                                   ResultSet rs = null;
                                                   rs = stmt.executeQuery(sql);
@@ -178,30 +199,37 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                                                                       //设置ID
                                                                       p_record.setId("" + rs.getInt(1));
                                                                       p_record.setType("" + rs.getInt(2));
-                                                                      p_record.setPay_time(rs.getString(3));
-                                                                      p_record.setPay_amount("" + rs.getInt(4));
-                                                                      p_record.setMonth("" + rs.getInt(5));
+                                                                      if (pay_status==1)
+                                                                                p_record.setPay_time("未缴费！");
+                                                                      else
+                                                                                p_record.setPay_time(rs.getString(3));
+                                                                      p_record.setPay_amount("" + rs.getFloat(4));
+                                                                      p_record.setMonth(rs.getInt(5)+"月份");
                                                                       //设置每条数据
                                                                       list.add(p_record);
                                                             }
                                                             //设置整个结果数据
                                                             jiaofeiListEntity.setPay_record(list);
-                                                            System.out.println("恭喜您，登录成功!");
+                                                            System.out.println("缴费记录查询成功！");
                                                             System.out.println(sql);
+                                                            //查询完毕,通知UI更新
+                                                            Message msg = handler.obtainMessage();
+                                                            msg.arg1 = 1;
+                                                            handler.sendMessage(msg);
                                                   } else {
                                                             //无数据设置为空
-                                                            System.out.println("账号或密码错误!");
+                                                            System.out.println("没有查询到数据！");
+                                                            Message msg = handler.obtainMessage();
+                                                            msg.arg1 = 0;
+                                                            handler.sendMessage(msg);
                                                   }
+                                                  //关闭数据连接
                                                   if (rs != null)
                                                             rs.close();
                                                   if (stmt != null)
                                                             stmt.close();
                                                   if (conn != null)
                                                             conn.close();
-                                                  //查询完毕,通知UI更新
-                                                  Message msg = handler.obtainMessage();
-                                                  msg.arg1 = 1;
-                                                  handler.sendMessage(msg);
                                         } catch (Exception e) {
                                                   System.out.println("连接数据库错误！");
                                                   e.printStackTrace();

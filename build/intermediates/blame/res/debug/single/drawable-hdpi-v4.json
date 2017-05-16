@@ -4,6 +4,10 @@
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\passport_arrow_right_normal.png"
     },
     {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_del_unfocused.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_del_unfocused.png"
+    },
+    {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\gonggao_zuixin.png",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\gonggao_zuixin.png"
     },
@@ -32,12 +36,20 @@
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\jiaofei_fangzu.png"
     },
     {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_bottom_bar.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_bottom_bar.png"
+    },
+    {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_pre_v5_normal.png",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\btn_pre_v5_normal.png"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_arrow_2.png",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\icon_arrow_2.png"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_title_bar.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_title_bar.png"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\xieyi_weidu.png",
@@ -64,12 +76,20 @@
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\bg_transparent.png"
     },
     {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_cancel.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_cancel.png"
+    },
+    {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\progress_2.png",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\progress_2.png"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jiaofei_qita.png",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\jiaofei_qita.png"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_send_unselected.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_send_unselected.png"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\xieyi_yidu.png",
@@ -96,6 +116,10 @@
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\sort_arrow_red.png"
     },
     {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_back_btn.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_back_btn.png"
+    },
+    {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jiaofei_dianfei.png",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\jiaofei_dianfei.png"
     },
@@ -118,6 +142,10 @@
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jiantou2x.png",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\jiantou2x.png"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_back_btn_pressed.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_back_btn_pressed.png"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\richpush_btn_selector.xml",
@@ -176,6 +204,42 @@
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\ic_conditionor_windcapacity_low.png"
     },
     {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_send_focused.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_send_focused.png"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_filenum.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_filenum.png"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_preview_unselected.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_preview_unselected.png"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_choose_back.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_choose_back.png"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_choosed.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_choosed.png"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_cancel_pressed.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_cancel_pressed.png"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_preview_pressed.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_preview_pressed.png"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_album_back.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_album_back.png"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plubin_camera_del_focused.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plubin_camera_del_focused.png"
+    },
+    {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\add_image.png",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\add_image.png"
     },
@@ -192,6 +256,10 @@
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\icon_arrow_3.png"
     },
     {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_send_pressed.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_send_pressed.png"
+    },
+    {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_pre_v5_pressed.png",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\btn_pre_v5_pressed.png"
     },
@@ -200,12 +268,20 @@
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\bg_smart_curtain1.jpg"
     },
     {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_preview_focused.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_preview_focused.png"
+    },
+    {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_mode_cold_black.png",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\btn_mode_cold_black.png"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_stb_v53_normal.png",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\btn_stb_v53_normal.png"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_no_pictures.png",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_no_pictures.png"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_next_v5_pressed.png",

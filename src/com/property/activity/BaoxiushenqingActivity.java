@@ -1,16 +1,5 @@
 package com.property.activity;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.kymjs.kjframe.KJHttp;
-import org.kymjs.kjframe.http.HttpCallBack;
-import org.kymjs.kjframe.http.HttpParams;
-import org.kymjs.kjframe.ui.BindView;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
@@ -24,28 +13,26 @@ import android.os.Handler;
 import android.os.Message;
 import android.provider.MediaStore;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
+import android.view.WindowManager;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
-import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
 
 import com.ab.util.AbDialogUtil;
 import com.property.base.BaseActivity;
@@ -61,6 +48,17 @@ import com.property.utils.SharedpfTools;
 import com.property.utils.UrlConnector;
 import com.property.view.MyGridView;
 import com.way.tabui.gokit.R;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.kymjs.kjframe.KJHttp;
+import org.kymjs.kjframe.http.HttpCallBack;
+import org.kymjs.kjframe.http.HttpParams;
+import org.kymjs.kjframe.ui.BindView;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BaoxiushenqingActivity extends BaseActivity {
 
@@ -220,7 +218,8 @@ public class BaoxiushenqingActivity extends BaseActivity {
 		params.put("village_id", village_id);		
 		for (int i = 0; i < Bimp.getBimp().tempSelectBitmap.size(); i++) {
 			params.put("file"+i, new File(Bimp.getBimp().tempSelectBitmap.get(i).getImagePath()));
-		}		
+		}
+
 		http.post(UrlConnector.FAULT_ADD, params, false,
 				new HttpCallBack() {
 					@Override
@@ -246,7 +245,8 @@ public class BaoxiushenqingActivity extends BaseActivity {
 					}
 				});
 	}	
-		
+
+	//初始化照片
 	public void Init() {
 		parentView = getLayoutInflater().inflate(R.layout.activity_baoxiushenqing, null);
 		pop = new PopupWindow(BaoxiushenqingActivity.this);
@@ -260,6 +260,7 @@ public class BaoxiushenqingActivity extends BaseActivity {
 		pop.setOutsideTouchable(true);
 		pop.setContentView(view);
 
+		//选择照片
 		RelativeLayout parent = (RelativeLayout) view.findViewById(R.id.parent);
 		Button bt1 = (Button) view.findViewById(R.id.item_popupwindows_camera);
 		Button bt2 = (Button) view.findViewById(R.id.item_popupwindows_Photo);

@@ -176,6 +176,8 @@
         <activity
             android:name="com.way.tabui.cevicemodule.GosDeviceListActivity"
             android:theme="@android:style/Theme.Holo.Light" >
+
+            <!-- TODO -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -379,22 +381,30 @@
         </activity>
         <activity
             android:name="com.property.activity.JiaofeiDetailActivity"
-            android:label="@string/title_activity_inform"
+            android:label="缴费详情"
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.property.activity.JiaofeiListActivity"
-            android:label="@string/title_activity_inform"
+            android:label="缴费分类列表"
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.property.activity.JiaofeifenleiActivity"
-            android:label="@string/title_activity_inform"
+            android:label="缴费分类"
             android:theme="@android:style/Theme.Holo.Light" >
+
+            <!-- TODO 物业 -->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name="com.property.activity.JiaofeijiluActivity"
-            android:label="@string/title_activity_inform"
+            android:label="缴费分类记录"
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
@@ -407,6 +417,12 @@
             android:label="@string/title_activity_inform"
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
+        <activity
+            android:name="com.property.duotushangchuan.AlbumActivity"
+            android:label="@string/title_activity_inform"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+
         <!-- 物业报修 -->
 
 

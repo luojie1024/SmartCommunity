@@ -80,6 +80,10 @@
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_intelligent_socket.xml"
     },
     {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_select_folder.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\plugin_camera_select_folder.xml"
+    },
+    {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_air_con_brand.xml",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\listview_air_con_brand.xml"
     },
@@ -118,6 +122,10 @@
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fault_delete.xml",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_fault_delete.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_album.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\plugin_camera_album.xml"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\popupwindows_pingjia.xml",
@@ -160,6 +168,14 @@
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_user_login.xml"
     },
     {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_show_all_photo.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\plugin_camera_show_all_photo.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_select_imageview.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\plugin_camera_select_imageview.xml"
+    },
+    {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_register_user.xml",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_register_user.xml"
     },
@@ -170,6 +186,10 @@
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baoxiuguanli.xml",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_baoxiuguanli.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_image_file.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\plugin_camera_image_file.xml"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_jiaofei_list.xml",
@@ -214,6 +234,10 @@
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_config_countdown.xml",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_config_countdown.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_no_image_file.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\plugin_camera_no_image_file.xml"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_adddev4.xml",
@@ -272,6 +296,10 @@
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_main2.xml"
     },
     {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_gallery.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\plugin_camera_gallery.xml"
+    },
+    {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main3.xml",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_main3.xml"
     },
@@ -300,12 +328,12 @@
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_inform.xml"
     },
     {
-        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_config_failed.xml",
-        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_config_failed.xml"
-    },
-    {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_modifypsw.xml",
         "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_modifypsw.xml"
+    },
+    {
+        "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_config_failed.xml",
+        "source": "D:\\space\\NO7\\SmartCommunity\\res\\layout\\activity_gos_config_failed.xml"
     },
     {
         "merged": "D:\\space\\NO7\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_ocdevice.xml",
