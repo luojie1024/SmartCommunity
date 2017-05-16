@@ -19,6 +19,9 @@
     <!-- Application thianeme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:actionBarStyle">@style/my_actionbar_style</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+        <!--<item name="android:fitsSystemWindows">true</item>-->
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 

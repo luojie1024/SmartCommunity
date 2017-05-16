@@ -43,6 +43,7 @@ import com.way.tabui.gokit.AllMessageActivity;
 import com.way.tabui.gokit.PromailActivity;
 import com.way.tabui.gokit.R;
 import com.way.tabui.gokit.SmartCurtainActivity;
+import com.way.tabui.gokit.SmartDoorActivity;
 import com.way.tabui.settingsmodule.GosAboutActivity;
 import com.way.tabui.settingsmodule.GosSettiingsActivity;
 import com.way.util.DataCache;
@@ -57,6 +58,8 @@ import java.util.Random;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+
+import static com.way.tabui.gokit.R.id.vp;
 
 /**
  * 每个Tab中的fragment
@@ -106,7 +109,8 @@ public class SampleFragment extends Fragment {
 	// Ronrey
 	LayoutParams lp;
 	FrameLayout fl;
-	private int count = 0; // 双击计数器
+    public SharedPreferences spf;//储存器
+    private int count = 0; // 双击计数器
 	private long firstTimeNum, secondTimeNum; // 记录两次触摸点击的时间
 	private ViewPager viewPager; // android-support-v4中的滑动组件
 	private List<ImageView> imageViews; // 滑动的图片集合
@@ -203,7 +207,7 @@ public class SampleFragment extends Fragment {
 		dots.add(v.findViewById(R.id.v_dot1));
 		dots.add(v.findViewById(R.id.v_dot2));
 
-		viewPager = (ViewPager) v.findViewById(R.id.vp);
+		viewPager = (ViewPager) v.findViewById(vp);
 		viewPager.setAdapter(new com.way.adapter.MyAdapter(imageResId,
 				imageViews));// 设置填充ViewPager页面的适配器
 		// 设置一个监听器，当ViewPager中的页面改变时调用
@@ -666,12 +670,27 @@ public class SampleFragment extends Fragment {
 		startActivity(intent);
 	}
 
-	public SharedPreferences spf;
 
+
+    //手机开门
+    private void smart_door(){
+        spf = getActivity().getSharedPreferences(GosConstant.SPF_Name,
+                Context.MODE_PRIVATE);
+        if (!getofisoffline()) {
+            Intent intent = new Intent(context,SmartDoorActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putParcelable("GizWifiDevice",
+                    (GizWifiDevice) ((MainActivity) getActivity()).device);
+            intent.putExtras(bundle);
+            startActivityForResult(intent, 1000);
+        } else {
+            Toast.makeText(context, "现在为离线状态，无法进入此功能界面..", Toast.LENGTH_SHORT)
+                    .show();
+        }
+    }
 	private void giz_witsetd() {
 		spf = getActivity().getSharedPreferences(GosConstant.SPF_Name,
 				Context.MODE_PRIVATE);
-		// spf.edit().putString("msgobjx", "istrue").commit();
 		Intent intent = new Intent(context, GosDeviceListActivity.class);
 		intent.putExtra("ismain", true);
 		Bundle bundle = new Bundle();
@@ -820,6 +839,8 @@ public class SampleFragment extends Fragment {
 					pro_jiaofei();
 				else if(poem.get(location) == "智能窗帘")
 					smart_curtain();
+                else if(poem.get(location) == "手机开门")
+                    smart_door();
 				else {
 					Toast.makeText(context, "敬请期待", Toast.LENGTH_SHORT).show();
 				}

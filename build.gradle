@@ -16,7 +16,7 @@ dependencies {
 }
 
 android {
-    compileSdkVersion 16
+    compileSdkVersion 22
     buildToolsVersion "24.0.3"
     dexOptions {
         javaMaxHeapSize "4g"

@@ -1,8 +1,5 @@
 package com.way.tabui.commonmodule;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.ActionBar;
 import android.app.ActivityManager;
 import android.app.ProgressDialog;
@@ -16,10 +13,11 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 
-import com.way.tabui.actity.MainActivity;
-import com.way.tabui.cevicemodule.GosDeviceListActivity;
 import com.way.tabui.gokit.R;
 import com.way.util.ExitAppReceiver;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class GosBaseActivity extends FragmentActivity {
 
@@ -44,8 +42,24 @@ public class GosBaseActivity extends FragmentActivity {
 			setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		}
 
-		
-		spf = getSharedPreferences(GosConstant.SPF_Name, Context.MODE_PRIVATE);
+
+//            Window window = getWindow();
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {//5.0
+//                window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);//设置主窗体全屏
+//                window.setStatusBarColor(Color.TRANSPARENT);
+//            }
+//            else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT ) {//4.4
+//                window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+//            }
+//
+//        ViewGroup mContentView = (ViewGroup) window.findViewById(Window.ID_ANDROID_CONTENT);
+//        View mChildView = mContentView.getChildAt(0);
+//        if (mChildView != null) {
+//            //注意不是设置 ContentView 的 FitsSystemWindows, 而是设置 ContentView 的第一个子 View . 预留出系统 View 的空间.
+//            mChildView.setFitsSystemWindows(true);
+//        }
+
+        spf = getSharedPreferences(GosConstant.SPF_Name, Context.MODE_PRIVATE);
 		// 初始化
 		setProgressDialog();
 		
@@ -53,8 +67,7 @@ public class GosBaseActivity extends FragmentActivity {
 		  IntentFilter filter0=new IntentFilter();
 		  filter0.addAction("com.way.util.exit_app");
 		  registerReceiver(exitReceiver,filter0);
-		
-		
+
 	}
 	@Override
 	protected void onDestroy() {
@@ -92,6 +105,7 @@ public class GosBaseActivity extends FragmentActivity {
 //		GosConstant.ProductKeyList = productkeyList;
 //	}
 //
+
 	/**
 	 * 设置ActionBar（工具方法）
 	 * 

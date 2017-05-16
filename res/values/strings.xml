@@ -181,7 +181,7 @@
     <string name="list_loading_label">正在加载中…</string>
     <string name="my_app_data">我的应用数据</string>
     <string name="baidu_album">百度相册</string>
-    <string name="more" />
+    <string name="more"/>
     <string name="upload">上传</string>
     <string name="select_all">全选</string>
     <string name="deselect_all">取消</string>
@@ -1239,5 +1239,6 @@ UID：{4}"</string>
     <string name="title_activity_air_con_brand">选择设备</string>
     <string name="title_activity_air_mate">配对设备</string>
     <string name="title_activity_smart_curtain">智能窗帘</string>
+    <string name="title_activity_smart_door">智能开门</string>
 
 </resources>

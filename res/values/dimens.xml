@@ -53,9 +53,9 @@
     <dimen name="file_sort_popupwindow_vertical_padding">10.0dip</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    
-  
-    <dimen name="item_deivce_height">70dip</dimen>    
+
+
+    <dimen name="item_deivce_height">70dip</dimen>
     <dimen name="item_title_height">40dip</dimen>
 
 </resources>
