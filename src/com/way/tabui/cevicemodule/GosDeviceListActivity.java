@@ -57,6 +57,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.ConcurrentHashMap;
 
 import cn.jpush.android.api.JPushInterface;
 import zxing.CaptureActivity;
@@ -175,7 +176,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 	boolean isback =false;
 	boolean isoffline ;
 	private MyReceiver receiver =null;
-	
+
 	Handler handler = new Handler() {
 		private AlertDialog myDialog;
 		private TextView dialog_name;
@@ -186,14 +187,11 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 			case GETLIST:
 				GizWifiSDK.sharedInstance().getBoundDevices(uid, token, GosConstant.ProductKeyList);
                 Log.i("xxs", "uid:" + uid + "---" +token );
-                spf.edit().putString("Uid", uid).commit();
-                spf.edit().putString("Token", token).commit();
 				if (loginStatus == 0) {
 					loginStatus = 3;
 					GizWifiSDK.sharedInstance().userLoginAnonymous();
-					// TODO isAnonymousLoging = true;
+//                    Toast.makeText(GosDeviceListActivity.this, "isAnonymousLoging = true", Toast.LENGTH_SHORT).show();
 				}
-
 				break;
 
 			case UPDATALIST:
@@ -313,6 +311,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		super.onCreate(savedInstanceState);
 		//initsdk();
 		setContentView(R.layout.activity_gos_device_list);
+
 		Intent intentfalg = getIntent();
 		ismain=intentfalg.getBooleanExtra("ismain", false);
 		isoffline=intentfalg.getBooleanExtra("isoffline", false);
@@ -324,6 +323,8 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		getdevices();	
 		else{
 			login();
+//            initLogin();
+
 			if(isWorked("com.way.tabui.actity.GizService")){
 				sendbroadcast();
 				count++;
@@ -379,7 +380,9 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 	
 	
 	 IXmSystem xmSystem;
-	 
+
+
+
 	 private void init(){
 	        xmSystem = XmSystem.getInstance();
 	        xmSystem.xmInit(this, "CN", new OnXmSimpleListener() {
@@ -480,7 +483,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 	public void onPause() {
 		
 		unregisterReceiver(receiver);
-		JPushInterface.onPause(this);
+//		JPushInterface.onPause(this);
 		Log.i("Apptest", loginStatus + "onPause");
 		// TODO GosMessageHandler.getSingleInstance().SetHandler(null);
 		super.onPause();
@@ -493,7 +496,8 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 			GosConstant.App_Screct=spf.getString("appscrect", "57c13265403549ac83d828e50639c37a");
 			GosConstant.device_ProductKey=spf.getString("prroductkey", "330b43e5cd9b4aa9a03fc97c5f6f52a4");
 			// 启动SDK
-			GizWifiSDK.sharedInstance().startWithAppID(getApplicationContext(), GosConstant.App_ID);
+//			GizWifiSDK.sharedInstance().startWithAppID(getApplicationContext(), GosConstant.App_ID);
+            GizWifiSDK.sharedInstance().startWithAppID(getApplicationContext(),GosConstant.App_ID,GosConstant.App_Screct,GosConstant.ProductKeyList,new ConcurrentHashMap<String, String>(0),true);
 			// 只能选择支持其中一种
 			 gosPushManager=new GosPushManager(GizPushType.GizPushJiGuang,this);//极光推送
 		} catch (Exception e) {
@@ -614,7 +618,6 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 	private void initData() {
 		uid = spf.getString("Uid", "");
 		token = spf.getString("Token", "");
-
 		// 可以在此处把关心的设备productKey加入到过滤列表中
 		addProductKey(GosConstant.device_ProductKey);
 		
@@ -639,23 +642,41 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		handler.sendEmptyMessage(UPDATALIST);
 	}
 
-	protected void didUserLogin(GizWifiErrorCode result, java.lang.String uid, java.lang.String token) {
+    public  void didUserLogin(GizWifiErrorCode result, String uid, String token) {
+        if (result == GizWifiErrorCode.GIZ_SDK_SUCCESS) {
+            // 登录成功
+            loginStatus = 2;
+            spf.edit().putString("Uid", uid).commit();
+            spf.edit().putString("Token", token).commit();
+            Toast.makeText(getApplicationContext(), "匿名登入成功", Toast.LENGTH_SHORT).show();
+        } else {
+            // 登录失败
+            Log.i("xxxs", "didUserLogin: "+result);
+            loginStatus = 0;
+		    tryUserLoginAnonymous();
+//            Toast.makeText(getApplicationContext(), "登入失败"+result, Toast.LENGTH_SHORT).show();
 
-		// TODO isAnonymousLoging = false;
-		if (GizWifiErrorCode.GIZ_SDK_SUCCESS == result) {
-			loginStatus = 2;
-			this.uid = uid;
-			this.token = token;
-			spf.edit().putString("Uid", this.uid).commit();
-			spf.edit().putString("Token", this.token).commit();
-			handler.sendEmptyMessage(GETLIST);
-			// TODO 绑定推送
-//			GosPushManager.pushBindService(token);
-		} else {
-			loginStatus = 0;
-			tryUserLoginAnonymous();
-		}
-	}
+        }
+    }
+
+//	protected void didUserLogin(GizWifiErrorCode result, java.lang.String uid, java.lang.String token) {
+//
+//		//  isAnonymousLoging = false;
+//		if (GizWifiErrorCode.GIZ_SDK_SUCCESS == result) {
+//			loginStatus = 2;
+//			this.uid = uid;
+//			this.token = token;
+//			spf.edit().putString("Uid", this.uid).commit();
+//			spf.edit().putString("Token", this.token).commit();
+//            Toast.makeText(getApplicationContext(), "登入成功", Toast.LENGTH_SHORT).show();
+//            handler.sendEmptyMessage(GETLIST);
+//			//  绑定推送
+////			GosPushManager.pushBindService(token);
+//		} else {
+//			loginStatus = 0;
+//			tryUserLoginAnonymous();
+//		}
+//	}
 
 	protected void didUnbindDevice(GizWifiErrorCode result, java.lang.String did) {
 		progressDialog.cancel();
@@ -1054,25 +1075,26 @@ int   count=0;
 
 	private void exitBy2Click() {
 		Timer tExit = null;
-		if (isExit == false) {
-			isExit = true; // 准备退出；
-			String doubleClick;
-
-		    doubleClick = (String) getText(R.string.doubleclick_exit);
-			Toast.makeText(this, doubleClick, Toast.LENGTH_SHORT).show();
-			tExit = new Timer();
-			tExit.schedule(new TimerTask() {
-				@Override
-				public void run() {
-					isExit = false; // 取消退出
-				}
-			}, 2000); // 如果2秒钟内没有按下返回键，则启动定时器取消掉刚才执行的任务
-
-		} else {
-			logoutToClean();
-			finish();
-			System.exit(0);
-		}
+        finish();
+//		if (isExit == false) {
+//			isExit = true; // 准备退出；
+//			String doubleClick;
+//
+//		    doubleClick = (String) getText(R.string.doubleclick_exit);
+//			Toast.makeText(this, doubleClick, Toast.LENGTH_SHORT).show();
+//			tExit = new Timer();
+//			tExit.schedule(new TimerTask() {
+//				@Override
+//				public void run() {
+//					isExit = false; // 取消退出
+//				}
+//			}, 2000); // 如果2秒钟内没有按下返回键，则启动定时器取消掉刚才执行的任务
+//
+//		} else {
+//			logoutToClean();
+//			finish();
+//			System.exit(0);
+//		}
 	}
 
 	/** 注销函数 */

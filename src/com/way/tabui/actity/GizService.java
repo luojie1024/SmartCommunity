@@ -1,14 +1,5 @@
 package com.way.tabui.actity;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.concurrent.ConcurrentHashMap;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -37,6 +28,15 @@ import com.way.tabui.commonmodule.GosConstant;
 import com.way.tabui.gokit.R;
 import com.way.tabui.pushmodule.GosPushManager;
 import com.way.util.Alertinfo;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class GizService extends Service {
 
@@ -480,6 +480,9 @@ public class GizService extends Service {
 		bulider.setAutoCancel(true);
 		bulider.setContentText(mes);
 		if(id!=0x020){
+//            Intent intentexit = new Intent();
+//            intentexit.setAction("com.way.util.exit_app");
+//            sendBroadcast(intentexit);
 		Intent intent =new Intent(this,MainActivity.class);
 		Bundle bundle = new Bundle();
 		bundle.putParcelable("GizWifiDevice", device);

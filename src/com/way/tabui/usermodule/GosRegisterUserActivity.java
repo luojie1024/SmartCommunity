@@ -1,8 +1,5 @@
 package com.way.tabui.usermodule;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.Handler;
@@ -21,6 +18,9 @@ import com.gizwits.gizwifisdk.api.GizWifiSDK;
 import com.gizwits.gizwifisdk.enumration.GizUserAccountType;
 import com.way.tabui.commonmodule.GosConstant;
 import com.way.tabui.gokit.R;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 @SuppressLint("HandlerLeak")
 public class GosRegisterUserActivity extends GosUserModuleBaseActivity implements OnClickListener {
@@ -90,8 +90,8 @@ public class GosRegisterUserActivity extends GosUserModuleBaseActivity implement
 				String successfulText = (String) getText(R.string.register_successful);
 
 				if (msg.obj.toString().equals(successfulText)) {
-					spf.edit().putString("UserName", name).commit();
-					spf.edit().putString("PassWord", psw).commit();
+//					spf.edit().putString("UserName", name).commit();
+//					spf.edit().putString("PassWord", psw).commit();
 					finish();
 				}
 				break;
@@ -253,5 +253,6 @@ public class GosRegisterUserActivity extends GosUserModuleBaseActivity implement
 			}
 		}, 1000, 1000);
 	}
+
 
 }

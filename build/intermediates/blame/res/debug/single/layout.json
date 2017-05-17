@@ -48,12 +48,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_main2.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_colorlist.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_colorlist.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_all_message.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_all_message.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_colorlist.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_colorlist.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_all_mes.xml",
@@ -86,6 +86,10 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_adddev2.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_adddev2.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_smart_door.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_smart_door.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_smart_light.xml",
@@ -296,12 +300,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\main_fsystem.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_airlink_choose_device_workwifi.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_airlink_choose_device_workwifi.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_forget_password.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_forget_password.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_airlink_choose_device_workwifi.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_airlink_choose_device_workwifi.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\alert_gos_wifi_list.xml",
@@ -400,12 +404,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_smart_air_condition.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_baoxiuguanli.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\fragment_baoxiuguanli.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_gos_colors_list.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\item_gos_colors_list.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_baoxiuguanli.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\fragment_baoxiuguanli.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_check_device_workwifi.xml",

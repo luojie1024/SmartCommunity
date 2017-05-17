@@ -1,5 +1,9 @@
 [
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\unlocked_normal.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\unlocked_normal.png"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_conditionor_windcapacity.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\ic_conditionor_windcapacity.png"
     },
@@ -74,6 +78,10 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_conditionor_windcapacity_middle.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\ic_conditionor_windcapacity_middle.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\fault_tips_box.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\fault_tips_box.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jiaofei_tingchefei.png",
@@ -234,5 +242,9 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_pre_v5_normal.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\btn_pre_v5_normal.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\unlock_normal.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\unlock_normal.png"
     }
 ]

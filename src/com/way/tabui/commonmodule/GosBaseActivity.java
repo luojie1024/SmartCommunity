@@ -31,6 +31,8 @@ public class GosBaseActivity extends FragmentActivity {
 	public ActionBar actionBar;
 
 	 private ExitAppReceiver exitReceiver = null;
+
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -41,7 +43,20 @@ public class GosBaseActivity extends FragmentActivity {
 		if (getRequestedOrientation() != ActivityInfo.SCREEN_ORIENTATION_PORTRAIT) {
 			setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		}
-
+//        GizWifiSDK.sharedInstance().setListener(mListener);
+// 设置要过滤的设备 productKey 列表。不需要过滤则不用定义此变量直接传 null
+        List<String> specialProductKeys = new ArrayList<String> ();
+        addProductKey(GosConstant.device_ProductKey);
+// 指定要切换的域名信息。使用机智云生产环境的 App 则不用定义此变量直接传 null
+//        ConcurrentHashMap<String, Object> cloudServiceInfo = new
+//                ConcurrentHashMap<String, Object>();
+//        cloudServiceInfo.put("openAPIInfo", "your_api_domain");
+//        cloudServiceInfo.put("siteInfo", "your_site_domain");
+// 调用 SDK 的启动接口
+//        GizWifiSDK.sharedInstance().startWithAppID(getApplicationContext(), GosConstant.App_ID,
+//                GosConstant.App_Screct, null,null, false);
+//        GizWifiSDK.sharedInstance().setListener(mListener);
+//        GizWifiSDK.sharedInstance().userLogin("1340802108@qq.com","123456lyj");
 
 //            Window window = getWindow();
 //            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {//5.0
@@ -62,7 +77,8 @@ public class GosBaseActivity extends FragmentActivity {
         spf = getSharedPreferences(GosConstant.SPF_Name, Context.MODE_PRIVATE);
 		// 初始化
 		setProgressDialog();
-		
+
+
 		 exitReceiver = new ExitAppReceiver();
 		  IntentFilter filter0=new IntentFilter();
 		  filter0.addAction("com.way.util.exit_app");
@@ -200,7 +216,7 @@ public class GosBaseActivity extends FragmentActivity {
 						.getApplicationContext().getSystemService(
 								Context.ACTIVITY_SERVICE);
 				ArrayList<ActivityManager.RunningServiceInfo> runningService = (ArrayList<ActivityManager.RunningServiceInfo>) myManager
-						.getRunningServices(50);
+						.getRunningServices(100);
 				for (int i = 0; i < runningService.size(); i++) {
 					Log.i("==", runningService.get(i).service.getClassName().toString());
 					if (runningService.get(i).service.getClassName().toString()

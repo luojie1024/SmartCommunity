@@ -43,8 +43,8 @@ import static android.graphics.Color.BLACK;
 public class GosSettiingsActivity extends GosBaseActivity implements
 		OnClickListener {
 
-    private static final int QR_WIDTH = 1000;
-    private static final int QR_HEIGHT = 1000;
+    private static final int QR_WIDTH = 800;
+    private static final int QR_HEIGHT = 800;
     /** The ll About */
 	private LinearLayout llAbout, llexit,llsetbund,llSetLed,llSetSafe,llQrcode;
 
@@ -212,12 +212,13 @@ public class GosSettiingsActivity extends GosBaseActivity implements
         @Override
         public void didSharingDevice(GizWifiErrorCode result, String deviceID, int sharingID, Bitmap QRCodeImage) {
             if (result == GizWifiErrorCode.GIZ_SDK_SUCCESS) {
+                QRCodeImage.setHeight(QR_HEIGHT);
+                QRCodeImage.setWidth(QR_WIDTH);
                 ImageView = new ImageView(GosSettiingsActivity.this);
                 ImageView.setImageBitmap(QRCodeImage);
                 AlertDialog.Builder builder = new AlertDialog.Builder(GosSettiingsActivity.this);
-                builder.setTitle("二维码"+device.getPasscode());
+                builder.setTitle("二维码");
                 builder.setView(ImageView);
-                builder.setMessage(sharingID);
                 builder.show();
             } else {
                 Toast.makeText(GosSettiingsActivity.this, "分享失败"+result.toString(), Toast.LENGTH_SHORT).show();
@@ -228,16 +229,19 @@ public class GosSettiingsActivity extends GosBaseActivity implements
     String token;
     String uid;
     public void sharing(){
-        uid = spf.getString("Uid",null);
-        token =spf.getString("Token",null);
+        uid = spf.getString("Uid","");
+        token =spf.getString("Token","");
     GizDeviceSharing.setListener(mListener);
 // 在设备列表中找到可以分享的设备
 // 二维码分享设备
-       if( (device.getSharingRole()).equals(GizDeviceSharingUserRole.GizDeviceSharingNormal)
-               ||(device.getSharingRole()).equals(GizDeviceSharingUserRole.GizDeviceSharingGuest)){
-        Toast.makeText(this, "没有分享权限", Toast.LENGTH_SHORT).show();
+       if( (device.getSharingRole()).equals(GizDeviceSharingUserRole.GizDeviceSharingNormal)){
+        Toast.makeText(this, "您的权限为：普通用户.没有分享权限", Toast.LENGTH_SHORT).show();
            return;
        }
+        else if((device.getSharingRole()).equals(GizDeviceSharingUserRole.GizDeviceSharingGuest)){
+           Toast.makeText(this, "您的权限为：分享者.没有分享权限", Toast.LENGTH_SHORT).show();
+           return;
+        }
     GizDeviceSharing.sharingDevice(token,device.getDid(), GizDeviceSharingWay.GizDeviceSharingByQRCode, null, null);
     }
 

@@ -8,7 +8,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:id="@+id/li_main_curtain"
     android:orientation="vertical"
-    android:background="@drawable/bg_smart_curtain1"
+    android:background="@color/gray0"
     tools:context="com.way.tabui.gokit.SmartCurtainActivity" >
     <TextView 
 	    android:id="@+id/tv_mes"

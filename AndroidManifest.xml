@@ -114,6 +114,22 @@
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar">
         </activity>
+
+        <activity
+            android:name="com.way.tabui.usermodule.GosUserLoginActivity"
+            android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.way.tabui.cevicemodule.GosDeviceListActivity"
+            android:theme="@android:style/Theme.Holo.Light">
+
+        </activity>
         <activity
             android:name="com.way.tabui.actity.EsptouchDemoActivity"
             android:theme="@android:style/Theme.Holo.Light">
@@ -136,10 +152,7 @@
             android:label="@string/title_activity_preview"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar">
         </activity>
-        <activity
-            android:name="com.way.tabui.usermodule.GosUserLoginActivity"
-            android:theme="@android:style/Theme.Holo.Light">
-        </activity>
+
         <activity
             android:name="com.way.tabui.usermodule.GosRegisterUserActivity"
             android:theme="@android:style/Theme.Holo.Light">
@@ -173,15 +186,7 @@
             android:name="com.way.tabui.configmodule.GosConfigFailedActivity"
             android:theme="@android:style/Theme.Holo.Light">
         </activity>
-        <activity
-            android:name="com.way.tabui.cevicemodule.GosDeviceListActivity"
-            android:theme="@android:style/Theme.Holo.Light">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
         <activity
             android:name="com.way.tabui.actity.SmartOCActivity"
             android:theme="@android:style/Theme.Holo.Light">

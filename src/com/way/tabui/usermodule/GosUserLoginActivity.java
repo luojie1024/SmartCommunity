@@ -1,13 +1,10 @@
 package com.way.tabui.usermodule;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.annotation.SuppressLint;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -24,18 +21,24 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import cn.jpush.android.api.JPushInterface;
 
+import com.gizwits.gizwifisdk.api.GizWifiDevice;
 import com.gizwits.gizwifisdk.api.GizWifiSDK;
 import com.gizwits.gizwifisdk.enumration.GizPushType;
 import com.gizwits.gizwifisdk.enumration.GizThirdAccountType;
 import com.gizwits.gizwifisdk.enumration.GizWifiErrorCode;
 import com.tencent.tauth.IUiListener;
 import com.tencent.tauth.Tencent;
+import com.way.tabui.actity.MainActivity;
 import com.way.tabui.cevicemodule.GosDeviceListActivity;
 import com.way.tabui.commonmodule.GosConstant;
 import com.way.tabui.gokit.R;
 import com.way.tabui.pushmodule.GosPushManager;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
+import cn.jpush.android.api.JPushInterface;
 
 @SuppressLint("HandlerLeak")
 public class GosUserLoginActivity extends GosUserModuleBaseActivity implements OnClickListener {
@@ -75,8 +78,10 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 
 	// The Intent
 	Intent intent;
+    private MyReceiver receiver;
 
-	// // The String
+    private boolean isready=false;
+    // // The String
 	// String name, psw;
 
 	private enum handler_key {
@@ -114,7 +119,7 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 				progressDialog.show();
 				GosDeviceListActivity.loginStatus = 0;
 				GizWifiSDK.sharedInstance().userLogin(spf.getString("UserName", ""), spf.getString("PassWord", ""));
-				break;
+                break;
 			// 第三方登录
 			case THRED_LOGIN:
 				progressDialog.show();
@@ -125,7 +130,6 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 				break;
 			// 登录成功
 			case LOGIN_SUCCESS:
-
 				Toast.makeText(GosUserLoginActivity.this, R.string.toast_login_successful, Toast.LENGTH_SHORT).show();
 				String[] uidAndToken = (String[]) msg.obj;
 				// TODO 绑定推送
@@ -136,10 +140,18 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 				}
 				spf.edit().putString("Uid", uidAndToken[0]).commit();
 				spf.edit().putString("Token", uidAndToken[1]).commit();
-
-				intent = new Intent(GosUserLoginActivity.this, GosDeviceListActivity.class);
+                if(isready){
+				intent = new Intent(GosUserLoginActivity.this, MainActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putParcelable("GizWifiDevice", device);
+                    intent.putExtras(bundle);
+                    intent.putExtra("isoffline",false);
+                }else{
+                    intent = new Intent(GosUserLoginActivity.this, GosDeviceListActivity.class);
+                }
 				intent.putExtra("ThredLogin", true);
 				startActivity(intent);
+                finish();
 				break;
 			// 登录失败
 			case LOGIN_FAIL:
@@ -169,18 +181,69 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 			}
 			// return;
 		}
+//        autoLogin();
 		setContentView(R.layout.activity_gos_user_login);
 		mTencent = Tencent.createInstance(GosConstant.Tencent_APP_ID, this.getApplicationContext());
 		initView();
 		initEvent();
+        initReceiver();
+        if(isWorked("com.way.tabui.actity.GizService")){
+            sendbroadcast();
+        }
 	}
+
+    private void sendbroadcast(){
+        Intent intent=new Intent();
+        intent.setAction("com.way.tabui.actity.GosDeviceListActivity");
+        sendBroadcast(intent);
+    }
+    private GizWifiDevice device;
+    public class MyReceiver extends BroadcastReceiver {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String action = intent.getAction();
+            device = (GizWifiDevice) intent.getParcelableExtra("GizWifiDevice");
+            isready=true;
+            Message msg = new Message();
+            if(action.equals("com.way.tabui.actity.GosDeviceListActivityReceviver")){
+                Toast.makeText(GosUserLoginActivity.this, "登陆上次所连接设备", Toast.LENGTH_SHORT).show();
+                if (TextUtils.isEmpty(spf.getString("UserName", ""))||TextUtils.isEmpty(spf.getString("PassWord", ""))) {
+                    intent = new Intent(GosUserLoginActivity.this, MainActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putParcelable("GizWifiDevice", device);
+                    intent.putExtras(bundle);
+                    intent.putExtra("isoffline",false);
+                    startActivity(intent);
+                    finish();
+                }
+                else{
+                    autoLogin();
+
+                }
+
+            }
+//            if(action.equals("com.way.tabui.actity.GizServiceTOAST")){
+//                msg.what = TOAST;
+//                msg.obj=intent.getStringExtra("Toastdata");
+//                handler.sendMessage(msg);
+//            }
+        }
+    }
 
 	@Override
 	protected void onResume() {
 		super.onResume();
 		JPushInterface.onResume(this);
-		autoLogin();
+        initData();
+//		autoLogin();
 	}
+    private void initReceiver(){
+        receiver = new MyReceiver();
+        IntentFilter filter=new IntentFilter();
+        filter.addAction("com.way.tabui.actity.GosDeviceListActivityReceviver");
+//      filter.addAction("com.way.tabui.actity.GizServiceTOAST");
+        registerReceiver(receiver, filter);
+    }
 
 	private void autoLogin() {
 		if (TextUtils.isEmpty(spf.getString("UserName", ""))) {
@@ -197,6 +260,7 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 	protected void onPause() {
 		super.onPause();
 		JPushInterface.onPause(this);
+        unregisterReceiver(receiver);
 	}
 
 	@Override
@@ -206,6 +270,11 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 		etPsw.setText("");
 	}
 
+
+    private void initData(){
+        etName.setText(spf.getString("UserName", ""));
+        etPsw.setText(spf.getString("PassWord", ""));
+    }
 	private void initView() {
 		etName = (EditText) findViewById(R.id.etName);
 		etPsw = (EditText) findViewById(R.id.etPsw);
@@ -215,7 +284,7 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 		llPass = (LinearLayout) findViewById(R.id.llPass);
 		cbLaws = (CheckBox) findViewById(R.id.cbLaws);
 
-		llQQ = (LinearLayout) findViewById(R.id.llQQ);
+//		llQQ = (LinearLayout) findViewById(R.id.llQQ);
 
 	}
 
@@ -225,7 +294,7 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 		tvForget.setOnClickListener(this);
 		llPass.setOnClickListener(this);
 
-		llQQ.setOnClickListener(this);
+//		llQQ.setOnClickListener(this);
 
 		cbLaws.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
@@ -267,35 +336,37 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 			startActivity(intent);
 			break;
 		case R.id.llPass:
+            spf.edit().putString("UserName","").commit();
+            spf.edit().putString("PassWord", "").commit();
 			intent = new Intent(GosUserLoginActivity.this, GosDeviceListActivity.class);
 			startActivity(intent);
 
 			break;
 
-		case R.id.llQQ:
-			listener = new BaseUiListener() {
-				protected void doComplete(JSONObject values) {
-					Message msg = new Message();
-					try {
-						if (values.getInt("ret") == 0) {
-							msg.what = handler_key.THRED_LOGIN.ordinal();
-							String[] openIDAndToken = { values.getString("openid").toString(),
-									(String) values.getString("access_token").toString() };
-							msg.obj = openIDAndToken;
-							handler.sendMessage(msg);
-						} else {
-							msg.what = handler_key.LOGIN_FAIL.ordinal();
-							String loginFailed = (String) getText(R.string.toast_login_failed);
-							msg.obj = loginFailed + "\n loginWithThirdAccount Failed";
-							handler.sendMessage(msg);
-						}
-					} catch (JSONException e) {
-						e.printStackTrace();
-					}
-				}
-			};
-			mTencent.login(this, Scope, listener);
-			break;
+//		case R.id.llQQ:
+//			listener = new BaseUiListener() {
+//				protected void doComplete(JSONObject values) {
+//					Message msg = new Message();
+//					try {
+//						if (values.getInt("ret") == 0) {
+//							msg.what = handler_key.THRED_LOGIN.ordinal();
+//							String[] openIDAndToken = { values.getString("openid").toString(),
+//									(String) values.getString("access_token").toString() };
+//							msg.obj = openIDAndToken;
+//							handler.sendMessage(msg);
+//						} else {
+//							msg.what = handler_key.LOGIN_FAIL.ordinal();
+//							String loginFailed = (String) getText(R.string.toast_login_failed);
+//							msg.obj = loginFailed + "\n loginWithThirdAccount Failed";
+//							handler.sendMessage(msg);
+//						}
+//					} catch (JSONException e) {
+//						e.printStackTrace();
+//					}
+//				}
+//			};
+//			mTencent.login(this, Scope, listener);
+//			break;
 
 		}
 	}

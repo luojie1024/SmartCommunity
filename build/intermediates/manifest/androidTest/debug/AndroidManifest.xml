@@ -3,8 +3,8 @@
     package="com.way.tabui.gokit.test" >
 
     <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="22" />
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
 
     <instrumentation
         android:name="com.android.test.runner.MultiDexTestRunner"

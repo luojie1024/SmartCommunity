@@ -1046,7 +1046,7 @@ UID：{4}"</string>
     <string name="toast_login_successful">登录成功</string>
     <string name="toast_login_failed">登录失败</string>
     <string name="loadingtext">处理中,请稍等...</string>
-    <string name="pass">跳 过</string>
+    <string name="pass">匿名登入</string>
     <string name="QQ">QQ登录</string>
     <string name="double_click">再按一次退出程序</string>
 

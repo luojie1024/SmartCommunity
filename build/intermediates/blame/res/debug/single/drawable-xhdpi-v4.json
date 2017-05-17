@@ -140,12 +140,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_gas_a.jpg"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btn_viewpager_switch_selector.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\btn_viewpager_switch_selector.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\right_icon.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\right_icon.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btn_viewpager_switch_selector.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\btn_viewpager_switch_selector.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_btn_normal_9.png",

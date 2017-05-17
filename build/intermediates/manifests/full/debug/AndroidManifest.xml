@@ -5,8 +5,8 @@
     android:versionName="1.2.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="22" />
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -119,6 +119,19 @@
             android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
         </activity>
         <activity
+            android:name="com.way.tabui.usermodule.GosUserLoginActivity"
+            android:theme="@android:style/Theme.Holo.Light" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.way.tabui.cevicemodule.GosDeviceListActivity"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
             android:name="com.way.tabui.actity.EsptouchDemoActivity"
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
@@ -139,10 +152,6 @@
             android:name="com.way.tabui.actity.PreviewActivity"
             android:label="@string/title_activity_preview"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
-        </activity>
-        <activity
-            android:name="com.way.tabui.usermodule.GosUserLoginActivity"
-            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.way.tabui.usermodule.GosRegisterUserActivity"
@@ -176,15 +185,6 @@
         <activity
             android:name="com.way.tabui.configmodule.GosConfigFailedActivity"
             android:theme="@android:style/Theme.Holo.Light" >
-        </activity>
-        <activity
-            android:name="com.way.tabui.cevicemodule.GosDeviceListActivity"
-            android:theme="@android:style/Theme.Holo.Light" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.way.tabui.actity.SmartOCActivity"
@@ -344,16 +344,22 @@
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
+            android:name="com.way.tabui.gokit.SmartDoorActivity"
+            android:label="@string/title_activity_smart_door"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
             android:name="com.way.tabui.settingsmodule.SetBundMesActivity"
             android:label="@string/title_activity_set_bund_mes"
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
+
         <!-- 物业报修 -->
-        <activity
-            android:name="com.property.activity.InformActivity"
-            android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light" >
-        </activity>
+        <!-- <activity -->
+        <!-- android:name="com.property.activity.InformActivity" -->
+        <!-- android:label="@string/title_activity_inform" -->
+        <!-- android:theme="@android:style/Theme.Holo.Light" > -->
+        <!-- </activity> -->
         <activity
             android:name="com.property.activity.BaoxiuguanliActivity"
             android:label="@string/title_activity_inform"
@@ -383,22 +389,30 @@
         </activity>
         <activity
             android:name="com.property.activity.JiaofeiDetailActivity"
-            android:label="@string/title_activity_inform"
+            android:label="缴费详情"
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.property.activity.JiaofeiListActivity"
-            android:label="@string/title_activity_inform"
+            android:label="缴费分类列表"
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.property.activity.JiaofeifenleiActivity"
-            android:label="@string/title_activity_inform"
+            android:label="缴费分类"
             android:theme="@android:style/Theme.Holo.Light" >
+
+            <!-- TODO 物业 -->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name="com.property.activity.JiaofeijiluActivity"
-            android:label="@string/title_activity_inform"
+            android:label="缴费分类记录"
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
@@ -411,6 +425,12 @@
             android:label="@string/title_activity_inform"
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
+        <activity
+            android:name="com.property.duotushangchuan.AlbumActivity"
+            android:label="@string/title_activity_inform"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+
         <!-- 物业报修 -->
 
 
@@ -598,6 +618,7 @@
 
 
         <!-- <activity android:name="com.way.tabui.controlmodule.GosColorsListActivity"></activity> -->
+
     </application>
 
 </manifest>

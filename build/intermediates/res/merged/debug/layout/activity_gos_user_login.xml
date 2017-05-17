@@ -3,14 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/logo3" />
+
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -129,27 +122,27 @@
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="10dp" >
 
-        <LinearLayout
-            android:id="@+id/llQQ"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical" >
+        <!--<LinearLayout-->
+            <!--android:id="@+id/llQQ"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical" >-->
 
-            <ImageView
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:src="@drawable/qq" />
+            <!--<ImageView-->
+                <!--android:layout_width="36dp"-->
+                <!--android:layout_height="36dp"-->
+                <!--android:src="@drawable/qq" />-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:text="@string/QQ"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-        </LinearLayout>
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="6dp"-->
+                <!--android:text="@string/QQ"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="12sp" />-->
+        <!--</LinearLayout>-->
 
         <LinearLayout
             android:id="@+id/llPass"

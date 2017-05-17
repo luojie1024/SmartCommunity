@@ -11,6 +11,7 @@
                android:id="@+id/bt_offline_login"
                android:background="@color/bg_white"
                android:textColor="@color/red"
+
                 />
     
     <LinearLayout

@@ -46,6 +46,8 @@ import com.way.tabui.gokit.SmartCurtainActivity;
 import com.way.tabui.gokit.SmartDoorActivity;
 import com.way.tabui.settingsmodule.GosAboutActivity;
 import com.way.tabui.settingsmodule.GosSettiingsActivity;
+import com.way.tabui.usermodule.GosRegisterUserActivity;
+import com.way.tabui.usermodule.GosUserLoginActivity;
 import com.way.util.DataCache;
 import com.way.util.ScreenInfo;
 import com.xmcamera.core.model.XmAccount;
@@ -737,6 +739,16 @@ public class SampleFragment extends Fragment {
 		startActivity(intent);
 	}
 
+    private void  register(){
+        Intent intent = new Intent(context, GosRegisterUserActivity.class);
+        startActivity(intent);
+    }
+    private void login(){
+        Intent intent = new Intent(context, GosUserLoginActivity.class);
+        ((MainActivity)getActivity()).stopsevice();
+        startActivity(intent);
+        ((MainActivity)getActivity()).finish();
+    }
 	//设置
 		private void set_Setting() {
 		//	if (!getofisoffline()) {
@@ -841,6 +853,10 @@ public class SampleFragment extends Fragment {
 					smart_curtain();
                 else if(poem.get(location) == "手机开门")
                     smart_door();
+                else if(poem.get(location)=="注册")
+                    register();
+                else if (poem.get(location)=="登陆")
+                    login();
 				else {
 					Toast.makeText(context, "敬请期待", Toast.LENGTH_SHORT).show();
 				}
