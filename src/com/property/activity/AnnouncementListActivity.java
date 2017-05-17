@@ -1,18 +1,8 @@
 package com.property.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.kymjs.kjframe.KJBitmap;
-import org.kymjs.kjframe.KJHttp;
-import org.kymjs.kjframe.http.HttpCallBack;
-import org.kymjs.kjframe.http.HttpParams;
-import org.kymjs.kjframe.ui.BindView;
-
 import android.content.Intent;
 import android.view.Gravity;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ImageView;
@@ -24,13 +14,22 @@ import com.ab.view.pullview.AbPullToRefreshView;
 import com.ab.view.pullview.AbPullToRefreshView.OnFooterLoadListener;
 import com.ab.view.pullview.AbPullToRefreshView.OnHeaderRefreshListener;
 import com.ab.view.sliding.AbSlidingPlayView;
-import com.property.base.BaseActivity;
+import com.google.gson.Gson;
 import com.property.activity.AnnouncementListEntity.ad_top;
 import com.property.activity.AnnouncementListEntity.list;
+import com.property.base.BaseActivity;
 import com.property.utils.UrlConnector;
 import com.property.view.NoScrollListView;
 import com.way.tabui.gokit.R;
-import com.google.gson.Gson;
+
+import org.kymjs.kjframe.KJBitmap;
+import org.kymjs.kjframe.KJHttp;
+import org.kymjs.kjframe.http.HttpCallBack;
+import org.kymjs.kjframe.http.HttpParams;
+import org.kymjs.kjframe.ui.BindView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class AnnouncementListActivity extends BaseActivity implements
 		OnHeaderRefreshListener, OnFooterLoadListener {
@@ -105,6 +104,8 @@ public class AnnouncementListActivity extends BaseActivity implements
 	}
 
 	public void sendpost() {
+
+
 		HttpParams params = new HttpParams();
 		params.put("cat_id", 160);
 		params.put("page_num", page_num);

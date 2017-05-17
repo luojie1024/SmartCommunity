@@ -18,7 +18,9 @@ import java.sql.Statement;
  * 查询mysql数据库中的数据
  */
 public class QueryAll {
-
+          public static final String DB_Url = "jdbc:mysql://192.168.31.145:3306/wysql";
+          public static final String DB_UesrName = "root";
+          public static final String DB_PassWord = "123456";
           private static JiaofeiListEntity jiaofeiListEntity;
           private static Handler handler=new Handler(){
                     @Override

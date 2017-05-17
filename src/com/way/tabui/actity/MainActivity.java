@@ -43,6 +43,8 @@ import java.util.HashMap;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import cn.bmob.v3.Bmob;
+
 /**
  * 智慧社区
  * 注意继承自FragmentActivity，才会有getSupportFragmentManager()函数
@@ -124,6 +126,8 @@ public class MainActivity extends GosControlModuleBaseActivity implements
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //TODO 初始化Bmob
+        Bmob.initialize(this, "b8f0f2a625ab97c165fd63f2c949041c");
 
         Intent intent = getIntent();
         isoffline = intent.getBooleanExtra("isoffline", false);

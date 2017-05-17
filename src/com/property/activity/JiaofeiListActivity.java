@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -25,13 +26,14 @@ import com.way.tabui.gokit.R;
 
 import org.kymjs.kjframe.ui.BindView;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
+import cn.bmob.v3.BmobQuery;
+import cn.bmob.v3.exception.BmobException;
+import cn.bmob.v3.listener.FindListener;
+
+import static org.kymjs.kjframe.ui.ViewInject.toast;
 
 public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefreshListener, OnFooterLoadListener {
 
@@ -75,7 +77,7 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                                         case 1:
                                                   //关闭等待框
                                                   pd.dismiss();
-                                                  sendpost();//更新UI
+                                                  updateUI();//更新UI
                                                   break;
                               }
 
@@ -104,9 +106,11 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                     gson = new Gson();
                     list = new ArrayList<pay_record>();
                     adapter = new JiaofeiListAdapter(getApplication(), list);
+                    //分配bean空间
+                    jiaofeiListEntity=new JiaofeiListEntity();
                     // TODO: 2017/5/14
                     intidata();
-//		            sendpost();
+//		            updateUI();
                     lvJiaofeiList.setOnItemClickListener(new OnItemClickListener() {
 
                               @Override
@@ -134,7 +138,6 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                                         tvRight.setTextColor(Color.WHITE);
                                         pay_status = 1;
                                         //刷新数据，更新UI
-//                                        sendpost();
                                         intidata();
                                         break;
                               case R.id.tv_jiaofei_title_right:
@@ -144,7 +147,6 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                                         tvRight.setTextColor(Color.parseColor("#c0d355"));
                                         pay_status = 2;
                                         //刷新数据，更新UI
-//                                        sendpost();
                                         initData();
                                         break;
                               default:
@@ -156,99 +158,36 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
            * 连接数据库，获取数据并生成JiaofeiListEntity,数据集合
            */
           public void intidata() {
-                    pd = ProgressDialog.show(JiaofeiListActivity.this,"正在获取数据", "加载中，请稍后……");
-                    new Thread() {
-                              @Override
-                              public void run() {
-                                        super.run();
-                                        try {
-                                                  // 1.注册驱动
-                                                  Class.forName("com.mysql.jdbc.Driver");
-                                                  // 2.获取连接
-                                                  Connection conn = null;
-                                                  //jdbc:mysql://192.168.31.210:3306/wysql?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false
-                                                  //conn = DriverManager.getConnection(QueryAll.mysqlUrl, QueryAll.mysqlRoot, QueryAll.mysqlpass);
-                                                  conn = DriverManager.getConnection("jdbc:mysql://192.168.31.210:3306/wysql","root", "123456");
-                                                  // 3.创建执行sql语句的对象
-                                                  Statement stmt = null;
-                                                  stmt = conn.createStatement();
-                                                  // 4.书写一个sql语句
-                                                  String sql;
-                                                  //支付时间默认为0，
-                                                  if (pay_status == 1) {
-                                                            sql = "SELECT * FROM pay_record WHERE pay_time='0' and type="+type;
 
-                                                  } else {
-                                                            sql = "SELECT * FROM pay_record WHERE LENGTH(pay_time)>1 and type="+type;
-                                                  }
-                                                  // 5.执行sql语句
-                                                  ResultSet rs = null;
-                                                  rs = stmt.executeQuery(sql);
-                                                  // 6.对结果集进行处理
-                                                  if (rs.next()) {
-                                                            //查询得到结果
-                                                            jiaofeiListEntity = new JiaofeiListEntity();
-                                                            jiaofeiListEntity.setStatus(1);
-                                                            jiaofeiListEntity.setMsg("");
-                                                            //得到结果集(rs)的结构信息，比如字段数、字段名等
-                                                            ResultSetMetaData md = rs.getMetaData();
-                                                            //返回此 ResultSet 对象中的列数
-                                                            int columnCount = md.getColumnCount();
-                                                            //获取ResultSet 对象中的行数
-                                                            rs.last();
-                                                            int rowCount = rs.getRow();
-                                                            rs.first();
-                                                            System.out.println("行数：" + rowCount + "!列数：" + columnCount);
-                                                            System.out.println(rs.toString());
-                                                            //遍历结果集，封装到list
-                                                            List<pay_record> list = new ArrayList<pay_record>();
-                                                            //rs.next()下一行数据
-                                                            for (int i = 0; i < rowCount; i++,rs.next()) {
-                                                                      pay_record p_record = jiaofeiListEntity.new pay_record();
-                                                                      //设置ID
-                                                                      p_record.setId("" + rs.getInt(1));
-                                                                      p_record.setType("" + rs.getInt(2));
-                                                                      if (pay_status==1)
-                                                                                p_record.setPay_time("未缴费！");
-                                                                      else
-                                                                                p_record.setPay_time(rs.getString(3));
-                                                                      p_record.setPay_amount("" + rs.getFloat(4));
-                                                                      p_record.setMonth(rs.getInt(5)+"月份");
-                                                                      //设置每条数据
-                                                                      list.add(p_record);
-                                                            }
-                                                            //设置整个结果数据
-                                                            jiaofeiListEntity.setPay_record(list);
-                                                            System.out.println("缴费记录查询成功！");
-                                                            System.out.println(sql);
-                                                            //查询完毕,通知UI更新
-                                                            Message msg = handler.obtainMessage();
-                                                            msg.arg1 = 1;
-                                                            handler.sendMessage(msg);
-                                                  } else {
-                                                            //无数据设置为空
-                                                            System.out.println("没有查询到数据！");
-                                                            Message msg = handler.obtainMessage();
-                                                            msg.arg1 = 0;
-                                                            handler.sendMessage(msg);
-                                                  }
-                                                  //关闭数据连接
-                                                  if (rs != null)
-                                                            rs.close();
-                                                  if (stmt != null)
-                                                            stmt.close();
-                                                  if (conn != null)
-                                                            conn.close();
-                                        } catch (Exception e) {
-                                                  System.out.println("连接数据库错误！");
-                                                  e.printStackTrace();
+                    BmobQuery<pay_record> bmobQuery = new BmobQuery<pay_record>();
+                    //设置查询条件
+                    bmobQuery.addWhereEqualTo("type",type);
+                    if (pay_status == 1) {
+                              bmobQuery.addWhereDoesNotExists("pay_time");
+                    } else {
+                              bmobQuery.addWhereExists("pay_time");
+                    }
+                    bmobQuery.findObjects(new FindListener<pay_record>() {
+                              @Override
+                              public void done(List<pay_record> object, BmobException e) {
+                                        if(e==null){
+                                                  //查询成功
+                                                  jiaofeiListEntity.setStatus(1);
+                                                  jiaofeiListEntity.setMsg("");
+                                                  jiaofeiListEntity.setPay_record(object);
+                                                  toast("查询成功：共"+object.size()+"条数据。");
+                                                  updateUI();
+//
+                                        }else{
+                                                  jiaofeiListEntity.setStatus(0);
+                                                  Log.i("bmob","失败："+e.getMessage()+","+e.getErrorCode());
                                         }
                               }
-                    }.start();
+                    });
+
           }
 
-          public void sendpost() {
-
+          public void updateUI() {
                     //通过数据库获取数据
                     // TODO: 2017/5/14
                     List<pay_record> list1 = jiaofeiListEntity.getPay_record();
@@ -314,12 +253,12 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
           @Override
           public void onFooterLoad(AbPullToRefreshView arg0) {
                     loadmore = true;
-                    sendpost();
+                    updateUI();
           }
 
           @Override
           public void onHeaderRefresh(AbPullToRefreshView arg0) {
                     loadmore = false;
-                    sendpost();
+                    updateUI();
           }
 }

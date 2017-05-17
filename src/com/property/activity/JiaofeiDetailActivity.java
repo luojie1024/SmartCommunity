@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.ab.http.AbHttpUtil;
 import com.google.gson.Gson;
 import com.property.base.BaseActivity;
+import com.property.utils.QueryAll;
 import com.way.tabui.gokit.R;
 
 import org.kymjs.kjframe.ui.BindView;
@@ -113,7 +114,7 @@ public class JiaofeiDetailActivity extends BaseActivity {
 			default:
 				break;
 		}
-//                    sendpost();
+//                    updateUI();
 		//从数据库获取数据
 		intidata();
 	}
@@ -150,7 +151,7 @@ public class JiaofeiDetailActivity extends BaseActivity {
 					Class.forName("com.mysql.jdbc.Driver");
 					// 2.获取连接
 					Connection conn = null;
-					conn = DriverManager.getConnection("jdbc:mysql://192.168.31.210:3306/wysql?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false","root", "123456");
+					conn = DriverManager.getConnection(QueryAll.DB_Url,QueryAll.DB_UesrName, QueryAll.DB_PassWord);
 					// 3.创建执行sql语句的对象
 					Statement stmt = null;
 					stmt = conn.createStatement();
@@ -218,7 +219,7 @@ public class JiaofeiDetailActivity extends BaseActivity {
 					Class.forName("com.mysql.jdbc.Driver");
 					// 2.获取连接
 					Connection conn = null;
-					conn = DriverManager.getConnection("jdbc:mysql://192.168.31.210:3306/wysql?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false","root", "123456");
+					conn = DriverManager.getConnection(QueryAll.DB_Url,QueryAll.DB_UesrName, QueryAll.DB_PassWord);
 					// 3.创建执行sql语句的对象
 					Statement stmt = null;
 					stmt = conn.createStatement();
