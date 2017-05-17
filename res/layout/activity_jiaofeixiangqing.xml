@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/theme_gray"
-    android:orientation="vertical" >
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/theme_gray"
+              android:orientation="vertical" >
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -81,7 +81,7 @@
                 android:id="@+id/tv_payee"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="国网山东电力公司"
+                android:text="环泰科技有限公司"
                 android:textColor="@color/gray4" />
         </LinearLayout>
 
@@ -161,7 +161,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/button_back"
         android:padding="10dp"
-        android:text="下载"
+        android:text="缴费"
         android:textColor="#fff"
         android:textSize="16sp" />
 

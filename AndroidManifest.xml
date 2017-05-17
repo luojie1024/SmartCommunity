@@ -351,68 +351,82 @@
         </activity>
 
         <!-- 物业报修 -->
-        <activity
-            android:name="com.property.activity.InformActivity"
-            android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light">
-        </activity>
+        <!--<activity-->
+            <!--android:name="com.property.activity.InformActivity"-->
+            <!--android:label="@string/title_activity_inform"-->
+            <!--android:theme="@android:style/Theme.Holo.Light" >-->
+        <!--</activity>-->
         <activity
             android:name="com.property.activity.BaoxiuguanliActivity"
             android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light">
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
-        <activity android:name="com.property.activity.BaoxiushenqingActivity">
+        <activity android:name="com.property.activity.BaoxiushenqingActivity" >
         </activity>
         <activity
             android:name="com.property.activity.BaoxiuxiangqingActivity"
             android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light">
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.property.activity.ChakandatuActivity"
             android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light">
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.property.activity.FaultDeleteActivity"
             android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light">
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.property.activity.FaultProgressActivity"
             android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light">
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.property.activity.JiaofeiDetailActivity"
-            android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light">
+            android:label="缴费详情"
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.property.activity.JiaofeiListActivity"
-            android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light">
+            android:label="缴费分类列表"
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.property.activity.JiaofeifenleiActivity"
-            android:label="@string/title_activity_inform"
+            android:label="缴费分类"
             android:theme="@android:style/Theme.Holo.Light">
+
+            <!--TODO 物业-->
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
         <activity
             android:name="com.property.activity.JiaofeijiluActivity"
-            android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light">
+            android:label="缴费分类记录"
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.property.activity.AnnouncementInfoActivity"
             android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light">
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.property.activity.AnnouncementListActivity"
             android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light">
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
+
+
+        <activity android:name="com.property.duotushangchuan.AlbumActivity"
+                  android:label="@string/title_activity_inform"
+                  android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+
         <!-- 物业报修 -->
 
 
