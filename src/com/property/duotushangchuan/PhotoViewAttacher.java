@@ -148,7 +148,7 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener, Vers
 
 			mGestureDetector.setOnDoubleTapListener(this);
 
-			// Finally, update the UI so that we're zoomable
+			// Finally, updatePay the UI so that we're zoomable
 			setZoomable(true);
 		}
 	}
@@ -499,7 +499,7 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener, Vers
 		if (isSupportedScaleType(scaleType) && scaleType != mScaleType) {
 			mScaleType = scaleType;
 
-			// Finally update
+			// Finally updatePay
 			update();
 		}
 	}

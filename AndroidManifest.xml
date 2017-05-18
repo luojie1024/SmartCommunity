@@ -434,6 +434,13 @@
 
         <!-- 物业报修 -->
 
+        <!-- TODO 生活服务 -->
+        <activity android:name="com.LifeServices.activity.SecondTradeActivity"
+                  android:label="二手物品"
+                  android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!-- 生活服务 -->
+
 
         <!-- 数据版本 -->
         <meta-data

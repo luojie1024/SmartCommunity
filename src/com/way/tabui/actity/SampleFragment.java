@@ -29,6 +29,7 @@ import android.widget.ImageView.ScaleType;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.LifeServices.activity.SecondTradeActivity;
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
 import com.property.activity.AnnouncementListActivity;
 import com.property.activity.BaoxiushenqingActivity;
@@ -799,6 +800,14 @@ public class SampleFragment extends Fragment {
 			startActivity(intent);
 
 		}
+
+		/**
+	 	* 作者：Jacky 时间：2017/5/18 17:35
+	 	*/
+		private void secondtrade() {
+			Intent intent = new Intent(context, SecondTradeActivity.class);
+			startActivity(intent);
+		}
 	
 	private void setListeners() {
 		dgv.setOnRearrangeListener(new OnRearrangeListener() {
@@ -857,6 +866,8 @@ public class SampleFragment extends Fragment {
                     register();
                 else if (poem.get(location)=="登陆")
                     login();
+				else if (poem.get(location)=="二手物品")
+					secondtrade();
 				else {
 					Toast.makeText(context, "敬请期待", Toast.LENGTH_SHORT).show();
 				}
@@ -865,6 +876,8 @@ public class SampleFragment extends Fragment {
 		});
 
 	}
+
+
 
 	public void getScheduledExecutorService() {
 		scheduledExecutorService.shutdown();

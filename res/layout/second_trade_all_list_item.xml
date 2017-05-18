@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <!-- 物品展示主图  96x96 -->
+
+    <ImageView
+        android:id="@+id/img_trade_item"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="@drawable/ic_shop_defalut"
+        android:contentDescription="商店展示主图" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignBaseline="@id/img_trade_item"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img_trade_item"
+        android:background="#F5F5F5"
+        android:padding="5dp" >
+
+        <!-- 物品名称 -->
+
+        <TextView
+            android:id="@+id/tv_trade_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="95新美利达自行车"
+            android:textSize="16sp" />
+
+        <!-- 物品类型 -->
+
+        <TextView
+            android:id="@+id/tv_trade_item_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_trade_item_name"
+            android:layout_centerVertical="true"
+            android:text="自行车"
+            android:textColor="#808080"
+            android:textSize="12sp" />
+        
+        <!-- 物品价格 -->
+        
+        <TextView
+            android:id="@+id/tv_trade_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="￥200.00"
+            android:textColor="#DC143C"
+            android:textSize="18sp" />
+
+        <!-- 发布者 -->
+
+        <TextView
+            android:id="@+id/tv_trade_item_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_trade_item_name"
+            android:layout_alignParentBottom="true"
+            android:text="我是一只小猫猫"
+            android:textColor="#B8860B"
+            android:textSize="12sp" />
+        
+        <!-- 发布时间-->
+        
+        <TextView
+            android:id="@+id/tv_trade_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="2014-9-15"
+            android:textColor="#808080"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
