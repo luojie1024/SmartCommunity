@@ -110,14 +110,14 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                     jiaofeiListEntity=new JiaofeiListEntity();
                     // TODO: 2017/5/14
                     intidata();
-//		            updateUI();
+//		            updatePay();
                     lvJiaofeiList.setOnItemClickListener(new OnItemClickListener() {
 
                               @Override
                               public void onItemClick(AdapterView<?> parent, View view,
                                                       int position, long id) {
                                         startActivity(new Intent(getApplication(), JiaofeiDetailActivity.class)
-                                             .putExtra("id", list.get(position).getId())
+                                             .putExtra("objectId", list.get(position).getObjectId())
                                              .putExtra("type", type));
                               }
                     });

@@ -2,7 +2,9 @@ package com.property.activity;
 
 import java.util.List;
 
-public class JiaofeiListEntity {
+import cn.bmob.v3.BmobObject;
+
+public class JiaofeiListEntity  {
 	private int status; // int 查询状态（0暂无数据 1成功）
 	private String msg; // string 提示信息
 	private List<pay_record> pay_record; // array 缴费记录数组
@@ -31,7 +33,7 @@ public class JiaofeiListEntity {
 		this.pay_record = pay_record;
 	}
 
-	public class pay_record {
+	public class pay_record extends BmobObject{
 		private String id; // int 缴费记录id
 		private String type;// 缴费类型id
 		private String pay_time; // string 缴费时间(未交费则为空)

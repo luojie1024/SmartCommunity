@@ -110,26 +110,26 @@ public class BaoxiushenqingActivity extends BaseActivity {
           private String content;    //string 报障内容
           private String village_id;    //int 小区id
 
-          private Handler handler = new Handler() {
-
-                    @Override
-                    public void handleMessage(Message msg) {
-                              super.handleMessage(msg);
-                              switch (msg.arg1) {
-                                        case 0:
-                                                  //关闭等待框
-                                                  pd.dismiss();
-                                                  Toast.makeText(BaoxiushenqingActivity.this, "服务器正忙！请稍后重试！", Toast.LENGTH_SHORT).show();
-                                                  break;
-                                        case 1:
-                                                  //关闭等待框
-                                                  pd.dismiss();
-                                                  Toast.makeText(BaoxiushenqingActivity.this, "报修成功！已提交维修信息至服务器！", Toast.LENGTH_SHORT).show();
-                                                  break;
-                              }
-
-                    }
-          };
+//          private Handler handler = new Handler() {
+//
+//                    @Override
+//                    public void handleMessage(Message msg) {
+//                              super.handleMessage(msg);
+//                              switch (msg.arg1) {
+//                                        case 0:
+//                                                  //关闭等待框
+//                                                  pd.dismiss();
+//                                                  Toast.makeText(BaoxiushenqingActivity.this, "服务器正忙！请稍后重试！", Toast.LENGTH_SHORT).show();
+//                                                  break;
+//                                        case 1:
+//                                                  //关闭等待框
+//                                                  pd.dismiss();
+//                                                  Toast.makeText(BaoxiushenqingActivity.this, "报修成功！已提交维修信息至服务器！", Toast.LENGTH_SHORT).show();
+//                                                  break;
+//                              }
+//
+//                    }
+//          };
 
 
           @Override

@@ -1,33 +1,34 @@
 package com.property.activity;
 
 import android.app.ProgressDialog;
-import android.os.Handler;
-import android.os.Message;
+import android.graphics.Color;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.ab.http.AbHttpUtil;
 import com.google.gson.Gson;
 import com.property.base.BaseActivity;
-import com.property.utils.QueryAll;
 import com.way.tabui.gokit.R;
 
 import org.kymjs.kjframe.ui.BindView;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
 import java.text.SimpleDateFormat;
+
+import cn.bmob.v3.BmobQuery;
+import cn.bmob.v3.exception.BmobException;
+import cn.bmob.v3.listener.QueryListener;
+import cn.bmob.v3.listener.UpdateListener;
+
+import static com.way.tabui.gokit.R.id.btn_loading;
+import static org.kymjs.kjframe.ui.ViewInject.toast;
 
 public class JiaofeiDetailActivity extends BaseActivity {
 
-	@BindView(id = R.id.btn_loading, click = true)
+	@BindView(id = btn_loading, click = true)
 	private Button bjiaofei;
 	@BindView(id = R.id.iv_back, click = true)
 	private ImageView ivBack;
@@ -52,32 +53,8 @@ public class JiaofeiDetailActivity extends BaseActivity {
 	private AbHttpUtil http;
 	private Gson gson;
 	private JiaofeiDetailEntity jiaofeiDetailEntity;
-	private String id;
+	private String objectId;
 	private String type = null;
-
-	//UI更新
-	private Handler handler = new Handler() {
-
-		@Override
-		public void handleMessage(Message msg) {
-			super.handleMessage(msg);
-			switch (msg.arg1) {
-				case 1:
-					//关闭等待框
-					pd.dismiss();
-					sendpost();//更新UI
-					break;
-				case 2:
-					//关闭等待框
-					pd.dismiss();
-					//设置为不可点击
-					bjiaofei.setClickable(false);
-					Toast.makeText(JiaofeiDetailActivity.this, "缴费成功！", Toast.LENGTH_SHORT).show();
-					break;
-			}
-
-		}
-	};
 
 	@Override
 	public void setRootView() {
@@ -89,9 +66,12 @@ public class JiaofeiDetailActivity extends BaseActivity {
 		super.initData();
 		http = AbHttpUtil.getInstance(this);
 		gson = new Gson();
-		id = getIntent().getStringExtra("id");
+		objectId = getIntent().getStringExtra("objectId");
 		type = getIntent().getStringExtra("type");
 		Log.e("type", type + "");
+		//c初始化jiaofeiDetailEntity
+		jiaofeiDetailEntity=new JiaofeiDetailEntity();
+
 		switch (Integer.parseInt(type)) {
 			case 1:
 				tvType.setText("水费缴费");
@@ -114,7 +94,6 @@ public class JiaofeiDetailActivity extends BaseActivity {
 			default:
 				break;
 		}
-//                    updateUI();
 		//从数据库获取数据
 		intidata();
 	}
@@ -128,8 +107,8 @@ public class JiaofeiDetailActivity extends BaseActivity {
 				finish();
 				break;
 
-			case R.id.btn_loading:
-				updata();
+			case btn_loading:
+				updatePay();
 				System.out.println("按钮点击");
 				break;
 			default:
@@ -141,116 +120,52 @@ public class JiaofeiDetailActivity extends BaseActivity {
 	 * 连接数据库，获取数据并生成JiaofeiListEntity,数据集合
 	 */
 	public void intidata() {
-		pd = ProgressDialog.show(JiaofeiDetailActivity.this,"正在获取数据", "加载中，请稍后……");
-		new Thread() {
+		//通过objectId查询数据
+		BmobQuery<JiaofeiDetailEntity.pay_record> bmobQuery = new BmobQuery<JiaofeiDetailEntity.pay_record>();
+		bmobQuery.getObject(objectId, new QueryListener<JiaofeiDetailEntity.pay_record>() {
 			@Override
-			public void run() {
-				super.run();
-				try {
-					// 1.注册驱动
-					Class.forName("com.mysql.jdbc.Driver");
-					// 2.获取连接
-					Connection conn = null;
-					conn = DriverManager.getConnection(QueryAll.DB_Url,QueryAll.DB_UesrName, QueryAll.DB_PassWord);
-					// 3.创建执行sql语句的对象
-					Statement stmt = null;
-					stmt = conn.createStatement();
-					// 4.书写一个sql语句
-					String sql;
-					//支付时间默认为0，
-					sql = "SELECT * FROM pay_record WHERE id=" + id + ";";
-					// 5.执行sql语句
-					ResultSet rs = null;
-					rs = stmt.executeQuery(sql);
-					// 6.对结果集进行处理
-					if (rs.next()) {
-						//查询得到结果
-						jiaofeiDetailEntity = new JiaofeiDetailEntity();
-						jiaofeiDetailEntity.setStatus(1);
-						jiaofeiDetailEntity.setMsg("");
-
-						//rs.next()下一行数据
-						JiaofeiDetailEntity.pay_record p_record = jiaofeiDetailEntity.new pay_record();
-						//设置数据
-						p_record.setId("" + rs.getInt(1));
-						p_record.setPay_time(rs.getString(3));
-						p_record.setPay_amount("" + rs.getFloat(4));
-						p_record.setPayee(rs.getString(6));
-						p_record.setAccount_name(rs.getString(7));
-						p_record.setUsername(rs.getString(8));
-						//设置整个结果数据
-						jiaofeiDetailEntity.setPay_record(p_record);
-						System.out.println("获取缴费详情数据成功!");
-						System.out.println(sql);
-					} else {
-						//无数据设置为空
-						System.out.println("获取缴费详情数据失败!");
-					}
-					if (rs != null)
-						rs.close();
-					if (stmt != null)
-						stmt.close();
-					if (conn != null)
-						conn.close();
-					//查询完毕,通知UI更新
-					Message msg = handler.obtainMessage();
-					msg.arg1 = 1;
-					handler.sendMessage(msg);
-				} catch (Exception e) {
-					System.out.println("连接数据库错误！");
-					e.printStackTrace();
+			public void done(JiaofeiDetailEntity.pay_record pay_record, BmobException e) {
+				if(e==null){
+					//查询成功
+					jiaofeiDetailEntity.setStatus(1);
+					jiaofeiDetailEntity.setMsg("");
+					jiaofeiDetailEntity.setPay_record(pay_record);
+					toast("查询成功!");
+					updateUI();
+				}else{
+					jiaofeiDetailEntity.setStatus(0);
+					Log.i("bmob","失败："+e.getMessage()+","+e.getErrorCode());
 				}
 			}
-		}.start();
-
-
+		});
 	}
 
 
 	//缴费逻辑
-	public void updata(){
-		pd = ProgressDialog.show(JiaofeiDetailActivity.this,"正在提交数据", "加载中，请稍后……");
-		new Thread() {
+	public void updatePay(){
+		JiaofeiDetailEntity.pay_record pay_re = jiaofeiDetailEntity.new pay_record();
+		//获取当前系统时间
+		SimpleDateFormat sDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+		String date = sDateFormat.format(new java.util.Date());
+		pay_re.setPay_time(date);
+		pay_re.update(objectId, new UpdateListener() {
 			@Override
-			public void run() {
-				super.run();
-				try {
-					// 1.注册驱动
-					Class.forName("com.mysql.jdbc.Driver");
-					// 2.获取连接
-					Connection conn = null;
-					conn = DriverManager.getConnection(QueryAll.DB_Url,QueryAll.DB_UesrName, QueryAll.DB_PassWord);
-					// 3.创建执行sql语句的对象
-					Statement stmt = null;
-					stmt = conn.createStatement();
-					//获取当前系统时间
-					SimpleDateFormat sDateFormat    =   new    SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-					String    date  = sDateFormat.format(new    java.util.Date());
-					// 4.书写一个sql语句
-					String sql;
-					//支付时间默认为0，
-					sql = "UPDATE pay_record SET pay_time='"+date+"' WHERE id="+id+";";
-					// 5.执行sql语句
-					stmt.execute(sql);
-					//关闭不需要的资源
-					if (stmt != null)
-						stmt.close();
-					if (conn != null)
-						conn.close();
-					//查询完毕,通知UI更新
-					Message msg = handler.obtainMessage();
-					msg.arg1 = 2;
-					handler.sendMessage(msg);
-				} catch (Exception e) {
-					System.out.println("连接数据库错误！");
-					e.printStackTrace();
+			public void done(BmobException e) {
+				if(e==null){
+					toast("缴费成功！");
+					//禁止按钮点击 设置颜色
+					bjiaofei.setClickable(false);
+					bjiaofei.setText("缴费成功");
+					bjiaofei.setBackgroundColor(Color.parseColor("#999999"));
+				}else{
+					Log.i("bmob","服务器连接失败，请稍后重试！"+e.getMessage()+","+e.getErrorCode());
 				}
 			}
-		}.start();
+		});
 	}
 
 	//更新UI
-	public void sendpost() {
+	public void updateUI() {
 		tvAmount.setText(jiaofeiDetailEntity.getPay_record()
 		.getPay_amount());
 		tvPayee.setText(jiaofeiDetailEntity.getPay_record()
@@ -264,48 +179,5 @@ public class JiaofeiDetailActivity extends BaseActivity {
 		.getUsername());
 		tvPayTime.setText(jiaofeiDetailEntity.getPay_record()
 		.getPay_time());
-
-
-//		AbRequestParams params = new AbRequestParams();
-//		params.put("id", id);
-//		params.put("type", type);
-//		http.post(UrlConnector.PAY_RECORD_DETAIL, params,
-//				new AbStringHttpResponseListener() {
-//
-//					@Override
-//					public void onStart() {
-//
-//					}
-//
-//					@Override
-//					public void onFinish() {
-//
-//					}
-//
-//					@Override
-//					public void onFailure(int arg0, String arg1, Throwable arg2) {
-//						Toast.makeText(getApplication(), "请求失败",
-//								Toast.LENGTH_SHORT).show();
-//					}
-//
-//					@Override
-//					public void onSuccess(int arg0, String arg1) {
-//						jiaofeiDetailEntity = gson.fromJson(arg1,
-//								JiaofeiDetailEntity.class);
-//						tvAmount.setText(jiaofeiDetailEntity.getPay_record()
-//								.getPay_amount());
-//						tvPayee.setText(jiaofeiDetailEntity.getPay_record()
-//								.getPayee());
-//						if(type.equals("1") || type.equals("2")){
-//							llAccount.setVisibility(View.VISIBLE);
-//							tvAccount.setText(jiaofeiDetailEntity.getPay_record()
-//									.getAccount_name());
-//						}
-//						tvUserName.setText(jiaofeiDetailEntity.getPay_record()
-//								.getUsername());
-//						tvPayTime.setText(jiaofeiDetailEntity.getPay_record()
-//								.getPay_time());
-//					}
-//				});
 	}
 }
