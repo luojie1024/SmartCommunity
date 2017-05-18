@@ -4,24 +4,24 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\rounded_linearlayout_right_unpress.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_textview_login_red.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\rounded_textview_login_red.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\alert_top_shape.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\alert_top_shape.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_textview_login_red.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\rounded_textview_login_red.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_circular.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\progress_circular.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\title_bk.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\title_bk.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_transferlist_personal_selector.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\tab_transferlist_personal_selector.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\title_bk.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\title_bk.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_feedlist.xml",
