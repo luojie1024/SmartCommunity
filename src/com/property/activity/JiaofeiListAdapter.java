@@ -1,22 +1,19 @@
 package com.property.activity;
 
-import java.util.List;
-
-import org.kymjs.kjframe.KJBitmap;
-
-import com.property.activity.JiaofeiListEntity.pay_record;
-import com.way.tabui.gokit.R;
-import com.lidroid.xutils.ViewUtils;
-import com.lidroid.xutils.view.annotation.ViewInject;
-
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ViewInject;
+import com.property.activity.JiaofeiListEntity.pay_record;
+import com.way.tabui.gokit.R;
+
+import java.util.List;
 
 public class JiaofeiListAdapter extends BaseAdapter {
 
@@ -63,16 +60,16 @@ public class JiaofeiListAdapter extends BaseAdapter {
 		case 2:
 			holder.tvName.setText("电费");
 			break;
-		case 5:
+		case 3:
 			holder.tvName.setText("房租费");
 			break;
-		case 6:
+		case 4:
 			holder.tvName.setText("物业费");
 			break;
-		case 7:
+		case 5:
 			holder.tvName.setText("停车费");
 			break;
-		case 8:
+		case 6:
 			holder.tvName.setText("其他费用");
 			break;
 		default:

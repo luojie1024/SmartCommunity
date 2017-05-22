@@ -55,6 +55,7 @@ public class JiaofeiDetailActivity extends BaseActivity {
 	private JiaofeiDetailEntity jiaofeiDetailEntity;
 	private String objectId;
 	private String type = null;
+	private int pay_status;
 
 	@Override
 	public void setRootView() {
@@ -68,9 +69,18 @@ public class JiaofeiDetailActivity extends BaseActivity {
 		gson = new Gson();
 		objectId = getIntent().getStringExtra("objectId");
 		type = getIntent().getStringExtra("type");
+		pay_status=getIntent().getIntExtra("pay_status",1);
 		Log.e("type", type + "");
 		//c初始化jiaofeiDetailEntity
 		jiaofeiDetailEntity=new JiaofeiDetailEntity();
+		//已缴费模式，初始化按钮
+		if (pay_status==2) {
+			//禁止按钮点击 设置颜色
+			bjiaofei.setClickable(false);
+			bjiaofei.setText("缴费成功");
+			bjiaofei.setBackgroundColor(Color.parseColor("#999999"));
+		}
+
 
 		switch (Integer.parseInt(type)) {
 			case 1:

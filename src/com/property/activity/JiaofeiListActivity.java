@@ -3,8 +3,6 @@ package com.property.activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
-import android.os.Handler;
-import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -12,7 +10,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.ab.http.AbHttpUtil;
 import com.ab.view.pullview.AbPullToRefreshView;
@@ -62,28 +59,6 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
           private String type;
           private int pay_status = 1;
 
-
-          private Handler handler=new Handler() {
-
-                    @Override
-                    public void handleMessage(Message msg) {
-                              super.handleMessage(msg);
-                              switch (msg.arg1) {
-                                        case 0:
-                                                  //关闭等待框
-                                                  pd.dismiss();
-                                                  Toast.makeText(JiaofeiListActivity.this,"没有查询到数据！",Toast.LENGTH_SHORT).show();
-                                                  break;
-                                        case 1:
-                                                  //关闭等待框
-                                                  pd.dismiss();
-                                                  updateUI();//更新UI
-                                                  break;
-                              }
-
-                    }
-          };
-
           @Override
           public void setRootView() {
                     setContentView(R.layout.activity_jiaofei_list);
@@ -118,6 +93,7 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                                                       int position, long id) {
                                         startActivity(new Intent(getApplication(), JiaofeiDetailActivity.class)
                                              .putExtra("objectId", list.get(position).getObjectId())
+                                             .putExtra("pay_status", pay_status)
                                              .putExtra("type", type));
                               }
                     });
@@ -163,9 +139,9 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                     //设置查询条件
                     bmobQuery.addWhereEqualTo("type",type);
                     if (pay_status == 1) {
-                              bmobQuery.addWhereDoesNotExists("pay_time");
+                              bmobQuery.addWhereEqualTo("pay_time","0");
                     } else {
-                              bmobQuery.addWhereExists("pay_time");
+                              bmobQuery.addWhereNotEqualTo("pay_time","0");
                     }
                     bmobQuery.findObjects(new FindListener<pay_record>() {
                               @Override
@@ -253,12 +229,12 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
           @Override
           public void onFooterLoad(AbPullToRefreshView arg0) {
                     loadmore = true;
-                    updateUI();
+                    intidata();
           }
 
           @Override
           public void onHeaderRefresh(AbPullToRefreshView arg0) {
                     loadmore = false;
-                    updateUI();
+                    intidata();
           }
 }
