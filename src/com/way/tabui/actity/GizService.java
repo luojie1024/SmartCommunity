@@ -548,7 +548,7 @@ public class GizService extends Service {
 			byte[] binary = (byte[]) dataMap.get("binary");
 //			notifbulid(bytesToHex(binary), R.drawable.ic_launcher, 0x021,
 //					"网关设备");
-			Log.i("==", "Binary data:" + bytesToHex(binary));
+			Log.i("xxxxs", "Binary data:" + bytesToHex(binary));
 		}
 //		else{
 //			notifbulid("binary is null", R.drawable.ic_launcher, 0x021,

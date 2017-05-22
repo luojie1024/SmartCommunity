@@ -1,22 +1,9 @@
 package com.way.tabui.actity;
 
-import java.io.File;
-
-import javax.microedition.khronos.egl.EGLConfig;
-import javax.microedition.khronos.opengles.GL10;
-
-import vv.PpviewClientInterface.PpviewClientInterface;
-import vv.playlib.CPlayerEx;
-import vv.playlib.FishEyeInfo;
-import vv.playlib.OnPlayerCallbackListener;
-import vv.playlib.OnVoiceTalkCallbackListener;
-import vv.playlib.RecPlayerEx;
-import vv.playlib.VVAudio;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.opengl.GLSurfaceView;
-import android.opengl.GLSurfaceView.Renderer;
 import android.os.Bundle;
 import android.os.Environment;
 import android.text.TextUtils;
@@ -28,17 +15,26 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.way.tabui.commonmodule.GosBaseActivity;
 import com.way.tabui.gokit.R;
 import com.way.util.ToastUtil;
-import com.xmcamera.core.sys.XmSystem;
 import com.xmcamera.core.sysInterface.IXmSystem;
 import com.xmcamera.core.view.decoderView.XmGlView;
+
+import java.io.File;
+
+import vv.PpviewClientInterface.PpviewClientInterface;
+import vv.playlib.CPlayerEx;
+import vv.playlib.OnPlayerCallbackListener;
+import vv.playlib.OnVoiceTalkCallbackListener;
+import vv.playlib.RecPlayerEx;
+import vv.playlib.VVAudio;
 
 /**
  * Created by Administrator on 2016/8/15.
  * 实时预览接口demo
  */
-public class PreviewActivity extends Activity{
+public class PreviewActivity extends GosBaseActivity {
     private PpviewClientInterface ppviewClientInterface;
 //    = PpviewClientInterface.getInstance();
     private Activity mActivity = this;

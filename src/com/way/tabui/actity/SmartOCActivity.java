@@ -37,6 +37,9 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import zxing.CaptureActivity;
 
+/**
+ * 灯光/插座/开关操作界面
+ */
 public class SmartOCActivity extends GosControlModuleBaseActivity {
 
 	/** 传输字符 */

@@ -1,19 +1,16 @@
 package com.way.adapter;
 
-import java.util.ArrayList;
-
-import cn.jpush.a.a.a;
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 
 import com.way.util.AirMesinfo;
 import com.way.util.Alertinfo;
 import com.way.util.GizMetaData;
 import com.way.util.Gizinfo;
 
-import android.content.ContentValues;
-import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
+import java.util.ArrayList;
 
 public class DatabaseAdapter {
 
@@ -89,7 +86,7 @@ public class DatabaseAdapter {
 		db.delete(GizMetaData.GizTable.TABLE_NAME, whereClause, whereArgs);
 		db.close();
 	}
-	public void deletealert(int id){
+        public void deletealert(int id){
 		SQLiteDatabase db = dbHelper.getWritableDatabase();
 		String whereClause =GizMetaData.AlertTable._ID+"=?";
 		String[] whereArgs = {String.valueOf(id)};

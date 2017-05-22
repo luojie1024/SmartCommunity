@@ -171,19 +171,24 @@ public class MainActivity extends GosControlModuleBaseActivity implements
     private class StopThread extends Thread {
         @Override
         public void run() {
-
             stopsevice();
         }
     }
+/**
+ * 启动后台服务
+ */
 
     void startsevice() {
+
         Intent reIntent = new Intent(this, GizService.class);
         Bundle bundle = new Bundle();
         bundle.putParcelable("GizWifiDevice", (GizWifiDevice) device);
         reIntent.putExtras(bundle);
         startService(reIntent);
     }
-
+    /**
+     * 关闭后台服务
+     */
     void stopsevice() {
         Intent reIntent = new Intent(this, GizService.class);
         stopService(reIntent);
@@ -193,6 +198,7 @@ public class MainActivity extends GosControlModuleBaseActivity implements
     spUtil sp;
 
     private void init() {
+        //初始化爱小屏sdk
         xmSystem = XmSystem.getInstance();
         xmSystem.xmInit(MainActivity.this, "CN", new OnXmSimpleListener() {
             @Override
@@ -208,6 +214,7 @@ public class MainActivity extends GosControlModuleBaseActivity implements
     }
 
     public void loginSuc(XmAccount info) {
+        //登录成功的操作
         Intent intent = new Intent(MainActivity.this, MainContentActivity.class);
         Bundle bundle = new Bundle();
         bundle.putSerializable("user", info);

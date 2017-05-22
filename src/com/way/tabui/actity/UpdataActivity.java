@@ -1,6 +1,5 @@
 package com.way.tabui.actity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,10 +9,11 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.way.adapter.DatabaseAdapter;
+import com.way.tabui.commonmodule.GosBaseActivity;
 import com.way.tabui.gokit.R;
 import com.way.util.Gizinfo;
 
-public class UpdataActivity extends Activity {
+public class UpdataActivity extends GosBaseActivity {
 
 	private EditText ed_name, ed_address;
 	private Button bt_updatadevice;

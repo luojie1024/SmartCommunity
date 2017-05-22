@@ -1,19 +1,6 @@
 package com.way.tabui.actity;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.DatagramPacket;
-import java.net.InetAddress;
-import java.net.MulticastSocket;
-import java.net.NetworkInterface;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.net.SocketException;
-import java.util.Enumeration;
-
 import android.app.ActionBar;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.wifi.WifiInfo;
@@ -29,9 +16,22 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.way.tabui.commonmodule.GosBaseActivity;
 import com.way.tabui.gokit.R;
 
-public class IntelligentSocketActivity extends Activity {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.DatagramPacket;
+import java.net.InetAddress;
+import java.net.MulticastSocket;
+import java.net.NetworkInterface;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.SocketException;
+import java.util.Enumeration;
+
+public class IntelligentSocketActivity extends GosBaseActivity {
 
 	  private static String LOG_TAG = "IntelligentSocketActivity";
 	  
@@ -95,7 +95,7 @@ public class IntelligentSocketActivity extends Activity {
 	        new udpReceiveAndtcpSend().start();
 	        
 	        time();
-	        Toast.makeText(IntelligentSocketActivity.this,"验证设备连接配置是否正常中...", 4000).show();
+	        Toast.makeText(IntelligentSocketActivity.this,"验证设备连接配置是否正常中...", Toast.LENGTH_LONG).show();
 	       
 //	       if (isconnet==false){
 //	    	   Toast.makeText(IntelligentSocketActivity.this,"connet="+wififlag, Toast.LENGTH_SHORT).show();
@@ -674,7 +674,7 @@ public class IntelligentSocketActivity extends Activity {
 	                }
 	            }
 	        } catch (SocketException ex) {
-	           Log.e(LOG_TAG, ex.toString());
+//	           Log.e(LOG_TAG, ex.toString());
 	        }
 	        return null;
 	    }

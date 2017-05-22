@@ -1,23 +1,19 @@
 package com.way.tabui.actity;
 
-import com.way.adapter.DatabaseAdapter;
-import com.way.tabui.gokit.R;
-import com.way.tabui.gokit.R.id;
-import com.way.tabui.gokit.R.layout;
-import com.way.util.Gizinfo;
-
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class AddOcdeviceActivity extends Activity {
+import com.way.adapter.DatabaseAdapter;
+import com.way.tabui.commonmodule.GosBaseActivity;
+import com.way.tabui.gokit.R;
+import com.way.util.Gizinfo;
+
+public class AddOcdeviceActivity extends GosBaseActivity {
 
 	private EditText ed_name, ed_address;
 	private Button bt_addocdevice;

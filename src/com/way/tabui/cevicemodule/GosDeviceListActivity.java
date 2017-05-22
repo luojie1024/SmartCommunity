@@ -45,6 +45,7 @@ import com.way.tabui.configmodule.GosCheckDeviceWorkWiFiActivity;
 import com.way.tabui.gokit.R;
 import com.way.tabui.pushmodule.GosPushManager;
 import com.way.tabui.settingsmodule.GosSettiingsActivity;
+import com.way.tabui.usermodule.GosUserLoginActivity;
 import com.way.tabui.view.SlideListView2;
 import com.xmcamera.core.model.XmAccount;
 import com.xmcamera.core.model.XmErrInfo;
@@ -694,7 +695,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		}
 	}
 
-
+    //暂时记录设备
 	GizWifiDevice gizd;
 	GizWifiDevice gizd0;
 	String Maca;
@@ -762,7 +763,6 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 			startActivity(intent);
 			break;
 		case R.id.action_change_user:
-
 			if (item.getTitle() == getText(R.string.login)) {
 				logoutToClean();
 				break;
@@ -800,7 +800,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		return super.onOptionsItemSelected(item);
 	}
 	
-int   count=0;
+    int   count=0;
 	private void UpdateUI() {
 		
 		if (GosDeviceModuleBaseActivity.deviceslist.isEmpty()) {
@@ -1075,6 +1075,8 @@ int   count=0;
 
 	private void exitBy2Click() {
 		Timer tExit = null;
+        Intent intent= new Intent(GosDeviceListActivity.this, GosUserLoginActivity.class);
+        startActivity(intent);
         finish();
 //		if (isExit == false) {
 //			isExit = true; // 准备退出；
@@ -1113,7 +1115,12 @@ int   count=0;
 		} else {
 			loginStatus = 4;
 		}
-
+        Intent intent = new Intent(GosDeviceListActivity.this,GosUserLoginActivity.class);
+        Toast.makeText(this, "已注销登录", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+        stopsevice();
+        finish();
 	}
+
 
 }

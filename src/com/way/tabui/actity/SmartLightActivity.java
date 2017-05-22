@@ -3,23 +3,6 @@ package com.way.tabui.actity;
 
 
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.net.Socket;
-import java.nio.charset.Charset;
-import java.util.ArrayList;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -37,11 +20,28 @@ import android.widget.ToggleButton;
 
 import com.way.adapter.SmartLightAdapter;
 import com.way.main.MyClickListener;
+import com.way.tabui.commonmodule.GosBaseActivity;
 import com.way.tabui.gokit.R;
 import com.way.util.LightInfo;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-public class SmartLightActivity extends Activity implements OnClickListener {
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+
+
+public class SmartLightActivity extends GosBaseActivity implements OnClickListener {
 
 //	private String mUrl;
 	private ArrayList<LightInfo> mList=new ArrayList<LightInfo>();
