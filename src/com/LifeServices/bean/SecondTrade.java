@@ -5,8 +5,9 @@ import cn.bmob.v3.datatype.BmobFile;
 
 /**
  * 二手交易实体类
- * @date 2014-9-15
- * @author Stone
+ * 作者：Jacky
+ * 邮箱：550997728@qq.com
+ * 时间：2017/5/22 22:22
  */
 @SuppressWarnings("serial")
 public class SecondTrade extends BmobObject {
