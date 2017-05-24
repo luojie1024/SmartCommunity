@@ -277,51 +277,75 @@
             android:name="com.tencent.connect.common.AssistActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity android:name="com.showmo.demo.maincotent.MainContentActivity" >
+        <activity
+            android:name="com.showmo.demo.maincotent.MainContentActivity"
+            android:label="@string/title_activity_showmo_demo"
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.showmo.demo.account.ModifyPswActivity"
+            android:label="@string/title_activity_showmo_demo"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.showmo.demo.account.AccountActivity"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.showmo.demo.play.DeviceslistActivity"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.showmo.demo.adddevice.AddDeviceUserEnsure"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.showmo.demo.adddevice.AddDeviceSetNetworkActivity"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.showmo.demo.adddevice.AddDeviceUserTipClose"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.showmo.demo.adddevice.AddDeviceConfigSearchActivity"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.showmo.demo.login.ResetDeviceActivity"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.showmo.demo.login.RegisterActivity"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.showmo.demo.login.RegisterActivity2"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.showmo.demo.play.PlayActivity"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
             android:name="com.way.tabui.gokit.PromailActivity"
@@ -432,6 +456,15 @@
         </activity>
 
         <!-- 物业报修 -->
+
+
+        <!-- TODO 生活服务 -->
+        <activity
+            android:name="com.LifeServices.activity.SecondTradeActivity"
+            android:label="二手物品"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!-- 生活服务 -->
 
 
         <!-- 数据版本 -->

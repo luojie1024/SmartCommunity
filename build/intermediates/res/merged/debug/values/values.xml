@@ -176,6 +176,8 @@
     <color name="text_little_blue">#ff7facea</color>
     <color name="text_red">#ffff0000</color>
     <color name="text_resource_category">#ff7f7f7f</color>
+    <color name="text_white">#ffffff</color>
+    <color name="theme_blue">#298eee</color>
     <color name="theme_color">#c0d355</color>
     <color name="theme_gray">#E8E8E8</color>
     <color name="thumb_apk">#ff97c932</color>
@@ -1252,6 +1254,7 @@
     <string name="title_activity_promail">物业信箱</string>
     <string name="title_activity_set_bund_mes">设置绑定信息</string>
     <string name="title_activity_set_mail">设置邮箱信息</string>
+    <string name="title_activity_showmo_demo">监控摄像</string>
     <string name="title_activity_smart_air_condition">智能空调</string>
     <string name="title_activity_smart_curtain">智能窗帘</string>
     <string name="title_activity_smart_door">智能开门</string>

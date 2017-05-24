@@ -1,10 +1,9 @@
 package com.way.adapter;
 
-import java.util.ArrayList;
-
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -13,18 +12,19 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.ToggleButton;
 
 import com.way.main.MyClickListener;
 import com.way.tabui.gokit.R;
 import com.way.util.Gizinfo;
+
+import java.util.ArrayList;
 
 public class SmartOCAdapter extends BaseAdapter {
 	private Context mContext;
 //	private ArrayList<LightInfo> mList;
 	private ArrayList<Gizinfo> mList;
 	private MyClickListener mListener;
-
+    private DatabaseAdapter dbAdapter;
 	protected static final int OPEN = 1;
 	protected static final int CLOSE = 0;
 	Handler handler = new Handler();
@@ -32,14 +32,17 @@ public class SmartOCAdapter extends BaseAdapter {
 	public void setHandler(Handler handler) {
 		this.handler = handler;
 	}
-	
-	public  SmartOCAdapter(Context mContext, ArrayList<Gizinfo> mList) {
+
+    public SmartOCAdapter(Handler handler, Context mContext) {
+        this.handler = handler;
+        this.dbAdapter =new DatabaseAdapter(mContext);
+        this.mContext = mContext;
+        this.mList = new ArrayList<Gizinfo>();
+    }
+
+    public  SmartOCAdapter(Context mContext, ArrayList<Gizinfo> mList) {
 		this.mContext = mContext;
 		this.mList = mList;
-	}
-	
-	public void setOnClickListener(MyClickListener mListener){
-		this.mListener=mListener;
 	}
 	
 	public int getCount() {
@@ -56,6 +59,24 @@ public class SmartOCAdapter extends BaseAdapter {
 		// TODO Auto-generated method stub
 		return position;
 	}
+    public SmartOCAdapter setDate(String mac){
+        mList=dbAdapter.findbybindgiz(mac);
+        if(mList.size()!=0){
+        this.notifyDataSetChanged();
+            Log.i("smartoc", "setDate:-----> "+mList.size());
+        }
+        else
+            return null;
+        return this;
+    }
+    public ArrayList<Gizinfo> getmList(){
+        return mList;
+    }
+
+    public SmartOCAdapter deleteDate(int id){
+        dbAdapter.delete(id);
+        return this;
+    }
 
 	
 	public View getView(int position, View convertView, ViewGroup parent) {
@@ -70,10 +91,8 @@ public class SmartOCAdapter extends BaseAdapter {
 					.findViewById(R.id.text_name);
 			viewHolder.btn_tog = (Switch) convertView
 					.findViewById(R.id.btn_tog);
-			viewHolder.btn_tog.setOnClickListener(mOnClickListener);
 			final int index=position;
 			viewHolder.btn_tog.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-				
 				@Override
 				public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 					// TODO Auto-generated method stub
@@ -108,19 +127,7 @@ public class SmartOCAdapter extends BaseAdapter {
 //		private TextView btn_tog;
 		private Switch btn_tog;
 	}
- private View.OnClickListener mOnClickListener=new View.OnClickListener() {
-		public void onClick(View v) {
-			// TODO Auto-generated method stub
-			if(mListener!=null){
-				int position =(Integer) v.getTag();
-				switch(v.getId()){
-				case R.id.btn_tog:
-					 mListener.onTogButton(SmartOCAdapter.this, v, position);
-					break;
-				}
-			}
-		}
-	};
+
 	
 
 

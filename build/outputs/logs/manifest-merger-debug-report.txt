@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:2:1-625:12
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:2:1-658:12
 	package
 		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:3:11-40
 	android:versionName
@@ -199,7 +199,7 @@ ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:102:5-74
 	android:name
 		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:102:22-72
 application
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:104:5-623:19
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:104:5-656:19
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] E:\jaaspro\SmartCommunity\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] E:\jaaspro\SmartCommunity\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] E:\jaaspro\SmartCommunity\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\AndroidManifest.xml:29:5-20
@@ -491,475 +491,529 @@ ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:277:9-280:74
 	android:name
 		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:278:13-69
 activity#com.showmo.demo.maincotent.MainContentActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:281:9-282:20
-	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:281:19-80
-activity#com.showmo.demo.account.ModifyPswActivity
 ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:283:9-286:20
-	android:screenOrientation
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:285:13-49
+	android:label
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:284:19-69
+	android:theme
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:285:19-66
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:284:13-69
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:283:19-80
+activity#com.showmo.demo.account.ModifyPswActivity
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:288:9-292:20
+	android:screenOrientation
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:290:13-49
+	android:label
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:291:13-63
+	android:name
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:289:13-69
 activity#com.showmo.demo.account.AccountActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:287:9-290:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:293:9-298:20
 	android:screenOrientation
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:289:13-49
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:295:13-49
+	android:label
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:296:13-63
+	android:theme
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:297:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:288:13-67
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:294:13-67
 activity#com.showmo.demo.play.DeviceslistActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:291:9-294:20
-	android:screenOrientation
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:293:13-49
-	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:292:13-68
-activity#com.showmo.demo.adddevice.AddDeviceUserEnsure
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:295:9-298:20
-	android:screenOrientation
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:297:13-49
-	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:296:13-73
-activity#com.showmo.demo.adddevice.AddDeviceSetNetworkActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:299:9-302:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:299:9-304:20
 	android:screenOrientation
 		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:301:13-49
+	android:label
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:302:13-63
+	android:theme
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:303:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:300:13-81
-activity#com.showmo.demo.adddevice.AddDeviceUserTipClose
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:303:9-306:20
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:300:13-68
+activity#com.showmo.demo.adddevice.AddDeviceUserEnsure
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:305:9-310:20
 	android:screenOrientation
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:305:13-49
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:307:13-49
+	android:label
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:308:13-63
+	android:theme
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:309:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:304:13-75
-activity#com.showmo.demo.adddevice.AddDeviceConfigSearchActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:307:9-310:20
-	android:screenOrientation
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:309:13-49
-	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:308:13-83
-activity#com.showmo.demo.login.ResetDeviceActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:311:9-314:20
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:306:13-73
+activity#com.showmo.demo.adddevice.AddDeviceSetNetworkActivity
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:311:9-316:20
 	android:screenOrientation
 		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:313:13-49
+	android:label
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:314:13-63
+	android:theme
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:315:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:312:13-69
-activity#com.showmo.demo.login.RegisterActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:315:9-318:20
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:312:13-81
+activity#com.showmo.demo.adddevice.AddDeviceUserTipClose
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:317:9-322:20
 	android:screenOrientation
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:317:13-49
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:319:13-49
+	android:label
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:320:13-63
+	android:theme
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:321:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:316:13-66
-activity#com.showmo.demo.login.RegisterActivity2
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:319:9-322:20
-	android:screenOrientation
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:321:13-49
-	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:320:13-67
-activity#com.showmo.demo.play.PlayActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:323:9-326:20
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:318:13-75
+activity#com.showmo.demo.adddevice.AddDeviceConfigSearchActivity
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:323:9-328:20
 	android:screenOrientation
 		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:325:13-49
-	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:324:13-61
-activity#com.way.tabui.gokit.PromailActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:327:9-331:20
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:329:13-59
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:326:13-63
 	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:330:13-60
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:327:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:328:13-44
-activity#com.way.tabui.gokit.AllMessageActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:332:9-336:20
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:324:13-83
+activity#com.showmo.demo.login.ResetDeviceActivity
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:329:9-334:20
+	android:screenOrientation
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:331:13-49
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:334:13-63
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:332:13-63
 	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:335:13-60
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:333:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:333:13-47
-activity#com.way.tabui.gokit.SetMailActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:337:9-341:20
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:330:13-69
+activity#com.showmo.demo.login.RegisterActivity
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:335:9-340:20
+	android:screenOrientation
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:337:13-49
 	android:label
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:338:13-63
+	android:theme
 		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:339:13-60
-	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:340:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:338:13-44
-activity#com.way.tabui.gokit.SmartAirConditionActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:342:9-346:20
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:336:13-66
+activity#com.showmo.demo.login.RegisterActivity2
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:341:9-346:20
+	android:screenOrientation
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:343:13-49
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:344:13-71
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:344:13-63
 	android:theme
 		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:345:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:343:13-54
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:342:13-67
+activity#com.showmo.demo.play.PlayActivity
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:347:9-352:20
+	android:screenOrientation
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:349:13-49
+	android:label
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:350:13-63
+	android:theme
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:351:13-60
+	android:name
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:348:13-61
+activity#com.way.tabui.gokit.PromailActivity
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:353:9-357:20
+	android:label
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:355:13-59
+	android:theme
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:356:13-60
+	android:name
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:354:13-44
+activity#com.way.tabui.gokit.AllMessageActivity
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:358:9-362:20
+	android:label
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:360:13-63
+	android:theme
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:361:13-60
+	android:name
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:359:13-47
+activity#com.way.tabui.gokit.SetMailActivity
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:363:9-367:20
+	android:label
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:365:13-60
+	android:theme
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:366:13-60
+	android:name
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:364:13-44
+activity#com.way.tabui.gokit.SmartAirConditionActivity
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:368:9-372:20
+	android:label
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:370:13-71
+	android:theme
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:371:13-60
+	android:name
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:369:13-54
 activity#com.way.tabui.gokit.SmartDoorActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:347:9-351:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:373:9-377:20
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:348:19-68
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:374:19-68
 	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:349:19-66
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:375:19-66
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:347:19-52
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:373:19-52
 activity#com.way.tabui.settingsmodule.SetBundMesActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:352:9-356:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:378:9-382:20
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:354:13-64
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:380:13-64
 	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:355:13-60
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:381:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:353:13-75
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:379:13-75
 activity#com.property.activity.BaoxiuguanliActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:364:9-368:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:390:9-394:20
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:366:13-58
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:392:13-58
 	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:367:13-60
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:393:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:365:13-70
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:391:13-70
 activity#com.property.activity.BaoxiushenqingActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:369:9-370:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:395:9-396:20
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:369:19-78
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:395:19-78
 activity#com.property.activity.BaoxiuxiangqingActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:371:9-375:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:397:9-401:20
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:373:13-58
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:399:13-58
 	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:374:13-60
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:400:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:372:13-73
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:398:13-73
 activity#com.property.activity.ChakandatuActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:376:9-380:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:402:9-406:20
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:378:13-58
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:404:13-58
 	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:379:13-60
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:405:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:377:13-68
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:403:13-68
 activity#com.property.activity.FaultDeleteActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:381:9-385:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:407:9-411:20
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:383:13-58
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:409:13-58
 	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:384:13-60
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:410:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:382:13-69
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:408:13-69
 activity#com.property.activity.FaultProgressActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:386:9-390:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:412:9-416:20
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:388:13-58
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:414:13-58
 	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:389:13-60
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:415:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:387:13-71
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:413:13-71
 activity#com.property.activity.JiaofeiDetailActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:391:9-395:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:417:9-421:20
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:393:13-33
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:419:13-33
 	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:394:13-60
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:420:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:392:13-71
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:418:13-71
 activity#com.property.activity.JiaofeiListActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:396:9-400:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:422:9-426:20
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:398:13-35
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:424:13-35
 	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:399:13-60
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:425:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:397:13-69
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:423:13-69
 activity#com.property.activity.JiaofeifenleiActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:401:9-412:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:427:9-438:20
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:403:13-33
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:429:13-33
 	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:404:13-60
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:430:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:402:13-71
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:428:13-71
 activity#com.property.activity.JiaofeijiluActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:413:9-417:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:439:9-443:20
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:415:13-35
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:441:13-35
 	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:416:13-60
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:442:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:414:13-69
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:440:13-69
 activity#com.property.activity.AnnouncementInfoActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:418:9-422:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:444:9-448:20
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:420:13-58
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:446:13-58
 	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:421:13-60
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:447:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:419:13-74
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:445:13-74
 activity#com.property.activity.AnnouncementListActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:423:9-427:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:449:9-453:20
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:425:13-58
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:451:13-58
 	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:426:13-60
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:452:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:424:13-74
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:450:13-74
 activity#com.property.duotushangchuan.AlbumActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:430:9-433:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:456:9-459:20
 	android:label
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:431:19-64
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:457:19-64
 	android:theme
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:432:19-66
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:458:19-66
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:430:19-76
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:456:19-76
+activity#com.LifeServices.activity.SecondTradeActivity
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:464:9-467:20
+	android:label
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:465:19-39
+	android:theme
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:466:19-66
+	android:name
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:464:19-79
 meta-data#PW_CONFIG_SDK_IDENTIFIER_CODE
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:439:9-441:32
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:472:9-474:32
 	android:value
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:441:13-30
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:474:13-30
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:440:13-57
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:473:13-57
 meta-data#PW_CONFIG_SDK_IDENTIFIER_STRING
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:442:9-444:31
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:475:9-477:31
 	android:value
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:444:13-29
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:477:13-29
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:443:13-59
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:476:13-59
 service#com.way.tabui.actity.GizService
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:446:9-447:19
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:479:9-480:19
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:446:18-64
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:479:18-64
 service#cn.jpush.android.service.PushService
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:452:9-462:19
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:485:9-495:19
 	android:enabled
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:454:13-35
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:487:13-35
 	android:exported
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:455:13-37
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:488:13-37
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:453:13-64
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:486:13-64
 intent-filter#cn.jpush.android.intent.PUSH_TIME+cn.jpush.android.intent.PushService+cn.jpush.android.intent.REGISTER+cn.jpush.android.intent.REPORT
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:456:13-461:29
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:489:13-494:29
 action#cn.jpush.android.intent.REGISTER
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:457:17-74
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:490:17-74
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:457:25-72
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:490:25-72
 action#cn.jpush.android.intent.REPORT
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:458:17-72
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:491:17-72
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:458:25-70
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:491:25-70
 action#cn.jpush.android.intent.PushService
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:459:17-77
-	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:459:25-75
-action#cn.jpush.android.intent.PUSH_TIME
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:460:17-75
-	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:460:25-73
-service#cn.jpush.android.service.DaemonService
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:466:9-475:19
-	android:enabled
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:468:13-35
-	android:exported
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:469:13-36
-	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:467:13-66
-intent-filter#cn.jpush.android.intent.DaemonService+com.way
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:470:13-474:29
-action#cn.jpush.android.intent.DaemonService
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:471:17-79
-	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:471:25-77
-category#com.way
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:473:17-51
-	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:473:27-49
-receiver#cn.jpush.android.service.PushReceiver
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:478:9-497:20
-	android:enabled
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:480:13-35
-	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:479:13-65
-intent-filter#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY+com.way
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:481:13-485:29
-	android:priority
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:481:28-51
-action#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:482:17-93
-	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:482:25-91
-intent-filter#android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:486:13-489:29
-action#android.intent.action.USER_PRESENT
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:487:17-76
-	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:487:25-74
-action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:488:17-78
-	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:488:25-76
-intent-filter#android.intent.action.PACKAGE_ADDED+android.intent.action.PACKAGE_REMOVED
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:491:13-496:29
-action#android.intent.action.PACKAGE_ADDED
 ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:492:17-77
 	android:name
 		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:492:25-75
-action#android.intent.action.PACKAGE_REMOVED
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:493:17-79
+action#cn.jpush.android.intent.PUSH_TIME
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:493:17-75
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:493:25-77
-activity#cn.jpush.android.ui.PushActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:499:9-509:20
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:493:25-73
+service#cn.jpush.android.service.DaemonService
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:499:9-508:19
+	android:enabled
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:501:13-35
 	android:exported
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:502:13-37
-	android:configChanges
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:501:13-63
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:502:13-36
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:500:13-60
-intent-filter#android.intent.category.DEFAULT+cn.jpush.android.ui.PushActivity+com.way
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:503:13-508:29
-action#cn.jpush.android.ui.PushActivity
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:504:17-74
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:500:13-66
+intent-filter#cn.jpush.android.intent.DaemonService+com.way
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:503:13-507:29
+action#cn.jpush.android.intent.DaemonService
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:504:17-79
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:504:25-72
-service#cn.jpush.android.service.DownloadService
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:511:9-515:19
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:504:25-77
+category#com.way
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:506:17-51
+	android:name
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:506:27-49
+receiver#cn.jpush.android.service.PushReceiver
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:511:9-530:20
 	android:enabled
 		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:513:13-35
+	android:name
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:512:13-65
+intent-filter#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY+com.way
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:514:13-518:29
+	android:priority
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:514:28-51
+action#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:515:17-93
+	android:name
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:515:25-91
+intent-filter#android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:519:13-522:29
+action#android.intent.action.USER_PRESENT
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:520:17-76
+	android:name
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:520:25-74
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:521:17-78
+	android:name
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:521:25-76
+intent-filter#android.intent.action.PACKAGE_ADDED+android.intent.action.PACKAGE_REMOVED
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:524:13-529:29
+action#android.intent.action.PACKAGE_ADDED
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:525:17-77
+	android:name
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:525:25-75
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:526:17-79
+	android:name
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:526:25-77
+activity#cn.jpush.android.ui.PushActivity
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:532:9-542:20
 	android:exported
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:514:13-37
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:535:13-37
+	android:configChanges
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:534:13-63
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:512:13-68
-receiver#cn.jpush.android.service.AlarmReceiver
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:517:9-74
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:533:13-60
+intent-filter#android.intent.category.DEFAULT+cn.jpush.android.ui.PushActivity+com.way
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:536:13-541:29
+action#cn.jpush.android.ui.PushActivity
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:537:17-74
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:517:19-72
-receiver#com.way.tabui.commonmodule.JPushReceiver
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:520:9-540:20
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:537:25-72
+service#cn.jpush.android.service.DownloadService
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:544:9-548:19
 	android:enabled
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:522:13-35
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:546:13-35
+	android:exported
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:547:13-37
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:521:13-68
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:545:13-68
+receiver#cn.jpush.android.service.AlarmReceiver
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:550:9-74
+	android:name
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:550:19-72
+receiver#com.way.tabui.commonmodule.JPushReceiver
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:553:9-573:20
+	android:enabled
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:555:13-35
+	android:name
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:554:13-68
 intent-filter#cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK+cn.jpush.android.intent.CONNECTION+cn.jpush.android.intent.MESSAGE_RECEIVED+cn.jpush.android.intent.NOTIFICATION_OPENED+cn.jpush.android.intent.NOTIFICATION_RECEIVED+cn.jpush.android.intent.REGISTRATION+com.way
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:523:13-539:29
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:556:13-572:29
 action#cn.jpush.android.intent.REGISTRATION
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:526:17-78
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:559:17-78
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:526:25-76
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:559:25-76
 action#cn.jpush.android.intent.MESSAGE_RECEIVED
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:528:17-82
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:561:17-82
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:528:25-80
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:561:25-80
 action#cn.jpush.android.intent.NOTIFICATION_RECEIVED
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:530:17-87
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:563:17-87
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:530:25-85
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:563:25-85
 action#cn.jpush.android.intent.NOTIFICATION_OPENED
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:532:17-85
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:565:17-85
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:532:25-83
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:565:25-83
 action#cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:534:17-90
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:567:17-90
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:534:25-88
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:567:25-88
 action#cn.jpush.android.intent.CONNECTION
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:536:17-76
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:569:17-76
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:536:25-74
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:569:25-74
 meta-data#JPUSH_CHANNEL
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:548:9-550:48
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:581:9-583:48
 	android:value
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:550:13-46
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:583:13-46
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:549:13-41
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:582:13-41
 meta-data#JPUSH_APPKEY
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:552:9-554:55
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:585:9-587:55
 	android:value
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:554:13-53
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:587:13-53
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:553:13-40
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:586:13-40
 receiver#com.baidu.android.pushservice.PushServiceReceiver
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:561:9-575:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:594:9-608:20
 	android:process
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:563:13-44
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:596:13-44
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:562:13-77
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:595:13-77
 intent-filter#android.intent.action.ACTION_POWER_CONNECTED+android.intent.action.ACTION_POWER_DISCONNECTED+android.intent.action.BOOT_COMPLETED+android.intent.action.MEDIA_MOUNTED+android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE+com.baidu.android.pushservice.action.media.CLICK+com.baidu.android.pushservice.action.notification.SHOW
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:564:13-574:29
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:597:13-607:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:565:17-78
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:598:17-78
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:565:25-76
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:598:25-76
 action#com.baidu.android.pushservice.action.notification.SHOW
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:567:17-96
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:600:17-96
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:567:25-94
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:600:25-94
 action#com.baidu.android.pushservice.action.media.CLICK
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:568:17-90
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:601:17-90
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:568:25-88
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:601:25-88
 action#android.intent.action.MEDIA_MOUNTED
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:570:17-77
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:603:17-77
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:570:25-75
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:603:25-75
 action#android.intent.action.ACTION_POWER_CONNECTED
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:572:17-86
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:605:17-86
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:572:25-84
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:605:25-84
 action#android.intent.action.ACTION_POWER_DISCONNECTED
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:573:17-89
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:606:17-89
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:573:25-87
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:606:25-87
 receiver#com.baidu.android.pushservice.RegistrationReceiver
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:577:9-589:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:610:9-622:20
 	android:process
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:579:13-44
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:612:13-44
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:578:13-78
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:611:13-78
 intent-filter#com.baidu.android.pushservice.action.BIND_SYNC+com.baidu.android.pushservice.action.METHOD
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:580:13-583:29
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:613:13-616:29
 action#com.baidu.android.pushservice.action.METHOD
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:581:17-85
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:614:17-85
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:581:25-83
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:614:25-83
 action#com.baidu.android.pushservice.action.BIND_SYNC
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:582:17-88
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:615:17-88
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:582:25-86
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:615:25-86
 intent-filter#android.intent.action.PACKAGE_REMOVED
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:584:13-588:29
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:617:13-621:29
 service#com.baidu.android.pushservice.PushService
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:591:9-598:19
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:624:9-631:19
 	android:process
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:594:13-44
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:627:13-44
 	android:exported
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:593:13-36
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:626:13-36
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:592:13-69
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:625:13-69
 intent-filter#com.baidu.android.pushservice.action.PUSH_SERVICE
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:595:13-597:29
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:628:13-630:29
 action#com.baidu.android.pushservice.action.PUSH_SERVICE
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:596:17-91
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:629:17-91
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:596:25-89
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:629:25-89
 service#com.baidu.android.pushservice.CommandService
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:600:9-602:38
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:633:9-635:38
 	android:exported
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:602:13-36
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:635:13-36
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:601:13-72
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:634:13-72
 receiver#com.way.tabui.commonmodule.BaiDuPushReceiver
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:607:9-617:20
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:640:9-650:20
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:607:19-78
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:640:19-78
 intent-filter#com.baidu.android.pushservice.action.MESSAGE+com.baidu.android.pushservice.action.RECEIVE+com.baidu.android.pushservice.action.notification.CLICK
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:608:13-616:29
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:641:13-649:29
 action#com.baidu.android.pushservice.action.MESSAGE
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:611:17-86
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:644:17-86
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:611:25-84
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:644:25-84
 action#com.baidu.android.pushservice.action.RECEIVE
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:613:17-86
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:646:17-86
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:613:25-84
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:646:25-84
 action#com.baidu.android.pushservice.action.notification.CLICK
-ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:615:17-97
+ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:648:17-97
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:615:25-95
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:648:25-95
 meta-data#android.support.VERSION
 ADDED from [com.android.support:support-v4:26.0.0-alpha1] E:\jaaspro\SmartCommunity\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\AndroidManifest.xml:25:5-27:41
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] E:\jaaspro\SmartCommunity\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\AndroidManifest.xml:25:5-27:41

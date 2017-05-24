@@ -4,8 +4,6 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -20,13 +18,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
-import com.way.adapter.DatabaseAdapter;
-import com.way.adapter.DatebaseHelper;
 import com.way.adapter.SmartOCAdapter;
 import com.way.tabui.controlmodule.GosControlModuleBaseActivity;
 import com.way.tabui.gokit.R;
 import com.way.tabui.settingsmodule.GosSettiingsActivity;
-import com.way.util.GizMetaData;
 import com.way.util.Gizinfo;
 
 import org.json.JSONException;
@@ -57,9 +52,7 @@ public class SmartOCActivity extends GosControlModuleBaseActivity {
 	protected static final int CLOSE = 0;
 	private TextView tv_nodevice;
 	private ListView smart_oc_listview;
-	private DatabaseAdapter dbAdapter;
 	private SmartOCAdapter adapter;
-	private DatebaseHelper dbHelper;
 	ArrayList<Gizinfo> giz = new ArrayList<Gizinfo>();
 	private String MacAddress, name, address;
 
@@ -68,20 +61,22 @@ public class SmartOCActivity extends GosControlModuleBaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_smart_oc);
 		initDevice();
-		dbAdapter = new DatabaseAdapter(this);
-		dbHelper = new DatebaseHelper(this);
 		MacAddress = device.getMacAddress();
 		setActionBar(true, true, "灯光/插座/开关");
 		setProgressDialog();
 		initView();
+      //  initdata();
+        initList();
 	}
 
 	@Override
 	protected void onResume() {
 		// TODO Auto-generated method stub
-
-		initdata();
-		initList();
+        if((adapter.setDate(MacAddress))==null){
+            tv_nodevice.setVisibility(View.VISIBLE);
+        }else {
+            tv_nodevice.setVisibility(View.GONE);
+        }
 		initevent();
 		super.onResume();
 	}
@@ -89,17 +84,15 @@ public class SmartOCActivity extends GosControlModuleBaseActivity {
 	@Override
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
-
 		super.onDestroy();
 	}
 
 	private void initDevice() {
 		Intent intent = getIntent();
 		device = (GizWifiDevice) intent.getParcelableExtra("GizWifiDevice");
-
 		deviceStatu = new HashMap<String, Object>();
-
-	}
+       Log.i("device", "initDevice:----> "+device.getMacAddress());
+    }
 
 	private void initView() {
 		smart_oc_listview = (ListView) findViewById(R.id.smart_oc_listview);
@@ -119,21 +112,24 @@ public class SmartOCActivity extends GosControlModuleBaseActivity {
 						SmartOCActivity.this);
 				builder.setTitle("请选择操作");
 				String[] items = { "删除", "修改" };
-				gizid = giz.get(position).getId();
-				name = giz.get(position).getName();
-				address = giz.get(position).getAddress();
+				gizid = adapter.getmList().get(position).getId();
+				name = adapter.getmList().get(position).getName();
+				address = adapter.getmList().get(position).getAddress();
 				builder.setItems(items, new OnClickListener() {
-
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 						// TODO Auto-generated method stub
 						switch (which) {
 						case 0:
-							dbAdapter.delete(gizid);
+                            if((adapter.deleteDate(gizid).setDate(MacAddress))==null){
+                                    tv_nodevice.setVisibility(View.VISIBLE);
+                            }else {
+                                tv_nodevice.setVisibility(View.GONE);
+                            }
 							Toast.makeText(getApplicationContext(), "删除完毕",
 									Toast.LENGTH_SHORT).show();
-							initdata();
-							initList();
+//							initdata();
+//							initList();
 							break;
 						case 1:
 							if (!checkNetwork(SmartOCActivity.this)) {
@@ -165,32 +161,31 @@ public class SmartOCActivity extends GosControlModuleBaseActivity {
 		});
 
 	}
-
-	private void initdata() {
-		progressDialog.setMessage("读取数据中...");
-		progressDialog.show();
-		SQLiteDatabase db = dbHelper.getWritableDatabase();
-		String whereClause = GizMetaData.GizTable.GIZ_BINDGIZ + "=?";
-		String[] whereArgs = { MacAddress };
-		String[] columns = { GizMetaData.GizTable.GIZ_ID,
-				GizMetaData.GizTable.GIZ_NAME,
-				GizMetaData.GizTable.GIZ_ADDRESS,
-				GizMetaData.GizTable.GIZ_BINDGIZ,
-				GizMetaData.GizTable.GIZ_USERID, GizMetaData.GizTable.GIZ_FLAG };
-		// 参数说明(是否去除重复记录,表明,要查询的列，查询条件，查询条件的值，分组条件，分组条件的值，排序，排序条件)
-		Cursor c = db.query(true, GizMetaData.GizTable.TABLE_NAME, columns,
-				whereClause, whereArgs, null, null, null, null);
-		if (c.getCount() == 0) {
-			tv_nodevice.setVisibility(View.VISIBLE);
-		} else {
-			tv_nodevice.setVisibility(View.GONE);
-		}
-		c.close();
-		db.close();
-		giz = dbAdapter.findbybindgiz(MacAddress);
-		// Toast.makeText(getApplicationContext(), giz.get(0).getName(),
-		// Toast.LENGTH_SHORT).show();
-	}
+//	private void initdata() {
+//		progressDialog.setMessage("读取数据中...");
+//		progressDialog.show();
+//		SQLiteDatabase db = dbHelper.getWritableDatabase();
+//		String whereClause = GizMetaData.GizTable.GIZ_BINDGIZ + "=?";
+//		String[] whereArgs = { MacAddress };
+//		String[] columns = { GizMetaData.GizTable.GIZ_ID,
+//				GizMetaData.GizTable.GIZ_NAME,
+//				GizMetaData.GizTable.GIZ_ADDRESS,
+//				GizMetaData.GizTable.GIZ_BINDGIZ,
+//				GizMetaData.GizTable.GIZ_USERID, GizMetaData.GizTable.GIZ_FLAG };
+//		// 参数说明(是否去除重复记录,表明,要查询的列，查询条件，查询条件的值，分组条件，分组条件的值，排序，排序条件)
+//		Cursor c = db.query(true, GizMetaData.GizTable.TABLE_NAME, columns,
+//				whereClause, whereArgs, null, null, null, null);
+//		if (c.getCount() == 0) {
+//			tv_nodevice.setVisibility(View.VISIBLE);
+//		} else {
+//			tv_nodevice.setVisibility(View.GONE);
+//		}
+//		c.close();
+//		db.close();
+////		giz = dbAdapter.findbybindgiz(MacAddress);
+//		// Toast.makeText(getApplicationContext(), giz.get(0).getName(),
+//		// Toast.LENGTH_SHORT).show();
+//	}
 
 	Gizinfo gizinfo;
 	
@@ -201,7 +196,7 @@ public class SmartOCActivity extends GosControlModuleBaseActivity {
 			switch (msg.what){
 			case OPEN:
 				try {
-					sendJson(KEY_Sendcom, Integer.parseInt(giz
+					sendJson(KEY_Sendcom, Integer.parseInt(adapter.getmList()
 							.get(position).getAddress()));
 				} catch (NumberFormatException e) {
 					// TODO Auto-generated catch block
@@ -215,7 +210,7 @@ public class SmartOCActivity extends GosControlModuleBaseActivity {
 				break;
 			case CLOSE:
 				try {
-					sendJson(KEY_Sendcom, Integer.parseInt(giz
+					sendJson(KEY_Sendcom, Integer.parseInt(adapter.getmList()
 							.get(position).getAddress()) + 1);
 				} catch (NumberFormatException e) {
 					// TODO Auto-generated catch block
@@ -233,11 +228,11 @@ public class SmartOCActivity extends GosControlModuleBaseActivity {
 	};
 
 	private void initList() {
-		adapter = new SmartOCAdapter(SmartOCActivity.this, giz);
-		adapter.setHandler(handler);
+//		adapter = new SmartOCAdapter(SmartOCActivity.this, giz);
+//		adapter.setHandler(handler);
+        adapter=new SmartOCAdapter(handler,this);
 		smart_oc_listview.setAdapter(adapter);
 		progressDialog.cancel();
-
 	}
 	
 	

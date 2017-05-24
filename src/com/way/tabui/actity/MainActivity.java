@@ -410,7 +410,6 @@ public class MainActivity extends GosControlModuleBaseActivity implements
                     break;
             }
 
-
         }
     };
 

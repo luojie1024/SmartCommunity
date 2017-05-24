@@ -616,7 +616,7 @@ public class SampleFragment extends Fragment {
 	private void smart_oc() {
 		if (!getofisoffline()) {
 			Intent intent = new Intent(context, SmartOCActivity.class);
-			intent.putExtra("ismain", true);
+			//intent.putExtra("ismain", true);
 			Bundle bundle = new Bundle();
 			bundle.putParcelable("GizWifiDevice",
 					(GizWifiDevice) ((MainActivity) getActivity()).device);

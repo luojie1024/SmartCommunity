@@ -1240,6 +1240,7 @@ UID：{4}"</string>
     <string name="title_activity_air_mate">配对设备</string>
     <string name="title_activity_smart_curtain">智能窗帘</string>
     <string name="title_activity_smart_door">智能开门</string>
+    <string name="title_activity_showmo_demo">监控摄像</string>
 
 
     <!-- 图片浏览 -->

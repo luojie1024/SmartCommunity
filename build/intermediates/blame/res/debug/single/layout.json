@@ -16,6 +16,10 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_config_failed.xml"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\header_shop_all.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\header_shop_all.xml"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_air_mate.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_air_mate.xml"
     },
@@ -44,16 +48,16 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_chakandatu.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main2.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_main2.xml"
-    },
-    {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_colorlist.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_colorlist.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\second_trade_all_list_item.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\second_trade_all_list_item.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_all_message.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_all_message.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_colorlist.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_colorlist.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_all_mes.xml",
@@ -194,6 +198,10 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\main_personal_page.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\main_personal_page.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_play_showmo.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_play_showmo.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_jiaofeifenlei.xml",
@@ -358,6 +366,10 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_baoxiuguanli.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\list_item_baoxiuguanli.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_second_trade_all.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_second_trade_all.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_inform_item.xml",
