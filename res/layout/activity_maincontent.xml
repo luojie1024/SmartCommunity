@@ -19,23 +19,49 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_line_gray"
+            />
         <Button
             android:id="@+id/bt_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="设备列表  GO TO >>"
+            android:padding="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
             android:textSize="16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_line_gray"
+            />
         <Button
             android:id="@+id/bt_binder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="绑定设备  GO TO >>"
+            android:padding="25dp"
+            android:background="@color/white"
             android:textSize="16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_line_gray"
+            />
         <Button
             android:id="@+id/bt_account"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="账号管理  GO TO >>"
+            android:visibility="gone"
             android:textSize="16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_line_gray"
+            />
     </LinearLayout>
 </LinearLayout>

@@ -28,6 +28,7 @@ import com.showmo.demo.util.spUtil;
 import com.way.adapter.SmartOCAdapter;
 import com.way.tabui.commonmodule.GosBaseActivity;
 import com.way.tabui.gokit.R;
+import com.way.util.Gizinfo;
 import com.xmcamera.core.model.XmErrInfo;
 import com.xmcamera.core.model.XmStreamMode;
 import com.xmcamera.core.sys.XmSystem;
@@ -45,6 +46,7 @@ import com.xmcamera.core.view.decoderView.XmGlView;
 
 import org.json.JSONException;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -102,6 +104,8 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
     private boolean isshow = false;
     private ScrollView scrollView;
     private TextView tv_show;
+    private TextView tx_oc;
+    private TextView tx_curtain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -151,6 +155,11 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
         SLrecordclose = (Button) findViewById(R.id.SLrecordclose);
         ll_show = (LinearLayout) findViewById(R.id.ll_show);
         tv_show = (TextView) findViewById(R.id.tv_show);
+
+        tx_oc = (TextView) findViewById(R.id.tx_oc);
+        tx_curtain = (TextView) findViewById(R.id.tx_curtain);
+        tx_curtain.setVisibility(View.GONE);
+        tx_oc.setVisibility(View.GONE);
 
         ll_curtain = (LinearLayout) findViewById(R.id.ll_curtain);
         ll_curtain.setVisibility(View.GONE);
@@ -215,6 +224,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
 
                 try {
                     sendJson(KEY_Sendair, con_mes[1]);
+
            //         btn_stop.setTextColor(getResources().getColor(R.color.golden));
                 } catch (JSONException e) {
                     // TODO Auto-generated catch block
@@ -495,6 +505,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
         @Override
         public void handleMessage(Message msg) {
             int position;
+            ArrayList<Gizinfo> gizinfos;
             switch (msg.what) {
                 case 0x123:
                     Toast.makeText(PlayActivity.this, "删除成功！", Toast.LENGTH_LONG)
@@ -539,9 +550,13 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                     break;
                 case OPEN:
                     position = msg.arg1;
+                    gizinfos = adapter.getmList();
                     try {
-                        sendJson(KEY_Sendcom, Integer.parseInt(adapter.getmList()
+                        sendJson(KEY_Sendcom, Integer.parseInt(gizinfos
                                 .get(position).getAddress()));
+                        gizinfos.get(position).setFlag(1);
+                        adapter.updateList(gizinfos.get(position));
+
                     } catch (NumberFormatException e) {
                         // TODO Auto-generated catch block
                         Toast.makeText(getApplicationContext(), "指令发送失败",
@@ -554,10 +569,12 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                     break;
                 case CLOSE:
                     position = msg.arg1;
-                    ;
+                    ;gizinfos= adapter.getmList();
                     try {
-                        sendJson(KEY_Sendcom, Integer.parseInt(adapter.getmList()
+                        sendJson(KEY_Sendcom, Integer.parseInt(gizinfos
                                 .get(position).getAddress()) + 1);
+                        gizinfos.get(position).setFlag(0);
+                        adapter.updateList(gizinfos.get(position));
                     } catch (NumberFormatException e) {
                         // TODO Auto-generated catch block
                         Toast.makeText(getApplicationContext(), "指令发送失败",
@@ -702,12 +719,19 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                 if (isshow) {
                     isshow = false;
                     tv_show.setText("-打开实时演示板-");
+                    if (adapter.getmList().size()!=0)
+                    tx_curtain.setVisibility(View.GONE);
+                    tx_oc.setVisibility(View.GONE);
                     ll_oc_list.setVisibility(View.GONE);
                     ll_curtain.setVisibility(View.GONE);
                     //scrollView.scrollTo(50,0);
                 } else {
                     isshow = true;
                     tv_show.setText("-关闭实时演示板-");
+                    tx_curtain.setVisibility(View.VISIBLE);
+                    if (adapter.getmList().size()!=0){
+                    tx_oc.setVisibility(View.VISIBLE);
+                    }
                     ll_oc_list.setVisibility(View.VISIBLE);
                     ll_curtain.setVisibility(View.VISIBLE);
                    // scrollView.scrollTo(50,0);

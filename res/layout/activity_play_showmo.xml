@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+              android:background="@color/line_gray"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
@@ -32,18 +33,40 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_line_gray"
+                />
     <Button
         android:id="@+id/play"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="播放" />
+        android:text="播放"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="@color/white"
+        android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_line_gray"
+                />
 
     <Button
         android:id="@+id/stop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="@color/white"
+        android:gravity="center"
         android:text="停止播放" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_line_gray"
+                />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,53 +77,136 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:background="@color/white"
+            android:gravity="center"
             android:text="高清模式" />
         <Button
             android:id="@+id/SD"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:background="@color/white"
+            android:gravity="center"
             android:text="标清模式" />
         <Button
             android:id="@+id/AT"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:background="@color/white"
+            android:gravity="center"
             android:text="自动模式" />
     </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_line_gray"
+                />
     <Button
         android:id="@+id/capture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="@color/white"
+        android:gravity="center"
         android:text="截图" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_line_gray"
+                />
 
     <Button
         android:id="@+id/Record"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="@color/white"
+        android:gravity="center"
         android:text="开始录像" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_line_gray"
+                />
     <Button
         android:id="@+id/SLrecord"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="@color/white"
+        android:gravity="center"
         android:text="开启可视对讲" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_line_gray"
+                />
     <Button
         android:id="@+id/SLrecordclose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="@color/white"
+        android:gravity="center"
         android:text="关闭可视对讲" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_line_gray"
+                />
     <Button
         android:id="@+id/StopRecord"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="@color/white"
+        android:gravity="center"
         android:text="结束录像" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_line_gray"
+                />
     <Button
         android:id="@+id/btn_rebinder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="@color/white"
+        android:gravity="center"
         android:text="删除设备"
         />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_line_gray"
+                />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/tx_oc"
+                android:text="灯光\\开关\\插座"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center"
+                />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -110,6 +216,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/ll_oc_list"
+                android:background="@color/white"
                 android:orientation="vertical">
                 <ListView
                     android:layout_width="match_parent"
@@ -118,6 +225,21 @@
                     />
             </LinearLayout>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_line_gray"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/tx_curtain"
+                android:text="窗帘电机"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center"
+                />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -133,24 +255,44 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:id="@+id/btn_open"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:background="@color/white"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center"
                     android:text="开启"/>
                 <Button
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:id="@+id/btn_stop"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:background="@color/white"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center"
                     android:text="停止"/>
                 <Button
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:id="@+id/btn_redic"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:layout_marginRight="1dp"
                     android:text="换向"/>
                 <Button
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:id="@+id/btn_colse"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+
+                    android:background="@color/white"
+                    android:gravity="center"
                     android:text="关闭"/>
             </LinearLayout>
             <TextView
@@ -170,6 +312,7 @@
                     android:paddingTop="20dp"
                     android:paddingBottom="20dp"
                     android:gravity="center"
+                    android:background="@color/white"
                     android:text="-打开实时演示板-"
                     android:textSize="25sp"/>
             </LinearLayout>

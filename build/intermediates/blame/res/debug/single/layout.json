@@ -52,12 +52,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\second_trade_all_list_item.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_all_message.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_all_message.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_colorlist.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_colorlist.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_all_message.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_all_message.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_all_mes.xml",

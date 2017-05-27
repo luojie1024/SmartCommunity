@@ -192,12 +192,17 @@ public class SmartOCActivity extends GosControlModuleBaseActivity {
 	Handler handler = new Handler(){
 		public void handleMessage(android.os.Message msg) {
 			super.handleMessage(msg);
-			int position =msg.arg1;;
+			int position =msg.arg1;
+            ArrayList<Gizinfo> mlist =adapter.getmList();
 			switch (msg.what){
 			case OPEN:
 				try {
-					sendJson(KEY_Sendcom, Integer.parseInt(adapter.getmList()
+
+					sendJson(KEY_Sendcom, Integer.parseInt(mlist
 							.get(position).getAddress()));
+                    mlist.get(position).setFlag(1);
+                    adapter.updateList(mlist.get(position));
+
 				} catch (NumberFormatException e) {
 					// TODO Auto-generated catch block
 					Toast.makeText(getApplicationContext(), "指令发送失败",
@@ -212,6 +217,8 @@ public class SmartOCActivity extends GosControlModuleBaseActivity {
 				try {
 					sendJson(KEY_Sendcom, Integer.parseInt(adapter.getmList()
 							.get(position).getAddress()) + 1);
+                    mlist.get(position).setFlag(0);
+                    adapter.updateList(mlist.get(position));
 				} catch (NumberFormatException e) {
 					// TODO Auto-generated catch block
 					Toast.makeText(getApplicationContext(), "指令发送失败",
@@ -282,21 +289,6 @@ public class SmartOCActivity extends GosControlModuleBaseActivity {
 			startActivity(intent);
 			break;
 		case R.id.action_change_user:
-			//
-			// if (item.getTitle() == getText(R.string.login)) {
-			// logoutToClean();
-			// break;
-			// }
-			// new
-			// AlertDialog.Builder(this).setTitle(R.string.prompt).setMessage(R.string.cancel_logout)
-			// .setPositiveButton(R.string.besure, new
-			// DialogInterface.OnClickListener() {
-			//
-			// @Override
-			// public void onClick(DialogInterface dialog, int which) {
-			// logoutToClean();
-			// }
-			// }).setNegativeButton(R.string.no, null).show();
 			break;
 		case R.id.action_addDevice:
 			if (!checkNetwork(SmartOCActivity.this)) {

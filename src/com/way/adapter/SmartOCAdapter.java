@@ -69,6 +69,14 @@ public class SmartOCAdapter extends BaseAdapter {
             return null;
         return this;
     }
+    public SmartOCAdapter updateList(Gizinfo gizinfo){
+        if(gizinfo!=null){
+            dbAdapter.update(gizinfo);
+            return this;
+        }
+        return null;
+    }
+
     public ArrayList<Gizinfo> getmList(){
         return mList;
     }
@@ -114,9 +122,12 @@ public class SmartOCAdapter extends BaseAdapter {
 		} else {
 			viewHolder = (ViewHolder) convertView.getTag();
 		}
-		viewHolder.text_id.setText(" "+mList.get(position).getId());
+		viewHolder.text_id.setText(" "+(position+1));
 		viewHolder.text_name.setText(mList.get(position).getName());
+        if(mList.get(position).getFlag()==0)
 		viewHolder.btn_tog.setChecked(false);
+        else
+            viewHolder.btn_tog.setChecked(true);
 		viewHolder.btn_tog.setTag(position);
 		return convertView;
 	}

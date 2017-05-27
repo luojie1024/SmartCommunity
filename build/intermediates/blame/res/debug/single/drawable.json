@@ -4,12 +4,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\rounded_linearlayout_right_unpress.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_textview_login_red.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\rounded_textview_login_red.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\alert_top_shape.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\alert_top_shape.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_textview_login_red.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\rounded_textview_login_red.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_circular.xml",
