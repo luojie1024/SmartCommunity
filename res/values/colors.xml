@@ -3,6 +3,7 @@
     <color name="transparent">#00000000</color>
     <color name="red">#ffd84545</color>
     <color name="text_red">#ffff0000</color>
+    <color name="text_black">#000000</color>
     <color name="text_green">#ff32c02b</color>
     <color name="normal">#ff474747</color>
     <color name="small">#ff7c7c7c</color>
@@ -171,4 +172,14 @@
     <color name="plugin_camera_black">#000000</color>
     <color name="albumback">#E1E0DE</color>
     <color name="style_red">#ff4c41</color>
+
+    <!-- 商店列表的颜色 -->
+    <!-- A dark Holo shade of orange -->
+    <color name="holo_orange_dark">#ffff8800</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <!-- A light Holo shade of green -->
+    <color name="holo_green_light">#ff99cc00</color>
+    <!-- A light Holo shade of red -->
+    <color name="holo_red_light">#ffff4444</color>
 </resources>

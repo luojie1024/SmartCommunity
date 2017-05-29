@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ccDCDCDC"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="设置取餐时间"
+            android:textColor="@color/theme_blue"
+            android:textSize="16sp" />
+        
+        <Button 
+            android:id="@+id/btn_dlg_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_margin="3dp"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+            android:background="@color/theme_blue"
+			android:textColor="#FFFFFF"
+            android:text="确定" />
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/theme_blue"/>
+
+    <TimePicker
+        android:id="@+id/tp_dlg_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:soundEffectsEnabled="true" />
+
+</LinearLayout>

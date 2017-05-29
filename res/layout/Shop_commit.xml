@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_commit_son_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp" >
+
+    <TextView
+        android:id="@+id/tv_commit_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:text="stonekity:"
+        android:textColor="#2F4F4F"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_commit_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="米线很不错，味道真棒。价格还比较实惠."
+        android:textColor="#696969"
+        android:textSize="12sp" />
+
+</LinearLayout>

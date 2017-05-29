@@ -22,6 +22,16 @@ public class Shop extends BmobObject implements Serializable {
           private String phone;		// 联系电话
           private String info; 		// 简介
           private String sale; 		// 促销信息
+
+          public BmobFile getPicShop() {
+                    return picShop;
+          }
+
+          public void setPicShop(BmobFile picShop) {
+                    this.picShop = picShop;
+          }
+
+          @SuppressWarnings("unused")
           private BmobFile picShop; 	// 商店主图
 
           public String getUserID() {

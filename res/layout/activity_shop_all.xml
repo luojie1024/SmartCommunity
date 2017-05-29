@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_shop_all"
+        layout="@layout/header_shop_all" />
+    
+    <!-- Defalut layout when the data is empty -->
+
+    <TextView
+        android:id="@+id/ll_msg_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="30dp"
+        android:drawableTop="@drawable/ic_empty"
+        android:gravity="center_horizontal"
+        android:text="没有更多数据了哦，请检查网络并尝试刷新"
+        android:textColor="#C0C0C0"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/lv_shop_all_swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="always" >
+
+        <ListView
+            android:id="@+id/lv_shop_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="@null"
+            android:smoothScrollbar="true" >
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

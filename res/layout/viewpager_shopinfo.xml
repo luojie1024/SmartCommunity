@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+>
+
+    <!-- 店铺展示背景图 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/theme_blue"
+            android:contentDescription="商店信息背景图"
+            android:fitsSystemWindows="true"/>
+
+        <!-- 店名 -->
+
+        <TextView
+            android:id="@+id/tv_shop_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="过桥米线"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:rating="1.5"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:background="#bb000000"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <!-- 店铺信息 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#F5F5F5"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_shop_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="位置：湖工大-西区-二楼"
+                        android:textColor="#808080"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_shop_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="电话：13308647200"
+                        android:textColor="#808080"
+                        android:textSize="12sp"
+                        android:typeface="monospace"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_call"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_phone3"/>
+            </RelativeLayout>
+
+            <!-- 店铺简介 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="店铺简介"
+                android:textColor="#2F4F4F"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#F5F5F5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_shop_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.5"
+                    android:padding="10dp"
+                    android:text="暂无"
+                    android:textColor="#696969"
+                    android:textSize="14sp"
+                    android:typeface="monospace"/>
+            </LinearLayout>
+
+
+            <!-- 促销信息 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="最新公告"
+                android:textColor="#2F4F4F"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#F5F5F5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_shop_promotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.5"
+                    android:padding="10dp"
+                    android:text="   本店最近新推出多种美食，米线A情侣版--￥10，欢迎大家一起来品尝。有免费免单的机会哦"
+                    android:textColor="#696969"
+                    android:textSize="14sp"
+                    android:typeface="monospace"/>
+            </LinearLayout>
+
+            <!-- 历史评价记录 -->
+
+            <TextView
+                android:id="@+id/tv_commit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="历史评价  (2)"
+                android:textColor="#2F4F4F"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_commit_parent_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#F5F5F5"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_commit_son_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_commit_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="stonekity:"
+                        android:textColor="#2F4F4F"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_commit_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="米线很不错，味道真棒。价格还比较实惠，这个学期我几乎天天吃米线，真心觉得是美好的回忆"
+                        android:textColor="#696969"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="猫猫:"
+                        android:textColor="#2F4F4F"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="很好吃的哦, 希望推出更多的新品"
+                        android:textColor="#696969"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="丫丫:"
+                        android:textColor="#2F4F4F"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="天天吃米线, 相信自己总有一天也会变成米线, (*^__^*) 嘻嘻……"
+                        android:textColor="#696969"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 发表评论 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_commit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="#F5F5F5"
+                    android:hint="亲，(*^__^*)"
+                    android:padding="8dp"
+                    android:textColor="#2F4F4F"/>
+
+                <Button
+                    android:id="@+id/btn_commit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="3"
+                    android:background="@color/theme_blue"
+                    android:text="评论"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

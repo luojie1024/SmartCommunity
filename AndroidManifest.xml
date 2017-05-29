@@ -107,8 +107,6 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <activity android:name="com.way.MainActivity">
-        </activity>
         <activity
             android:name="com.way.tabui.actity.MainActivity"
             android:label="@string/app_name"
@@ -118,6 +116,7 @@
         <activity
             android:name="com.way.tabui.usermodule.GosUserLoginActivity"
             android:theme="@android:style/Theme.Holo.Light">
+            <!--TODO-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -463,6 +462,18 @@
         <!-- TODO 生活服务 -->
         <activity android:name="com.LifeServices.activity.SecondTradeActivity"
                   android:label="二手物品"
+                  android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity android:name="com.LifeServices.activity.OrderActivity"
+                  android:label="详细信息"
+                  android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity android:name="com.LifeServices.activity.ShopAllActivity"
+                  android:label="商店信息"
+                  android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity android:name="com.LifeServices.activity.ShopItemActivity"
+                  android:label="商品信息"
                   android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <!-- 生活服务 -->
