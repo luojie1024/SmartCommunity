@@ -32,7 +32,6 @@ import android.widget.Toast;
 
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
 import com.gizwits.gizwifisdk.api.GizWifiSDK;
-import com.gizwits.gizwifisdk.enumration.GizPushType;
 import com.gizwits.gizwifisdk.enumration.GizWifiDeviceNetStatus;
 import com.gizwits.gizwifisdk.enumration.GizWifiErrorCode;
 import com.gizwits.gizwifisdk.listener.GizWifiDeviceListener;
@@ -58,7 +57,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.ConcurrentHashMap;
 
 import cn.jpush.android.api.JPushInterface;
 import zxing.CaptureActivity;
@@ -489,27 +487,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		// TODO GosMessageHandler.getSingleInstance().SetHandler(null);
 		super.onPause();
 	}
-	
-	
-	private void initsdk(){
-		try {
-			GosConstant.App_ID=spf.getString("appid", "a61ed92da3764cca848f3dbab8481149");
-			GosConstant.App_Screct=spf.getString("appscrect", "57c13265403549ac83d828e50639c37a");
-			GosConstant.device_ProductKey=spf.getString("prroductkey", "330b43e5cd9b4aa9a03fc97c5f6f52a4");
-			// 启动SDK
-//			GizWifiSDK.sharedInstance().startWithAppID(getApplicationContext(), GosConstant.App_ID);
-            GizWifiSDK.sharedInstance().startWithAppID(getApplicationContext(),GosConstant.App_ID,GosConstant.App_Screct,GosConstant.ProductKeyList,new ConcurrentHashMap<String, String>(0),true);
-			// 只能选择支持其中一种
-			 gosPushManager=new GosPushManager(GizPushType.GizPushJiGuang,this);//极光推送
-		} catch (Exception e) {
-			// TODO: handle exception
-			Toast.makeText(getApplicationContext(), "设备配置错误，请重新配置绑定", Toast.LENGTH_LONG).show();
-			intent = new Intent(GosDeviceListActivity.this, GosSettiingsActivity.class);
-			startActivity(intent);
-			
-		}
-		
-	}
+
 
 	private void initView() {
 		

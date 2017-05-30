@@ -24,7 +24,6 @@ import android.widget.Toast;
 
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
 import com.gizwits.gizwifisdk.api.GizWifiSDK;
-import com.gizwits.gizwifisdk.enumration.GizPushType;
 import com.gizwits.gizwifisdk.enumration.GizThirdAccountType;
 import com.gizwits.gizwifisdk.enumration.GizWifiErrorCode;
 import com.tencent.tauth.IUiListener;
@@ -166,11 +165,11 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// 启动SDK
-		GizWifiSDK.sharedInstance().startWithAppID(getApplicationContext(), GosConstant.App_ID);
-
-		// 只能选择支持其中一种
-		 gosPushManager=new GosPushManager(GizPushType.GizPushJiGuang,this);//极光推送
+//		// 启动SDK
+//		GizWifiSDK.sharedInstance().startWithAppID(getApplicationContext(), GosConstant.App_ID);
+//
+//		// 只能选择支持其中一种
+//		 gosPushManager=new GosPushManager(GizPushType.GizPushJiGuang,this);//极光推送
 		 
 		if (!this.isTaskRoot()) {// 判断此activity是不是任务控件的源Activity，“非”也就是说是被系统重新实例化出来的
 			Intent mainIntent = getIntent();

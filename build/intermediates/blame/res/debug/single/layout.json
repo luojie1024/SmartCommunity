@@ -8,6 +8,10 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_play.xml"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\viewpager_shopinfo.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\viewpager_shopinfo.xml"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_adddev1.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_adddev1.xml"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\header_shop_all.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\header_shop_all.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_shop_all.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_shop_all.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_air_mate.xml",
@@ -52,12 +60,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\second_trade_all_list_item.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_colorlist.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_colorlist.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_all_message.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_all_message.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_colorlist.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_colorlist.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_all_mes.xml",
@@ -76,6 +84,10 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_device_ready.xml"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_select_imageview.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\plugin_camera_select_imageview.xml"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_settings.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_settings.xml"
     },
@@ -86,6 +98,10 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_popupwindows.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\item_popupwindows.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_show_all_photo.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\plugin_camera_show_all_photo.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_adddev2.xml",
@@ -108,8 +124,16 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_register.xml"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\shop_commit.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\shop_commit.xml"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_user_login.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_user_login.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\viewpager_menu.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\viewpager_menu.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_reset.xml",
@@ -132,6 +156,10 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_preview.xml"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_image_file.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\plugin_camera_image_file.xml"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\actvity_gos_device_reset.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\actvity_gos_device_reset.xml"
     },
@@ -146,6 +174,10 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gonggao_detail.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gonggao_detail.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_gallery.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\plugin_camera_gallery.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_gonggao.xml",
@@ -202,6 +234,10 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_play_showmo.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_play_showmo.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_album.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\plugin_camera_album.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_jiaofeifenlei.xml",
@@ -264,8 +300,16 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_jiaofei_fenlei.xml"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_order.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_order.xml"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_air_con_mes.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\item_air_con_mes.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\header_order.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\header_order.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_promail.xml",
@@ -274,6 +318,14 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main6.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_main6.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\shop_all_list_item.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\shop_all_list_item.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_shop_item.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_shop_item.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\play_view_item.xml",
@@ -292,6 +344,10 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\alert_air_con_set_mes.xml"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_no_image_file.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\plugin_camera_no_image_file.xml"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_smart_oc.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_smart_oc.xml"
     },
@@ -306,6 +362,10 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\main_fsystem.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\main_fsystem.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\dlg_order_settime.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\dlg_order_settime.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_forget_password.xml",
@@ -338,6 +398,10 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_choose_device.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_choose_device.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\goods_list_item.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\goods_list_item.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_air_con_brand.xml",
@@ -386,6 +450,10 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_smart.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\listview_smart.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_select_folder.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\plugin_camera_select_folder.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_worker_baoxiu.xml",

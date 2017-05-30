@@ -119,6 +119,10 @@
     <color name="gray5">#666666</color>
     <color name="gray6">#464646</color>
     <color name="gridview_selector_transparent_color">#ff57595b</color>
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_dark">#ffff8800</color>
+    <color name="holo_red_light">#ffff4444</color>
     <color name="hot_resource_title_background">#99000000</color>
     <color name="imagepager_bg">#ff252525</color>
     <color name="imagepager_bg_transparent">#00ffffff</color>
@@ -165,6 +169,7 @@
     <color name="tab_normal_color">#ff333333</color>
     <color name="tab_pressed_color">#ff3289cb</color>
     <color name="tab_text">#ff545963</color>
+    <color name="text_black">#000000</color>
     <color name="text_blue">#298eee</color>
     <color name="text_color">#ff6a6a6a</color>
     <color name="text_default">#ff2c2c2c</color>

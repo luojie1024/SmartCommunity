@@ -4,12 +4,20 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\unlocked_normal.png"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_album_back.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_album_back.png"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_conditionor_windcapacity.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\ic_conditionor_windcapacity.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_conditionor_windcapacity_aoto.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\ic_conditionor_windcapacity_aoto.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_choose_back.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_choose_back.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\xieyi_yidu.png",
@@ -36,6 +44,10 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\btn_mode_humidity_black.png"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_no_pictures.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_no_pictures.png"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_increase_v5_normal.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\btn_increase_v5_normal.png"
     },
@@ -46,6 +58,10 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_pre_v5_pressed.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\btn_pre_v5_pressed.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_del_unfocused.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_del_unfocused.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\back.png",
@@ -60,16 +76,40 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\ic_bg_starry_sky2.jpg"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_preview_pressed.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_preview_pressed.png"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jiaofei_fangzu.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\jiaofei_fangzu.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_filenum.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_filenum.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_cancel_pressed.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_cancel_pressed.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\passport_miui_provision_back_n.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\passport_miui_provision_back_n.png"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_title_bar.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_title_bar.png"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jiaofei_dianfei.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\jiaofei_dianfei.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plubin_camera_del_focused.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plubin_camera_del_focused.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_preview_unselected.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_preview_unselected.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\progress_1.png",
@@ -78,6 +118,10 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_conditionor_windcapacity_middle.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\ic_conditionor_windcapacity_middle.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_choosed.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_choosed.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\fault_tips_box.png",
@@ -112,12 +156,24 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\icon_arrow_1.png"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_send_pressed.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_send_pressed.png"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_winddirect_black.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\btn_winddirect_black.png"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_preview_focused.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_preview_focused.png"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_mode_hot_black.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\btn_mode_hot_black.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_back_btn_pressed.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_back_btn_pressed.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\progress_loading2.png",
@@ -148,6 +204,14 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\btn_next_v5_pressed.png"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_bottom_bar.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_bottom_bar.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_cancel.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_cancel.png"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\controller_jd_btn_power.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\controller_jd_btn_power.png"
     },
@@ -164,6 +228,10 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\ima_bg_starry_sky.jpg"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_send_focused.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_send_focused.png"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jiaofei_wuyefei.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\jiaofei_wuyefei.png"
     },
@@ -176,8 +244,16 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\progress_4.png"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_send_unselected.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_send_unselected.png"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\lunbo_white.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\lunbo_white.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_back_btn.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_back_btn.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_windspread_default.png",

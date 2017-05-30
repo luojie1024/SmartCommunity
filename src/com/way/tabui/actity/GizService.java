@@ -30,12 +30,9 @@ import com.way.tabui.pushmodule.GosPushManager;
 import com.way.util.Alertinfo;
 
 import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class GizService extends Service {
@@ -120,7 +117,8 @@ public class GizService extends Service {
 	protected String humidity;
 	protected Intent data;
 	protected InitThread thread;
-	private HashMap<String, Object> deviceStatu;
+    //HashMap<String, Object>
+	private  ConcurrentHashMap<String, Object> deviceStatu;
 	DatabaseAdapter dbAdapter;
 	private String bindgiz;
 
@@ -186,15 +184,18 @@ public class GizService extends Service {
 	private void initsdk() {
 		spf = getSharedPreferences(GosConstant.SPF_Name, Context.MODE_PRIVATE);
 		try {
-			GosConstant.App_ID = spf.getString("appid",
-					"a61ed92da3764cca848f3dbab8481149");
-			GosConstant.App_Screct = spf.getString("appscrect",
-					"57c13265403549ac83d828e50639c37a");
-			GosConstant.device_ProductKey = spf.getString("prroductkey",
-					"330b43e5cd9b4aa9a03fc97c5f6f52a4");
-			// 启动SDK
-			GizWifiSDK.sharedInstance().startWithAppID(getApplicationContext(),
-					GosConstant.App_ID);
+//			GosConstant.App_ID = spf.getString("appid",
+//					"a61ed92da3764cca848f3dbab8481149");
+//			GosConstant.App_Screct = spf.getString("appscrect",
+//					"57c13265403549ac83d828e50639c37a");
+//			GosConstant.device_ProductKey = spf.getString("prroductkey",
+//					"330b43e5cd9b4aa9a03fc97c5f6f52a4");
+//            GosConstant.device_ProductKey="69353614e549438ead162509abefd243";
+//            GosConstant.App_ID = "84ec3257a927470e97c7d66ff0558dc8";
+//            GosConstant.App_Screct="beaca00e79a546f3b393ffdc81fdef72";
+            // 启动SDK
+            GizWifiSDK.sharedInstance().startWithAppID(getApplicationContext(), GosConstant.App_ID,
+                    GosConstant.App_Screct, null,null, false);
 			// 只能选择支持其中一种
 			gosPushManager = new GosPushManager(GizPushType.GizPushJiGuang,
 					this);// 极光推送
@@ -241,7 +242,7 @@ public class GizService extends Service {
 		
 		device = (GizWifiDevice) intent.getParcelableExtra("GizWifiDevice");
 		Log.i("==", "device:" + device.getMacAddress());
-		deviceStatu = new HashMap<String, Object>();
+		deviceStatu = new ConcurrentHashMap<String,Object>();
 		device.setListener(gizWifiDeviceListener);
 		Log.i("==", "Listener---OK");
 		device.setSubscribe(true);
@@ -287,6 +288,7 @@ public class GizService extends Service {
 
 			case UPDATE_UI:
 				isUpDateUi = true;
+              //  if(deviceStatu.get(KEY_TEMPLATE)!=null)
 				temperature = deviceStatu.get(KEY_TEMPLATE).toString();
 				humidity = String.valueOf(100 - Integer.parseInt(deviceStatu
 						.get(KEY_HUMIDITY).toString()));
@@ -295,7 +297,8 @@ public class GizService extends Service {
 				Date curDate = new Date(System.currentTimeMillis());// 获取当前时间
 				String str = formatter.format(curDate);
 				if(spf.getBoolean("issafe", true)){
-				gasstua = (Boolean) deviceStatu.get(KEY_Gas);
+			//	if(deviceStatu.get(KEY_Gas)!=null)
+                    gasstua =(Boolean) deviceStatu.get(KEY_Gas);
 				if (lastgasstua != gasstua) {
 					lastgasstua = gasstua;
 					if (lastgasstua) {
@@ -367,9 +370,9 @@ public class GizService extends Service {
 				sendbcmes();
 				break;
 			case RESP:
-				String data = msg.obj.toString();
+				//String data = msg.obj.toString();
 				try {
-					showDataInUI(data);
+					showDataInUI(msg.obj);
 				} catch (JSONException e) {
 					e.printStackTrace();
 				}
@@ -498,15 +501,17 @@ public class GizService extends Service {
 	}
 
 	@SuppressWarnings("rawtypes")
-	private void showDataInUI(String data) throws JSONException {
-		Log.i("revjsonn", data);
-		JSONObject receive = new JSONObject(data);
-		Iterator actions = receive.keys();
-		while (actions.hasNext()) {
-			String param = actions.next().toString();
-			Object value = receive.get(param);
-			deviceStatu.put(param, value);
-		}
+	private void showDataInUI(Object data) throws JSONException {
+		//Log.i("revjsonn", data);
+//		JSONObject receive = new JSONObject(data);
+//		Iterator actions = receive.keys();
+//		while (actions.hasNext()) {
+//			String param = actions.next().toString();
+//			Object value = receive.get(param);
+		//	deviceStatu.put(param, value);
+//		}
+        deviceStatu = (ConcurrentHashMap<String, Object>) data;
+
 		Message msg = new Message();
 		msg.obj = data;
 		msg.what = UPDATE_UI;
@@ -516,18 +521,19 @@ public class GizService extends Service {
 	protected void didReceiveData(GizWifiErrorCode result, GizWifiDevice arg1,
 			ConcurrentHashMap<String, Object> dataMap, int arg3) {
 		try {
-			
 		
 		if (result != GizWifiErrorCode.GIZ_SDK_SUCCESS || dataMap.isEmpty()) {
 			return;
 		}
 		if (dataMap.get("data") != null) {
 			Log.i("Apptest", dataMap.get("data").toString());
+//          deviceStatu = (ConcurrentHashMap<String, Object>) dataMap.get("data");
 			Message msg = new Message();
 			msg.obj = dataMap.get("data");
 			msg.what = RESP;
 			handler.sendMessage(msg);
 		}
+            System.out.println("------------>data:"+dataMap.toString());
 
 		if (dataMap.get("alerts") != null) {
 			Message msg = new Message();
@@ -543,17 +549,15 @@ public class GizService extends Service {
 			handler.sendMessage(msg);
 		}
 
-		if (dataMap.get("binary") != null) {
-			
-			byte[] binary = (byte[]) dataMap.get("binary");
-//			notifbulid(bytesToHex(binary), R.drawable.ic_launcher, 0x021,
-//					"网关设备");
-			Log.i("xxxxs", "Binary data:" + bytesToHex(binary));
-		}
-//		else{
-//			notifbulid("binary is null", R.drawable.ic_launcher, 0x021,
-//					"网关设备");
-//		}
+//            if (dataMap.get("binary") != null) {
+//                byte[] binary = (byte[]) dataMap.get("binary");
+////                notifbulid(bytesToHex(binary), R.drawable.ic_launcher, 0x021,
+////                        "网关设备");
+//                Log.i("xxxxs", "Binary data:" + bytesToHex(binary));
+//                System.out.println("------------>Binary data:"+bytesToHex(binary));
+//            }
+
+
 		} catch (Exception e) {
 			// TODO: handle exception
 			notifbulid("接收数据出错...重启APP中...", R.drawable.ic_launcher, 0x020,
@@ -577,8 +581,7 @@ public class GizService extends Service {
 
 	String MCUversion = "null";
 
-	protected void didGetHardwareInfo(GizWifiErrorCode result,
-			GizWifiDevice arg1, ConcurrentHashMap<String, String> hardwareInfo) {
+	protected void didGetHardwareInfo(GizWifiErrorCode result, GizWifiDevice arg1, ConcurrentHashMap<String, String> hardwareInfo) {
 		// Log.i("Apptest", hardwareInfo.toString());
 		StringBuffer sb = new StringBuffer();
 		if (GizWifiErrorCode.GIZ_SDK_SUCCESS == result) {

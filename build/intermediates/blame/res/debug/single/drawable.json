@@ -4,12 +4,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\rounded_linearlayout_right_unpress.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\alert_top_shape.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\alert_top_shape.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_textview_login_red.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\rounded_textview_login_red.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\alert_top_shape.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\alert_top_shape.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_circular.xml",
@@ -36,8 +36,16 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\red_tabbargray_reverse_drawable.xml"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_title_btn_back.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\plugin_camera_title_btn_back.xml"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_curtain_shape2.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\bg_curtain_shape2.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_albumbackground.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\plugin_camera_albumbackground.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\button_shape.xml",
@@ -52,12 +60,20 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\tab_tools.xml"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_ok_btn_state.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\plugin_camera_ok_btn_state.xml"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_linearlayout_left_unpress.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\rounded_linearlayout_left_unpress.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_normal.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\dot_normal.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_del_state.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\plugin_camera_del_state.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_linearlayout_right_press.xml",
@@ -116,6 +132,14 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\button_shape_gray.xml"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_title_btn_cancel.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\plugin_camera_title_btn_cancel.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_pic_choose_selector.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\plugin_camera_pic_choose_selector.xml"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\main_menu_btnshape.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\main_menu_btnshape.xml"
     },
@@ -150,6 +174,10 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\resetsoftap.gif",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\resetsoftap.gif"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_title_btn_preview.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\plugin_camera_title_btn_preview.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_focused.xml",
