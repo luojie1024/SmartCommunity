@@ -1,14 +1,5 @@
 package com.property.activity;
 
-import java.util.List;
-
-import org.kymjs.kjframe.KJBitmap;
-
-import com.lidroid.xutils.ViewUtils;
-import com.lidroid.xutils.view.annotation.ViewInject;
-import com.property.activity.AnnouncementListEntity.list;
-import com.way.tabui.gokit.R;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +9,15 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ViewInject;
+import com.property.bean.Inform.list;
+import com.way.tabui.gokit.R;
+
+import org.kymjs.kjframe.KJBitmap;
+
+import java.util.List;
 
 public class AnnouncementListAdapter extends BaseAdapter {
 

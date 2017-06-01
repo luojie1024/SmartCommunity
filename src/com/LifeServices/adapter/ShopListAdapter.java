@@ -27,11 +27,9 @@ public class ShopListAdapter extends BaseAdapter {
 	private ArrayList<Shop> mShopList = null; // 所选分类下的所有店铺列表
 	private String mType; // 商店的分类
 
-	public ShopListAdapter(Context context, ArrayList<Shop> shopList,
-						   String type) {
+	public ShopListAdapter(Context context, ArrayList<Shop> shopList) {
 		mContext = context;
 		mShopList = shopList;
-		mType = type;
 		mInflater = LayoutInflater.from(context);
 	}
 
@@ -58,46 +56,6 @@ public class ShopListAdapter extends BaseAdapter {
 		notifyDataSetChanged();
 	}
 
-//	/**
-//	 * 根据当前的type类型, 转换成相应的文字
-//	 * @date 2014-4-29
-//	 * @param typeString
-//	 */
-//	private void exchangeType(String typeString) {
-//
-//		int type = Integer.parseInt(typeString);
-//		int fatherType = type / 10; //父类型编号
-//		int sonType = type % 10;	//子类型编号
-//
-//		Iterator<Shop> iterator = mShopList.iterator();
-//		while (iterator.hasNext()) {
-//			switch (fatherType) {
-//			case 1:
-//				iterator.next().setType(
-//						TypeDef.typeDadList[fatherType-1] + "/"
-//								+ TypeDef.typeSonList1[sonType-1]);
-//				break;
-//			case 2:
-//				iterator.next().setType(
-//						TypeDef.typeDadList[fatherType-1] + "/"
-//								+ TypeDef.typeSonList2[sonType-1]);
-//				break;
-//			case 3:
-//				iterator.next().setType(
-//						TypeDef.typeDadList[fatherType-1] + "/"
-//								+ TypeDef.typeSonList3[sonType-1]);
-//				break;
-//			case 4:
-//				iterator.next().setType(
-//						TypeDef.typeDadList[fatherType-1] + "/"
-//								+ TypeDef.typeSonList4[sonType-1]);
-//				break;
-//			default:
-//				break;
-//			}
-//
-//		}
-//	}
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {

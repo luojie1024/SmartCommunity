@@ -42,7 +42,7 @@ public class ShopAllActivity extends Activity implements OnItemClickListener, Sw
 	private SwipeRefreshLayout swipeLayout;
 	
 	//记录从ShopActivity中传过来的当前点击项的类型
-	private String type;
+	private String title;
 	private List<Shop> shopList = new ArrayList<Shop>();
 	
 	//下拉刷新
@@ -59,9 +59,9 @@ public class ShopAllActivity extends Activity implements OnItemClickListener, Sw
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_shop_all);
 		//得到从上级Activity中传入的Type数据
-//		type = getIntent().getStringExtra("type");
+		title = getIntent().getStringExtra("title");
 		//获取商店数据
-		queryData();
+		queryShopData();
 		
 		initView();
 		
@@ -70,7 +70,7 @@ public class ShopAllActivity extends Activity implements OnItemClickListener, Sw
 	public void initView() {
 		//设置标题
 		tvTitle = (TextView) findViewById(R.id.tv_title);
-		tvTitle.setText("超市");
+		tvTitle.setText(title);
 		
 		tvEmptyBg = (TextView) findViewById(R.id.ll_msg_empty);
 		tvEmptyBg.setVisibility(View.GONE);
@@ -83,7 +83,7 @@ public class ShopAllActivity extends Activity implements OnItemClickListener, Sw
 		
 		lvShopAllList = (ListView) findViewById(R.id.lv_shop_all);
 		//type商店类型，默认为1
-		shopListAdapter = new ShopListAdapter(this, (ArrayList<Shop>) shopList,"1");
+		shopListAdapter = new ShopListAdapter(this, (ArrayList<Shop>) shopList);
 		lvShopAllList.setAdapter(shopListAdapter);
 		lvShopAllList.setOnItemClickListener(this);
 		
@@ -102,38 +102,17 @@ public class ShopAllActivity extends Activity implements OnItemClickListener, Sw
         toShopItem.putExtras(bundle);
 		startActivity(toShopItem);
 	}
-	
-	/**
-	 * 加载当前分类的所有店铺到ListView中
-	 */
-	private void getShopsDate() {
-		BmobQuery<Shop> query = new BmobQuery<Shop>();
-		Shop shop = new Shop();
-		query.findObjects( new FindListener<Shop>() {
-			@Override
-			public void done(List<Shop> list, BmobException e) {
-				if(list.size()==0){
-					toast("暂时没有商店营业！");
-				} else {
-					shopList = list;
-					// 通知Adapter数据更新
-					shopListAdapter.refresh((ArrayList<Shop>) shopList);
-					shopListAdapter.notifyDataSetChanged();
-				}
 
-			}
 
-		});
-	}
-	
 	/**
-	 * 分页获取数据
+	 * 获取商商店列表
 	 */
-	private void queryData() {
+	private void queryShopData() {
 		BmobQuery<Shop> query = new BmobQuery<Shop>();
-		//返回50条数据，如果不加上这条语句，默认返回10条数据
 		//返回50条数据，如果不加上这条语句，默认返回10条数据
 		query.setLimit(50);
+		//筛选类型
+		query.addWhereEqualTo("type",title);
 		//执行查询方法
 		query.findObjects(new FindListener<Shop>() {
 			@Override
@@ -165,7 +144,7 @@ public class ShopAllActivity extends Activity implements OnItemClickListener, Sw
 		new Handler().postDelayed(new Runnable() {
 			public void run() {
 				swipeLayout.setRefreshing(false);
-				queryData();
+				queryShopData();
 			}
 		}, 1000);
 	};

@@ -824,6 +824,19 @@ public class SampleFragment extends Fragment {
            */
           private void supermarket() {
                     Intent intent = new Intent(context, ShopAllActivity.class);
+                    intent.putExtra("title", "超市");
+                    startActivity(intent);
+          }
+
+          private void foodmarket() {
+                    Intent intent = new Intent(context, ShopAllActivity.class);
+                    intent.putExtra("title", "菜市场");
+                    startActivity(intent);
+          }
+
+          private void takeaway() {
+                    Intent intent = new Intent(context, ShopAllActivity.class);
+                    intent.putExtra("title", "外卖");
                     startActivity(intent);
           }
 
@@ -872,7 +885,6 @@ public class SampleFragment extends Fragment {
                                                   pro_inform();
                                         else if (poem.get(location) == "物业报修")
                                                   pro_baoxiu();
-
                                         else if (poem.get(location) == "缴费查询")
                                                   pro_jiaofei();
                                         else if (poem.get(location) == "智能窗帘")
@@ -887,6 +899,10 @@ public class SampleFragment extends Fragment {
                                                   secondtrade();
                                         else if (poem.get(location) == "超市")
                                                   supermarket();
+                                        else if (poem.get(location) == "菜市场")
+                                                  foodmarket();
+                                        else if (poem.get(location) == "外卖")
+                                                  takeaway();
                                         else {
                                                   Toast.makeText(context, "敬请期待", Toast.LENGTH_SHORT).show();
                                         }
