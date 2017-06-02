@@ -66,7 +66,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
             SLrecord, SLrecordclose;
     private Button btn_open, btn_colse, btn_stop, btn_redic;
    // TextView show;
-    String logtext = "LogCat:";
+    String logtext = "";
 
     spUtil sp;
     private GizWifiDevice device;
@@ -188,7 +188,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
         SLrecordclose.setOnClickListener(this);
         //show = (TextView) findViewById(R.id.show);
 
-        mHander.sendEmptyMessage(0x126);
+//        mHander.sendEmptyMessage(0x126);
         sp = new spUtil(this);
     }
 
@@ -309,14 +309,15 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                     public void onStartSuc(boolean isLocalNet, int cameraId,
                                            int var3) {
                         playId = var3;
-                        showTV("播放成功！  isLocalNet:" + isLocalNet);
+                        showTV("播放成功！");
                     }
 
                     @Override
                     public void onStartErr(XmErrInfo errcode) {
-                        showTV("errId:" + errcode.errId + ",errCode:"
-                                + errcode.errCode + ",errdiscribe:"
-                                + errcode.discribe);
+//                        showTV("errId:" + errcode.errId + ",errCode:"
+//                                + errcode.errCode + ",errdiscribe:"
+//                                + errcode.discribe);
+                        showTV("播放失败");
                     }
                 });
     }
@@ -522,7 +523,9 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                             Toast.LENGTH_LONG).show();
                     break;
                 case 0x126:
-                   // show.setText(logtext);
+                    Toast.makeText(PlayActivity.this, logtext, Toast.LENGTH_LONG)
+                            .show();
+//                    show.setText(logtext);
                     break;
                 case 0x127:
                     Toast.makeText(PlayActivity.this, "你没有权限，请先注册登录~",
@@ -618,7 +621,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
     }
 
     private void showTV(String ss) {
-        logtext = logtext + "\n" + ss;
+        logtext =  ss;
         mHander.sendEmptyMessage(0x126);
     }
 

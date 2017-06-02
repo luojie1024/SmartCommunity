@@ -240,7 +240,7 @@
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
-            android:name="com.way.tabui.gokit.AirConMesActivity"
+            android:name="com.way.tabui.gokit.AirConditionListActivity"
             android:label="@string/title_activity_air_con_mes"
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>

@@ -39,7 +39,7 @@ import com.way.main.DraggableGridView;
 import com.way.main.OnRearrangeListener;
 import com.way.tabui.cevicemodule.GosDeviceListActivity;
 import com.way.tabui.commonmodule.GosConstant;
-import com.way.tabui.gokit.AirConMesActivity;
+import com.way.tabui.gokit.AirConditionListActivity;
 import com.way.tabui.gokit.AlertmesActivity;
 import com.way.tabui.gokit.AllMessageActivity;
 import com.way.tabui.gokit.PromailActivity;
@@ -635,7 +635,7 @@ public class SampleFragment extends Fragment {
           //智能空调
           private void smart_condition() {
                     if (!getofisoffline()) {
-                              Intent intent = new Intent(context, AirConMesActivity.class);
+                              Intent intent = new Intent(context, AirConditionListActivity.class);
                               Bundle bundle = new Bundle();
                               bundle.putParcelable("GizWifiDevice",
                                    (GizWifiDevice) ((MainActivity) getActivity()).device);

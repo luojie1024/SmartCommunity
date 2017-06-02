@@ -236,7 +236,7 @@
 -keep class com.way.tabui.gokit.AirConBrandActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:238
--keep class com.way.tabui.gokit.AirConMesActivity { <init>(...); }
+-keep class com.way.tabui.gokit.AirConditionListActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:248
 -keep class com.way.tabui.gokit.AirMateActivity { <init>(...); }

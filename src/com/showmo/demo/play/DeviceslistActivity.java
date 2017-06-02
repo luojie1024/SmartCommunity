@@ -1,14 +1,12 @@
 package com.showmo.demo.play;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -16,6 +14,9 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.showmo.demo.adddevice.AddDeviceUserEnsure;
+import com.showmo.demo.util.ActivityManager;
+import com.way.tabui.commonmodule.GosBaseActivity;
 import com.way.tabui.gokit.R;
 import com.xmcamera.core.model.XmAccount;
 import com.xmcamera.core.model.XmDevice;
@@ -23,15 +24,19 @@ import com.xmcamera.core.model.XmErrInfo;
 import com.xmcamera.core.sys.XmSystem;
 import com.xmcamera.core.sysInterface.IXmSystem;
 import com.xmcamera.core.sysInterface.OnXmListener;
+import com.xmcamera.core.sysInterface.OnXmMgrConnectStateChangeListener;
+import com.xmcamera.core.sysInterface.OnXmSimpleListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Administrator on 2016/6/29.
  */
-public class DeviceslistActivity extends Activity{
+public class DeviceslistActivity extends GosBaseActivity{
 
     IXmSystem xmSystem;
     XmAccount account;
-
     ListView listView;
     MyAdapter adapter;
     List<XmDevice> mlist;
@@ -40,11 +45,39 @@ public class DeviceslistActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_deviceslist);
-
+        setActionBar(true, true, "监控摄像");
+        init();
         initview();
-
         initdata();
     }
+
+    ActivityManager manager;
+    private void init(){
+        xmSystem = XmSystem.getInstance();
+        account = (XmAccount)getIntent().getExtras().getSerializable("user");
+        xmSystem.registerOnMgrConnectChangeListener(onXmMgrConnectStateChangeListener);
+        loginMgr();
+        manager = ActivityManager.getInstance();
+        manager.addActivity(this);
+    }
+    private void loginMgr(){
+        xmSystem.xmMgrSignin(new OnXmSimpleListener() {
+            @Override
+            public void onErr(XmErrInfo info) {
+//                Log.v("AAAAA", "MgrSignin fail!");
+            }
+            @Override
+            public void onSuc() {
+//                Log.v("AAAAA", "MgrSignin suc!");
+            }
+        });
+    }
+    OnXmMgrConnectStateChangeListener onXmMgrConnectStateChangeListener = new OnXmMgrConnectStateChangeListener() {
+        @Override
+        public void onChange(boolean connectState) {
+            Log.v("AAAAA", "OnXmMgrConnectStateChangeListener onChange is " + connectState);
+        }
+    };
 
     private void initview(){
         listView = (ListView)findViewById(R.id.list);
@@ -55,7 +88,7 @@ public class DeviceslistActivity extends Activity{
     }
 
     private void initdata(){
-        xmSystem = XmSystem.getInstance();
+//        xmSystem = XmSystem.getInstance();
 //        if(!getIntent().getExtras().getBoolean("isDemo")) {
 //            account = (XmAccount) getIntent().getExtras().getSerializable("username");
 //        }
@@ -144,5 +177,38 @@ public class DeviceslistActivity extends Activity{
         class ViewHoler{
             TextView tv;
         }
+    }
+
+    private void addDevice(){
+        Intent in = new Intent(this,AddDeviceUserEnsure.class);
+        in.putExtra("isDemo",account.isDemo());
+        if(!account.isDemo())
+            in.putExtra("username",account.getmUsername());
+        startActivity(in);
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.add_devices, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        switch (id) {
+            case android.R.id.home:
+                finish();
+                break;
+            case R.id.add_device:
+                addDevice();
+                break;
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

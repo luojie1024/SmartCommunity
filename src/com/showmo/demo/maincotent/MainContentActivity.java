@@ -6,13 +6,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.showmo.demo.account.AccountActivity;
 import com.showmo.demo.adddevice.AddDeviceUserEnsure;
 import com.showmo.demo.play.DeviceslistActivity;
 import com.showmo.demo.util.ActivityManager;
@@ -69,13 +67,9 @@ public class MainContentActivity extends Activity implements View.OnClickListene
 
     private void init(){
         xmSystem = XmSystem.getInstance();
-
         account = (XmAccount)getIntent().getExtras().getSerializable("user");
-
         xmSystem.registerOnMgrConnectChangeListener(onXmMgrConnectStateChangeListener);
-
         loginMgr();
-
         manager = ActivityManager.getInstance();
         manager.addActivity(this);
     }

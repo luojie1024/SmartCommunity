@@ -27,7 +27,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
-import com.showmo.demo.maincotent.MainContentActivity;
+import com.showmo.demo.play.DeviceslistActivity;
 import com.showmo.demo.util.spUtil;
 import com.way.tabui.cevicemodule.GosDeviceListActivity;
 import com.way.tabui.controlmodule.GosControlModuleBaseActivity;
@@ -214,8 +214,8 @@ public class MainActivity extends GosControlModuleBaseActivity implements
     }
 
     public void loginSuc(XmAccount info) {
-        //登录成功的操作
-        Intent intent = new Intent(MainActivity.this, MainContentActivity.class);
+        //登录成功的操作MainContentActivity.class
+        Intent intent = new Intent(MainActivity.this, DeviceslistActivity.class);
         Bundle bundle = new Bundle();
         bundle.putSerializable("user", info);
         intent.putExtras(bundle);

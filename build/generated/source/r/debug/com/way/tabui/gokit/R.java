@@ -590,10 +590,10 @@ containing a value of this type.
         public static final int action_getHardwareInfo=0x7f080266;
         public static final int action_getStatu=0x7f080264;
         public static final int action_setDeviceInfo=0x7f080265;
-        public static final int action_settings=0x7f080260;
+        public static final int action_settings=0x7f080261;
         public static final int action_site=0x7f080269;
         public static final int actionbarLayoutId=0x7f0801d9;
-        public static final int add_air_con=0x7f080262;
+        public static final int add_device=0x7f080260;
         public static final int alert_info_listview=0x7f080024;
         public static final int alert_name=0x7f0801ff;
         public static final int alert_time=0x7f080200;
@@ -711,7 +711,7 @@ containing a value of this type.
         public static final int dev_pass=0x7f08014d;
         public static final int dialog_name=0x7f0801a8;
         public static final int diss=0x7f0801a9;
-        public static final int diyforself=0x7f080261;
+        public static final int diyforself=0x7f080262;
         public static final int dotView1=0x7f0800b6;
         public static final int ed_ProductKey=0x7f080168;
         public static final int ed_address=0x7f080011;
@@ -1328,9 +1328,9 @@ containing a value of this type.
         public static final int viewpager_shopinfo=0x7f030085;
     }
     public static final class menu {
-        public static final int add_ocdevice=0x7f0b0000;
-        public static final int air_con_brand=0x7f0b0001;
-        public static final int air_con_mes=0x7f0b0002;
+        public static final int add_devices=0x7f0b0000;
+        public static final int add_ocdevice=0x7f0b0001;
+        public static final int air_con_brand=0x7f0b0002;
         public static final int air_mate=0x7f0b0003;
         public static final int alert_mes=0x7f0b0004;
         public static final int alertmes=0x7f0b0005;

@@ -420,14 +420,14 @@ ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:238:9-241:20
 		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:240:13-60
 	android:name
 		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:239:13-45
-activity#com.way.tabui.gokit.AirConMesActivity
+activity#com.way.tabui.gokit.AirConditionListActivity
 ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:242:9-246:20
 	android:label
 		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:244:13-63
 	android:theme
 		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:245:13-60
 	android:name
-		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:243:13-46
+		ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:243:13-53
 activity#com.way.tabui.gokit.AirConBrandActivity
 ADDED from E:\jaaspro\SmartCommunity\AndroidManifest.xml:247:9-251:20
 	android:label

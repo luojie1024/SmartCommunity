@@ -32,7 +32,6 @@ import com.way.tabui.actity.MainActivity;
 import com.way.tabui.cevicemodule.GosDeviceListActivity;
 import com.way.tabui.commonmodule.GosConstant;
 import com.way.tabui.gokit.R;
-import com.way.tabui.pushmodule.GosPushManager;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -145,12 +144,15 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
                     bundle.putParcelable("GizWifiDevice", device);
                     intent.putExtras(bundle);
                     intent.putExtra("isoffline",false);
+                    startActivity(intent);
+                    finish();
                 }else{
                     intent = new Intent(GosUserLoginActivity.this, GosDeviceListActivity.class);
+                    intent.putExtra("ThredLogin", true);
+                    startActivity(intent);
+                    finish();
                 }
-				intent.putExtra("ThredLogin", true);
-				startActivity(intent);
-                finish();
+
 				break;
 			// 登录失败
 			case LOGIN_FAIL:
@@ -161,15 +163,9 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 
 	};
 
-	GosPushManager gosPushManager;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-//		// 启动SDK
-//		GizWifiSDK.sharedInstance().startWithAppID(getApplicationContext(), GosConstant.App_ID);
-//
-//		// 只能选择支持其中一种
-//		 gosPushManager=new GosPushManager(GizPushType.GizPushJiGuang,this);//极光推送
 		 
 		if (!this.isTaskRoot()) {// 判断此activity是不是任务控件的源Activity，“非”也就是说是被系统重新实例化出来的
 			Intent mainIntent = getIntent();
@@ -217,7 +213,6 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
                 }
                 else{
                     autoLogin();
-
                 }
 
             }
@@ -339,6 +334,7 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
             spf.edit().putString("PassWord", "").commit();
 			intent = new Intent(GosUserLoginActivity.this, GosDeviceListActivity.class);
 			startActivity(intent);
+            finish();
 
 			break;
 

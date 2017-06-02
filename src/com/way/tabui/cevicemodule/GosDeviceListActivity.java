@@ -189,7 +189,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 				if (loginStatus == 0) {
 					loginStatus = 3;
 					GizWifiSDK.sharedInstance().userLoginAnonymous();
-//                    Toast.makeText(GosDeviceListActivity.this, "isAnonymousLoging = true", Toast.LENGTH_SHORT).show();
+
 				}
 				break;
 
@@ -310,7 +310,6 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		super.onCreate(savedInstanceState);
 		//initsdk();
 		setContentView(R.layout.activity_gos_device_list);
-
 		Intent intentfalg = getIntent();
 		ismain=intentfalg.getBooleanExtra("ismain", false);
 		isoffline=intentfalg.getBooleanExtra("isoffline", false);
@@ -319,7 +318,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		softNameList = new ArrayList<String>();
 //		initReceiver();
 		if(ismain)
-		getdevices();	
+		getDevices();
 		else{
 			login();
 //            initLogin();
@@ -433,7 +432,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 	
 	
 //	private GizWifiDevice lastdevices;
-	public void getdevices(){
+	public void getDevices(){
 		try {
 			Intent intents = getIntent();
 			devices = (GizWifiDevice) intents.getParcelableExtra("GizWifiDevice");
@@ -446,17 +445,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		
 	}
 
-	public void isokintent(){
-		        String msgobj=spf.getString("msgobj", "nodevice");
-				if((!ismain)&&msgobj.equals(gizd.getMacAddress())){
-				Toast.makeText(GosDeviceListActivity.this, "正在进入上次设备...", Toast.LENGTH_SHORT).show();
-				gizd.setListener(getGizWifiDeviceListener());
-				gizd.setSubscribe(true);
-				}
-				else{
-					count=0;
-				}
-	}
+
 	@Override
 	protected void onResume() {
 		
@@ -599,7 +588,6 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		token = spf.getString("Token", "");
 		// 可以在此处把关心的设备productKey加入到过滤列表中
 		addProductKey(GosConstant.device_ProductKey);
-		
 		if (uid.isEmpty() && token.isEmpty()) {
 			loginStatus = 0;
 		}

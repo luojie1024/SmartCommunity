@@ -236,7 +236,7 @@
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
-            android:name=".AirConMesActivity"
+            android:name=".AirConditionListActivity"
             android:label="@string/title_activity_air_con_mes"
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
