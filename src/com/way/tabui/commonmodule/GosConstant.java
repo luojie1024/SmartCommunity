@@ -3,7 +3,7 @@ package com.way.tabui.commonmodule;
 import java.util.List;
 
 public class GosConstant  {
-
+/*64位测试机*/
 //	// 在机智云开发者账号下申请的App_ID a61ed92da3764cca848f3dbab8481149//4d25e29be7e74a3aa18e2e7921cecb51
 //	public static String App_ID = "6fcbb295af17438aab3e3c19a82582c1";
 //	// 在机智云开发者账号下申请的App_Screct(必须与上述App_ID对应)57c13265403549ac83d828e50639c37a//84d1094f9dfe4911a961e5ef79b8e4f0
@@ -13,7 +13,7 @@ public class GosConstant  {
 // //e4426f0aa0e446a3a34260ec2064d609//ff1a9d62c35b4a4b9ca0c8eea0d120a2
 //    public static String Product_Secret="ff1a9d62c35b4a4b9ca0c8eea0d120a2";
 
-
+/*正式用户使用*/
     // 在机智云开发者账号下申请的App_ID a61ed92da3764cca848f3dbab8481149//4d25e29be7e74a3aa18e2e7921cecb51
     public static String App_ID = "a61ed92da3764cca848f3dbab8481149";
     // 在机智云开发者账号下申请的App_Screct(必须与上述App_ID对应)57c13265403549ac83d828e50639c37a//84d1094f9dfe4911a961e5ef79b8e4f0

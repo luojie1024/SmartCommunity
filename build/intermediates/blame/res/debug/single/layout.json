@@ -16,12 +16,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_adddev1.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\header_shop_all.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\header_shop_all.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_config_failed.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_config_failed.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\header_shop_all.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\header_shop_all.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_shop_all.xml",
@@ -88,12 +88,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\plugin_camera_select_imageview.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\view_gos_notification.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\view_gos_notification.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_settings.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_settings.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\view_gos_notification.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\view_gos_notification.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_popupwindows.xml",
@@ -128,12 +128,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\shop_commit.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\viewpager_menu.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\viewpager_menu.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_user_login.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_user_login.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\viewpager_menu.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\viewpager_menu.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_reset.xml",

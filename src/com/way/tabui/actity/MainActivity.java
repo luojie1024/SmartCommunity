@@ -321,35 +321,35 @@ public class MainActivity extends GosControlModuleBaseActivity implements
 
     }
 
-    public boolean Getgas() {
+    public boolean getGas() {
         return gasstua;
     }
 
-    public boolean Getsmoke() {
+    public boolean getSmoke() {
         return smokestua;
     }
 
-    public boolean Getgate() {
+    public boolean getGate() {
         return gatestua;
     }
 
-    public boolean Getbody() {
+    public boolean getBody() {
         return bodystua;
     }
 
-    public boolean Getisoffline() {
+    public boolean getIsOffline() {
         return isoffline;
     }
 
-    public String Getfirstmac() {
+    public String getFirstmac() {
         return firstmac;
     }
 
-    public String Gettem() {
+    public String getTem() {
         return temperature;
     }
 
-    public String Gethum() {
+    public String getHum() {
         return humidity;
     }
 
@@ -482,8 +482,8 @@ public class MainActivity extends GosControlModuleBaseActivity implements
         //我的娱乐
         String[][] mpDataArray = new String[][]{{"1", "虚拟家庭"}, {"2", "超级秀场"}, {"3", "附近的人"}};
         DataCache.networkStateDataCache.put("mpDataArray", mpDataArray);
-        //我的物业
-        String[][] mwyDataArray = new String[][]{{"1", "物业公告"}, {"2", "物业报修"}, {"3", "物业信箱"}, {"4", "物业代办"}, {"5", "缴费查询"}, {"6", "跑腿代办"}};
+        //我的物业{"3", "物业信箱"},
+        String[][] mwyDataArray = new String[][]{{"1", "物业公告"}, {"2", "物业报修"},  {"3", "物业代办"}, {"4", "缴费查询"}, {"5", "跑腿代办"}};
         DataCache.networkStateDataCache.put("mwyDataArray", mwyDataArray);
         //私下预定
         String[][] pbDataArray = new String[][]{{"1", "健康护理"}, {"2", "美容美体"}, {"3", "足疗按摩"}, {"4", "家政服务"}, {"5", "美工设计"}, {"6", "用车跑腿"}};

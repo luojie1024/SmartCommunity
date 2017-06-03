@@ -966,42 +966,42 @@ public class SampleFragment extends Fragment {
           }
 
           public boolean getofgas() {
-                    gasstua = ((MainActivity) getActivity()).Getgas();
+                    gasstua = ((MainActivity) getActivity()).getGas();
                     return gasstua;
           }
 
           public boolean getofgate() {
-                    gatestua = ((MainActivity) getActivity()).Getgate();
+                    gatestua = ((MainActivity) getActivity()).getGate();
                     return gatestua;
           }
 
           public boolean getofsmoke() {
-                    smokestua = ((MainActivity) getActivity()).Getsmoke();
+                    smokestua = ((MainActivity) getActivity()).getSmoke();
                     return smokestua;
           }
 
           public boolean getofbody() {
-                    bodystua = ((MainActivity) getActivity()).Getbody();
+                    bodystua = ((MainActivity) getActivity()).getBody();
                     return bodystua;
           }
 
           public String getoftem() {
-                    temperature = ((MainActivity) getActivity()).Gettem();
+                    temperature = ((MainActivity) getActivity()).getTem();
                     return temperature;
           }
 
           public String getofhum() {
-                    humidity = ((MainActivity) getActivity()).Gethum();
+                    humidity = ((MainActivity) getActivity()).getHum();
                     return humidity;
           }
 
           public String getoffirstmac() {
-                    firstmac = ((MainActivity) getActivity()).Getfirstmac();
+                    firstmac = ((MainActivity) getActivity()).getFirstmac();
                     return firstmac;
           }
 
           public boolean getofisoffline() {
-                    isoffline = ((MainActivity) getActivity()).Getisoffline();
+                    isoffline = ((MainActivity) getActivity()).getIsOffline();
                     return isoffline;
           }
 
