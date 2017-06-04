@@ -1,33 +1,31 @@
 package com.property.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.kymjs.kjframe.KJHttp;
-import org.kymjs.kjframe.http.HttpCallBack;
-import org.kymjs.kjframe.http.HttpParams;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.ab.view.pullview.AbPullToRefreshView;
 import com.ab.view.pullview.AbPullToRefreshView.OnFooterLoadListener;
 import com.ab.view.pullview.AbPullToRefreshView.OnHeaderRefreshListener;
+import com.google.gson.Gson;
+import com.property.bean.FaultListEntity.data;
+import com.property.adapter.WorkerBaoxiuAdapter;
 import com.property.base.BaseFragment;
-import com.property.activity.FaultListEntity.data;
+import com.property.bean.FaultListEntity;
 import com.property.utils.SharedpfTools;
 import com.property.utils.UrlConnector;
-import com.property.view.NoScrollListView;
 import com.way.tabui.gokit.R;
-import com.google.gson.Gson;
+
+import org.kymjs.kjframe.KJHttp;
+import org.kymjs.kjframe.http.HttpCallBack;
+import org.kymjs.kjframe.http.HttpParams;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class WorkerBaoxiuFragment extends BaseFragment implements
 		OnHeaderRefreshListener, OnFooterLoadListener {

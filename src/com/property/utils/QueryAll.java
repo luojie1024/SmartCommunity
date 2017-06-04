@@ -3,7 +3,7 @@ package com.property.utils;
 import android.os.Handler;
 import android.os.Message;
 
-import com.property.activity.JiaofeiListEntity;
+import com.property.bean.JiaofeiListEntity;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

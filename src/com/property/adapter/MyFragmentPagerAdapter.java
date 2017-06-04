@@ -1,4 +1,4 @@
-package com.property.activity;
+package com.property.adapter;
 
 import java.util.ArrayList;
 

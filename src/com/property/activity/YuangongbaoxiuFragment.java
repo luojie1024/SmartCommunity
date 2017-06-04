@@ -13,17 +13,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.view.View.OnClickListener;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.property.base.BaseActivity;
 import com.property.base.BaseFragment;
-import com.property.activity.MyFragmentPagerAdapter;
-import com.property.activity.WorkerBaoxiuFragment;
+import com.property.adapter.MyFragmentPagerAdapter;
 import com.way.tabui.gokit.R;
 
 public class YuangongbaoxiuFragment extends BaseFragment {

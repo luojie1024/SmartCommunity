@@ -1,10 +1,10 @@
-package com.property.activity;
+package com.property.adapter;
 
 import java.util.List;
 
 import org.kymjs.kjframe.KJBitmap;
 
-import com.property.activity.BaoxiuDetailEntity.data.history;
+import com.property.bean.BaoxiuDetailEntity.data.history;
 import com.way.tabui.gokit.R;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;

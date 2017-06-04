@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.ab.http.AbHttpUtil;
 import com.google.gson.Gson;
 import com.property.base.BaseActivity;
+import com.property.bean.JiaofeiDetailEntity;
 import com.way.tabui.gokit.R;
 
 import org.kymjs.kjframe.ui.BindView;

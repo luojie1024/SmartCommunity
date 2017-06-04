@@ -18,6 +18,7 @@ import android.widget.Toast;
 import com.ab.view.pullview.AbPullToRefreshView;
 import com.ab.view.pullview.AbPullToRefreshView.OnFooterLoadListener;
 import com.ab.view.pullview.AbPullToRefreshView.OnHeaderRefreshListener;
+import com.property.adapter.BaoxiuguanliAdapter;
 import com.property.base.BaseFragment;
 import com.property.bean.FaultListEntity;
 import com.property.bean.FaultListEntity.data;

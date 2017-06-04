@@ -37,6 +37,7 @@ import android.widget.Toast;
 
 import com.property.base.BaoxiushenqingEntity;
 import com.property.base.BaseActivity;
+import com.property.bean.FaultUserInfo;
 import com.property.duotushangchuan.AlbumActivity;
 import com.property.duotushangchuan.Bimp;
 import com.property.duotushangchuan.FileUtils;

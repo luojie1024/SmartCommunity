@@ -1,33 +1,18 @@
 package com.property.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.kymjs.kjframe.KJBitmap;
-import org.kymjs.kjframe.KJHttp;
-import org.kymjs.kjframe.http.HttpCallBack;
-import org.kymjs.kjframe.http.HttpParams;
-import org.kymjs.kjframe.ui.BindView;
-
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.view.animation.AnimationUtils;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
@@ -38,24 +23,31 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.property.activity.BaoxiushenqingActivity;
-import com.property.activity.BaoxiuxiangqingActivity;
-import com.property.activity.ChakandatuActivity;
-import com.property.activity.FaultDeleteActivity;
-import com.property.activity.FaultListEntity;
-import com.property.activity.FaultListEntity.data;
-import com.property.activity.FaultListEntity.data.gallery;
 import com.ab.view.pullview.AbPullToRefreshView;
 import com.ab.view.pullview.AbPullToRefreshView.OnFooterLoadListener;
 import com.ab.view.pullview.AbPullToRefreshView.OnHeaderRefreshListener;
+import com.google.gson.Gson;
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ViewInject;
+import com.property.bean.FaultListEntity.data;
+import com.property.bean.FaultListEntity.data.gallery;
 import com.property.base.BaseFragment;
+import com.property.bean.FaultListEntity;
 import com.property.utils.ScreenUtil;
 import com.property.utils.SharedpfTools;
 import com.property.utils.UrlConnector;
 import com.way.tabui.gokit.R;
-import com.google.gson.Gson;
-import com.lidroid.xutils.ViewUtils;
-import com.lidroid.xutils.view.annotation.ViewInject;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.kymjs.kjframe.KJBitmap;
+import org.kymjs.kjframe.KJHttp;
+import org.kymjs.kjframe.http.HttpCallBack;
+import org.kymjs.kjframe.http.HttpParams;
+import org.kymjs.kjframe.ui.BindView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class YezhubaoxiuFragment extends BaseFragment implements
 OnHeaderRefreshListener, OnFooterLoadListener{

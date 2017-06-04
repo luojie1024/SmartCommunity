@@ -14,6 +14,7 @@ import com.ab.view.pullview.AbPullToRefreshView.OnFooterLoadListener;
 import com.ab.view.pullview.AbPullToRefreshView.OnHeaderRefreshListener;
 import com.ab.view.sliding.AbSlidingPlayView;
 
+import com.property.adapter.AnnouncementListAdapter;
 import com.property.bean.Inform;
 import com.property.bean.Inform.ad_top;
 import com.property.bean.Inform.list;

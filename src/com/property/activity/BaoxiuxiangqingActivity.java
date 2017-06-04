@@ -6,8 +6,6 @@ import java.util.List;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.kymjs.kjframe.KJBitmap;
-import org.kymjs.kjframe.http.HttpCallBack;
-import org.kymjs.kjframe.http.HttpParams;
 import org.kymjs.kjframe.ui.BindView;
 
 import android.content.Intent;
@@ -26,14 +24,15 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import cn.jpush.android.util.ab;
 
 import com.ab.http.AbHttpUtil;
 import com.ab.http.AbRequestParams;
 import com.ab.http.AbStringHttpResponseListener;
+import com.property.adapter.BaoxiuHistoryAdapter;
 import com.property.base.BaseActivity;
-import com.property.activity.BaoxiuDetailEntity.data.gallery;
-import com.property.activity.BaoxiuDetailEntity.data.history;
+import com.property.bean.BaoxiuDetailEntity;
+import com.property.bean.BaoxiuDetailEntity.data.gallery;
+import com.property.bean.BaoxiuDetailEntity.data.history;
 import com.property.utils.ScreenUtil;
 import com.property.utils.SharedpfTools;
 import com.property.utils.UrlConnector;

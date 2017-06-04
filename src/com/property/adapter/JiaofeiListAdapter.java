@@ -1,4 +1,4 @@
-package com.property.activity;
+package com.property.adapter;
 
 import android.content.Context;
 import android.util.Log;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
-import com.property.activity.JiaofeiListEntity.pay_record;
+import com.property.bean.JiaofeiListEntity.pay_record;
 import com.way.tabui.gokit.R;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.property.activity;
+package com.property.bean;
 
 import cn.bmob.v3.BmobObject;
 

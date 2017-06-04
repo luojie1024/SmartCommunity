@@ -1,4 +1,4 @@
-package com.property.activity;
+package com.property.bean;
 
 import java.util.List;
 

@@ -1,10 +1,11 @@
-package com.property.activity;
+package com.property.adapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.kymjs.kjframe.KJBitmap;
 
+import com.property.activity.BaoxiuxiangqingActivity;
 import com.property.bean.FaultListEntity.data;
 import com.property.bean.FaultListEntity.data.gallery;
 import com.property.utils.ScreenUtil;

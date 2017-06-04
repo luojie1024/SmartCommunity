@@ -7,7 +7,7 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="48dp"
-        android:background="#c0d355" >
+        android:background="@color/theme_blue" >
 
         <LinearLayout
             android:id="@+id/ll_title"
@@ -26,7 +26,7 @@
                 android:background="@drawable/rounded_linearlayout_left_press"
                 android:gravity="center"
                 android:text="未缴费"
-                android:textColor="@color/theme_color"
+                android:textColor="@color/theme_blue"
                 android:textSize="18sp" />
 
             <TextView

@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.property.adapter.MyFragmentPagerAdapter;
 import com.property.base.BaseActivity;
 import com.way.tabui.gokit.R;
 

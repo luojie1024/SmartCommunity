@@ -13,7 +13,9 @@ import com.ab.view.pullview.AbPullToRefreshView;
 import com.ab.view.pullview.AbPullToRefreshView.OnFooterLoadListener;
 import com.ab.view.pullview.AbPullToRefreshView.OnHeaderRefreshListener;
 import com.google.gson.Gson;
-import com.property.activity.JiaofeifenleiEntity.pay_genre;
+import com.property.bean.JiaofeifenleiEntity;
+import com.property.bean.JiaofeifenleiEntity.pay_genre;
+import com.property.adapter.JiaofeifenleiAdapter;
 import com.property.base.BaseActivity;
 import com.way.tabui.gokit.R;
 

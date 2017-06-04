@@ -1,23 +1,4 @@
-package com.property.activity;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.kymjs.kjframe.KJBitmap;
-import org.kymjs.kjframe.KJHttp;
-import org.kymjs.kjframe.http.HttpCallBack;
-import org.kymjs.kjframe.http.HttpParams;
-
-import com.property.activity.FaultListEntity.data;
-import com.property.activity.FaultListEntity.data.gallery;
-import com.property.utils.ScreenUtil;
-import com.property.utils.SharedpfTools;
-import com.property.utils.UrlConnector;
-import com.way.tabui.gokit.R;
-import com.lidroid.xutils.ViewUtils;
-import com.lidroid.xutils.view.annotation.ViewInject;
+package com.property.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -33,6 +14,28 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ViewInject;
+import com.property.activity.BaoxiuxiangqingActivity;
+import com.property.activity.ChakandatuActivity;
+import com.property.activity.FaultProgressActivity;
+import com.property.bean.FaultListEntity.data.gallery;
+import com.property.bean.FaultListEntity.data;
+import com.property.utils.ScreenUtil;
+import com.property.utils.SharedpfTools;
+import com.property.utils.UrlConnector;
+import com.way.tabui.gokit.R;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.kymjs.kjframe.KJBitmap;
+import org.kymjs.kjframe.KJHttp;
+import org.kymjs.kjframe.http.HttpCallBack;
+import org.kymjs.kjframe.http.HttpParams;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class WorkerBaoxiuAdapter extends BaseAdapter {
 
