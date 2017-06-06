@@ -8,7 +8,7 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="48dp"
-        android:background="#c0d355" >
+        android:background="@color/theme_blue">
 
         <TextView
             android:id="@+id/title"
@@ -145,7 +145,7 @@
             android:id="@+id/tv_baoxiu_fabu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_textview_theme_color"
+            android:background="@color/theme_blue"
             android:gravity="center"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"

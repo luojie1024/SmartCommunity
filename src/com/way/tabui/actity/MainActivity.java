@@ -131,7 +131,7 @@ public class MainActivity extends GosControlModuleBaseActivity implements
 
         Intent intent = getIntent();
         isoffline = intent.getBooleanExtra("isoffline", false);
-        isworked = intent.getBooleanExtra("isworked", false);
+        isworked = isWorked("com.way.tabui.actity.GizService");
 
         if (isoffline) {
             firstmac = "NULL";
@@ -146,9 +146,7 @@ public class MainActivity extends GosControlModuleBaseActivity implements
                 thread.interrupt();
             }
         }
-
         initBroadcostData();
-
         init();
         setContentView(R.layout.activity_main);
         initView();
@@ -444,6 +442,7 @@ public class MainActivity extends GosControlModuleBaseActivity implements
                 handler.sendMessage(msg);
 //						}
             }
+
 
         }
     }

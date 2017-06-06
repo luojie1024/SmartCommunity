@@ -171,7 +171,6 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 	private GizWifiDevice rndevice;
 	
 	GosPushManager gosPushManager;
-
 	boolean isback =false;
 	boolean isoffline ;
 	private MyReceiver receiver =null;
@@ -189,13 +188,14 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 				if (loginStatus == 0) {
 					loginStatus = 3;
 					GizWifiSDK.sharedInstance().userLoginAnonymous();
-
 				}
 				break;
 
 			case UPDATALIST:
-				progressDialog.cancel();
-				UpdateUI();
+                if (progressDialog.isShowing()) {
+                    progressDialog.cancel();
+                }
+                UpdateUI();
 				break;
 
 			case UNBOUND:
@@ -224,11 +224,12 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 				 intent.putExtra("isoffline",false);
 				 if(!ismain){
 					 startActivity(intent);
-				finish();
+
 				 }else{
 					setResult(1001, intent);
-					 finish();
+
 				 }
+                finish();
 				break;
 
 			case TOAST:
@@ -316,19 +317,18 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		setActionBar(true, false, R.drawable.reflash_bt, R.string.devicelist_title);
 		GosMessageHandler.getSingleInstance().StartLooperWifi(this);
 		softNameList = new ArrayList<String>();
-//		initReceiver();
 		if(ismain)
 		getDevices();
 		else{
 			login();
 //            initLogin();
 
-			if(isWorked("com.way.tabui.actity.GizService")){
-				sendbroadcast();
-				count++;
-			}else{
-			stopsevice();
-			}
+//			if(isWorked("com.way.tabui.actity.GizService")){
+//				sendbroadcast();
+//				count++;
+//			}else{
+//			stopsevice();
+//			}
 		}
 		
 		initData();
@@ -348,19 +348,6 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 	     public void onReceive(Context context, Intent intent) {
 	    	 String action = intent.getAction();
 		      Message msg = new Message();
-		      if(action.equals("com.way.tabui.actity.GosDeviceListActivityReceviver")){
-	    	   devices = (GizWifiDevice) intent.getParcelableExtra("GizWifiDevice");
-	    	   if((devices!=null)&&(!ismain)){
-	    		Toast.makeText(getApplicationContext(), "进入后台所连接设备..", Toast.LENGTH_SHORT).show();
-	 			Intent rintent =new Intent(GosDeviceListActivity.this,MainActivity.class);
-	 			Bundle bundle = new Bundle();
-	 			bundle.putParcelable("GizWifiDevice",(GizWifiDevice) devices);
-	 			rintent.putExtras(bundle);
-	 			rintent.putExtra("isworked", true);
-	 			startActivity(rintent);	
-	 			finish();
-	 			}
-	     }
 		      if(action.equals("com.way.tabui.actity.GizServiceTOAST")){
 		    	  msg.what = TOAST;
 		    		msg.obj=intent.getStringExtra("Toastdata");
@@ -453,8 +440,6 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		initReceiver();
 		JPushInterface.onResume(this);
 		progressDialog.show();
-		Log.i("Apptest", loginStatus + "onResume");
-		// TODO isLogout = false;
 		handler.sendEmptyMessage(GETLIST);
 		super.onResume();
 		// TODO GosMessageHandler.getSingleInstance().SetHandler(handler);
@@ -464,6 +449,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 	// TODO Auto-generated method stub
 //	  count=0;
 //    	 unregisterReceiver(receiver);
+
 	  super.onDestroy();
     }
 
@@ -471,9 +457,10 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 	public void onPause() {
 		
 		unregisterReceiver(receiver);
-//		JPushInterface.onPause(this);
+        if (progressDialog.isShowing()) {
+            progressDialog.cancel();
+        }
 		Log.i("Apptest", loginStatus + "onPause");
-		// TODO GosMessageHandler.getSingleInstance().SetHandler(null);
 		super.onPause();
 	}
 
@@ -596,7 +583,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 	private void initReceiver(){
 		receiver = new MyReceiver();
 		IntentFilter filter=new IntentFilter();
-		filter.addAction("com.way.tabui.actity.GosDeviceListActivityReceviver");
+//		filter.addAction("com.way.tabui.actity.GosDeviceListActivityReceviver");
 		filter.addAction("com.way.tabui.actity.GizServiceTOAST");
 		registerReceiver(receiver, filter);
 	}
