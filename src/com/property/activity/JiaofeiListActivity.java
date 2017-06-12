@@ -112,7 +112,7 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                               case R.id.tv_jiaofei_title_left:
                                         tvLeft.setBackgroundResource(R.drawable.rounded_linearlayout_left_press);
                                         tvRight.setBackgroundResource(R.drawable.rounded_linearlayout_right_unpress);
-                                        tvLeft.setTextColor(Color.parseColor("#c0d355"));
+                                        tvLeft.setTextColor(Color.parseColor("#ff3995e3"));
                                         tvRight.setTextColor(Color.WHITE);
                                         pay_status = 1;
                                         //刷新数据，更新UI
@@ -122,7 +122,7 @@ public class JiaofeiListActivity extends BaseActivity implements OnHeaderRefresh
                                         tvLeft.setBackgroundResource(R.drawable.rounded_linearlayout_left_unpress);
                                         tvRight.setBackgroundResource(R.drawable.rounded_linearlayout_right_press);
                                         tvLeft.setTextColor(Color.WHITE);
-                                        tvRight.setTextColor(Color.parseColor("#c0d355"));
+                                        tvRight.setTextColor(Color.parseColor("#ff3995e3"));
                                         pay_status = 2;
                                         //刷新数据，更新UI
                                         initData();

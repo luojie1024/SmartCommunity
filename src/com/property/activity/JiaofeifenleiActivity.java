@@ -60,7 +60,6 @@ public class JiaofeifenleiActivity extends BaseActivity implements OnHeaderRefre
                     abPullToRefreshView.getFooterView()
                          .setFooterProgressBarDrawable(getApplication().getResources().getDrawable(R.drawable.progress_circular));
                     http = AbHttpUtil.getInstance(this);
-//                    gson = new Gson();
                     list = new ArrayList<pay_genre>();
                     adapter = new JiaofeifenleiAdapter(getApplication(), list);
                     applyData();

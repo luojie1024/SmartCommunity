@@ -108,6 +108,7 @@ public class ShopAllActivity extends Activity implements OnItemClickListener, Sw
 	 * 获取商商店列表
 	 */
 	private void queryShopData() {
+		shopList.clear();
 		BmobQuery<Shop> query = new BmobQuery<Shop>();
 		//返回50条数据，如果不加上这条语句，默认返回10条数据
 		query.setLimit(50);

@@ -127,7 +127,7 @@ public class MainActivity extends GosControlModuleBaseActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //TODO 初始化Bmob
-        Bmob.initialize(this, "b8f0f2a625ab97c165fd63f2c949041c");
+        Bmob.initialize(this, "9c8dd5f28e99afb2cd29544b5c815f0f");
 
         Intent intent = getIntent();
         isoffline = intent.getBooleanExtra("isoffline", false);
