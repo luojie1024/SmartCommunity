@@ -44,7 +44,7 @@ import com.way.tabui.gokit.AlertmesActivity;
 import com.way.tabui.gokit.AllMessageActivity;
 import com.way.tabui.gokit.PromailActivity;
 import com.way.tabui.gokit.R;
-import com.way.tabui.gokit.SmartCurtainActivity;
+import com.way.tabui.gokit.SmartCurtainListActivity;
 import com.way.tabui.gokit.SmartDoorActivity;
 import com.way.tabui.settingsmodule.GosAboutActivity;
 import com.way.tabui.settingsmodule.GosSettiingsActivity;
@@ -777,7 +777,8 @@ public class SampleFragment extends Fragment {
                     spf = getActivity().getSharedPreferences(GosConstant.SPF_Name,
                          Context.MODE_PRIVATE);
                     if (!getofisoffline()) {
-                              Intent intent = new Intent(context, SmartCurtainActivity.class);
+                              //窗帘控制类 SmartCurtainActivity
+                              Intent intent = new Intent(context, SmartCurtainListActivity.class);
                               Bundle bundle = new Bundle();
                               bundle.putParcelable("GizWifiDevice",
                                    (GizWifiDevice) ((MainActivity) getActivity()).device);
@@ -787,6 +788,8 @@ public class SampleFragment extends Fragment {
                               Toast.makeText(context, "现在为离线状态，无法进入此功能界面..", Toast.LENGTH_SHORT)
                                    .show();
                     }
+
+
           }
 
 
