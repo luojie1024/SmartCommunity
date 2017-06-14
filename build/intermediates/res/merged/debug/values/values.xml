@@ -183,7 +183,7 @@
     <color name="text_resource_category">#ff7f7f7f</color>
     <color name="text_white">#ffffff</color>
     <color name="theme_blue">#298eee</color>
-    <color name="theme_color">#c0d355</color>
+    <color name="theme_color">#298eee</color>
     <color name="theme_gray">#E8E8E8</color>
     <color name="thumb_apk">#ff97c932</color>
     <color name="thumb_bt">#ff72af46</color>
@@ -783,6 +783,7 @@
     <string name="my_phone">手机</string>
     <string name="my_resource_empty_text">"海量资源，一键保存到
 环泰智慧社区！"</string>
+    <string name="name">名字</string>
     <string name="name_digits">0123456789</string>
     <string name="name_hint">请输入手机号</string>
     <string name="need_activate">请激活帐号后再试</string>
@@ -1253,6 +1254,7 @@
     <string name="title_activity_air_mate">配对设备</string>
     <string name="title_activity_alertmes">警报记录</string>
     <string name="title_activity_all_message">信息机房</string>
+    <string name="title_activity_curtain_device_list">curtainDeviceListActivity</string>
     <string name="title_activity_inform">物业通知</string>
     <string name="title_activity_intelligent_socket">智能插座</string>
     <string name="title_activity_preview">PreviewActivity</string>

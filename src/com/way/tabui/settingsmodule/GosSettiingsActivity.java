@@ -189,8 +189,8 @@ public class GosSettiingsActivity extends GosBaseActivity implements
 			sendBroadcast(eintent);
 			break;
             case R.id.llQRcode:
-//                makeQRCode();
-                sharing();
+               makeQRCode();
+//                sharing();
                 break;
 
 		default:
@@ -234,6 +234,7 @@ public class GosSettiingsActivity extends GosBaseActivity implements
     GizDeviceSharing.setListener(mListener);
 // 在设备列表中找到可以分享的设备
 // 二维码分享设备
+
        if( (device.getSharingRole()).equals(GizDeviceSharingUserRole.GizDeviceSharingNormal)){
         Toast.makeText(this, "您的权限为：普通用户.没有分享权限", Toast.LENGTH_SHORT).show();
            return;
@@ -255,7 +256,7 @@ public class GosSettiingsActivity extends GosBaseActivity implements
         String mac=device.getMacAddress();
 
 //        String text = "http://blog.csdn.net/gao36951";
-        String url = "uid="+uid+"&token="+token+"&mac="+mac+"&productKey="+ GosConstant.device_ProductKey
+        String url = "type=bang"+"&mac="+mac+"&productKey="+ GosConstant.device_ProductKey
                 +"&productSecret="+GosConstant.Product_Secret;
 
         Log.i("xxs", "url::::"+url);
@@ -290,7 +291,7 @@ public class GosSettiingsActivity extends GosBaseActivity implements
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("二维码"+device.getPasscode());
             builder.setView(ImageView);
-            builder.setMessage(url);
+         //   builder.setMessage(url);
             builder.show();
             // 显示到一个ImageView上面
             // sweepIV.setImageBitmap(bitmap);

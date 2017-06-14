@@ -112,22 +112,20 @@
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar">
         </activity>
-
         <activity
             android:name="com.way.tabui.usermodule.GosUserLoginActivity"
             android:theme="@android:style/Theme.Holo.Light">
-            <!--TODO-->
+
+            <!-- TODO -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
         <activity
             android:name="com.way.tabui.cevicemodule.GosDeviceListActivity"
             android:theme="@android:style/Theme.Holo.Light">
-
         </activity>
         <activity
             android:name="com.way.tabui.actity.EsptouchDemoActivity"
@@ -151,7 +149,6 @@
             android:label="@string/title_activity_preview"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar">
         </activity>
-
         <activity
             android:name="com.way.tabui.usermodule.GosRegisterUserActivity"
             android:theme="@android:style/Theme.Holo.Light">
@@ -185,7 +182,6 @@
             android:name="com.way.tabui.configmodule.GosConfigFailedActivity"
             android:theme="@android:style/Theme.Holo.Light">
         </activity>
-
         <activity
             android:name="com.way.tabui.actity.SmartOCActivity"
             android:theme="@android:style/Theme.Holo.Light">
@@ -277,76 +273,74 @@
             android:name="com.tencent.connect.common.AssistActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-
-
-        <activity android:name="com.showmo.demo.maincotent.MainContentActivity"
-                  android:label="@string/title_activity_showmo_demo"
-                  android:theme="@android:style/Theme.Holo.Light">
+        <activity
+            android:name="com.showmo.demo.maincotent.MainContentActivity"
+            android:label="@string/title_activity_showmo_demo"
+            android:theme="@android:style/Theme.Holo.Light">
         </activity>
-
         <activity
             android:name="com.showmo.demo.account.ModifyPswActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/title_activity_showmo_demo">
+            android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name="com.showmo.demo.account.AccountActivity"
-            android:screenOrientation="portrait"
             android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.showmo.demo.play.DeviceslistActivity"
-            android:screenOrientation="portrait"
             android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.showmo.demo.adddevice.AddDeviceUserEnsure"
-            android:screenOrientation="portrait"
             android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.showmo.demo.adddevice.AddDeviceSetNetworkActivity"
-            android:screenOrientation="portrait"
             android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.showmo.demo.adddevice.AddDeviceUserTipClose"
-            android:screenOrientation="portrait"
             android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.showmo.demo.adddevice.AddDeviceConfigSearchActivity"
-            android:screenOrientation="portrait"
             android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.showmo.demo.login.ResetDeviceActivity"
-            android:screenOrientation="portrait"
             android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.showmo.demo.login.RegisterActivity"
-            android:screenOrientation="portrait"
             android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.showmo.demo.login.RegisterActivity2"
-            android:screenOrientation="portrait"
             android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.showmo.demo.play.PlayActivity"
-            android:screenOrientation="portrait"
             android:label="@string/title_activity_showmo_demo"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
@@ -369,10 +363,10 @@
             android:label="@string/title_activity_smart_air_condition"
             android:theme="@android:style/Theme.Holo.Light">
         </activity>
-        <activity android:name=".SmartDoorActivity"
-                  android:label="@string/title_activity_smart_door"
-                  android:theme="@android:style/Theme.Holo.Light">
-
+        <activity
+            android:name=".SmartDoorActivity"
+            android:label="@string/title_activity_smart_door"
+            android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.way.tabui.settingsmodule.SetBundMesActivity"
@@ -381,100 +375,105 @@
         </activity>
 
         <!-- 物业报修 -->
-        <!--<activity-->
-            <!--android:name="com.property.activity.InformActivity"-->
-            <!--android:label="@string/title_activity_inform"-->
-            <!--android:theme="@android:style/Theme.Holo.Light" >-->
-        <!--</activity>-->
+        <!-- <activity -->
+        <!-- android:name="com.property.activity.InformActivity" -->
+        <!-- android:label="@string/title_activity_inform" -->
+        <!-- android:theme="@android:style/Theme.Holo.Light" > -->
+        <!-- </activity> -->
         <activity
             android:name="com.property.activity.BaoxiuguanliActivity"
             android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light" >
+            android:theme="@android:style/Theme.Holo.Light">
         </activity>
-        <activity android:name="com.property.activity.BaoxiushenqingActivity" >
+        <activity android:name="com.property.activity.BaoxiushenqingActivity">
         </activity>
         <activity
             android:name="com.property.activity.BaoxiuxiangqingActivity"
             android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light" >
+            android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.property.activity.ChakandatuActivity"
             android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light" >
+            android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.property.activity.FaultDeleteActivity"
             android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light" >
+            android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.property.activity.FaultProgressActivity"
             android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light" >
+            android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.property.activity.JiaofeiDetailActivity"
             android:label="缴费详情"
-            android:theme="@android:style/Theme.Holo.Light" >
+            android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.property.activity.JiaofeiListActivity"
             android:label="缴费分类列表"
-            android:theme="@android:style/Theme.Holo.Light" >
+            android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.property.activity.JiaofeifenleiActivity"
             android:label="缴费分类"
             android:theme="@android:style/Theme.Holo.Light">
 
-            <!--TODO 物业-->
-            <!--<intent-filter>-->
-            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!-- TODO 物业 -->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
 
-            <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name="com.property.activity.JiaofeijiluActivity"
             android:label="缴费分类记录"
-            android:theme="@android:style/Theme.Holo.Light" >
+            android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.property.activity.AnnouncementInfoActivity"
             android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light" >
+            android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name="com.property.activity.AnnouncementListActivity"
             android:label="@string/title_activity_inform"
-            android:theme="@android:style/Theme.Holo.Light" >
+            android:theme="@android:style/Theme.Holo.Light">
         </activity>
-
-
-        <activity android:name="com.property.duotushangchuan.AlbumActivity"
-                  android:label="@string/title_activity_inform"
-                  android:theme="@android:style/Theme.Holo.Light" >
+        <activity
+            android:name="com.property.duotushangchuan.AlbumActivity"
+            android:label="@string/title_activity_inform"
+            android:theme="@android:style/Theme.Holo.Light">
         </activity>
 
         <!-- 物业报修 -->
 
+
         <!-- TODO 生活服务 -->
-        <activity android:name="com.LifeServices.activity.SecondTradeActivity"
-                  android:label="二手物品"
-                  android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.LifeServices.activity.SecondTradeActivity"
+            android:label="二手物品"
+            android:theme="@android:style/Theme.NoTitleBar">
         </activity>
-        <activity android:name="com.LifeServices.activity.OrderActivity"
-                  android:label="详细信息"
-                  android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.LifeServices.activity.OrderActivity"
+            android:label="详细信息"
+            android:theme="@android:style/Theme.NoTitleBar">
         </activity>
-        <activity android:name="com.LifeServices.activity.ShopAllActivity"
-                  android:label="商店信息"
-                  android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.LifeServices.activity.ShopAllActivity"
+            android:label="商店信息"
+            android:theme="@android:style/Theme.NoTitleBar">
         </activity>
-        <activity android:name="com.LifeServices.activity.ShopItemActivity"
-                  android:label="商品信息"
-                  android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.LifeServices.activity.ShopItemActivity"
+            android:label="商品信息"
+            android:theme="@android:style/Theme.NoTitleBar">
         </activity>
         <!-- 生活服务 -->
 
@@ -664,6 +663,10 @@
 
         <!-- <activity android:name="com.way.tabui.controlmodule.GosColorsListActivity"></activity> -->
 
+        <activity
+            android:name=".curtainDeviceListActivity"
+            android:label="@string/title_activity_curtain_device_list">
+        </activity>
     </application>
 
 </manifest>

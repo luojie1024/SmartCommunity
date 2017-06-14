@@ -667,6 +667,10 @@
 
         <!-- <activity android:name="com.way.tabui.controlmodule.GosColorsListActivity"></activity> -->
 
+        <activity
+            android:name="com.way.tabui.gokit.curtainDeviceListActivity"
+            android:label="@string/title_activity_curtain_device_list" >
+        </activity>
     </application>
 
 </manifest>

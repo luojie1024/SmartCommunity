@@ -42,8 +42,10 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.gizwits.gizwifisdk.api.GizDeviceSharing;
 import com.gizwits.gizwifisdk.api.GizWifiSDK;
 import com.gizwits.gizwifisdk.enumration.GizWifiErrorCode;
+import com.gizwits.gizwifisdk.listener.GizDeviceSharingListener;
 import com.gizwits.gizwifisdk.listener.GizWifiSDKListener;
 import com.google.zxing.Result;
 import com.way.adapter.DatabaseAdapter;
@@ -100,6 +102,8 @@ public final class CaptureActivity extends Activity implements
         }
 
 	};
+    private String type;
+    private String code;
 
 //    GizWifiSDKListener gizWifiSDKListener = new GizWifiSDKListener() {
 //        @Override
@@ -157,7 +161,7 @@ public final class CaptureActivity extends Activity implements
 
 		SUCCESS,
 
-		FAILED, ADD_DATA,
+		FAILED, ADD_DATA, SHARING, FAILED_QRC,
 
 	}
 
@@ -186,7 +190,7 @@ public final class CaptureActivity extends Activity implements
 
 			case SUCCESS:
 				finish();
-                Toast.makeText(CaptureActivity.this, "返回前一界面中", Toast.LENGTH_SHORT).show();
+                Toast.makeText(CaptureActivity.this, "添加成功", Toast.LENGTH_SHORT).show();
                 break;
 			case ADD_DATA:
 				Gizinfo gizinfo = new Gizinfo(name, address, bindgiz, "NULL", 0);
@@ -199,9 +203,39 @@ public final class CaptureActivity extends Activity implements
 				Toast.makeText(CaptureActivity.this, R.string.add_failed,
 						Toast.LENGTH_SHORT).show();
 				finish();
+                break;
+                case FAILED_QRC:
+                    Toast.makeText(CaptureActivity.this, "数据格式解析错误",
+                            Toast.LENGTH_SHORT).show();
+                    finish();
+                break;
+                case SHARING:
+                    GizDeviceSharing.setListener(mListener);
+                    String token =spf.getString("Token",null);
+                    if(token!=null)
+                    GizDeviceSharing.acceptDeviceSharingByQRCode(token,code);
+                    else{
+                        Toast.makeText(CaptureActivity.this, R.string.add_failed,
+                                Toast.LENGTH_SHORT).show();
+                        finish();
+                    }
+                    break;
 			}
 		}
 	};
+
+    GizDeviceSharingListener mListener = new GizDeviceSharingListener() {
+        @Override
+        public void didAcceptDeviceSharingByQRCode(GizWifiErrorCode result) {
+            if (result == GizWifiErrorCode.GIZ_SDK_SUCCESS) {
+// 成功
+                handler.sendEmptyMessage(handler_key.SUCCESS.ordinal());
+            } else {
+// 失败
+                handler.sendEmptyMessage(handler_key.FAILED.ordinal());
+            }
+        }
+    };
 
 	@SuppressWarnings("deprecation")
 	private void startBind(final String passcode, final String did) {
@@ -369,6 +403,7 @@ public final class CaptureActivity extends Activity implements
 	 */
 	public void handleDecode(Result rawResult, Bundle bundle) {
 		String text = rawResult.getText();
+
 		if ((!isfromoc) && text.contains("product_key=")
 				&& text.contains("did=") && text.contains("passcode=")) {
 			inactivityTimer.onActivity();
@@ -400,7 +435,31 @@ public final class CaptureActivity extends Activity implements
 			Toast.makeText(CaptureActivity.this, R.string.scanning_successful,
 					Toast.LENGTH_SHORT).show();
 			mHandler.sendEmptyMessage(handler_key.ADD_DATA.ordinal());
-		} else {
+		}else if ((!isfromoc) && text.contains("type")
+                && text.contains("code") ){
+            type = getParamFomeUrl(text,"type");
+            code = getParamFomeUrl(text,"code");
+            Toast.makeText(CaptureActivity.this, R.string.scanning_successful,
+                    Toast.LENGTH_SHORT).show();
+            mHandler.sendEmptyMessage(handler_key.SHARING.ordinal());
+
+        }else if((!isfromoc) && text.contains("type")
+                && text.contains("mac") && text.contains("productKey")
+                && text.contains("productSecret")){
+            type = getParamFomeUrl(text,"type");
+            uid = spf.getString("Uid",null);
+            token =  spf.getString("Token",null);
+            mac = getParamFomeUrl(text, "mac");
+            productKey = getParamFomeUrl(text, "productKey");
+            productSecret = getParamFomeUrl(text, "productSecret");
+            Toast.makeText(CaptureActivity.this, R.string.scanning_successful,
+                    Toast.LENGTH_SHORT).show();
+            if((type.equals("bang"))&&(uid!=null)&&(token!=null))
+            mHandler.sendEmptyMessage(handler_key.START_BIND.ordinal());
+            else
+                mHandler.sendEmptyMessage(handler_key.FAILED_QRC.ordinal());
+        }
+        else {
 			handler = new CaptureActivityHandler(this, cameraManager,
 					DecodeThread.ALL_MODE);
 		}

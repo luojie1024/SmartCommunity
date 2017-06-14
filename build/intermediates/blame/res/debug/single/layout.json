@@ -128,12 +128,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\shop_commit.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\viewpager_menu.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\viewpager_menu.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_user_login.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_user_login.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\viewpager_menu.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\viewpager_menu.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_reset.xml",
@@ -206,6 +206,10 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_alert_info.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\listview_alert_info.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_curtain_device_list.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_curtain_device_list.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_about.xml",

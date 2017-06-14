@@ -84,6 +84,10 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\jiaofei_fangzu.png"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_curtain.jpg",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\ic_curtain.jpg"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_filenum.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_filenum.png"
     },

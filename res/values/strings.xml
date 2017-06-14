@@ -1033,6 +1033,7 @@ UID：{4}"</string>
     <string name="title_activity_smart_light">SmartLightActivity</string>
     <string name="title_activity_preview">PreviewActivity</string>
     <!-- goziw -->
+    <string name="name">名字</string>
     <string name="name_hint">请输入手机号</string>
     <string name="password_hint">请输入登录密码</string>
     <string name="name_digits">0123456789</string>
@@ -1253,5 +1254,6 @@ UID：{4}"</string>
     <string name="unfinished">完成</string>
     <string name="camera_cancel">取消</string>
     <string name="no_photo">相册没有图片</string>
+    <string name="title_activity_curtain_device_list">curtainDeviceListActivity</string>
 
 </resources>
