@@ -1,11 +1,11 @@
 [
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\alertmes.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\alertmes.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\add_devices.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\add_devices.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\alertmes.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\menu\\alertmes.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\menu\\updata.xml",

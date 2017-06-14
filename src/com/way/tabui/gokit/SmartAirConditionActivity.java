@@ -451,7 +451,7 @@ public class SmartAirConditionActivity extends GosBaseActivity {
 
     private void updbData() {
         AirMesinfo airMesinfo = new AirMesinfo(_id, name, brand, temperature, modIndex, wsIndex, wdIndex, mac, "Null", opcl);
-        dbAdapter.updateairmes(airMesinfo);
+        dbAdapter.updateAirmes(airMesinfo);
     }
 
     private void sendJson(String key, Object value) throws JSONException {

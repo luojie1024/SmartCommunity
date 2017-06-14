@@ -144,7 +144,7 @@ public class AlertmesActivity extends GosBaseActivity {
 									@Override
 									public void onClick(DialogInterface dialog,
 											int which) {
-										dbAdapter.deletealert(alertmesid);
+										dbAdapter.deleteAlert(alertmesid);
 										Toast.makeText(getApplicationContext(),
 												"删除完毕", Toast.LENGTH_SHORT)
 												.show();
@@ -189,7 +189,7 @@ public class AlertmesActivity extends GosBaseActivity {
 									progressDialog.show();
 									for (int i = 0; i < mlist.size(); i++) {
 										alertmesid = mlist.get(i).getId();
-										dbAdapter.deletealert(alertmesid);
+										dbAdapter.deleteAlert(alertmesid);
 									}
 									progressDialog.cancel();
 									Toast.makeText(getApplicationContext(),

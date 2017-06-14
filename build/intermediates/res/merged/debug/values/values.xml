@@ -1248,7 +1248,7 @@
     <string name="timer_text">设备连接网络后，手机可以远程控制设备</string>
     <string name="title">title</string>
     <string name="title_account_explain">帐户说明</string>
-    <string name="title_activity_add_ocdevice">添加开关设备</string>
+    <string name="title_activity_add_ocdevice">添加设备</string>
     <string name="title_activity_air_con_brand">选择设备</string>
     <string name="title_activity_air_con_mes">设备列表</string>
     <string name="title_activity_air_mate">配对设备</string>

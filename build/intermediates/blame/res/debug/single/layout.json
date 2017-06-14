@@ -88,12 +88,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\plugin_camera_select_imageview.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\view_gos_notification.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\view_gos_notification.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_settings.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_settings.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\view_gos_notification.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\view_gos_notification.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_popupwindows.xml",
@@ -152,12 +152,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\popupwindow_shifouyifukuan.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_preview.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_preview.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\plugin_camera_image_file.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\plugin_camera_image_file.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_preview.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_preview.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\actvity_gos_device_reset.xml",
@@ -204,12 +204,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_fault_delete.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_alert_info.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\listview_alert_info.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_curtain_device_list.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_curtain_device_list.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\listview_alert_info.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\listview_alert_info.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_about.xml",
@@ -364,20 +364,20 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\fragment_mywy.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\main_fsystem.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\main_fsystem.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\dlg_order_settime.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\dlg_order_settime.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_forget_password.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_forget_password.xml"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\main_fsystem.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\main_fsystem.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_airlink_choose_device_workwifi.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_airlink_choose_device_workwifi.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gos_forget_password.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gos_forget_password.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\alert_gos_wifi_list.xml",
@@ -386,6 +386,10 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_modifypsw.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_modifypsw.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_smart_list_curtain.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_smart_list_curtain.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baoxiushenqing.xml",
@@ -424,6 +428,10 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_adddev4.xml"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\alert_curtain_set_mes.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\alert_curtain_set_mes.xml"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_updata.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_updata.xml"
     },
@@ -432,12 +440,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_gonggao.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_baoxiuguanli.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\list_item_baoxiuguanli.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_second_trade_all.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\activity_second_trade_all.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_baoxiuguanli.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\layout\\list_item_baoxiuguanli.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_inform_item.xml",

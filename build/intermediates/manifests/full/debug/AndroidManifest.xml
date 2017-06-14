@@ -254,6 +254,11 @@
             android:label="@string/title_activity_air_mate"
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
+        <!-- 智能窗帘列表 -->
+        <activity
+            android:name="com.way.tabui.gokit.SmartCurtainListActivity"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
         <!-- 智能窗帘 -->
         <activity
             android:name="com.way.tabui.gokit.SmartCurtainActivity"
@@ -667,10 +672,6 @@
 
         <!-- <activity android:name="com.way.tabui.controlmodule.GosColorsListActivity"></activity> -->
 
-        <activity
-            android:name="com.way.tabui.gokit.curtainDeviceListActivity"
-            android:label="@string/title_activity_curtain_device_list" >
-        </activity>
     </application>
 
 </manifest>

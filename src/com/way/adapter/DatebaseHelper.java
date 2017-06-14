@@ -1,14 +1,7 @@
 package com.way.adapter;
 
-import java.util.ArrayList;
-
-import com.larksmart7618.sdk.communication.tools.time.GetAndSetTime;
-import com.way.tabui.gokit.R;
-import com.way.util.Gizinfo;
-
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 /**
@@ -20,13 +13,16 @@ import android.util.Log;
 public class DatebaseHelper extends SQLiteOpenHelper {
 
 	public static final String DB_NAME ="gizdb.db";
-	public static final int VERSION = 3;
+	public static final int VERSION = 4;
 	private static final String CREATE_TABLE_GIZ ="create table giz(id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,address TEXT,bindgiz TEXT,userid TEXT,flag INTEGER)";
 	private static final String CREATE_TABLE_ALERT ="create table alert(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,time TEXT,bindgiz TEXT,userid TEXT,flag INTEGER)";
-	private static final String CREATE_TABLE_AIRMES="create table airmes(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,brand INTEGER,temperature INTEGER,mode INTEGER,speed INTEGER,direction INTEGER,bindgiz TEXT,userid TEXT,flag INTEGER)";	
-	private static final String DROP_TABLE_GIZ="DROP TABLE IF EXISTS giz";
+	private static final String CREATE_TABLE_AIRMES="create table airmes(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,brand INTEGER,temperature INTEGER,mode INTEGER,speed INTEGER,direction INTEGER,bindgiz TEXT,userid TEXT,flag INTEGER)";
+    private static final String CREATE_TABLE_CURTAIN="create table curtain(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,address TEXT,bindgiz TEXT,userid TEXT,flag INTEGER)";
+    private static final String DROP_TABLE_GIZ="DROP TABLE IF EXISTS giz";
 	private static final String DROP_TABLE_ALERT="DROP TABLE IF EXISTS alert";
 	private static final String DROP_TABLE_AIRMES="DROP TABLE IF EXISTS airmes";
+    private static final String DROP_TABLE_CURTAIN="DROP TABLE IF EXISTS curtain";
+
 
 	public DatebaseHelper(Context context) {
 		super(context, DB_NAME, null, VERSION);
@@ -41,6 +37,7 @@ public class DatebaseHelper extends SQLiteOpenHelper {
 		db.execSQL(CREATE_TABLE_GIZ);
 		db.execSQL(CREATE_TABLE_ALERT);
 		db.execSQL(CREATE_TABLE_AIRMES);
+        db.execSQL(CREATE_TABLE_CURTAIN);
 		} catch (Exception e) {
 			// TODO: handle exception
 			Log.e("==", "数据库创建失败");
@@ -59,6 +56,8 @@ public class DatebaseHelper extends SQLiteOpenHelper {
 		db.execSQL(CREATE_TABLE_ALERT);
 		db.execSQL(DROP_TABLE_AIRMES);
 		db.execSQL(CREATE_TABLE_AIRMES);
+        db.execSQL(DROP_TABLE_CURTAIN);
+        db.execSQL(CREATE_TABLE_CURTAIN);
 		} catch (Exception e) {
 			// TODO: handle exception
 			Log.e("==", "数据库更新版本失败");

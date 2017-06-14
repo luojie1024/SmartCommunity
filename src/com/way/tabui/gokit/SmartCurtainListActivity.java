@@ -1,5 +1,9 @@
 package com.way.tabui.gokit;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -8,26 +12,29 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.AdapterView;
-import android.widget.ListView;
-import android.widget.TextView;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
-import com.way.adapter.SmartOCAdapter;
+import com.way.adapter.CurtianAdapter;
+import com.way.adapter.DatabaseAdapter;
+import com.way.adapter.DatebaseHelper;
 import com.way.tabui.actity.AddOcdeviceActivity;
 import com.way.tabui.actity.MainActivity;
 import com.way.tabui.controlmodule.GosControlModuleBaseActivity;
-import com.way.tabui.settingsmodule.GosSettiingsActivity;
-import com.way.util.Gizinfo;
+import com.way.tabui.view.SlideListView2;
+import com.way.util.CurtainInfo;
+import com.way.util.GizMetaData;
 
 import org.json.JSONException;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
-
-import zxing.CaptureActivity;
 
 /**
  * 作者：Jacky
@@ -36,12 +43,9 @@ import zxing.CaptureActivity;
  */
 public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
 
-          /** 传输字符 */
-          private static final String KEY_Sendcom = "Send_com";
 
           /** The GizWifiDevice device */
           private GizWifiDevice device;
-
           /** The device statu. */
           private HashMap<String, Object> deviceStatu;
           /** The isUpDateUi */
@@ -49,10 +53,18 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
 
           protected static final int OPEN = 1;
           protected static final int CLOSE = 0;
-          private TextView tv_nodevice;
-          private ListView smart_oc_listview;
-          private SmartOCAdapter adapter;
-          ArrayList<Gizinfo> giz = new ArrayList<Gizinfo>();
+        protected static final int UPDATA = 99;
+        protected static final int DELETE = 100;
+
+
+         private LinearLayout bt_addCurtain;
+         private View lldevice;
+         private ScrollView svListGroup;
+          private SlideListView2 listview_air_con_mes;
+         private DatabaseAdapter dbAdapter;
+          private CurtianAdapter adapter;
+         private DatebaseHelper dbHelper;
+          ArrayList<CurtainInfo> giz = new ArrayList<CurtainInfo>();
           private String MacAddress, name, address;
 
           @Override
@@ -62,18 +74,23 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
                     initDevice();
                     MacAddress = device.getMacAddress();
                     setActionBar(true, true, "窗帘");
+                    dbAdapter = new DatabaseAdapter(this);
+                    dbHelper = new DatebaseHelper(this);
+                    curtainInfo = new CurtainInfo();
                     setProgressDialog();
+                   progressDialog.show();
                     initView();
-                    //  initdata();
                     initList();
           }
 
           @Override
           protected void onResume() {
                     if((adapter.setDate(MacAddress))==null){
-                              tv_nodevice.setVisibility(View.VISIBLE);
+                        bt_addCurtain.setVisibility(View.VISIBLE);
+                        svListGroup.setVisibility(View.GONE);
                     }else {
-                              tv_nodevice.setVisibility(View.GONE);
+                        bt_addCurtain.setVisibility(View.GONE);
+                        svListGroup.setVisibility(View.VISIBLE);
                     }
                     initevent();
                     super.onResume();
@@ -90,116 +107,170 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
                     deviceStatu = new HashMap<String, Object>();
                     Log.i("device", "initDevice:----> "+device.getMacAddress());
           }
+    private void initList(){
+        adapter = new CurtianAdapter(handler,SmartCurtainListActivity.this);
+        adapter.setHandler(handler);
+        listview_air_con_mes.setAdapter(adapter);
+
+    }
 
           private void initView() {
-                    smart_oc_listview = (ListView) findViewById(R.id.smart_oc_listview);
-                    tv_nodevice = (TextView) findViewById(R.id.tv_nodevice);
+              bt_addCurtain = (LinearLayout) findViewById(R.id.bt_add_air);
+              listview_air_con_mes = (SlideListView2) findViewById(R.id.slideListView1);
+              lldevice = findViewById(R.id.lldevice);
+              svListGroup = (ScrollView) findViewById(R.id.svListGroup);
+              progressDialog.cancel();
+              listview_air_con_mes.initSlideMode(SlideListView2.MOD_RIGHT);
           }
-
-          int gizid;
 
           private void initevent() {
                     // TODO: 2017/6/14 点击列表
-                    smart_oc_listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+              listview_air_con_mes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                  @Override
+                  public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                      name = adapter.getmList().get(position).getName();
+                      //address地址代码
+                      address = adapter.getmList().get(position).getAddress();
+                      Intent intent = new Intent(SmartCurtainListActivity.this, SmartCurtainActivity.class);
+                      intent.putExtra("name",name);
+                      intent.putExtra("address",address);
+                      Bundle bundle = new Bundle();
+                      //传设备
+                      bundle.putParcelable("GizWifiDevice",device);
+                      intent.putExtras(bundle);
+                      startActivityForResult(intent, 1000);
+                  }
+              });
+              bt_addCurtain.setOnClickListener(new View.OnClickListener() {
 
-                              @Override
-                              public void onItemClick(AdapterView<?> parent, View view,
-                                                      int position, long id) {
-                                        name = adapter.getmList().get(position).getName();
-                                        //address地址代码
-                                        address = adapter.getmList().get(position).getAddress();
-                                        Intent intent = new Intent(SmartCurtainListActivity.this, SmartCurtainActivity.class);
-                                        intent.putExtra("name",name);
-                                        intent.putExtra("address",address);
-                                        Bundle bundle = new Bundle();
-                                        //传设备
-                                        bundle.putParcelable("GizWifiDevice",device);
-                                        intent.putExtras(bundle);
-                                        startActivityForResult(intent, 1000);
-                              }
-                    });
+                  @Override
+                  public void onClick(View v) {
+                      // TODO Auto-generated method stub
+                      if (!checkNetwork(SmartCurtainListActivity.this)) {
+                          Toast.makeText(SmartCurtainListActivity.this, R.string.network_error,
+                                  Toast.LENGTH_SHORT).show();
+                      } else {
+                         Intent intent = new Intent(SmartCurtainListActivity.this,
+                                  AddOcdeviceActivity.class);
+                          intent.putExtra("bindgiz", MacAddress);
+                          intent.putExtra("tablename", GizMetaData.CurtainTable.TABLE_NAME);
+                          startActivity(intent);
+                      }
+                  }
+              });
 
           }
-//	private void initdata() {
-//		progressDialog.setMessage("读取数据中...");
-//		progressDialog.show();
-//		SQLiteDatabase db = dbHelper.getWritableDatabase();
-//		String whereClause = GizMetaData.GizTable.GIZ_BINDGIZ + "=?";
-//		String[] whereArgs = { MacAddress };
-//		String[] columns = { GizMetaData.GizTable.GIZ_ID,
-//				GizMetaData.GizTable.GIZ_NAME,
-//				GizMetaData.GizTable.GIZ_ADDRESS,
-//				GizMetaData.GizTable.GIZ_BINDGIZ,
-//				GizMetaData.GizTable.GIZ_USERID, GizMetaData.GizTable.GIZ_FLAG };
-//		// 参数说明(是否去除重复记录,表明,要查询的列，查询条件，查询条件的值，分组条件，分组条件的值，排序，排序条件)
-//		Cursor c = db.query(true, GizMetaData.GizTable.TABLE_NAME, columns,
-//				whereClause, whereArgs, null, null, null, null);
-//		if (c.getCount() == 0) {
-//			tv_nodevice.setVisibility(View.VISIBLE);
-//		} else {
-//			tv_nodevice.setVisibility(View.GONE);
-//		}
-//		c.close();
-//		db.close();
-////		giz = dbAdapter.findbybindgiz(MacAddress);
-//		// Toast.makeText(getApplicationContext(), giz.get(0).getName(),
-//		// Toast.LENGTH_SHORT).show();
-//	}
 
-          Gizinfo gizinfo;
+    int position;
+    Dialog dialog;
+    CurtainInfo curtainInfo;
+    private void setDeviceInfo() {
+        dialog = new AlertDialog.Builder(this).setView(new EditText(this))
+                .create();
+        dialog.show();
+        Window window = dialog.getWindow();
+        window.setContentView(R.layout.alert_curtain_set_mes);
+        final EditText etAlias;
+        final EditText etBrand;
+        etAlias = (EditText) window.findViewById(R.id.etAlias);
+        etBrand = (EditText) window.findViewById(R.id.etBrand);
+        LinearLayout llNo, llSure;
+        llNo = (LinearLayout) window.findViewById(R.id.llNo);
+        llSure = (LinearLayout) window.findViewById(R.id.llSure);
+        if (curtainInfo.getName() != null) {
+            etAlias.setText(curtainInfo.getName());
+        }
+        etBrand.setText("" + curtainInfo.getAddress());
+        // }
 
+        llNo.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                dialog.cancel();
+            }
+        });
+
+        llSure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ;
+                try {
+                    String name = etAlias.getText().toString();
+                    String  address = etBrand.getText().toString();
+                    curtainInfo.setAddress(address);
+                    curtainInfo.setName(name);
+
+
+                    if((adapter.updateList(curtainInfo).setDate(MacAddress))==null){
+                        bt_addCurtain.setVisibility(View.VISIBLE);
+                        svListGroup.setVisibility(View.GONE);
+                    }else {
+                        bt_addCurtain.setVisibility(View.GONE);
+                        svListGroup.setVisibility(View.VISIBLE);
+                    }
+                    Toast.makeText(getApplicationContext(), "修改成功",
+                            Toast.LENGTH_SHORT).show();
+                    dialog.cancel();
+                } catch (Exception e) {
+                    // TODO: handle exception
+                    Toast.makeText(getApplicationContext(), "修改失败",
+                            Toast.LENGTH_SHORT).show();
+                    dialog.cancel();
+                }
+
+            }
+        });
+    }
+
+    protected void deleteAlert(Context context) {
+        String title, message, nbtext, pbtext;
+        title = (String) getText(R.string.prompt);
+        message = "确定要删除么？";
+        nbtext = "取消";
+        pbtext = "确定";
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle(title);
+        builder.setMessage(message);
+        builder.setNegativeButton(nbtext, null);
+        builder.setPositiveButton(pbtext,
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        if((adapter.deleteDate(index).setDate(MacAddress))==null){
+                            bt_addCurtain.setVisibility(View.VISIBLE);
+                            svListGroup.setVisibility(View.GONE);
+                        }else {
+                            bt_addCurtain.setVisibility(View.GONE);
+                            svListGroup.setVisibility(View.VISIBLE);
+                        }
+                    }
+                });
+        builder.show();
+    }
+
+    int index;
           Handler handler = new Handler(){
                     public void handleMessage(android.os.Message msg) {
                               super.handleMessage(msg);
                               int position =msg.arg1;
-                              ArrayList<Gizinfo> mlist =adapter.getmList();
+                              ArrayList<CurtainInfo> mlist =adapter.getmList();
                               switch (msg.what){
-                                        case OPEN:
-                                                  try {
-
-                                                            sendJson(KEY_Sendcom, Integer.parseInt(mlist
-                                                                 .get(position).getAddress()));
-                                                            mlist.get(position).setFlag(1);
-                                                            adapter.updateList(mlist.get(position));
-
-                                                  } catch (NumberFormatException e) {
-                                                            // TODO Auto-generated catch block
-                                                            Toast.makeText(getApplicationContext(), "指令发送失败",
-                                                                 Toast.LENGTH_SHORT).show();
-                                                  } catch (JSONException e) {
-                                                            // TODO Auto-generated catch block
-                                                            Toast.makeText(getApplicationContext(), "指令发送失败",
-                                                                 Toast.LENGTH_SHORT).show();
-                                                  }
-                                                  break;
-                                        case CLOSE:
-                                                  try {
-                                                            sendJson(KEY_Sendcom, Integer.parseInt(adapter.getmList()
-                                                                 .get(position).getAddress()) + 1);
-                                                            mlist.get(position).setFlag(0);
-                                                            adapter.updateList(mlist.get(position));
-                                                  } catch (NumberFormatException e) {
-                                                            // TODO Auto-generated catch block
-                                                            Toast.makeText(getApplicationContext(), "指令发送失败",
-                                                                 Toast.LENGTH_SHORT).show();
-                                                  } catch (JSONException e) {
-                                                            // TODO Auto-generated catch block
-                                                            Toast.makeText(getApplicationContext(), "指令发送失败",
-                                                                 Toast.LENGTH_SHORT).show();
-                                                  }
-                                                  break;
+                                        case UPDATA:
+                                            index = msg.arg1;
+                                            curtainInfo= (CurtainInfo) msg.obj;
+                                            setDeviceInfo();
+                                            break;
+                                        case DELETE:
+                                            index = msg.arg1;
+                                            deleteAlert(SmartCurtainListActivity.this);
+                                            break;
                               }
                     }
 
           };
 
-          private void initList() {
-//		adapter = new SmartOCAdapter(SmartOCActivity.this, giz);
-//		adapter.setHandler(handler);
-                    adapter=new SmartOCAdapter(handler,this);
-                    smart_oc_listview.setAdapter(adapter);
-                    progressDialog.cancel();
-          }
+
 
 
 
@@ -213,18 +284,8 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
 
           @Override
           public boolean onCreateOptionsMenu(Menu menu) {
-                    // Inflate the menu; this adds items to the action bar if it is present.
-                    // if (!TextUtils.isEmpty(spf.getString("UserName", "")) &&
-                    // !TextUtils.isEmpty(spf.getString("PassWord", ""))) {
-                    getMenuInflater().inflate(R.menu.devicelist_logout, menu);
-                    // } else {
-                    // if (getIntent().getBooleanExtra("ThredLogin", false)) {
-                    // getMenuInflater().inflate(R.menu.devicelist_logout, menu);
-                    // } else {
-                    // getMenuInflater().inflate(R.menu.devicelist_login, menu);
-                    // }
-                    // }
 
+              getMenuInflater().inflate(R.menu.add_devices, menu);
                     return true;
           }
 
@@ -234,22 +295,11 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
                     Intent intent;
                     switch (item.getItemId()) {
                               case android.R.id.home:
-                                        // if (checkNetwork(SmartOCActivity.this)) {
-                                        // progressDialog.show();
-                                        // handler.sendEmptyMessage(GETLIST);
-                                        // }
+
                                         finish();
                                         break;
-                              case R.id.action_QR_code:
 
-                                        intent = new Intent(SmartCurtainListActivity.this, CaptureActivity.class);
-                                        intent.putExtra("fromoc", true);
-                                        intent.putExtra("bindgiz", MacAddress);
-                                        startActivity(intent);
-                                        break;
-                              case R.id.action_change_user:
-                                        break;
-                              case R.id.action_addDevice:
+                              case R.id.add_device:
                                         if (!checkNetwork(SmartCurtainListActivity.this)) {
                                                   Toast.makeText(SmartCurtainListActivity.this, R.string.network_error,
                                                        Toast.LENGTH_SHORT).show();
@@ -257,14 +307,11 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
                                                   intent = new Intent(SmartCurtainListActivity.this,
                                                        AddOcdeviceActivity.class);
                                                   intent.putExtra("bindgiz", MacAddress);
+                                                    intent.putExtra("tablename", GizMetaData.CurtainTable.TABLE_NAME);
                                                   startActivity(intent);
                                         }
                                         break;
-                              case R.id.action_site:
-                                        intent = new Intent(SmartCurtainListActivity.this,
-                                             GosSettiingsActivity.class);
-                                        startActivity(intent);
-                                        break;
+
                     }
                     return super.onOptionsItemSelected(item);
           }

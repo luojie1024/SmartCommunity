@@ -1223,7 +1223,7 @@ UID：{4}"</string>
     <string name="spinnerTaskResultCountTitle">Task result count</string>
     <string name="btnConfirmTitle">配置</string>
     <string name="title_activity_smart_oc">SmartOCActivity</string>
-    <string name="title_activity_add_ocdevice">添加开关设备</string>
+    <string name="title_activity_add_ocdevice">添加设备</string>
     <string name="title_activity_updata">修改设备信息</string>
     <string name="title_activity_promail">物业信箱</string>
     <string name="title_activity_alertmes">警报记录</string>

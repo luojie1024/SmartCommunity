@@ -104,12 +104,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plugin_camera_title_bar.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jiaofei_dianfei.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\jiaofei_dianfei.png"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plubin_camera_del_focused.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\plubin_camera_del_focused.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jiaofei_dianfei.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-hdpi\\jiaofei_dianfei.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\plugin_camera_preview_unselected.png",

@@ -56,6 +56,10 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_feedlist_checked.png"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_btn_normal.9.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_btn_normal.9.png"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_viewpager_switch_flying_indicator.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_viewpager_switch_flying_indicator.png"
     },
@@ -140,16 +144,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_gas_a.jpg"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\right_icon.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\right_icon.png"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btn_viewpager_switch_selector.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\btn_viewpager_switch_selector.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_btn_normal_9.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_btn_normal_9.png"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\right_icon.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\right_icon.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\login_icon_name.png",
@@ -264,16 +264,16 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_main_bg.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_btn_pressed_9.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_btn_pressed_9.png"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\qq.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\qq.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gas_b.jpg",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_gas_b.jpg"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_btn_pressed.9.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_btn_pressed.9.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\add.png",

@@ -22,6 +22,7 @@ import com.way.adapter.SmartOCAdapter;
 import com.way.tabui.controlmodule.GosControlModuleBaseActivity;
 import com.way.tabui.gokit.R;
 import com.way.tabui.settingsmodule.GosSettiingsActivity;
+import com.way.util.GizMetaData;
 import com.way.util.Gizinfo;
 
 import org.json.JSONException;
@@ -298,6 +299,7 @@ public class SmartOCActivity extends GosControlModuleBaseActivity {
 				intent = new Intent(SmartOCActivity.this,
 						AddOcdeviceActivity.class);
 				intent.putExtra("bindgiz", MacAddress);
+                intent.putExtra("tablename", GizMetaData.GizTable.TABLE_NAME);
 				startActivity(intent);
 			}
 			break;

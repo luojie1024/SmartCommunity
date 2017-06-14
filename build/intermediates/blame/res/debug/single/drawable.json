@@ -40,12 +40,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\plugin_camera_title_btn_back.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_curtain_shape2.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\bg_curtain_shape2.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_albumbackground.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\plugin_camera_albumbackground.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_curtain_shape2.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\bg_curtain_shape2.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\button_shape.xml",
@@ -104,12 +104,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\checkbox_hook_selector.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\png_left.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\png_left.png"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_shop_defalut.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\ic_shop_defalut.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\png_left.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\png_left.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_hotresouce.xml",
@@ -128,12 +128,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\checkbox_laws_selector.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\button_shape_gray.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\button_shape_gray.xml"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_title_btn_cancel.xml",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\plugin_camera_title_btn_cancel.xml"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\button_shape_gray.xml",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable\\button_shape_gray.xml"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_pic_choose_selector.xml",

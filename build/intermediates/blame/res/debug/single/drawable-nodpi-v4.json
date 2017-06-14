@@ -1,15 +1,27 @@
 [
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\viewpager_indicator_background.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\viewpager_indicator_background.png"
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\tab_btn_pressed.9.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\tab_btn_pressed.9.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\tab_transferlist_personal.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\tab_transferlist_personal.png"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\tab_btn_normal.9.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\tab_btn_normal.9.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\viewpager_background_pressed9.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\viewpager_background_pressed9.png"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\ic_swipe_guide_left.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\ic_swipe_guide_left.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\viewpager_background_normal9.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\viewpager_background_normal9.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\tab_transferlist_checked.png",
@@ -20,12 +32,12 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\ic_humity.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\viewpager_background_pressed.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\viewpager_background_pressed.png"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\tab_feedlist_checked.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\tab_feedlist_checked.png"
+    },
+    {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\viewpager_indicator_background9.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\viewpager_indicator_background9.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\ic_swipe_guide_right.png",
@@ -60,18 +72,6 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\tab_hotresouce_checked.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\transfer_tab_uncheck.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\transfer_tab_uncheck.png"
-    },
-    {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\tab_btn_pressed_9.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\tab_btn_pressed_9.png"
-    },
-    {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\tab_btn_normal_9.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\tab_btn_normal_9.png"
-    },
-    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\ic_body.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\ic_body.png"
     },
@@ -104,6 +104,10 @@
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\transfer_titlebar_upload_tab_pressed.png"
     },
     {
+        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\transfer_tab_uncheck9.png",
+        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\transfer_tab_uncheck9.png"
+    },
+    {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\tab_tools_checked.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\tab_tools_checked.png"
     },
@@ -134,10 +138,6 @@
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\ic_temity.png",
         "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\ic_temity.png"
-    },
-    {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\viewpager_background_normal.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-nodpi\\viewpager_background_normal.png"
     },
     {
         "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\ic_viewpager_switch_feedlist.png",

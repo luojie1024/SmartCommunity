@@ -1,12 +1,5 @@
 package com.way.adapter;
 
-import java.util.ArrayList;
-
-import com.way.adapter.AllmesAdapter.ViewHolder;
-import com.way.tabui.gokit.R;
-import com.way.util.AirMesinfo;
-import com.way.util.Allmesinfo;
-
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
@@ -18,6 +11,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.way.tabui.gokit.R;
+import com.way.util.AirMesinfo;
+
+import java.util.ArrayList;
 
 public class AirMesAdapter extends BaseAdapter{
 	private ArrayList<AirMesinfo> mList;
@@ -67,12 +65,14 @@ public class AirMesAdapter extends BaseAdapter{
 			viewHolder.tvAirName=(TextView) convertView.findViewById(R.id.tvAirName);
 			viewHolder.bt_update=(Button) convertView.findViewById(R.id.bt_update);
 			viewHolder.bt_delete=(Button) convertView.findViewById(R.id.bt_delete);
+            viewHolder.imageView1 = (ImageView) convertView.findViewById(R.id.imageView1);
 			convertView.setTag(viewHolder);
 		}else{
 			viewHolder = (ViewHolder) convertView.getTag();
 		}
 		final int index;
 		index=position;
+        viewHolder.imageView1.setImageResource(R.drawable.btn_stb_v53_normal);
 		viewHolder.tvAirName.setText(mList.get(position).getName());
 		viewHolder.bt_update.setOnClickListener(new OnClickListener() {		
 			@Override
@@ -101,6 +101,7 @@ public class AirMesAdapter extends BaseAdapter{
 	
 	class ViewHolder{
 		private TextView tvAirName;
+        private ImageView imageView1;
 		private Button bt_update;
 		private Button bt_delete;
 		

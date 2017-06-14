@@ -75,7 +75,6 @@ public class AirConditionListActivity extends GosBaseActivity {
 				// Toast.makeText(getApplicationContext(), "暂未开放",
 				// Toast.LENGTH_SHORT).show();
 				break;
-
 			case DELETE:
 				index = msg.arg1;
 				deleteAlert(AirConditionListActivity.this);
@@ -115,7 +114,7 @@ public class AirConditionListActivity extends GosBaseActivity {
 				new DialogInterface.OnClickListener() {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
-						dbAdapter.deleteairmes(index);
+						dbAdapter.deleteAirmes(index);
 						setProgressDialog("刷新中...");
 						progressDialog.show();
 						initData();
@@ -253,7 +252,7 @@ public class AirConditionListActivity extends GosBaseActivity {
 							airMesinfo.getSpeed(), airMesinfo.getDirection(),
 							airMesinfo.getBindgiz(), airMesinfo.getUserid(),
 							airMesinfo.getFlag());
-					dbAdapter.updateairmes(airMesinfo2);
+					dbAdapter.updateAirmes(airMesinfo2);
 					Toast.makeText(getApplicationContext(), "修改成功",
 							Toast.LENGTH_SHORT).show();
 					setProgressDialog("刷新数据中...");
