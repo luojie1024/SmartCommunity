@@ -53,17 +53,17 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
 
           protected static final int OPEN = 1;
           protected static final int CLOSE = 0;
-        protected static final int UPDATA = 99;
-        protected static final int DELETE = 100;
+          protected static final int UPDATA = 99;
+          protected static final int DELETE = 100;
 
 
-         private LinearLayout bt_addCurtain;
-         private View lldevice;
-         private ScrollView svListGroup;
+          private LinearLayout bt_addCurtain;
+          private View lldevice;
+          private ScrollView svListGroup;
           private SlideListView2 listview_air_con_mes;
-         private DatabaseAdapter dbAdapter;
+          private DatabaseAdapter dbAdapter;
           private CurtianAdapter adapter;
-         private DatebaseHelper dbHelper;
+          private DatebaseHelper dbHelper;
           ArrayList<CurtainInfo> giz = new ArrayList<CurtainInfo>();
           private String MacAddress, name, address;
 
@@ -78,7 +78,7 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
                     dbHelper = new DatebaseHelper(this);
                     curtainInfo = new CurtainInfo();
                     setProgressDialog();
-                   progressDialog.show();
+                    progressDialog.show();
                     initView();
                     initList();
           }
@@ -86,11 +86,11 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
           @Override
           protected void onResume() {
                     if((adapter.setDate(MacAddress))==null){
-                        bt_addCurtain.setVisibility(View.VISIBLE);
-                        svListGroup.setVisibility(View.GONE);
+                              bt_addCurtain.setVisibility(View.VISIBLE);
+                              svListGroup.setVisibility(View.GONE);
                     }else {
-                        bt_addCurtain.setVisibility(View.GONE);
-                        svListGroup.setVisibility(View.VISIBLE);
+                              bt_addCurtain.setVisibility(View.GONE);
+                              svListGroup.setVisibility(View.VISIBLE);
                     }
                     initevent();
                     super.onResume();
@@ -107,149 +107,149 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
                     deviceStatu = new HashMap<String, Object>();
                     Log.i("device", "initDevice:----> "+device.getMacAddress());
           }
-    private void initList(){
-        adapter = new CurtianAdapter(handler,SmartCurtainListActivity.this);
-        adapter.setHandler(handler);
-        listview_air_con_mes.setAdapter(adapter);
+          private void initList(){
+                    adapter = new CurtianAdapter(handler,SmartCurtainListActivity.this);
+                    adapter.setHandler(handler);
+                    listview_air_con_mes.setAdapter(adapter);
 
-    }
+          }
 
           private void initView() {
-              bt_addCurtain = (LinearLayout) findViewById(R.id.bt_add_air);
-              listview_air_con_mes = (SlideListView2) findViewById(R.id.slideListView1);
-              lldevice = findViewById(R.id.lldevice);
-              svListGroup = (ScrollView) findViewById(R.id.svListGroup);
-              progressDialog.cancel();
-              listview_air_con_mes.initSlideMode(SlideListView2.MOD_RIGHT);
+                    bt_addCurtain = (LinearLayout) findViewById(R.id.bt_add_air);
+                    listview_air_con_mes = (SlideListView2) findViewById(R.id.slideListView1);
+                    lldevice = findViewById(R.id.lldevice);
+                    svListGroup = (ScrollView) findViewById(R.id.svListGroup);
+                    progressDialog.cancel();
+                    listview_air_con_mes.initSlideMode(SlideListView2.MOD_RIGHT);
           }
 
           private void initevent() {
                     // TODO: 2017/6/14 点击列表
-              listview_air_con_mes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                  @Override
-                  public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                      name = adapter.getmList().get(position).getName();
-                      //address地址代码
-                      address = adapter.getmList().get(position).getAddress();
-                      Intent intent = new Intent(SmartCurtainListActivity.this, SmartCurtainActivity.class);
-                      intent.putExtra("name",name);
-                      intent.putExtra("address",address);
-                      Bundle bundle = new Bundle();
-                      //传设备
-                      bundle.putParcelable("GizWifiDevice",device);
-                      intent.putExtras(bundle);
-                      startActivityForResult(intent, 1000);
-                  }
-              });
-              bt_addCurtain.setOnClickListener(new View.OnClickListener() {
+                    listview_air_con_mes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                              @Override
+                              public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                        name = adapter.getmList().get(position).getName();
+                                        //address地址代码
+                                        address = adapter.getmList().get(position).getAddress();
+                                        Intent intent = new Intent(SmartCurtainListActivity.this, SmartCurtainActivity.class);
+                                        intent.putExtra("name",name);
+                                        intent.putExtra("address",address);
+                                        Bundle bundle = new Bundle();
+                                        //传设备
+                                        bundle.putParcelable("GizWifiDevice",device);
+                                        intent.putExtras(bundle);
+                                        startActivityForResult(intent, 1000);
+                              }
+                    });
+                    bt_addCurtain.setOnClickListener(new View.OnClickListener() {
 
-                  @Override
-                  public void onClick(View v) {
-                      // TODO Auto-generated method stub
-                      if (!checkNetwork(SmartCurtainListActivity.this)) {
-                          Toast.makeText(SmartCurtainListActivity.this, R.string.network_error,
-                                  Toast.LENGTH_SHORT).show();
-                      } else {
-                         Intent intent = new Intent(SmartCurtainListActivity.this,
-                                  AddOcdeviceActivity.class);
-                          intent.putExtra("bindgiz", MacAddress);
-                          intent.putExtra("tablename", GizMetaData.CurtainTable.TABLE_NAME);
-                          startActivity(intent);
-                      }
-                  }
-              });
+                              @Override
+                              public void onClick(View v) {
+                                        // TODO Auto-generated method stub
+                                        if (!checkNetwork(SmartCurtainListActivity.this)) {
+                                                  Toast.makeText(SmartCurtainListActivity.this, R.string.network_error,
+                                                       Toast.LENGTH_SHORT).show();
+                                        } else {
+                                                  Intent intent = new Intent(SmartCurtainListActivity.this,
+                                                       AddOcdeviceActivity.class);
+                                                  intent.putExtra("bindgiz", MacAddress);
+                                                  intent.putExtra("tablename", GizMetaData.CurtainTable.TABLE_NAME);
+                                                  startActivity(intent);
+                                        }
+                              }
+                    });
 
           }
 
-    int position;
-    Dialog dialog;
-    CurtainInfo curtainInfo;
-    private void setDeviceInfo() {
-        dialog = new AlertDialog.Builder(this).setView(new EditText(this))
-                .create();
-        dialog.show();
-        Window window = dialog.getWindow();
-        window.setContentView(R.layout.alert_curtain_set_mes);
-        final EditText etAlias;
-        final EditText etBrand;
-        etAlias = (EditText) window.findViewById(R.id.etAlias);
-        etBrand = (EditText) window.findViewById(R.id.etBrand);
-        LinearLayout llNo, llSure;
-        llNo = (LinearLayout) window.findViewById(R.id.llNo);
-        llSure = (LinearLayout) window.findViewById(R.id.llSure);
-        if (curtainInfo.getName() != null) {
-            etAlias.setText(curtainInfo.getName());
-        }
-        etBrand.setText("" + curtainInfo.getAddress());
-        // }
-
-        llNo.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                dialog.cancel();
-            }
-        });
-
-        llSure.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ;
-                try {
-                    String name = etAlias.getText().toString();
-                    String  address = etBrand.getText().toString();
-                    curtainInfo.setAddress(address);
-                    curtainInfo.setName(name);
-
-
-                    if((adapter.updateList(curtainInfo).setDate(MacAddress))==null){
-                        bt_addCurtain.setVisibility(View.VISIBLE);
-                        svListGroup.setVisibility(View.GONE);
-                    }else {
-                        bt_addCurtain.setVisibility(View.GONE);
-                        svListGroup.setVisibility(View.VISIBLE);
+          int position;
+          Dialog dialog;
+          CurtainInfo curtainInfo;
+          private void setDeviceInfo() {
+                    dialog = new AlertDialog.Builder(this).setView(new EditText(this))
+                         .create();
+                    dialog.show();
+                    Window window = dialog.getWindow();
+                    window.setContentView(R.layout.alert_curtain_set_mes);
+                    final EditText etAlias;
+                    final EditText etBrand;
+                    etAlias = (EditText) window.findViewById(R.id.etAlias);
+                    etBrand = (EditText) window.findViewById(R.id.etBrand);
+                    LinearLayout llNo, llSure;
+                    llNo = (LinearLayout) window.findViewById(R.id.llNo);
+                    llSure = (LinearLayout) window.findViewById(R.id.llSure);
+                    if (curtainInfo.getName() != null) {
+                              etAlias.setText(curtainInfo.getName());
                     }
-                    Toast.makeText(getApplicationContext(), "修改成功",
-                            Toast.LENGTH_SHORT).show();
-                    dialog.cancel();
-                } catch (Exception e) {
-                    // TODO: handle exception
-                    Toast.makeText(getApplicationContext(), "修改失败",
-                            Toast.LENGTH_SHORT).show();
-                    dialog.cancel();
-                }
+                    etBrand.setText("" + curtainInfo.getAddress());
+                    // }
 
-            }
-        });
-    }
+                    llNo.setOnClickListener(new View.OnClickListener() {
 
-    protected void deleteAlert(Context context) {
-        String title, message, nbtext, pbtext;
-        title = (String) getText(R.string.prompt);
-        message = "确定要删除么？";
-        nbtext = "取消";
-        pbtext = "确定";
-        AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setTitle(title);
-        builder.setMessage(message);
-        builder.setNegativeButton(nbtext, null);
-        builder.setPositiveButton(pbtext,
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        if((adapter.deleteDate(index).setDate(MacAddress))==null){
-                            bt_addCurtain.setVisibility(View.VISIBLE);
-                            svListGroup.setVisibility(View.GONE);
-                        }else {
-                            bt_addCurtain.setVisibility(View.GONE);
-                            svListGroup.setVisibility(View.VISIBLE);
-                        }
-                    }
-                });
-        builder.show();
-    }
+                              @Override
+                              public void onClick(View v) {
+                                        dialog.cancel();
+                              }
+                    });
 
-    int index;
+                    llSure.setOnClickListener(new View.OnClickListener() {
+                              @Override
+                              public void onClick(View v) {
+                                        ;
+                                        try {
+                                                  String name = etAlias.getText().toString();
+                                                  String  address = etBrand.getText().toString();
+                                                  curtainInfo.setAddress(address);
+                                                  curtainInfo.setName(name);
+
+
+                                                  if((adapter.updateList(curtainInfo).setDate(MacAddress))==null){
+                                                            bt_addCurtain.setVisibility(View.VISIBLE);
+                                                            svListGroup.setVisibility(View.GONE);
+                                                  }else {
+                                                            bt_addCurtain.setVisibility(View.GONE);
+                                                            svListGroup.setVisibility(View.VISIBLE);
+                                                  }
+                                                  Toast.makeText(getApplicationContext(), "修改成功",
+                                                       Toast.LENGTH_SHORT).show();
+                                                  dialog.cancel();
+                                        } catch (Exception e) {
+                                                  // TODO: handle exception
+                                                  Toast.makeText(getApplicationContext(), "修改失败",
+                                                       Toast.LENGTH_SHORT).show();
+                                                  dialog.cancel();
+                                        }
+
+                              }
+                    });
+          }
+
+          protected void deleteAlert(Context context) {
+                    String title, message, nbtext, pbtext;
+                    title = (String) getText(R.string.prompt);
+                    message = "确定要删除么？";
+                    nbtext = "取消";
+                    pbtext = "确定";
+                    AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                    builder.setTitle(title);
+                    builder.setMessage(message);
+                    builder.setNegativeButton(nbtext, null);
+                    builder.setPositiveButton(pbtext,
+                         new DialogInterface.OnClickListener() {
+                                   @Override
+                                   public void onClick(DialogInterface dialog, int which) {
+                                             if((adapter.deleteDate(index).setDate(MacAddress))==null){
+                                                       bt_addCurtain.setVisibility(View.VISIBLE);
+                                                       svListGroup.setVisibility(View.GONE);
+                                             }else {
+                                                       bt_addCurtain.setVisibility(View.GONE);
+                                                       svListGroup.setVisibility(View.VISIBLE);
+                                             }
+                                   }
+                         });
+                    builder.show();
+          }
+
+          int index;
           Handler handler = new Handler(){
                     public void handleMessage(android.os.Message msg) {
                               super.handleMessage(msg);
@@ -257,14 +257,14 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
                               ArrayList<CurtainInfo> mlist =adapter.getmList();
                               switch (msg.what){
                                         case UPDATA:
-                                            index = msg.arg1;
-                                            curtainInfo= (CurtainInfo) msg.obj;
-                                            setDeviceInfo();
-                                            break;
+                                                  index = msg.arg1;
+                                                  curtainInfo= (CurtainInfo) msg.obj;
+                                                  setDeviceInfo();
+                                                  break;
                                         case DELETE:
-                                            index = msg.arg1;
-                                            deleteAlert(SmartCurtainListActivity.this);
-                                            break;
+                                                  index = msg.arg1;
+                                                  deleteAlert(SmartCurtainListActivity.this);
+                                                  break;
                               }
                     }
 
@@ -285,7 +285,7 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
           @Override
           public boolean onCreateOptionsMenu(Menu menu) {
 
-              getMenuInflater().inflate(R.menu.add_devices, menu);
+                    getMenuInflater().inflate(R.menu.add_devices, menu);
                     return true;
           }
 
@@ -307,7 +307,7 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
                                                   intent = new Intent(SmartCurtainListActivity.this,
                                                        AddOcdeviceActivity.class);
                                                   intent.putExtra("bindgiz", MacAddress);
-                                                    intent.putExtra("tablename", GizMetaData.CurtainTable.TABLE_NAME);
+                                                  intent.putExtra("tablename", GizMetaData.CurtainTable.TABLE_NAME);
                                                   startActivity(intent);
                                         }
                                         break;
