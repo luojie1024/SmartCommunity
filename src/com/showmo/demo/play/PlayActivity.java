@@ -25,7 +25,7 @@ import android.widget.Toast;
 
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
 import com.showmo.demo.util.spUtil;
-import com.way.adapter.SmartOCAdapter;
+import com.way.adapter.SmartSwitchListAdapter;
 import com.way.tabui.commonmodule.GosBaseActivity;
 import com.way.tabui.gokit.R;
 import com.way.util.Gizinfo;
@@ -97,7 +97,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
     IXmTalkManager talkma;
     private ListView list_oc;
     private MyReceiver receiver = null;
-    private SmartOCAdapter adapter;
+    private SmartSwitchListAdapter adapter;
     private LinearLayout ll_curtain;
     private LinearLayout ll_oc_list;
     private LinearLayout ll_show;
@@ -166,7 +166,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
         ll_oc_list = (LinearLayout) findViewById(R.id.ll_oc_list);
         ll_oc_list.setVisibility(View.GONE);
         list_oc = (ListView) findViewById(R.id.list_oc);
-        adapter = new SmartOCAdapter(mHander, this);
+        adapter = new SmartSwitchListAdapter(mHander, this);
 
         list_oc.setAdapter(adapter);
         btn_open = (Button) findViewById(R.id.btn_open);
@@ -550,43 +550,6 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                 case 0x132:
                     Toast.makeText(PlayActivity.this, "已关闭对讲", Toast.LENGTH_SHORT)
                             .show();
-                    break;
-                case OPEN:
-                    position = msg.arg1;
-                    gizinfos = adapter.getmList();
-                    try {
-                        sendJson(KEY_Sendcom, Integer.parseInt(gizinfos
-                                .get(position).getAddress()));
-                        gizinfos.get(position).setFlag(1);
-                        adapter.updateList(gizinfos.get(position));
-
-                    } catch (NumberFormatException e) {
-                        // TODO Auto-generated catch block
-                        Toast.makeText(getApplicationContext(), "指令发送失败",
-                                Toast.LENGTH_SHORT).show();
-                    } catch (JSONException e) {
-                        // TODO Auto-generated catch block
-                        Toast.makeText(getApplicationContext(), "指令发送失败",
-                                Toast.LENGTH_SHORT).show();
-                    }
-                    break;
-                case CLOSE:
-                    position = msg.arg1;
-                    ;gizinfos= adapter.getmList();
-                    try {
-                        sendJson(KEY_Sendcom, Integer.parseInt(gizinfos
-                                .get(position).getAddress()) + 1);
-                        gizinfos.get(position).setFlag(0);
-                        adapter.updateList(gizinfos.get(position));
-                    } catch (NumberFormatException e) {
-                        // TODO Auto-generated catch block
-                        Toast.makeText(getApplicationContext(), "指令发送失败",
-                                Toast.LENGTH_SHORT).show();
-                    } catch (JSONException e) {
-                        // TODO Auto-generated catch block
-                        Toast.makeText(getApplicationContext(), "指令发送失败",
-                                Toast.LENGTH_SHORT).show();
-                    }
                     break;
             }
         }

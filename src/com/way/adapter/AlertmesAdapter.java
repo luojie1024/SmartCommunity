@@ -1,12 +1,9 @@
 package com.way.adapter;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
-import com.way.adapter.SmartOCAdapter.ViewHolder;
 import com.way.tabui.gokit.R;
 import com.way.util.Alertinfo;
-import com.way.util.Gizinfo;
 
 
 import android.content.Context;

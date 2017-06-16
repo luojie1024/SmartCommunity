@@ -183,7 +183,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.way.tabui.actity.SmartOCActivity"
+            android:name=".SmartSwitchListActivity"
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity

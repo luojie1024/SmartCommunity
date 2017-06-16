@@ -10,6 +10,7 @@ import com.way.util.Alertinfo;
 import com.way.util.CurtainInfo;
 import com.way.util.GizMetaData;
 import com.way.util.Gizinfo;
+import com.way.util.SwitchInfo;
 
 import java.util.ArrayList;
 
@@ -98,6 +99,83 @@ public class DatabaseAdapter {
         db.close();
     }
 
+	/**
+	 * 2017-6-15
+	 * @param switchInfo 开关数据
+	 * */
+	//增加开关
+	public void addSwitchInfo(SwitchInfo switchInfo){
+		SQLiteDatabase db = dbHelper.getWritableDatabase();
+		ContentValues values = new ContentValues();
+		if(switchInfo.get_id()!=0){
+			values.put(GizMetaData.SwitchTable._ID,  switchInfo.get_id());
+		}
+
+		values.put(GizMetaData.SwitchTable.CURTAIN_NAME,  switchInfo.getName());
+		values.put(GizMetaData.SwitchTable.CURTAIN_ADDRESS, switchInfo.getAddress());
+		values.put(GizMetaData.SwitchTable.GIZ_BINDGIZ, switchInfo.getBindgiz());
+		values.put(GizMetaData.SwitchTable.GIZ_USERID, switchInfo.getUserid());
+		values.put(GizMetaData.SwitchTable.GIZ_FLAG, switchInfo.getFlag());
+		values.put(GizMetaData.SwitchTable.GIZ_TYPE, switchInfo.getType());
+		//参数说明(表名,可以为空的列名，ContentValues)
+		db.insert(GizMetaData.SwitchTable.TABLE_NAME, null, values);
+
+		db.close();
+	}
+	
+	//删除开关
+	public void deleteSwitchInfo(int id){
+		SQLiteDatabase db = dbHelper.getWritableDatabase();
+		String whereClause =GizMetaData.SwitchTable._ID+"=?";
+		String[] whereArgs = {String.valueOf(id)};
+		//参数说明(表名,条件，条件的值)
+		db.delete(GizMetaData.SwitchTable.TABLE_NAME, whereClause, whereArgs);
+		db.close();
+	}
+
+	//更新开关
+	public void updateSwitchInfo(SwitchInfo switchInfo){
+		SQLiteDatabase db = dbHelper.getWritableDatabase();
+		ContentValues values = new ContentValues();
+		values.put(GizMetaData.SwitchTable.CURTAIN_NAME, switchInfo.getName());
+		values.put(GizMetaData.SwitchTable.CURTAIN_ADDRESS, switchInfo.getAddress());
+		values.put(GizMetaData.SwitchTable.GIZ_BINDGIZ, switchInfo.getBindgiz());
+		values.put(GizMetaData.SwitchTable.GIZ_FLAG, switchInfo.getFlag());
+		values.put(GizMetaData.SwitchTable.GIZ_USERID, switchInfo.getUserid());
+		values.put(GizMetaData.SwitchTable.GIZ_TYPE, switchInfo.getType());
+		String whereClause =GizMetaData.SwitchTable._ID+"=?";
+		String[] whereArgs = {String.valueOf(switchInfo.get_id())};
+		//参数说明(表名,ContentValues,条件，条件的值)
+		db.update(GizMetaData.SwitchTable.TABLE_NAME, values, whereClause, whereArgs);
+	}
+
+	public ArrayList<SwitchInfo> findbybindgizSwitchInfo(String bindgiz){
+		SQLiteDatabase db = dbHelper.getWritableDatabase();
+		String whereClause =GizMetaData.SwitchTable.GIZ_BINDGIZ+"=?";
+		String[] whereArgs = {bindgiz};
+		String[] columns={GizMetaData.SwitchTable._ID,GizMetaData.SwitchTable.CURTAIN_NAME,
+		GizMetaData.SwitchTable.CURTAIN_ADDRESS,GizMetaData.SwitchTable.GIZ_BINDGIZ,
+		GizMetaData.SwitchTable.GIZ_USERID,GizMetaData.SwitchTable.GIZ_FLAG,GizMetaData.SwitchTable.GIZ_TYPE};
+		//参数说明(是否去除重复记录,表明,要查询的列，查询条件，查询条件的值，分组条件，分组条件的值，排序，排序条件)
+		Cursor c = db.query(true, GizMetaData.SwitchTable.TABLE_NAME, columns, whereClause, whereArgs, null, null, null, null);
+		ArrayList<SwitchInfo> SwitchInfos = new ArrayList<SwitchInfo>();
+		SwitchInfo SwitchInfo =null;
+		while(c.moveToNext()){
+			SwitchInfo=new SwitchInfo();
+			SwitchInfo.set_id(c.getInt(c.getColumnIndexOrThrow(GizMetaData.SwitchTable._ID)));
+			SwitchInfo.setName(c.getString(c.getColumnIndexOrThrow(GizMetaData.SwitchTable.CURTAIN_NAME)));
+			SwitchInfo.setAddress(c.getString(c.getColumnIndexOrThrow(GizMetaData.SwitchTable.CURTAIN_ADDRESS)));
+			SwitchInfo.setBindgiz(c.getString(c.getColumnIndexOrThrow(GizMetaData.SwitchTable.GIZ_BINDGIZ)));
+			SwitchInfo.setUserid(c.getString(c.getColumnIndexOrThrow(GizMetaData.SwitchTable.GIZ_USERID)));
+			SwitchInfo.setFlag(c.getInt(c.getColumnIndexOrThrow(GizMetaData.SwitchTable.GIZ_FLAG)));
+			SwitchInfo.setType(c.getInt(c.getColumnIndexOrThrow(GizMetaData.SwitchTable.GIZ_TYPE)));
+			SwitchInfos.add(SwitchInfo);
+		}
+		c.close();
+		db.close();
+		return SwitchInfos;
+
+	}
 
 	public void delete(int id){
 		SQLiteDatabase db = dbHelper.getWritableDatabase();

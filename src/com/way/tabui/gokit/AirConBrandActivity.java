@@ -1,25 +1,21 @@
 package com.way.tabui.gokit;
 
-import java.util.ArrayList;
-
-import com.gizwits.gizwifisdk.api.GizWifiDevice;
-import com.way.tabui.commonmodule.GosBaseActivity;
-
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.database.DataSetObserver;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.gizwits.gizwifisdk.api.GizWifiDevice;
+import com.way.tabui.commonmodule.GosBaseActivity;
+
+import java.util.ArrayList;
 
 public class AirConBrandActivity extends GosBaseActivity {
 
@@ -31,7 +27,7 @@ public class AirConBrandActivity extends GosBaseActivity {
 	//各个品牌的控制码范围
 	int[] min={0,0,1,40,60,80,100,110,120,140,150,170,180,190,190,200,210};
 	int[] max={1000,39,19,59,79,99,109,119,139,149,169,179,199,190,190,209,229};
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

@@ -51,5 +51,16 @@ public final class GizMetaData {
         public static final String GIZ_USERID="userid";//用户ID，备用
         public static final String GIZ_FLAG="flag";//留用
     }
+
+	//灯光设备记录表
+	public static abstract class SwitchTable implements BaseColumns{
+		public static final String TABLE_NAME="switch";//表明
+		public static final String CURTAIN_NAME="name";//名称
+		public static final String CURTAIN_ADDRESS="address";//窗帘设备地址
+		public static final String GIZ_BINDGIZ="bindgiz";//绑定到此Mac地址的板子
+		public static final String GIZ_USERID="userid";//用户ID，备用
+		public static final String GIZ_FLAG="flag";//留用
+		public static final String GIZ_TYPE="type";//用户ID，备用
+	}
 	
 }

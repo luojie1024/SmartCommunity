@@ -46,6 +46,7 @@ import com.way.tabui.gokit.PromailActivity;
 import com.way.tabui.gokit.R;
 import com.way.tabui.gokit.SmartCurtainListActivity;
 import com.way.tabui.gokit.SmartDoorActivity;
+import com.way.tabui.gokit.SmartSwitchListActivity;
 import com.way.tabui.settingsmodule.GosAboutActivity;
 import com.way.tabui.settingsmodule.GosSettiingsActivity;
 import com.way.tabui.usermodule.GosRegisterUserActivity;
@@ -619,7 +620,7 @@ public class SampleFragment extends Fragment {
           // 开关
           private void smart_oc() {
                     if (!getofisoffline()) {
-                              Intent intent = new Intent(context, SmartOCActivity.class);
+                              Intent intent = new Intent(context, SmartSwitchListActivity.class);
                               //intent.putExtra("ismain", true);
                               Bundle bundle = new Bundle();
                               bundle.putParcelable("GizWifiDevice",

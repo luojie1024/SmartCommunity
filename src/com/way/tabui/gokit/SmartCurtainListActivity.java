@@ -115,7 +115,7 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
           }
 
           private void initView() {
-                    bt_addCurtain = (LinearLayout) findViewById(R.id.bt_add_air);
+                    bt_addCurtain = (LinearLayout) findViewById(R.id.bt_add_device);
                     listview_air_con_mes = (SlideListView2) findViewById(R.id.slideListView1);
                     lldevice = findViewById(R.id.lldevice);
                     svListGroup = (ScrollView) findViewById(R.id.svListGroup);

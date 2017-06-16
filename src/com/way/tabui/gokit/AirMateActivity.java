@@ -6,12 +6,9 @@ import org.json.JSONException;
 
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
 import com.way.adapter.DatabaseAdapter;
-import com.way.tabui.actity.SmartOCActivity;
-import com.way.tabui.actity.UpdataActivity;
 import com.way.tabui.commonmodule.GosBaseActivity;
 import com.way.util.AirMesinfo;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.Service;
@@ -23,7 +20,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.Vibrator;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
@@ -33,9 +29,7 @@ import android.view.View.OnTouchListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 

@@ -1238,8 +1238,10 @@ UID：{4}"</string>
     <string name="title_activity_inform">物业通知</string>
     <string name="title_activity_air_con_mes">设备列表</string>
     <string name="title_activity_air_con_brand">选择设备</string>
+    <string name="title_activity_switch_type">选择设备类型</string>
     <string name="title_activity_air_mate">配对设备</string>
     <string name="title_activity_smart_curtain">智能窗帘</string>
+    <string name="title_activity_smart_switch">智能设备</string>
     <string name="title_activity_smart_door">智能开门</string>
     <string name="title_activity_showmo_demo">监控摄像</string>
 

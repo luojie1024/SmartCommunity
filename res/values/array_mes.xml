@@ -33,5 +33,12 @@
         <item>新科</item>
         <item>澳柯玛</item>
     </string-array>
+
+    <string-array name="switchtype">
+        <item>一位开关</item>
+        <item>二位开关</item>
+        <item>三位开关</item>
+        <item>插座</item>
+    </string-array>
     
 </resources>
