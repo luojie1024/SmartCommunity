@@ -187,7 +187,7 @@
         </activity>
 
         <activity
-            android:name="com.way.tabui.actity.SmartOCActivity"
+            android:name=".SmartSwitchListActivity"
             android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
@@ -248,6 +248,17 @@
             android:name=".AirConBrandActivity"
             android:label="@string/title_activity_air_con_brand"
             android:theme="@android:style/Theme.Holo.Light">
+        </activity>
+        <!--灯光/插座/开关-->
+        <activity
+            android:name=".SmartSwitchTypeListActivity"
+            android:label="@string/title_activity_switch_type"
+            android:theme="@android:style/Theme.Holo.Light">
+        </activity>
+        <activity
+            android:name=".SmartSwitchActivity"
+            android:label="@string/title_activity_smart_switch"
+            android:theme="@android:style/Theme.NoTitleBar">
         </activity>
         <activity
             android:name=".AirMateActivity"
@@ -434,11 +445,6 @@
             android:theme="@android:style/Theme.Holo.Light">
 
             <!--TODO 物业-->
-            <!--<intent-filter>-->
-            <!--<action android:name="android.intent.action.MAIN" />-->
-
-            <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
         </activity>
         <activity
             android:name="com.property.activity.JiaofeijiluActivity"

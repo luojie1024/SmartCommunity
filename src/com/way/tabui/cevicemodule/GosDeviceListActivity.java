@@ -133,7 +133,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 	//
 	// public static boolean isAnonymousLoging = false;
 
-	/**
+	/**TODO
 	 * 判断用户登录状态 0：未登录 1：实名用户登录 2：匿名用户登录 3：匿名用户登录中 4：匿名用户登录中断
 	 */
 	public static int loginStatus;
@@ -216,7 +216,8 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 			break;
 
 			case TOCONTROL:
-			
+
+				//绑定设备，转跳
 				intent = new Intent(GosDeviceListActivity.this,MainActivity.class);
 				Bundle bundle = new Bundle();
 				bundle.putParcelable("GizWifiDevice", (GizWifiDevice) msg.obj);
@@ -424,8 +425,6 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 			Intent intents = getIntent();
 			devices = (GizWifiDevice) intents.getParcelableExtra("GizWifiDevice");
 		} catch (Exception e) {
-			// TODO: handle exception
-			
 		}
 		
 
@@ -478,7 +477,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		llNoDevice = (LinearLayout) findViewById(R.id.llNoDevice);
 		imgNoDevice = (ImageView) findViewById(R.id.imgNoDevice);
 		tvNoDevice = (TextView) findViewById(R.id.tvNoDevice);
-
+		//绑定设备
 		icBoundDevices = findViewById(R.id.icBoundDevices);
 		icFoundDevices = findViewById(R.id.icFoundDevices);
 		icOfflineDevices = findViewById(R.id.icOfflineDevices);
@@ -546,6 +545,8 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 			}
 		});
 
+		//// TODO: 2017/6/17
+		//绑定设备响应
 		slvBoundDevices.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, final View view, int position, long id) {

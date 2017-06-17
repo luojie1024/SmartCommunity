@@ -146,6 +146,7 @@ public class MainActivity extends GosControlModuleBaseActivity implements
                 thread.interrupt();
             }
         }
+        // TODO: 2017/6/17  
         initBroadcostData();
         init();
         setContentView(R.layout.activity_main);
@@ -411,7 +412,7 @@ public class MainActivity extends GosControlModuleBaseActivity implements
         }
     };
 
-
+    //接收温度 湿度信息
     public class MyReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -505,7 +506,7 @@ public class MainActivity extends GosControlModuleBaseActivity implements
         sp = new spUtil(this);
         mAnimView = (ImageView) findViewById(R.id.anim_icon);
         mSwitchImageButton = (ImageButton) findViewById(R.id.switch_btn);
-
+        // TODO: 2017/6/17 主界面ViewPager
         mViewPager = (ViewPager) findViewById(R.id.vp_pager);
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mViewPager.setAdapter(mPagerAdapter);
@@ -617,7 +618,8 @@ public class MainActivity extends GosControlModuleBaseActivity implements
 
     /**
      * ViewPager的适配器
-     *
+     * TODO
+     *t底栏适配器
      * @author way
      */
     private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
@@ -633,9 +635,11 @@ public class MainActivity extends GosControlModuleBaseActivity implements
         public Fragment getItem(int position) {
             switch (position) {
                 case PAGE_PERSONAL:
+                    //下标栏A
                     MainPersonalFragment mainper = new MainPersonalFragment();
                     return mainper;
                 case PAGE_FILE_SYSTEM:
+                    //下标栏B
                     MainFileSystemFragment mainFileSys = new MainFileSystemFragment();
                     return mainFileSys;
                 default:

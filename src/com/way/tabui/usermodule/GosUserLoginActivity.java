@@ -275,6 +275,7 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 		btnLogin = (Button) findViewById(R.id.btnLogin);
 		tvRegister = (TextView) findViewById(R.id.tvRegister);
 		tvForget = (TextView) findViewById(R.id.tvForget);
+		//匿名登录
 		llPass = (LinearLayout) findViewById(R.id.llPass);
 		cbLaws = (CheckBox) findViewById(R.id.cbLaws);
 
@@ -286,6 +287,7 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 		btnLogin.setOnClickListener(this);
 		tvRegister.setOnClickListener(this);
 		tvForget.setOnClickListener(this);
+		//匿名登录响应
 		llPass.setOnClickListener(this);
 
 //		llQQ.setOnClickListener(this);
@@ -329,7 +331,7 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 			intent = new Intent(GosUserLoginActivity.this, GosForgetPasswordActivity.class);
 			startActivity(intent);
 			break;
-		case R.id.llPass:
+		case R.id.llPass://匿名登录响应
             spf.edit().putString("UserName","").commit();
             spf.edit().putString("PassWord", "").commit();
 			intent = new Intent(GosUserLoginActivity.this, GosDeviceListActivity.class);

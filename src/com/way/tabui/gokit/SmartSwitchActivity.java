@@ -1,6 +1,7 @@
 package com.way.tabui.gokit;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,6 +28,7 @@ public class SmartSwitchActivity extends GosBaseActivity {
 	private GizWifiDevice device;
 	/** The device statu. */
 	private HashMap<String, Object> deviceStatu;
+	private int status1=0,status2=0,status3=0;
 	
 	//窗帘控制指令关键字
 	private static final String KEY_Sendair = "kuozhan";
@@ -35,14 +37,19 @@ public class SmartSwitchActivity extends GosBaseActivity {
 	private String name,address;
 	private  int type;
 
+	//配置存储SharedPreferences
+	private SharedPreferences sp;
+
 	/** 指令代码0:开 1：停止  2：关 3：换向 */
 	private byte[] BYTES_ID = new byte[4];
 	private byte[] BYTES_BESE=new byte[7];
+	private SharedPreferences.Editor edit;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_smart_switch);
+
 		initView();
 		initDevice();
 		initEvent();
@@ -55,11 +62,26 @@ public class SmartSwitchActivity extends GosBaseActivity {
 		address=intent.getStringExtra("address");
 		name=intent.getStringExtra("name");
 		System.out.println("name:"+name+"\naddress"+address+"\ntype:"+type);
+
+		//获取开关状态
+		sp = getSharedPreferences(address, 0);
+		//获取SP编辑器
+		edit = sp.edit();
+		status1 = sp.getInt("status1",0);
+		status2 = sp.getInt("status2",0);
+		status3 = sp.getInt("status3",0);
 //		addresses = Integer.parseInt(intent.getStringExtra("address"));
 		BYTES_ID = hexStringToByte(intent.getStringExtra("address"));
 		//填充类型
 		switch (type) {
 			case 1:
+				if (status1 == 1) {
+					btn_open1.setTextColor(getResources().getColor(R.color.golden));
+					btn_colse1.setTextColor(getResources().getColor(R.color.color_blue));
+				} else {
+					btn_colse1.setTextColor(getResources().getColor(R.color.golden));
+					btn_open1.setTextColor(getResources().getColor(R.color.color_blue));
+				}
 				BYTES_BESE[0]=0;
 				btn_open2.setVisibility(View.GONE);
 				btn_colse2.setVisibility(View.GONE);
@@ -69,6 +91,20 @@ public class SmartSwitchActivity extends GosBaseActivity {
 				btn_colse4.setVisibility(View.GONE);
 				break;
 			case 2:
+				if (status1 == 1) {
+					btn_open1.setTextColor(getResources().getColor(R.color.golden));
+					btn_colse1.setTextColor(getResources().getColor(R.color.color_blue));
+				} else {
+					btn_colse1.setTextColor(getResources().getColor(R.color.golden));
+					btn_open1.setTextColor(getResources().getColor(R.color.color_blue));
+				}
+				if (status2 == 1) {
+					btn_open2.setTextColor(getResources().getColor(R.color.golden));
+					btn_colse2.setTextColor(getResources().getColor(R.color.color_blue));
+				} else {
+					btn_colse2.setTextColor(getResources().getColor(R.color.golden));
+					btn_open2.setTextColor(getResources().getColor(R.color.color_blue));
+				}
 				BYTES_BESE[0]=1;
 				btn_open3.setVisibility(View.GONE);
 				btn_colse3.setVisibility(View.GONE);
@@ -76,11 +112,39 @@ public class SmartSwitchActivity extends GosBaseActivity {
 				btn_colse4.setVisibility(View.GONE);
 				break;
 			case 3:
+				if (status1 == 1) {
+					btn_open1.setTextColor(getResources().getColor(R.color.golden));
+					btn_colse1.setTextColor(getResources().getColor(R.color.color_blue));
+				} else {
+					btn_colse1.setTextColor(getResources().getColor(R.color.golden));
+					btn_open1.setTextColor(getResources().getColor(R.color.color_blue));
+				}
+				if (status2 == 1) {
+					btn_open2.setTextColor(getResources().getColor(R.color.golden));
+					btn_colse2.setTextColor(getResources().getColor(R.color.color_blue));
+				} else {
+					btn_colse2.setTextColor(getResources().getColor(R.color.golden));
+					btn_open2.setTextColor(getResources().getColor(R.color.color_blue));
+				}
+				if (status3 == 1) {
+					btn_open3.setTextColor(getResources().getColor(R.color.golden));
+					btn_colse3.setTextColor(getResources().getColor(R.color.color_blue));
+				} else {
+					btn_colse3.setTextColor(getResources().getColor(R.color.golden));
+					btn_open3.setTextColor(getResources().getColor(R.color.color_blue));
+				}
 				BYTES_BESE[0]=2;
 				btn_open4.setVisibility(View.GONE);
 				btn_colse4.setVisibility(View.GONE);
 				break;
 			case 4:
+				if (status1 == 1) {
+					btn_open4.setTextColor(getResources().getColor(R.color.golden));
+					btn_colse4.setTextColor(getResources().getColor(R.color.color_blue));
+				} else {
+					btn_colse4.setTextColor(getResources().getColor(R.color.golden));
+					btn_open4.setTextColor(getResources().getColor(R.color.color_blue));
+				}
 				btn_open1.setVisibility(View.GONE);
 				btn_colse1.setVisibility(View.GONE);
 				btn_open2.setVisibility(View.GONE);
@@ -133,6 +197,10 @@ public class SmartSwitchActivity extends GosBaseActivity {
 					}else if (type == 3) {
 						BYTES_BESE[5]=0x7;
 					}
+					//保存状态
+					edit.putInt("status1",1);
+					//提交edit
+					edit.commit();
 					sendJson(KEY_Sendair, BYTES_BESE);
 					btn_open1.setTextColor(getResources().getColor(R.color.golden));
 					btn_colse1.setTextColor(getResources().getColor(R.color.color_blue));
@@ -155,6 +223,10 @@ public class SmartSwitchActivity extends GosBaseActivity {
 					}else if (type == 3) {
 						BYTES_BESE[5]=0x8;
 					}
+					//保存状态
+					edit.putInt("status1",0);
+					//提交edit
+					edit.commit();
 					sendJson(KEY_Sendair, BYTES_BESE);
 					btn_colse1.setTextColor(getResources().getColor(R.color.golden));
 					btn_open1.setTextColor(getResources().getColor(R.color.color_blue));
@@ -176,6 +248,10 @@ public class SmartSwitchActivity extends GosBaseActivity {
 					} else if (type == 3) {
 						BYTES_BESE[5]=0x9;
 					}
+					//保存状态
+					edit.putInt("status2",1);
+					//提交edit
+					edit.commit();
 					sendJson(KEY_Sendair, BYTES_BESE);
 					btn_open2.setTextColor(getResources().getColor(R.color.golden));
 					btn_colse2.setTextColor(getResources().getColor(R.color.color_blue));
@@ -196,6 +272,10 @@ public class SmartSwitchActivity extends GosBaseActivity {
 					} else if (type == 3) {
 						BYTES_BESE[5]=0xA;
 					}
+					//保存状态
+					edit.putInt("status2",0);
+					//提交edit
+					edit.commit();
 					sendJson(KEY_Sendair, BYTES_BESE);
 					btn_colse2.setTextColor(getResources().getColor(R.color.golden));
 					btn_open2.setTextColor(getResources().getColor(R.color.color_blue));
@@ -213,6 +293,10 @@ public class SmartSwitchActivity extends GosBaseActivity {
 			public void onClick(View v) {
 				try {
 					BYTES_BESE[5]=0xB;
+					//保存状态
+					edit.putInt("status3",1);
+					//提交edit
+					edit.commit();
 					sendJson(KEY_Sendair, BYTES_BESE);
 					btn_open3.setTextColor(getResources().getColor(R.color.golden));
 					btn_colse3.setTextColor(getResources().getColor(R.color.color_blue));
@@ -229,6 +313,10 @@ public class SmartSwitchActivity extends GosBaseActivity {
 			public void onClick(View v) {
 				try {
 					BYTES_BESE[5]=0xC;
+					//保存状态
+					edit.putInt("status3",0);
+					//提交edit
+					edit.commit();
 					sendJson(KEY_Sendair, BYTES_BESE);
 					btn_colse3.setTextColor(getResources().getColor(R.color.golden));
 					btn_open3.setTextColor(getResources().getColor(R.color.color_blue));
@@ -246,6 +334,10 @@ public class SmartSwitchActivity extends GosBaseActivity {
 			public void onClick(View v) {
 				try {
 					BYTES_BESE[5]=0xD;
+					//保存状态
+					edit.putInt("status1",1);
+					//提交edit
+					edit.commit();
 					sendJson(KEY_Sendair, BYTES_BESE);
 					btn_open4.setTextColor(getResources().getColor(R.color.golden));
 					btn_colse4.setTextColor(getResources().getColor(R.color.color_blue));
@@ -262,6 +354,10 @@ public class SmartSwitchActivity extends GosBaseActivity {
 			public void onClick(View v) {
 				try {
 					BYTES_BESE[5]=0xE;
+					//保存状态
+					edit.putInt("status1",0);
+					//提交edit
+					edit.commit();
 					sendJson(KEY_Sendair, BYTES_BESE);
 					btn_colse4.setTextColor(getResources().getColor(R.color.golden));
 					btn_open4.setTextColor(getResources().getColor(R.color.color_blue));
