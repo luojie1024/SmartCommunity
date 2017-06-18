@@ -1,6 +1,8 @@
 package com.way.tabui.usermodule;
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -22,6 +24,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.baidu.autoupdatesdk.BDAutoUpdateSDK;
+import com.baidu.autoupdatesdk.UICheckUpdateCallback;
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
 import com.gizwits.gizwifisdk.api.GizWifiSDK;
 import com.gizwits.gizwifisdk.enumration.GizThirdAccountType;
@@ -100,6 +104,8 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 		LOGIN_FAIL,
 
 	}
+
+	private ProgressDialog dialog;
 
 	Handler handler = new Handler() {
 		public void handleMessage(android.os.Message msg) {
@@ -185,9 +191,31 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
         if(isWorked("com.way.tabui.actity.GizService")){
             sendbroadcast();
         }
+		// TODO: 2017/6/18
+		//检查自动更新，默认UI
+		dialog = new ProgressDialog(this);
+		dialog.setIndeterminate(true);
+		dialog.setTitle("正在检查更新！");
+		dialog.setProgressStyle(Dialog.BUTTON_NEGATIVE);
+		dialog.show();
+		//检测更新
+		BDAutoUpdateSDK.uiUpdateAction(getApplicationContext(), new MyUICheckUpdateCallback());
+
 	}
 
-    private void sendbroadcast(){
+	/**
+	 * 自动更新接口 
+	 */
+	private class MyUICheckUpdateCallback implements UICheckUpdateCallback {
+		@Override
+		public void onCheckComplete() {
+			//检查完成后调用
+			dialog.dismiss();
+		}
+
+	}
+
+	private void sendbroadcast(){
         Intent intent=new Intent();
         intent.setAction("com.way.tabui.actity.GosDeviceListActivity");
         sendBroadcast(intent);

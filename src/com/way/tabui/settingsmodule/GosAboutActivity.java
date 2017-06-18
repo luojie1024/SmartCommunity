@@ -1,10 +1,10 @@
 package com.way.tabui.settingsmodule;
 
-import java.util.HashMap;
-
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -19,10 +19,9 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.baidu.autoupdatesdk.BDAutoUpdateSDK;
+import com.baidu.autoupdatesdk.UICheckUpdateCallback;
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
-import com.gizwits.gizwifisdk.api.GizWifiSDK;
-import com.way.tabui.actity.MainActivity;
-import com.way.tabui.actity.MainActivity.MyReceiver;
 import com.way.tabui.gokit.R;
 
 public class GosAboutActivity extends Activity {
@@ -43,6 +42,9 @@ public class GosAboutActivity extends Activity {
 	MyReceiver receiver;
 	String title;
 	private  TextView textView1;
+
+
+	private ProgressDialog dialog;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -66,6 +68,14 @@ public class GosAboutActivity extends Activity {
 			}else{
 				MCUversion="目前为离线登入状态";
 			}
+
+			//检查自动更新，默认UI
+			dialog = new ProgressDialog(this);
+			dialog.setIndeterminate(true);
+			dialog.setTitle("正在检查更新！");
+			dialog.setProgressStyle(Dialog.BUTTON_NEGATIVE);
+			dialog.show();
+			BDAutoUpdateSDK.uiUpdateAction(getApplicationContext(), new MyUICheckUpdateCallback());
 		}
 		
 		else
@@ -74,6 +84,17 @@ public class GosAboutActivity extends Activity {
 		initView();
 		initdata();
 		initEvent();
+	}
+
+	/**
+	 * 自动更新接口
+	 */
+	private class MyUICheckUpdateCallback implements UICheckUpdateCallback {
+		@Override
+		public void onCheckComplete() {
+			//检查完成后调用
+			dialog.dismiss();
+		}
 	}
 
 	/**

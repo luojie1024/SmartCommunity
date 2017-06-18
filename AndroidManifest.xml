@@ -2,7 +2,7 @@
 <manifest package="com.way.tabui.gokit"
           xmlns:android="http://schemas.android.com/apk/res/android"
           android:versionCode="1"
-          android:versionName="1.2.0">
+          android:versionName="1.2.2">
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -107,6 +107,18 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
+
+        <!--&lt;!&ndash; 百度自动更新SDK   Appid配置,AppKey配置&ndash;&gt;-->
+        <meta-data android:name="BDAPPID" android:value="9779347"/>
+        <meta-data android:name="BDAPPKEY" android:value="vjZg1l5uwHm02vkoSFH98LBvHTEIxusj"/>
+        <!-- 百度自动更新SDK -->
+        <activity
+            android:name="com.baidu.autoupdatesdk.ConfirmDialoigActivity"
+            android:exported="false"
+            android:screenOrientation="sensor"
+            android:theme="@style/bdp_update_dialog_style_fullscreen"/>
+
+
         <activity
             android:name="com.way.tabui.actity.MainActivity"
             android:label="@string/app_name"

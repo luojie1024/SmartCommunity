@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="bdp_update_request_net_error">网络错误，请重试</string>
+    
+    <string name="bdp_update_title_download">发现新版本</string>
+    <string name="bdp_update_title_install">发现新版本安装包</string>
+    <string name="bdp_update_title_as">提示</string>
+    <string name="bdp_update_download_main_tip">%1$s → %2$s / %3$s</string>
+    <string name="bdp_update_install_main_tip">%1$s → %2$s</string>
+    <string name="bdp_update_minor_tip">更新内容：</string>
+    <string name="bdp_update_action_download">立即升级</string>
+    <string name="bdp_update_action_install">立即安装</string>
+    <string name="bdp_update_not_now">暂不升级</string>
+    <string name="bdp_update_ignore">忽略此版本</string>
+    
+    <string name="bdp_update_new_download">发现新版本，点击更新</string>
+    <string name="bdp_update_download_complete">新版本下载完成，点击安装</string>
+    
+    <string name="bdp_update_as_notify_title">百度手机助手</string>
+    <string name="bdp_update_as_notify_tip">百度手机助手</string>
+    <string name="bdp_update_as_download_complete">百度手机助手下载完成</string>
+    <string name="bdp_update_as_install_tip">推荐您使用百度手机助手进行升级。您尚未安装百度手机助手，请先安装。</string>
+    <string name="bdp_update_as_action_install">安装</string>
+    <string name="bdp_update_as_action_cancel">取消</string>
+
+</resources>
