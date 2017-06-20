@@ -199,7 +199,7 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 		dialog.setProgressStyle(Dialog.BUTTON_NEGATIVE);
 		dialog.show();
 		//检测更新
-		BDAutoUpdateSDK.uiUpdateAction(getApplicationContext(), new MyUICheckUpdateCallback());
+		BDAutoUpdateSDK.uiUpdateAction(GosUserLoginActivity.this, new MyUICheckUpdateCallback());
 
 	}
 

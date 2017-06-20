@@ -131,8 +131,8 @@ public class IntelligentSocketActivity extends GosBaseActivity {
 	        
 	    }
 	    int count=1;
-	    public boolean openWIFI(){
-	    	WifiManager wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+	    public boolean openWIFI(){// TODO: 2017/6/20 更新方法
+			WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 	            //判断wifi是否开启  
 	            if ((!wifiManager.isWifiEnabled())&&(count==1)) {  
 	              wifiManager.setWifiEnabled(true); 

@@ -1,0 +1,431 @@
+[
+    {
+        "outputFile": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 59,
+                    "endOffset": 110
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 59,
+                        "endOffset": 110
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 115,
+                    "endColumn": 58,
+                    "endOffset": 169
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 115,
+                        "endColumn": 58,
+                        "endOffset": 169
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 174,
+                    "endColumn": 58,
+                    "endOffset": 228
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 174,
+                        "endColumn": 58,
+                        "endOffset": 228
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 233,
+                    "endColumn": 59,
+                    "endOffset": 288
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 233,
+                        "endColumn": 59,
+                        "endOffset": 288
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 293,
+                    "endColumn": 70,
+                    "endOffset": 359
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 293,
+                        "endColumn": 70,
+                        "endOffset": 359
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 364,
+                    "endColumn": 87,
+                    "endOffset": 447
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 364,
+                        "endColumn": 87,
+                        "endOffset": 447
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 452,
+                    "endColumn": 59,
+                    "endOffset": 507
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 452,
+                        "endColumn": 59,
+                        "endOffset": 507
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 512,
+                    "endColumn": 61,
+                    "endOffset": 569
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 512,
+                        "endColumn": 61,
+                        "endOffset": 569
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 574,
+                    "endColumn": 69,
+                    "endOffset": 639
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 574,
+                        "endColumn": 69,
+                        "endOffset": 639
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 644,
+                    "endColumn": 75,
+                    "endOffset": 715
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 644,
+                        "endColumn": 75,
+                        "endOffset": 715
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 720,
+                    "endColumn": 51,
+                    "endOffset": 767
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 720,
+                        "endColumn": 51,
+                        "endOffset": 767
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 772,
+                    "endColumn": 67,
+                    "endOffset": 835
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 772,
+                        "endColumn": 67,
+                        "endOffset": 835
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 840,
+                    "endColumn": 54,
+                    "endOffset": 890
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 840,
+                        "endColumn": 54,
+                        "endOffset": 890
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 895,
+                    "endColumn": 62,
+                    "endOffset": 953
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 895,
+                        "endColumn": 62,
+                        "endOffset": 953
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 958,
+                    "endColumn": 51,
+                    "endOffset": 1005
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 958,
+                        "endColumn": 51,
+                        "endOffset": 1005
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1010,
+                    "endColumn": 65,
+                    "endOffset": 1071
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1010,
+                        "endColumn": 65,
+                        "endOffset": 1071
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1076,
+                    "endColumn": 50,
+                    "endOffset": 1122
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1076,
+                        "endColumn": 50,
+                        "endOffset": 1122
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1127,
+                    "endColumn": 59,
+                    "endOffset": 1182
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1127,
+                        "endColumn": 59,
+                        "endOffset": 1182
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1187,
+                    "endColumn": 61,
+                    "endOffset": 1244
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1187,
+                        "endColumn": 61,
+                        "endOffset": 1244
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1249,
+                    "endLine": 30,
+                    "endColumn": 12,
+                    "endOffset": 1873
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1249,
+                        "endLine": 30,
+                        "endColumn": 12,
+                        "endOffset": 1873
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 1878,
+                    "endLine": 33,
+                    "endColumn": 12,
+                    "endOffset": 2038
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1878,
+                        "endLine": 33,
+                        "endColumn": 12,
+                        "endOffset": 2038
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2043,
+                    "endLine": 39,
+                    "endColumn": 12,
+                    "endOffset": 2353
+                },
+                "from": {
+                    "file": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 2043,
+                        "endLine": 39,
+                        "endColumn": 12,
+                        "endOffset": 2353
+                    }
+                }
+            }
+        ]
+    }
+]

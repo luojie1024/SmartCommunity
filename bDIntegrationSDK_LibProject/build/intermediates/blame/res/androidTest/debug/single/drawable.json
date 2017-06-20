@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bdp_update_bg_dialog_btn.xml",
+        "source": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\drawable\\bdp_update_bg_dialog_btn.xml"
+    },
+    {
+        "merged": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bdp_update_progress_download.xml",
+        "source": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\drawable\\bdp_update_progress_download.xml"
+    },
+    {
+        "merged": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bdp_update_bg_dialog_title.xml",
+        "source": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\drawable\\bdp_update_bg_dialog_title.xml"
+    },
+    {
+        "merged": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bdp_update_bg_dialog_content.xml",
+        "source": "D:\\space\\NO10\\SmartCommunity\\bDIntegrationSDK_LibProject\\build\\intermediates\\bundles\\debug\\res\\drawable\\bdp_update_bg_dialog_content.xml"
+    }
+]

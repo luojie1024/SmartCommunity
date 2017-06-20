@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\space\NO10\SmartCommunity\bDIntegrationSDK_LibProject\src\main\assets"/><source path="D:\space\NO10\SmartCommunity\bDIntegrationSDK_LibProject\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\space\NO10\SmartCommunity\bDIntegrationSDK_LibProject\src\debug\assets"/></dataSet></merger>
