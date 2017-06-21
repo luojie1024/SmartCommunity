@@ -29,11 +29,8 @@ import com.way.tabui.view.SlideListView2;
 import com.way.util.GizMetaData;
 import com.way.util.SwitchInfo;
 
-import org.json.JSONException;
-
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 灯光/插座/开关操作界面
@@ -270,16 +267,6 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
 	};
 
 
-
-
-
-	private void sendJson(String key, Object value) throws JSONException {
-		ConcurrentHashMap<String, Object> hashMap = new ConcurrentHashMap<String, Object>();
-		hashMap.put(key, value);
-		device.write(hashMap, 0);
-		Log.i("==", hashMap.toString());
-		// Log.i("Apptest", hashMap.toString());
-	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

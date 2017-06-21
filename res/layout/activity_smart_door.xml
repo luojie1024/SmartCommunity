@@ -1,18 +1,40 @@
 <!--<LinearLayout-->
 <LinearLayout
-    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:gravity="center"
+    android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-<ImageButton
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/ib_unclock"
-    android:src="@drawable/unlock_normal"
-    android:background="@drawable/main_menu_btnshape"
-    android:onClick="doorClick"
-    android:adjustViewBounds="true"
-    android:alpha="100"/>
+    android:orientation="vertical"
+    android:gravity="center">
+    <ImageButton
+        android:id="@+id/ib_unclock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:alpha="100"
+        android:background="@drawable/main_menu_btnshape"
+        android:onClick="doorClick"
+        android:src="@drawable/unlock_normal"/>
+
+    <EditText
+        android:id="@+id/et_kuozhancode"
+        android:hint="@string/initkuozhancode"
+        android:textColor="#6e6969"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+    <Button
+        android:id="@+id/btn_sendcode"
+        android:text="发送命令"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendClick"
+    />
 
 </LinearLayout>

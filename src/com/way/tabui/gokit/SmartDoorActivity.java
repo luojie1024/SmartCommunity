@@ -7,10 +7,14 @@ import android.os.Vibrator;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
 import com.way.tabui.commonmodule.GosBaseActivity;
+import com.way.util.ConvertUtil;
+import com.way.util.ToastUtil;
 
 import org.json.JSONException;
 
@@ -24,6 +28,8 @@ public class SmartDoorActivity extends GosBaseActivity {
     public GizWifiDevice device;
     private HashMap<String, Object> deviceStatu;
     private static final String KUOZHAN = "kuozhan";
+    private EditText et_kuozhancode;
+    private Button btn_sendcode;
 
     private byte[] OPEN_DOOR = {(byte) 0x01, (byte) 0x23, (byte) 0x45, (byte) 0x67, (byte) 0x89, (byte) 0xab, (byte) 0xcd, (byte) 0xef,
             (byte) 0x01, (byte) 0x23, (byte) 0x45, (byte) 0x67, (byte) 0x89, (byte) 0xab, (byte) 0xcd, (byte) 0xef,
@@ -45,6 +51,8 @@ public class SmartDoorActivity extends GosBaseActivity {
 
     private void initView() {
         ib_unclock = (ImageButton) findViewById(R.id.ib_unclock);
+        et_kuozhancode=(EditText)findViewById(R.id.et_kuozhancode);
+        btn_sendcode=(Button)findViewById(R.id.btn_sendcode);
     }
 
     public void initDevice() {
@@ -65,6 +73,29 @@ public class SmartDoorActivity extends GosBaseActivity {
         Vibrator vibrator = (Vibrator) getSystemService(Service.VIBRATOR_SERVICE);
         vibrator.vibrate(20);
     }
+
+    /**
+     * 2017/6/21
+     * 发送按钮点击事件
+     * @param view
+     */
+    public void sendClick(View view) {
+        String code = et_kuozhancode.getText().toString();
+        //如果获得的代码为出示代码，则弹出提示信息
+        if (code.length()==0) {
+            ToastUtil.ToastShow(this,"请输入代码！");
+        } else {
+            byte[] bytes_code = ConvertUtil.hexStringToByte(code);
+            try {
+                sendJson(KUOZHAN,bytes_code);
+                ToastUtil.ToastShow(this,"发送成功！");
+            } catch (JSONException e) {
+                e.printStackTrace();
+                ToastUtil.ToastShow(this,"发送失败！");
+            }
+        }
+    }
+
 
     public void doorClick(View view) {
         simpe();

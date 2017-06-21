@@ -18,6 +18,8 @@ import org.json.JSONException;
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
+import static com.way.util.ConvertUtil.hexStringToByte;
+
 public class SmartCurtainActivity extends GosBaseActivity {
 
 	private Button btn_open, btn_colse,btn_stop,btn_redic;
@@ -51,9 +53,7 @@ public class SmartCurtainActivity extends GosBaseActivity {
 	private void initDevice() {
 		Intent intent = getIntent();
 		device = (GizWifiDevice) intent.getParcelableExtra("GizWifiDevice");
-//		addresses = Integer.parseInt(intent.getStringExtra("address"));
 		byte[] bytes = hexStringToByte(intent.getStringExtra("address"));
-//		byte[] bytes = intToByteArray(this.addresses);
 		for (int i=0;i<4;i++) {
 			BYTES_BESE[1+i]=bytes[i];
 		}
@@ -172,39 +172,5 @@ public class SmartCurtainActivity extends GosBaseActivity {
 		Log.i("==", hashMap.toString());
 	}
 
-	//java int转byer
-	public byte[] intToByteArray(int i) {
-		byte[] result = new byte[4];
-		result[0] = (byte)((i >> 24) & 0xFF);
-		result[1] = (byte)((i >> 16) & 0xFF);
-		result[2] = (byte)((i >> 8) & 0xFF);
-		result[3] = (byte)(i & 0xFF);
-		return result;
-	}
 
-
-	//java 合并两个byte数组
-	public byte[] byteMerger(byte[] byte_1, byte[] byte_2){
-		byte[] byte_3 = new byte[byte_1.length+byte_2.length];
-		System.arraycopy(byte_1, 0, byte_3, 0, byte_1.length);
-		System.arraycopy(byte_2, 0, byte_3, byte_1.length, byte_2.length);
-		return byte_3;
-	}
-
-	//把16进制字符串转换成字节数组
-	public byte[] hexStringToByte(String hex) {
-		int len = (hex.length() / 2);
-		byte[] result = new byte[len];
-		char[] achar = hex.toCharArray();
-		for (int i = 0; i < len; i++) {
-			int pos = i * 2;
-			result[i] = (byte) (toByte(achar[pos]) << 4 | toByte(achar[pos + 1]));
-		}
-		return result;
-	}
-
-	private byte toByte(char c) {
-		byte b = (byte) "0123456789ABCDEF".indexOf(c);
-		return b;
-	}
 }

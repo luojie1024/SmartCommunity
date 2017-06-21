@@ -19,6 +19,8 @@ import org.json.JSONException;
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
+import static com.way.util.ConvertUtil.hexStringToByte;
+
 public class SmartSwitchActivity extends GosBaseActivity {
 
 	private Button btn_open1, btn_colse1,btn_open2, btn_colse2,btn_open3, btn_colse3,btn_open4, btn_colse4;
@@ -70,7 +72,6 @@ public class SmartSwitchActivity extends GosBaseActivity {
 		status1 = sp.getInt("status1",0);
 		status2 = sp.getInt("status2",0);
 		status3 = sp.getInt("status3",0);
-//		addresses = Integer.parseInt(intent.getStringExtra("address"));
 		BYTES_ID = hexStringToByte(intent.getStringExtra("address"));
 		//填充类型
 		switch (type) {
@@ -389,29 +390,4 @@ public class SmartSwitchActivity extends GosBaseActivity {
 		return result;
 	}
 
-
-	//java 合并两个byte数组
-	public byte[] byteMerger(byte[] byte_1, byte[] byte_2){
-		byte[] byte_3 = new byte[byte_1.length+byte_2.length];
-		System.arraycopy(byte_1, 0, byte_3, 0, byte_1.length);
-		System.arraycopy(byte_2, 0, byte_3, byte_1.length, byte_2.length);
-		return byte_3;
-	}
-
-	//把16进制字符串转换成字节数组
-	public byte[] hexStringToByte(String hex) {
-		int len = (hex.length() / 2);
-		byte[] result = new byte[len];
-		char[] achar = hex.toCharArray();
-		for (int i = 0; i < len; i++) {
-			int pos = i * 2;
-			result[i] = (byte) (toByte(achar[pos]) << 4 | toByte(achar[pos + 1]));
-		}
-		return result;
-	}
-
-	private byte toByte(char c) {
-		byte b = (byte) "0123456789ABCDEF".indexOf(c);
-		return b;
-	}
 }

@@ -33,11 +33,13 @@ public class AddDeviceUserEnsure extends Activity implements View.OnClickListene
         btn_reset.setOnClickListener(this);
     }
 
+    //跳转下一步
     private void btn_next(){
         Intent in = new Intent(this,AddDeviceSetNetworkActivity.class);
         startActivityForResult(in,100);
     }
 
+    //未闪灯
     private void btn_reset(){
         Intent in = new Intent(this,ResetDeviceActivity.class);
         startActivity(in);

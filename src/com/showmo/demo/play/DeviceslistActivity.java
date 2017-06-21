@@ -112,6 +112,7 @@ public class DeviceslistActivity extends GosBaseActivity{
         });
     }
 
+    //设备选择事件
     AdapterView.OnItemClickListener itemListener = new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -179,6 +180,7 @@ public class DeviceslistActivity extends GosBaseActivity{
         }
     }
 
+    //增加设备
     private void addDevice(){
         Intent in = new Intent(this,AddDeviceUserEnsure.class);
         in.putExtra("isDemo",account.isDemo());

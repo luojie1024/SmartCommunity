@@ -46,8 +46,8 @@ public class AddDeviceSetNetworkActivity extends Activity implements View.OnClic
 //        String psw = "88888888";
         String wifi = et_wifissid.getText().toString();
         String psw = et_wifipsw.getText().toString();
-        if(wifi.equals("")||psw.equals("")){
-            Toast.makeText(this,"wifi或密码不能为空！",Toast.LENGTH_LONG).show();
+        if(wifi.equals("")){
+            Toast.makeText(this,"wifi不能为空！",Toast.LENGTH_LONG).show();
             return;
         }
         Intent in = new Intent(this,AddDeviceUserTipClose.class);

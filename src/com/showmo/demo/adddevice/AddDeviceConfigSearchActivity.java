@@ -100,6 +100,7 @@ public class AddDeviceConfigSearchActivity extends Activity implements View.OnCl
         }
     };
 
+    //点击下一步
     private void btn_next(){
         btn_next.setVisibility(View.GONE);
         xmBinderManager.exitSendWork();
