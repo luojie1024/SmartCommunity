@@ -72,8 +72,6 @@ public class AirConditionListActivity extends GosBaseActivity {
 				index = msg.arg1;
 				airMesinfo = (AirMesinfo) msg.obj;
 				setDeviceInfo();
-				// Toast.makeText(getApplicationContext(), "暂未开放",
-				// Toast.LENGTH_SHORT).show();
 				break;
 			case DELETE:
 				index = msg.arg1;

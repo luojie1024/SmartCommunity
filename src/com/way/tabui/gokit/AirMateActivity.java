@@ -1,14 +1,5 @@
 package com.way.tabui.gokit;
 
-import java.util.concurrent.ConcurrentHashMap;
-
-import org.json.JSONException;
-
-import com.gizwits.gizwifisdk.api.GizWifiDevice;
-import com.way.adapter.DatabaseAdapter;
-import com.way.tabui.commonmodule.GosBaseActivity;
-import com.way.util.AirMesinfo;
-
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.Service;
@@ -23,9 +14,9 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.Window;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -33,12 +24,24 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.gizwits.gizwifisdk.api.GizWifiDevice;
+import com.way.adapter.DatabaseAdapter;
+import com.way.tabui.commonmodule.GosBaseActivity;
+import com.way.util.AirMesinfo;
+import com.way.util.ToastUtil;
+
+import org.json.JSONException;
+
+import java.util.concurrent.ConcurrentHashMap;
+
+
 public class AirMateActivity extends GosBaseActivity {
 
 	private GizWifiDevice device = null;
 	private DatabaseAdapter dbAdapter;
 	private ImageButton ib_pre, ib_ceshi, ib_next;
 	private TextView tv_pro, tv_brand;
+	private EditText ed_macaddress;
 	private int min, max, brand, index;
 	private String name = "Null";
 	private Button bt_diybrand;
@@ -85,6 +88,8 @@ public class AirMateActivity extends GosBaseActivity {
 		tv_brand = (TextView) findViewById(R.id.tv_brand);
 
 		bt_diybrand = (Button) findViewById(R.id.bt_diybrand);
+
+		ed_macaddress=(EditText)findViewById(R.id.et_macaddress);
 	//	ib_pre.setEnabled(false);
 
 	}
@@ -119,8 +124,6 @@ public class AirMateActivity extends GosBaseActivity {
 
 				if (brand == min) {
 					Toast.makeText(getApplicationContext(), "当前已经是第一个遥控码", Toast.LENGTH_SHORT).show();
-					//ib_pre.setEnabled(false);
-					//ib_pre.setVisibility(View.GONE);
 				} else {
 					brand--;
 					index--;
@@ -149,35 +152,56 @@ public class AirMateActivity extends GosBaseActivity {
 				}
 			}
 		});
+		/**
+		 * description:选定设备触摸事件
+		 * auther:joahluo
+		 * updata:2017/6/24 20:55:
+		 * version:1.0
+		 */
+		ib_ceshi.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				if (ed_macaddress.getText().length()<8) {
+					ToastUtil.ToastShow(AirMateActivity.this, "请输入正确的设备ID");
+				}
+			}
+		});
 
+		/**
+		 * description:选定设备触摸事件
+		 * auther:joahluo
+		 * updata:2017/6/24 20:57
+		 * version:1.0
+		 */
 		ib_ceshi.setOnTouchListener(new OnTouchListener() {
 
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
-				// TODO Auto-generated method stub
-				boolean isopen = false;
-				switch (event.getAction()) {
-				case MotionEvent.ACTION_DOWN:
-					// isonclick=false;
-					if (!isopen) {
-						isstart = true;
-						initTimer();
-						Log.i("==", "Thread is start");
-						isopen = true;
+				//当设备ID输入真确是，才允许进行设备设置控制
+				if (ed_macaddress.getText().length() == 8) {
+					boolean isopen = false;
+					switch (event.getAction()) {
+						case MotionEvent.ACTION_DOWN:
+							// isonclick=false;
+							if (!isopen) {
+								isstart = true;
+								initTimer();
+								Log.i("==", "Thread is start");
+								isopen = true;
+							}
+							break;
+
+						case MotionEvent.ACTION_UP:
+							// isonclick=false;
+							isstart = false;
+							initTimer();
+							// myThread.interrupt();
+							isopen = false;
+							windex = 1;
+							boundAlert(AirMateActivity.this);
+							break;
 					}
-					break;
-
-				case MotionEvent.ACTION_UP:
-					// isonclick=false;
-					isstart = false;
-					initTimer();
-					// myThread.interrupt();
-					isopen = false;
-					windex = 1;
-					boundAlert(AirMateActivity.this);
-					break;
 				}
-
 				return false;
 			}
 		});
@@ -216,8 +240,10 @@ public class AirMateActivity extends GosBaseActivity {
 				new DialogInterface.OnClickListener() {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
+						//TODO USERID null
 						AirMesinfo airMesinfo = new AirMesinfo(name, brand, 22,
 								0, 0, 0, device.getMacAddress(), "null", 0);
+						//增加空调信息
 						dbAdapter.addairmes(airMesinfo);
 						Toast.makeText(getApplicationContext(), "添加完毕",
 								Toast.LENGTH_SHORT).show();
