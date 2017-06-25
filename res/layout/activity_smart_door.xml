@@ -20,7 +20,7 @@
         android:id="@+id/et_kuozhancode"
         android:hint="@string/initkuozhancode"
         android:textColor="#6e6969"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
         android:layout_width="match_parent"
@@ -29,12 +29,86 @@
     <Button
         android:id="@+id/btn_sendcode"
         android:text="发送命令"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="sendClick"
     />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/bt_aer_mod"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="手动模式" />
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_aer_lowopen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="低报继开（高关）" />
+            <Button
+                android:id="@+id/bt_aer_highopen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="高报继开（低关）" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_aer_allclose"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="高低全关" />
+
+            <Button
+                android:id="@+id/bt_aer_allopen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="高低全开" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

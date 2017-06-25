@@ -28,7 +28,6 @@ import com.gizwits.gizwifisdk.api.GizWifiDevice;
 import com.way.adapter.DatabaseAdapter;
 import com.way.tabui.commonmodule.GosBaseActivity;
 import com.way.util.AirMesinfo;
-import com.way.util.ToastUtil;
 
 import org.json.JSONException;
 
@@ -99,6 +98,7 @@ public class AirMateActivity extends GosBaseActivity {
 		min = intent.getIntExtra("min", 0);
 		max = intent.getIntExtra("max", 1000);
 		name = intent.getStringExtra("name") + "空调";
+		//品牌号从最小号开始
 		brand = min;
 		index = 1;
 		setProText();
@@ -112,7 +112,6 @@ public class AirMateActivity extends GosBaseActivity {
 
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				setBrandInfo();
 			}
 		});
@@ -120,8 +119,6 @@ public class AirMateActivity extends GosBaseActivity {
 
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
-
 				if (brand == min) {
 					Toast.makeText(getApplicationContext(), "当前已经是第一个遥控码", Toast.LENGTH_SHORT).show();
 				} else {
@@ -158,16 +155,16 @@ public class AirMateActivity extends GosBaseActivity {
 		 * updata:2017/6/24 20:55:
 		 * version:1.0
 		 */
-		ib_ceshi.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				if (ed_macaddress.getText().length()<8) {
-					ToastUtil.ToastShow(AirMateActivity.this, "请输入正确的设备ID");
-				}
-			}
-		});
+//		ib_ceshi.setOnClickListener(new OnClickListener() {
+//			@Override
+//			public void onClick(View v) {
+//				if (ed_macaddress.getText().length()<8) {
+//					ToastUtil.ToastShow(AirMateActivity.this, "请输入正确的设备ID");
+//				}
+//			}
+//		});
 
-		/**
+		/**FIXME
 		 * description:选定设备触摸事件
 		 * auther:joahluo
 		 * updata:2017/6/24 20:57
@@ -178,11 +175,10 @@ public class AirMateActivity extends GosBaseActivity {
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				//当设备ID输入真确是，才允许进行设备设置控制
-				if (ed_macaddress.getText().length() == 8) {
+				//if (ed_macaddress.getText().length() == 8) {
 					boolean isopen = false;
 					switch (event.getAction()) {
 						case MotionEvent.ACTION_DOWN:
-							// isonclick=false;
 							if (!isopen) {
 								isstart = true;
 								initTimer();
@@ -201,7 +197,7 @@ public class AirMateActivity extends GosBaseActivity {
 							boundAlert(AirMateActivity.this);
 							break;
 					}
-				}
+				//}
 				return false;
 			}
 		});
@@ -225,7 +221,6 @@ public class AirMateActivity extends GosBaseActivity {
 
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
-						// TODO Auto-generated method stub
 						if (brand != max) {
 							brand++;
 							index++;
@@ -240,7 +235,6 @@ public class AirMateActivity extends GosBaseActivity {
 				new DialogInterface.OnClickListener() {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
-						//TODO USERID null
 						AirMesinfo airMesinfo = new AirMesinfo(name, brand, 22,
 								0, 0, 0, device.getMacAddress(), "null", 0);
 						//增加空调信息
@@ -263,6 +257,12 @@ public class AirMateActivity extends GosBaseActivity {
 		tv_brand.setText("当前测试遥控码:" + brand);
 	}
 
+	/**
+	 * FIXME
+	 * description:发送控制命令
+	 * auther：joahluo
+	 * time：2017/6/25 9:56
+	 */
 	Handler handler = new Handler() {
 		public void handleMessage(Message msg) {
 			// 要做的事情
@@ -272,7 +272,6 @@ public class AirMateActivity extends GosBaseActivity {
 					sendJson(KEY_Sendair, sendtype + brand);
 					vSimple();
 				} catch (JSONException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 
@@ -408,7 +407,6 @@ public class AirMateActivity extends GosBaseActivity {
 
 			@Override
 			public void run() {
-				// TODO Auto-generated method stub
 				while (isstart) {
 					Message mas = new Message();
 					mas.what = windex;
@@ -417,14 +415,12 @@ public class AirMateActivity extends GosBaseActivity {
 						try {
 							Thread.sleep(1200);
 						} catch (InterruptedException e) {
-							// TODO Auto-generated catch block
 							Log.i("==", "线程出错" + e.toString());
 						}
 					} else {
 						try {
 							Thread.sleep(800);
 						} catch (InterruptedException e) {
-							// TODO Auto-generated catch block
 							Log.i("==", "线程出错" + e.toString());
 						}
 					}

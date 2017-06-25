@@ -165,7 +165,6 @@ public class AirConditionListActivity extends GosBaseActivity {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				// TODO Auto-generated method stub
 				Intent intent = new Intent(AirConditionListActivity.this,
 						SmartAirConditionActivity.class);
 				Bundle bundle = new Bundle();

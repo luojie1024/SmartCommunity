@@ -216,7 +216,6 @@ public class SmartAirConditionActivity extends GosBaseActivity {
         try {
             sendJson(KEY_Sendair, sendtype + brand);
         } catch (JSONException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
@@ -247,7 +246,6 @@ public class SmartAirConditionActivity extends GosBaseActivity {
 
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
                 vSimple();
                 if (opcl == 0) {
                     try {
@@ -258,7 +256,6 @@ public class SmartAirConditionActivity extends GosBaseActivity {
                         opcl = 1;
                         updbData();
                     } catch (JSONException e) {
-                        // TODO Auto-generated catch block
                     }
                 } else {
                     try {
@@ -269,8 +266,6 @@ public class SmartAirConditionActivity extends GosBaseActivity {
                         opcl = 0;
                         updbData();
                     } catch (JSONException e) {
-                        // TODO Auto-generated catch block
-
                     }
                 }
             }
@@ -380,7 +375,6 @@ public class SmartAirConditionActivity extends GosBaseActivity {
                     }
                     updbData();
                 } catch (JSONException e) {
-                    // TODO Auto-generated catch block
                     Toast.makeText(getApplicationContext(), "发送失败",
                             Toast.LENGTH_SHORT).show();
                 }
