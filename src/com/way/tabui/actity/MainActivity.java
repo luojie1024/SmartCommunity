@@ -153,8 +153,6 @@ public class MainActivity extends GosControlModuleBaseActivity implements
         initView();
         initAnim();
         loadData();
-
-        String waitingText = (String) getText(R.string.waiting_device_ready);
         super.onCreate(savedInstanceState);
 
     }
@@ -253,6 +251,8 @@ public class MainActivity extends GosControlModuleBaseActivity implements
 //        Log.i("==", "uid:" + spf.getString("Uid","null").toString() + "---" +spf.getString("Token","null").toString() );
         Log.i("==", "did:" + device.getDid() + "---" + device.getPasscode());
 //        Toast.makeText(this, "uid:" + device.getDid() + "---" + device.getPasscode(), Toast.LENGTH_SHORT).show();
+
+
     }
 
     @Override
@@ -454,7 +454,6 @@ public class MainActivity extends GosControlModuleBaseActivity implements
 
     @Override
     protected void onResume() {
-        // TODO Auto-generated method stub
         initReceiver();
         initBroadcostData();
         super.onResume();
@@ -468,7 +467,6 @@ public class MainActivity extends GosControlModuleBaseActivity implements
 
     @Override
     protected void onDestroy() {
-        // TODO Auto-generated method stub
 //		MainActivity.this.unregisterReceiver(receiver);
 //		MainActivity.this.unregisterReceiver(exitReceiver);
         super.onDestroy();
@@ -717,7 +715,6 @@ public class MainActivity extends GosControlModuleBaseActivity implements
             try {
                 spf.edit().putString("msgobj", device.getMacAddress()).commit();
             } catch (Exception e) {
-                // TODO: handle exception
                 spf.edit().putString("msgobj", "").commit();
             }
             Intent home = new Intent(Intent.ACTION_MAIN);
@@ -729,8 +726,5 @@ public class MainActivity extends GosControlModuleBaseActivity implements
 //			System.exit(0); 
         }
     }
-    //String softssid, uid, token;
-//	public static int loginStatus;
-
 
 }

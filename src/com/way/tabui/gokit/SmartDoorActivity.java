@@ -51,13 +51,13 @@ public class SmartDoorActivity extends GosBaseActivity {
     private byte[] NORMAL_MODE= {(byte) 0x50, (byte) 0x02, (byte) 0x06, (byte) 0x00, (byte) 0x07, (byte) 0x00, (byte) 0x01, (byte) 0x00,
          (byte) 0x01, (byte) 0x82, (byte) 0x12};
 
-    private byte[] OPEN_DOOR = {(byte) 0x01, (byte) 0x23, (byte) 0x45, (byte) 0x67, (byte) 0x89, (byte) 0xab, (byte) 0xcd, (byte) 0xef,
-            (byte) 0x01, (byte) 0x23, (byte) 0x45, (byte) 0x67, (byte) 0x89, (byte) 0xab, (byte) 0xcd, (byte) 0xef,
-            (byte) 0x01, (byte) 0x23, (byte) 0x45, (byte) 0x67, (byte) 0x89, (byte) 0xab, (byte) 0xcd, (byte) 0xef
+    private byte[] OPEN_DOOR = {(byte) 0x40,(byte) 0x5a, (byte) 0x1b, (byte) 0x01, (byte) 0x00, (byte) 0x00, (byte) 0x11, (byte) 0x22,
+            (byte) 0x14, (byte) 0x47, (byte) 0x06, (byte) 0x69, (byte) 0x01, (byte) 0x37, (byte) 0x35, (byte) 0x30,
+            (byte) 0x39, (byte) 0x31, (byte) 0x38, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0xff, (byte) 0xc3
     };
-    private byte[] CLOSE_DOOR = {(byte) 0x01, (byte) 0x23, (byte) 0x45, (byte) 0x67, (byte) 0x89, (byte) 0xab, (byte) 0xcd, (byte) 0xef,
-            (byte) 0x01, (byte) 0x23, (byte) 0x45, (byte) 0x67, (byte) 0x89, (byte) 0xab, (byte) 0xcd, (byte) 0xef,
-            (byte) 0x01, (byte) 0x23, (byte) 0x45, (byte) 0x67,(byte) 0x89, (byte) 0xab, (byte) 0xcd, (byte) 0xef
+    private byte[] CLOSE_DOOR = {(byte) 0x40,(byte) 0x5a, (byte) 0x17, (byte) 0x02, (byte) 0x00, (byte) 0x00, (byte) 0x11, (byte) 0x22,
+         (byte) 0x14, (byte) 0x47, (byte) 0x06, (byte) 0x69, (byte) 0x01, (byte) 0x37, (byte) 0x35, (byte) 0x30,
+         (byte) 0x39, (byte) 0x31, (byte) 0x38, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0xc1
     };
 
 
@@ -170,7 +170,7 @@ public class SmartDoorActivity extends GosBaseActivity {
                 if (auto_mod == false) {
                     sendJson(KUOZHAN, AUTO_MODE);
                     auto_mod = true;
-                    bt_aer_mod.setText("手动模式");
+                    bt_aer_mod.setText("自动模式");
                     ToastUtil.ToastShow(SmartDoorActivity.this,"自动模式！");
                     bt_aer_allopen.setVisibility(View.INVISIBLE);
                     bt_aer_allclose.setVisibility(View.INVISIBLE);
@@ -179,7 +179,7 @@ public class SmartDoorActivity extends GosBaseActivity {
                 } else {
                     sendJson(KUOZHAN, NORMAL_MODE);
                     auto_mod = false;
-                    bt_aer_mod.setText("自动模式");
+                    bt_aer_mod.setText("手动模式");
                     ToastUtil.ToastShow(SmartDoorActivity.this,"手动模式！");
                     bt_aer_allopen.setVisibility(View.VISIBLE);
                     bt_aer_allclose.setVisibility(View.VISIBLE);

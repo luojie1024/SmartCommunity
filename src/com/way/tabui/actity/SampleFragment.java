@@ -17,6 +17,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -57,9 +58,12 @@ import com.xmcamera.core.model.XmAccount;
 import com.xmcamera.core.model.XmErrInfo;
 import com.xmcamera.core.sysInterface.OnXmListener;
 
+import org.json.JSONException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -134,6 +138,10 @@ public class SampleFragment extends Fragment {
                     f.setArguments(args);
                     return f;
           }
+
+
+          private static final String KUOZHAN = "kuozhan";
+          private byte[] SEND_BROAD={(byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0x15};
 
           TextView title;
           String titleValue;
@@ -269,7 +277,6 @@ public class SampleFragment extends Fragment {
                               // stask.interrupt();
                               stopreceiver();
                     } catch (Exception e) {
-                              // TODO: handle exception
                     }
 
                     super.onPause();
@@ -277,7 +284,6 @@ public class SampleFragment extends Fragment {
 
           @Override
           public void onResume() {
-                    // TODO Auto-generated method stub
                     try {
                               spf = getActivity().getSharedPreferences(GosConstant.SPF_Name,
                                    Context.MODE_PRIVATE);
@@ -308,7 +314,6 @@ public class SampleFragment extends Fragment {
                               } else
                                         title.setText(getArguments().getString(ARG_TEXT) + "-" + "网关离线中");
                     } catch (Exception e) {
-                              // TODO: handle exception
                               title.setText(getArguments().getString(ARG_TEXT) + "-" + "网关离线中");
                     }
                     //如果是智能家居模块则启动广播接收，用来更新相关的UI
@@ -333,7 +338,6 @@ public class SampleFragment extends Fragment {
 //					imasmoke.setVisibility(View.GONE);
 //				}
                               } catch (Exception e) {
-                                        // TODO: handle exception
 
                               }
                     }
@@ -346,7 +350,6 @@ public class SampleFragment extends Fragment {
                     try {
                               stopreceiver();
                     } catch (Exception e) {
-                              // TODO: handle exception
                     }
                     super.onStop();
           }
@@ -366,12 +369,24 @@ public class SampleFragment extends Fragment {
                     IntentFilter filter = new IntentFilter();
                     filter.addAction("com.way.tabui.actity.GizService");
                     getActivity().registerReceiver(receiver, filter);
+                    //// TODO: 2017/6/26 发送广播
+                    try {
+                              sendJson(KUOZHAN,SEND_BROAD);
+                    } catch (JSONException e) {
+                              e.printStackTrace();
+                    }
           }
 
           private void stopreceiver() {
                     getActivity().unregisterReceiver(receiver);
           }
 
+
+          /**
+           * description:接收温度湿度广播
+           * auther：joahluo
+           * time：2017/6/26 14:02
+           */
           public class MyReceiver extends BroadcastReceiver {
                     @Override
                     public void onReceive(Context context, Intent intent) {
@@ -433,6 +448,7 @@ public class SampleFragment extends Fragment {
                               }
                     }
 
+
           }
 
 
@@ -447,7 +463,6 @@ public class SampleFragment extends Fragment {
                                                             try {
                                                                       imagas.setImageResource(R.drawable.ic_gas_a);
                                                             } catch (Exception e) {
-                                                                      // TODO: handle exception
                                                             }
                                                   }
                                                   break;
@@ -456,7 +471,6 @@ public class SampleFragment extends Fragment {
                                                   try {
                                                             imagas.setImageResource(R.drawable.ic_gas_b);
                                                   } catch (Exception e) {
-                                                            // TODO: handle exception
                                                   }
 
                                                   break;
@@ -466,7 +480,6 @@ public class SampleFragment extends Fragment {
                                                             try {
                                                                       imagate.setImageResource(R.drawable.ic_gate_a);
                                                             } catch (Exception e) {
-                                                                      // TODO: handle exception
                                                             }
                                                   }
 
@@ -476,7 +489,6 @@ public class SampleFragment extends Fragment {
                                                   try {
                                                             imagate.setImageResource(R.drawable.ic_gate_b);
                                                   } catch (Exception e) {
-                                                            // TODO: handle exception
                                                   }
 
                                                   break;
@@ -486,7 +498,6 @@ public class SampleFragment extends Fragment {
                                                             try {
                                                                       imasmoke.setImageResource(R.drawable.ic_smoke_a);
                                                             } catch (Exception e) {
-                                                                      // TODO: handle exception
                                                             }
                                                   }
 
@@ -508,7 +519,6 @@ public class SampleFragment extends Fragment {
                                                             try {
                                                                       imabody.setImageResource(R.drawable.ic_body_a);
                                                             } catch (Exception e) {
-                                                                      // TODO: handle exception
                                                             }
                                                   }
 
@@ -518,7 +528,6 @@ public class SampleFragment extends Fragment {
                                                   try {
                                                             imabody.setImageResource(R.drawable.ic_body_b);
                                                   } catch (Exception e) {
-                                                            // TODO: handle exception
                                                   }
 
                                                   break;
@@ -527,7 +536,6 @@ public class SampleFragment extends Fragment {
                                                             imatehu.setImageBitmap(getThumb("温度:" + getoftem() + "\n"
                                                                  + "湿度:" + getofhum()));
                                                   } catch (Exception e) {
-                                                            // TODO: handle exception
                                                   }
                                                   break;
 
@@ -1023,5 +1031,18 @@ public class SampleFragment extends Fragment {
                     paint.setTextAlign(Paint.Align.CENTER);
                     canvas.drawText(s, 75, 75, paint);
                     return bmp;
+          }
+
+          /**
+           * description:发送数据
+           * auther：joahluo
+           * time：2017/6/26 20:14
+           */
+          private void sendJson(String key, Object value) throws JSONException {
+                    ConcurrentHashMap<String, Object> hashMap = new ConcurrentHashMap<String, Object>();
+                    hashMap.put(key, value);
+                    GizWifiDevice device = ((MainActivity) getActivity()).device;
+                    device.write(hashMap, 0);
+                    Log.i("==", hashMap.toString());
           }
 }
