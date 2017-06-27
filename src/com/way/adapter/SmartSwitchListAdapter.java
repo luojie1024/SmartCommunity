@@ -45,20 +45,19 @@ public class SmartSwitchListAdapter extends BaseAdapter {
 	}
 
 	public int getCount() {
-		// TODO Auto-generated method stub
 		return mList.size();
 	}
 
 	public Object getItem(int position) {
-		// TODO Auto-generated method stub
 		return mList.get(position);
 	}
 
 	public long getItemId(int position) {
-		// TODO Auto-generated method stub
 		return position;
 	}
 
+
+	//MAC地址
 	public SmartSwitchListAdapter setDate(String mac){
 		mList=dbAdapter.findbybindgizSwitchInfo(mac);
 		if(mList.size()!=0){
@@ -89,7 +88,6 @@ public class SmartSwitchListAdapter extends BaseAdapter {
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		// TODO Auto-generated method stub
 		SmartSwitchListAdapter.ViewHolder viewHolder =null;
 		if(convertView==null){
 			convertView = RelativeLayout.inflate(mContext, R.layout.listview_aircon_mes, null);
@@ -122,7 +120,6 @@ public class SmartSwitchListAdapter extends BaseAdapter {
 		viewHolder.bt_update.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				Message message = new Message();
 				message.what =UPDATA;
 				message.arg1 = mList.get(index).get_id();
@@ -133,7 +130,6 @@ public class SmartSwitchListAdapter extends BaseAdapter {
 		viewHolder.bt_delete.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				Message message = new Message();
 				message.what =DELETE;
 				message.arg1 = mList.get(index).get_id();
@@ -148,7 +144,6 @@ public class SmartSwitchListAdapter extends BaseAdapter {
 		private ImageView imageView1;
 		private Button bt_update;
 		private Button bt_delete;
-
 	}
 
 }

@@ -141,7 +141,7 @@ public class SampleFragment extends Fragment {
 
 
           private static final String KUOZHAN = "kuozhan";
-          private byte[] SEND_BROAD={(byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0x15};
+          private byte[] SEND_BROAD = {(byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0x15};
 
           TextView title;
           String titleValue;
@@ -291,25 +291,13 @@ public class SampleFragment extends Fragment {
                               if (!getofisoffline()) {
                                         if (TextUtils.isEmpty(((MainActivity) getActivity()).device
                                              .getAlias())) {
-//				if(issafe){
                                                   title.setText(getArguments().getString(ARG_TEXT)
                                                        + "-"
                                                        + ((MainActivity) getActivity()).device
                                                        .getProductName());
-//				}else{
-//					title.setText(getArguments().getString(ARG_TEXT)
-//							+ "-"
-//							+ ((MainActivity) getActivity()).device
-//									.getProductName()+"-撤防-");
-//				}
                                         } else {
-//				if(issafe){
                                                   title.setText(getArguments().getString(ARG_TEXT) + "-"
                                                        + ((MainActivity) getActivity()).device.getAlias());
-//				}else{
-//					title.setText(getArguments().getString(ARG_TEXT) + "-"
-//							+ ((MainActivity) getActivity()).device.getAlias()+"-撤防-");
-//				}
                                         }
                               } else
                                         title.setText(getArguments().getString(ARG_TEXT) + "-" + "网关离线中");
@@ -369,9 +357,9 @@ public class SampleFragment extends Fragment {
                     IntentFilter filter = new IntentFilter();
                     filter.addAction("com.way.tabui.actity.GizService");
                     getActivity().registerReceiver(receiver, filter);
-                    //// TODO: 2017/6/26 发送广播
+                    // TODO: 2017/6/26 发送广播
                     try {
-                              sendJson(KUOZHAN,SEND_BROAD);
+                              sendJson(KUOZHAN, SEND_BROAD);
                     } catch (JSONException e) {
                               e.printStackTrace();
                     }
@@ -508,7 +496,6 @@ public class SampleFragment extends Fragment {
                                                   try {
                                                             imasmoke.setImageResource(R.drawable.ic_smoke_b);
                                                   } catch (Exception e) {
-                                                            // TODO: handle exception
                                                   }
 
 

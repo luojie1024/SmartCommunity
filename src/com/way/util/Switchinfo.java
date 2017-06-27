@@ -74,6 +74,34 @@ public class SwitchInfo {
           private int flag;
           private int type;
 
+          public int getStatus1() {
+                    return status1;
+          }
+
+          public void setStatus1(int status1) {
+                    this.status1 = status1;
+          }
+
+          public int getStatus2() {
+                    return status2;
+          }
+
+          public void setStatus2(int status2) {
+                    this.status2 = status2;
+          }
+
+          public int getStatus3() {
+                    return status3;
+          }
+
+          public void setStatus3(int status3) {
+                    this.status3 = status3;
+          }
+
+          private int status1;
+          private int status2;
+          private int status3;
+
           public SwitchInfo(int id, String name, String address, String bindgiz, String userid, int flag, int type) {
                     super();
                     this._id = id;
@@ -83,6 +111,9 @@ public class SwitchInfo {
                     this.userid=userid;
                     this.flag = flag;
                     this.type = type;
+                    this.status1=0;
+                    this.status2=0;
+                    this.status3=0;
           }
 
           public SwitchInfo(String name, String address, String bindgiz, String userid, int flag, int type) {

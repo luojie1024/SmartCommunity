@@ -436,12 +436,9 @@ public class MainActivity extends GosControlModuleBaseActivity implements
             if (action.equals("com.way.tabui.actity.GizServiceTOAST")) {
 
                 String mes = intent.getStringExtra("Toastdata");
-//			    		if(mes.equals("连接设备失败"))
-//			    		{
                 msg.what = TOAST;
                 msg.obj = mes;
                 handler.sendMessage(msg);
-//						}
             }
 
 

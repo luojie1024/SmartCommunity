@@ -16,7 +16,7 @@ public class DatebaseHelper extends SQLiteOpenHelper {
           public static final String DB_NAME = "gizdb.db";
           public static final int VERSION = 4;
           private static final String CREATE_TABLE_GIZ = "create table giz(id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,address TEXT,bindgiz TEXT,userid TEXT,flag INTEGER)";
-          private static final String CREATE_TABLE_SWITCH = "create table switch(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,address TEXT,bindgiz TEXT,userid TEXT,flag INTEGER,type INTEGER)";
+          private static final String CREATE_TABLE_SWITCH = "create table switch(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,address TEXT,bindgiz TEXT,userid TEXT,flag INTEGER,type INTEGER,status1 INTEGER,status2 INTEGER,status3 INTEGER)";
           private static final String CREATE_TABLE_ALERT = "create table alert(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,time TEXT,bindgiz TEXT,userid TEXT,flag INTEGER)";
           private static final String CREATE_TABLE_AIRMES = "create table airmes(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,brand INTEGER,temperature INTEGER,mode INTEGER,speed INTEGER,direction INTEGER,bindgiz TEXT,userid TEXT,flag INTEGER)";
           private static final String CREATE_TABLE_CURTAIN = "create table curtain(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,address TEXT,bindgiz TEXT,userid TEXT,flag INTEGER)";
@@ -29,7 +29,6 @@ public class DatebaseHelper extends SQLiteOpenHelper {
 
           public DatebaseHelper(Context context) {
                     super(context, DB_NAME, null, VERSION);
-                    // TODO Auto-generated constructor stub
           }
 
           //如果数据库不存在，那么会执行该方法

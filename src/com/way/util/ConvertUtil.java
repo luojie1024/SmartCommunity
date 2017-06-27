@@ -41,4 +41,22 @@ public class ConvertUtil {
                     result[3] = (byte)(i & 0xFF);
                     return result;
           }
+
+
+          //把字节数组转换成16进制字符串
+          public static String byteStringToHexString(byte[] bytes) {
+                    StringBuilder stringBuilder = new StringBuilder("");
+                    if (bytes == null || bytes.length <= 0) {
+                              return null;
+                    }
+                    for (int i = 0; i < bytes.length; i++) {
+                              int v = bytes[i] & 0xFF;
+                              String hv = Integer.toHexString(v);
+                              if (hv.length() < 2) {
+                                        stringBuilder.append(0);
+                              }
+                              stringBuilder.append(hv);
+                    }
+                    return stringBuilder.toString();
+          }
 }

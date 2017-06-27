@@ -33,6 +33,7 @@ public class SmartSwitchTypeListActivity extends GosBaseActivity {
           SmartSwitchTypeListActivity.MyAdapter adapter;
           //各个品牌的控制码范围
 
+
           @Override
           protected void onCreate(Bundle savedInstanceState) {
                     super.onCreate(savedInstanceState);
@@ -81,6 +82,8 @@ public class SmartSwitchTypeListActivity extends GosBaseActivity {
                               mlist.add(str);
                     }
                     adapter = new SmartSwitchTypeListActivity.MyAdapter(this, mlist);
+
+
           }
 
           private class MyAdapter extends BaseAdapter {

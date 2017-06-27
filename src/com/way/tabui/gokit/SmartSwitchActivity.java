@@ -152,7 +152,7 @@ public class SmartSwitchActivity extends GosBaseActivity {
 				btn_colse2.setVisibility(View.GONE);
 				btn_open3.setVisibility(View.GONE);
 				btn_colse3.setVisibility(View.GONE);
-				BYTES_BESE[0]=3;
+				BYTES_BESE[0]=10;
 				break;
 		}
 		//填充ID

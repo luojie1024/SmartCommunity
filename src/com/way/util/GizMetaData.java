@@ -60,7 +60,10 @@ public final class GizMetaData {
 		public static final String GIZ_BINDGIZ="bindgiz";//绑定到此Mac地址的板子
 		public static final String GIZ_USERID="userid";//用户ID，备用
 		public static final String GIZ_FLAG="flag";//留用
-		public static final String GIZ_TYPE="type";//用户ID，备用
+		public static final String GIZ_TYPE="type";//开关类型
+		public static final String GIZ_STATUS1="status1";//开关状态
+		public static final String GIZ_STATUS2="status2";//开关状态
+		public static final String GIZ_STATUS3="status3";//开关状态
 	}
 	
 }
