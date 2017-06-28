@@ -26,6 +26,8 @@ public class SmartSwitchListAdapter extends BaseAdapter {
 	private DatabaseAdapter dbAdapter;
 	protected static final int UPDATA = 99;
 	protected static final int DELETE = 100;
+	private static final int UPDATA_STATUS=1;
+	private static final int UPDATA_INFO=0;
 	Handler handler = new Handler();
 
 	public void setHandler(Handler handler) {
@@ -68,9 +70,17 @@ public class SmartSwitchListAdapter extends BaseAdapter {
 			return null;
 		return this;
 	}
-	public SmartSwitchListAdapter updateList(SwitchInfo switchInfo){
+	public SmartSwitchListAdapter updateList(SwitchInfo switchInfo,int mode){
 		if(switchInfo!=null){
-			dbAdapter.updateSwitchInfo(switchInfo);
+			//选择更新方式
+			switch (mode) {
+				case UPDATA_INFO:
+					dbAdapter.updateSwitchInfo(switchInfo);
+					break;
+				case UPDATA_STATUS:
+					dbAdapter.updateSwitchStatusInfo(switchInfo);
+					break;
+			}
 			return this;
 		}
 		return null;

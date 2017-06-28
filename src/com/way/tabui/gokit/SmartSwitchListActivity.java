@@ -5,7 +5,6 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -61,18 +60,18 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
           protected static final int CLOSE = 0;
           protected static final int UPDATA = 99;
           protected static final int DELETE = 100;
-
+          //查询方式
+          private static final int UPDATA_STATUS=1;
+          private static final int UPDATA_INFO=0;
 
           private LinearLayout bt_addCurtain;
           private View lldevice;
           private ScrollView svListGroup;
           private SlideListView2 listview_air_con_mes;
           private DatabaseAdapter dbAdapter;
-          private SmartSwitchListAdapter adapter;
           private DatebaseHelper dbHelper;
+          private SmartSwitchListAdapter adapter;
 
-          //保存开关状态
-          private SharedPreferences sp;
 
           ArrayList<SwitchInfo> giz = new ArrayList<SwitchInfo>();
           private String MacAddress, name, address;
@@ -260,10 +259,11 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                                         try {
                                                   String name = etAlias.getText().toString();
                                                   String address = etBrand.getText().toString();
+
                                                   switchInfo.setAddress(address);
                                                   switchInfo.setName(name);
-
-                                                  if ((adapter.updateList(switchInfo).setDate(MacAddress)) == null) {
+                                                  //数据更新
+                                                  if ((adapter.updateList(switchInfo,UPDATA_INFO).setDate(MacAddress)) == null) {
                                                             bt_addCurtain.setVisibility(View.VISIBLE);
                                                             svListGroup.setVisibility(View.GONE);
                                                   } else {
@@ -398,9 +398,7 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                     Log.i("==", hashMap.toString());
           }
 
-          private SharedPreferences.Editor edit;
           /**
-           * TODO
            * description:获取设备状态
            * auther：joahluo
            * time：2017/6/27 15:53
@@ -419,31 +417,31 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                                                             deviceId[i] = bytes[i + 1];
                                                   }
                                                   String mac = ConvertUtil.byteStringToHexString(deviceId);
-                                                  //设置地址
-                                                  switchInfo.setAddress(mac);
+                                                  //获取数据库数据
+                                                  switchInfo=dbAdapter.findSwitchInfoStatus(mac);
                                                   //开关类型 状态
                                                   switch (bytes[0]) {
                                                             case ControlProtocol.DevType.SWITCH_THREE:
-                                                                      if ((bytes[5] | 0x4) == 0x4) {
+                                                                      if ((bytes[5] & 0x4) == 0x4) {
                                                                                 switchInfo.setStatus3(1);
                                                                       } else {
                                                                                 switchInfo.setStatus3(0);
                                                                       }
-                                                            case ControlProtocol.DevType.SWITCH_TOW:
-                                                                      if ((bytes[5] | 0x2) == 0x2) {
+                                                            case ControlProtocol.DevType.SWITCH_TWO:
+                                                                      if ((bytes[5] & 0x2) == 0x2) {
                                                                                 switchInfo.setStatus2(1);
                                                                       } else {
                                                                                 switchInfo.setStatus2(0);
                                                                       }
                                                             case ControlProtocol.DevType.SWITCH_ONE:
-                                                                      if ((bytes[5] | 0x1) == 0x1) {
+                                                                      if ((bytes[5] & 0x1) == 0x1) {
                                                                                 switchInfo.setStatus1(1);
                                                                       } else {
                                                                                 switchInfo.setStatus1(0);
                                                                       }
                                                                       break;
                                                             case ControlProtocol.DevType.PLUG_FIVE:
-                                                                      if ((bytes[5] | 0x1) == 0x1) {
+                                                                      if ((bytes[5] & 0x1) == 0x1) {
                                                                                 switchInfo.setStatus1(1);
                                                                       } else {
                                                                                 switchInfo.setStatus1(0);
@@ -452,13 +450,12 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                                                   }
                                                   //FIXME
                                                   /**
-                                                   * description:
+                                                   * description:保存状态信息
                                                    * auther：joahluo
                                                    * time：2017/6/27 21:19
                                                    */
-                                                  adapter.updateList(switchInfo).setDate(mac);
-                                                  dbAdapter.updateSwitchInfo(switchInfo);
-                                                  Toast.makeText(getApplicationContext(), "状态获取成功！",
+                                                  adapter.updateList(switchInfo,UPDATA_STATUS);
+                                                  Toast.makeText(getApplicationContext(), "状态更新成功！",
                                                        Toast.LENGTH_SHORT).show();
 
 

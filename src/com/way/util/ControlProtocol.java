@@ -18,7 +18,7 @@ public class ControlProtocol {
                     //一位开关
                     public static final byte SWITCH_ONE=0x00;
                     //二位开关
-                    public static final byte SWITCH_TOW=0x01;
+                    public static final byte SWITCH_TWO=0x01;
                     //三位开关
                     public static final byte SWITCH_THREE=0x02;
                     //四位开关
