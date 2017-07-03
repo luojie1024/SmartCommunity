@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="debug"><source path="D:\space\NO10\SmartCommunity\bDIntegrationSDK_LibProject\build\intermediates\bundles\debug\assets"/></dataSet><dataSet config="main"><source path="D:\space\NO10\SmartCommunity\bDIntegrationSDK_LibProject\src\androidTest\assets"/><source path="D:\space\NO10\SmartCommunity\bDIntegrationSDK_LibProject\build\generated\assets\shaders\androidTest\debug"/></dataSet></merger>
