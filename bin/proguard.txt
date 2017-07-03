@@ -179,7 +179,7 @@
 -keep class com.way.tabui.actity.SmartLightActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:185
--keep class com.way.tabui.actity.SmartOCActivity { <init>(...); }
+-keep class com.way.tabui.gokit.SmartSwitchListActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:125
 -keep class com.way.tabui.actity.TcpActivity { <init>(...); }

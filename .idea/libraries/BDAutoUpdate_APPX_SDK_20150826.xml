@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="BDAutoUpdate_APPX_SDK_20150826">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bDIntegrationSDK_LibProject/libs/BDAutoUpdate_APPX_SDK_20150826.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

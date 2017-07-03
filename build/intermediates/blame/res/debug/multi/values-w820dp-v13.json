@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
+        "outputFile": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "E:\\jaaspro\\SmartCommunity\\res\\values-w820dp\\dimens.xml",
+                    "file": "D:\\space\\NO10\\SmartCommunity\\res\\values-w820dp\\dimens.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,

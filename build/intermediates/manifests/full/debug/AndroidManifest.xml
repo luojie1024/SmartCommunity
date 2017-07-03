@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.way.tabui.gokit"
-    android:versionCode="1"
-    android:versionName="1.2.0" >
+    android:versionCode="3"
+    android:versionName="1.2.5" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -111,6 +111,20 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
+        <!-- &lt;!&ndash; 百度自动更新SDK   Appid配置,AppKey配置&ndash;&gt; -->
+        <meta-data
+            android:name="BDAPPID"
+            android:value="9779347" />
+        <meta-data
+            android:name="BDAPPKEY"
+            android:value="vjZg1l5uwHm02vkoSFH98LBvHTEIxusj" />
+        <!-- 百度自动更新SDK -->
+        <activity
+            android:name="com.baidu.autoupdatesdk.ConfirmDialoigActivity"
+            android:exported="false"
+            android:screenOrientation="sensor"
+            android:theme="@style/bdp_update_dialog_style_fullscreen" />
         <activity
             android:name="com.way.tabui.actity.MainActivity"
             android:label="@string/app_name"
@@ -187,7 +201,7 @@
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
-            android:name="com.way.tabui.actity.SmartOCActivity"
+            android:name="com.way.tabui.gokit.SmartSwitchListActivity"
             android:theme="@android:style/Theme.Holo.Light" >
         </activity>
         <activity
@@ -248,6 +262,17 @@
             android:name="com.way.tabui.gokit.AirConBrandActivity"
             android:label="@string/title_activity_air_con_brand"
             android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <!-- 灯光/插座/开关 -->
+        <activity
+            android:name="com.way.tabui.gokit.SmartSwitchTypeListActivity"
+            android:label="@string/title_activity_switch_type"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name="com.way.tabui.gokit.SmartSwitchActivity"
+            android:label="@string/title_activity_smart_switch"
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
             android:name="com.way.tabui.gokit.AirMateActivity"
@@ -432,12 +457,6 @@
             android:theme="@android:style/Theme.Holo.Light" >
 
             <!-- TODO 物业 -->
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name="com.property.activity.JiaofeijiluActivity"
@@ -672,6 +691,40 @@
 
         <!-- <activity android:name="com.way.tabui.controlmodule.GosColorsListActivity"></activity> -->
 
+
+        <!-- ↓↓↓ 百度移动统计SDK ↓↓↓ -->
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" /> <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START -->
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START" /> <!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔(取消下行注释)。取值为1-24的整数，默认为1 -->
+        <!-- <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2" /> -->
+        <!-- 日志仅在wifi网络下发送，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" /> <!-- 是否获取基站位置信息 ,默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="true" /> <!-- 是否获取GPS位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_GPS_LOCATION"
+            android:value="true" /> <!-- 是否获取WIFI位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_WIFI_LOCATION"
+            android:value="true" />
+
+        <receiver
+            android:name="com.baidu.autoupdatesdk.receiver.BDBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_NEW_UPDATE" />
+                <action android:name="com.baidu.autoupdatesdk.ACTION_DOWNLOAD_COMPLETE" />
+                <action android:name="com.baidu.autoupdatesdk.ACTION_NEW_AS" />
+                <action android:name="com.baidu.autoupdatesdk.ACTION_AS_DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

@@ -49,6 +49,12 @@
         <item>古北</item>
         <item>宇音天下</item>
     </string-array>
+    <string-array name="switchtype">
+        <item>一位开关</item>
+        <item>二位开关</item>
+        <item>三位开关</item>
+        <item>插座</item>
+    </string-array>
     <integer-array name="taskResultCount">
         <item>0</item>
         <item>1</item>
@@ -385,6 +391,25 @@
     <string name="baidu_album">百度相册</string>
     <string name="baidu_yun_no_storage">环泰智慧社区空间不足</string>
     <string name="baiduyun_no_storage">环泰智慧社区空间不足，无法保存 清理空间后再试吧</string>
+    <string name="bdp_update_action_download">立即升级</string>
+    <string name="bdp_update_action_install">立即安装</string>
+    <string name="bdp_update_as_action_cancel">取消</string>
+    <string name="bdp_update_as_action_install">安装</string>
+    <string name="bdp_update_as_download_complete">百度手机助手下载完成</string>
+    <string name="bdp_update_as_install_tip">推荐您使用百度手机助手进行升级。您尚未安装百度手机助手，请先安装。</string>
+    <string name="bdp_update_as_notify_tip">百度手机助手</string>
+    <string name="bdp_update_as_notify_title">百度手机助手</string>
+    <string name="bdp_update_download_complete">新版本下载完成，点击安装</string>
+    <string name="bdp_update_download_main_tip">%1$s → %2$s / %3$s</string>
+    <string name="bdp_update_ignore">忽略此版本</string>
+    <string name="bdp_update_install_main_tip">%1$s → %2$s</string>
+    <string name="bdp_update_minor_tip">更新内容：</string>
+    <string name="bdp_update_new_download">发现新版本，点击更新</string>
+    <string name="bdp_update_not_now">暂不升级</string>
+    <string name="bdp_update_request_net_error">网络错误，请重试</string>
+    <string name="bdp_update_title_as">提示</string>
+    <string name="bdp_update_title_download">发现新版本</string>
+    <string name="bdp_update_title_install">发现新版本安装包</string>
     <string name="besure">确定</string>
     <string name="bind_alert_ok">确定</string>
     <string name="both_unupload_upload">全部(%1$s)</string>
@@ -673,6 +698,7 @@
     <string name="imagepager_tv_pic_name">图片名称</string>
     <string name="info_install">播放此视频需安装视频插件</string>
     <string name="info_update">播放此视频需升级视频插件</string>
+    <string name="initkuozhancode">请按十六进制大写输入</string>
     <string name="input_mes">输入信息</string>
     <string name="input_need_download_url">填写要下载的文件链接</string>
     <string name="install_downloading">"正在安装视频插件
@@ -1267,6 +1293,8 @@
     <string name="title_activity_smart_door">智能开门</string>
     <string name="title_activity_smart_light">SmartLightActivity</string>
     <string name="title_activity_smart_oc">SmartOCActivity</string>
+    <string name="title_activity_smart_switch">智能设备</string>
+    <string name="title_activity_switch_type">选择设备类型</string>
     <string name="title_activity_tcp">TcpActivity</string>
     <string name="title_activity_tcp_ip">TcpIpActivity</string>
     <string name="title_activity_updata">修改设备信息</string>
@@ -1582,6 +1610,25 @@ UID：{4}"</string>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/gifview_background</item>
+    </style>
+    <style name="bdp_update_dialog_style" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item> 
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:windowContentOverlay">@null</item> 
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="bdp_update_dialog_style_fullscreen" parent="@style/bdp_update_dialog_style">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="bdp_update_progress_download">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/bdp_update_progress_download</item>
+        <item name="android:minHeight">8dip</item>
+        <item name="android:maxHeight">8dip</item>
     </style>
     <style name="dot_style">
         <item name="android:layout_width">5dip</item>

@@ -1,10 +1,10 @@
 [
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\anim\\activity_translate_out.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\anim\\activity_translate_out.xml"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\anim\\activity_translate_out.xml",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\anim\\activity_translate_out.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\anim\\activity_translate_in.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\anim\\activity_translate_in.xml"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\anim\\activity_translate_in.xml",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\anim\\activity_translate_in.xml"
     }
 ]

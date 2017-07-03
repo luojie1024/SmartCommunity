@@ -1,298 +1,290 @@
 [
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\button_blue_long.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\button_blue_long.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\viewpager_indicator_background.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\viewpager_indicator_background.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_sm_lbimage2.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_sm_lbimage2.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\viewpager_background_pressed.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\viewpager_background_pressed.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\laws.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\laws.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_main_bg.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_main_bg.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\reflash_bt.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\reflash_bt.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_tools_checked.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\tab_tools_checked.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\fourth.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\fourth.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_smoke_b.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_smoke_b.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\failsoft.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\failsoft.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\login_icon_key.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\login_icon_key.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\nolaws.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\nolaws.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gate_a.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_gate_a.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_body_a.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_body_a.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gas_a.jpg",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_gas_a.jpg"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\wifi_icon.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\wifi_icon.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\right_icon.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\right_icon.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gate_b.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_gate_b.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_viewpager_switch_feedlist.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_viewpager_switch_feedlist.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\transfer_titlebar_download_tab_normal.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\transfer_titlebar_download_tab_normal.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_smoke_a.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_smoke_a.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_sm_lbimage.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_sm_lbimage.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\transfer_titlebar_download_tab_pressed.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\transfer_titlebar_download_tab_pressed.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_tools_checked.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_tools_checked.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_swipe_guide_left.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_swipe_guide_left.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_feedlist_checked.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_feedlist_checked.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\sms.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\sms.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_btn_normal.9.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_btn_normal.9.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_transferlist_checked.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\tab_transferlist_checked.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_viewpager_switch_flying_indicator.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_viewpager_switch_flying_indicator.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\skip.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\skip.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gate_a.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_gate_a.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\laws.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\laws.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_smoke_a.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_smoke_a.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\select.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\select.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\noselect.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\noselect.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_filelist_normal.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\tab_filelist_normal.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\login_icon_key.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\login_icon_key.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\login_user.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\login_user.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_hotresouce_normal.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_hotresouce_normal.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_sm_lbimage.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_sm_lbimage.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_swipe_guide_right.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_swipe_guide_right.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\login_icon_name.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\login_icon_name.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\back_bt.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\back_bt.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_sm_lbimage2.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_sm_lbimage2.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\wifi.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\wifi.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\arrow.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\arrow.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\select.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\select.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\all_item_bg_default.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\all_item_bg_default.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\barcode_frame.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\barcode_frame.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_transferlist_personal.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\tab_transferlist_personal.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\phone.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\phone.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_body_a.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_body_a.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\sms.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\sms.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\fourth.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\fourth.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_body_b.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_body_b.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\transfer_tab_uncheck.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\transfer_tab_uncheck.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_viewpager_switch_feedlist.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_viewpager_switch_feedlist.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_swipe_guide_right.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_swipe_guide_right.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\logo3.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\logo3.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\nolaws.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\nolaws.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\transfer_titlebar_download_tab_pressed.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\transfer_titlebar_download_tab_pressed.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_hotresouce_normal.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\tab_hotresouce_normal.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_viewpager_switch_feedlist_indecator.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_viewpager_switch_feedlist_indecator.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\wifi.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\wifi.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\all_item_bg_default.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\all_item_bg_default.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_feedlist_checked.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\tab_feedlist_checked.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_filelist_checked.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_filelist_checked.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\wifi_icon.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\wifi_icon.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gas_a.jpg",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_gas_a.jpg"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gas_b.jpg",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_gas_b.jpg"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btn_viewpager_switch_selector.xml",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\btn_viewpager_switch_selector.xml"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\return_icon.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\return_icon.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\right_icon.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\right_icon.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_viewpager_switch_fsystem.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_viewpager_switch_fsystem.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\login_icon_name.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\login_icon_name.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\transfer_titlebar_upload_tab_normal.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\transfer_titlebar_upload_tab_normal.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_transferlist_normal.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_transferlist_normal.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mymyshoft.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\mymyshoft.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\transfer_tab_uncheck.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\transfer_tab_uncheck.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\phone.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\phone.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\viewpager_indicator_background.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\viewpager_indicator_background.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tabbar_background.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\tabbar_background.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tabbar_background.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tabbar_background.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\barcode_laser_line.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\barcode_laser_line.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\login_user.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\login_user.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_viewpager_switch_flying_indicator.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_viewpager_switch_flying_indicator.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_swipe_guide_left.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_swipe_guide_left.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\sub.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\sub.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\transfer_titlebar_upload_tab_normal.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\transfer_titlebar_upload_tab_normal.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\login_password.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\login_password.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\nodevice.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\nodevice.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\transfer_titlebar_download_tab_normal.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\transfer_titlebar_download_tab_normal.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\new_quota_task_img.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\new_quota_task_img.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_body_b.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_body_b.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_filelist_normal.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_filelist_normal.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\failsoft.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\failsoft.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_tools_normal.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_tools_normal.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\add.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\add.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\checkmark.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\checkmark.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\qq.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\qq.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\barcode_laser_line.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\barcode_laser_line.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_viewpager_switch_feedlist_indecator.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_viewpager_switch_feedlist_indecator.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_smoke_b.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_smoke_b.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_sm_lbimage3.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_sm_lbimage3.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_hotresouce_checked.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_hotresouce_checked.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_filelist_checked.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\tab_filelist_checked.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\viewpager_background_normal.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\viewpager_background_normal.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\transfer_titlebar_upload_tab_pressed.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\transfer_titlebar_upload_tab_pressed.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\arrow.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\arrow.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btn_viewpager_switch_selector.xml",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\btn_viewpager_switch_selector.xml"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_sm_lbimage4.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_sm_lbimage4.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_hotresouce_checked.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\tab_hotresouce_checked.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_feedlist_normal.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_feedlist_normal.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\noselect.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\noselect.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_viewpager_switch_fsystem.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_viewpager_switch_fsystem.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\button_blue_long.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\button_blue_long.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_transferlist_personal.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_transferlist_personal.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_feedlist_normal.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\tab_feedlist_normal.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\viewpager_background_pressed.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\viewpager_background_pressed.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\nodevice.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\nodevice.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_sm_lbimage3.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_sm_lbimage3.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\barcode_frame.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\barcode_frame.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\login_password.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\login_password.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_sm_lbimage4.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_sm_lbimage4.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\sub.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\sub.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_transferlist_normal.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\tab_transferlist_normal.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\return_icon.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\return_icon.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_tools_normal.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\tab_tools_normal.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_main_bg.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_main_bg.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\back_bt.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\back_bt.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\qq.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\qq.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gate_b.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_gate_b.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gas_b.jpg",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\ic_gas_b.jpg"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\logo3.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\logo3.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_btn_pressed.9.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_btn_pressed.9.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\viewpager_background_normal.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\viewpager_background_normal.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\add.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\add.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\new_quota_task_img.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\new_quota_task_img.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mymyshoft.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\mymyshoft.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\checkmark.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\checkmark.png"
     },
     {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_transferlist_checked.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\tab_transferlist_checked.png"
-    },
-    {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\skip.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\skip.png"
-    },
-    {
-        "merged": "E:\\jaaspro\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\transfer_titlebar_upload_tab_pressed.png",
-        "source": "E:\\jaaspro\\SmartCommunity\\res\\drawable-xhdpi\\transfer_titlebar_upload_tab_pressed.png"
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\reflash_bt.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\reflash_bt.png"
     }
 ]
