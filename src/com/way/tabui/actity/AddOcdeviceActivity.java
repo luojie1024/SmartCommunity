@@ -46,6 +46,12 @@ public class AddOcdeviceActivity extends GosBaseActivity {
 		bt_addocdevice = (Button) findViewById(R.id.bt_addocdevice);
 	}
 
+	/**
+	 * description:添加设备，修复地址添加（大写转换）
+	 * auther:joahluo
+	 * updata:2017/7/6 15:28
+	 * version:2.0
+	 */
 	private void initevent() {
 		bt_addocdevice.setOnClickListener(new OnClickListener() {
 			@Override
@@ -70,7 +76,7 @@ public class AddOcdeviceActivity extends GosBaseActivity {
 						type=4;
 					}
 					SwitchInfo switchinfo = new SwitchInfo(ed_name.getText().toString(),
-					ed_address.getText().toString(), bindgiz, "NULL", 0, type);
+					ed_address.getText().toString().toUpperCase(), bindgiz, "NULL", 0, type);
 					dbAdapter.addSwitchInfo(switchinfo);
 					finish();
 				}

@@ -1,6 +1,9 @@
 package com.way.tabui.gokit;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -60,6 +63,24 @@ public class SmartSwitchActivity extends GosBaseActivity {
 		initView();
 		upData();
 		initEvent();
+		initBroadCast();
+	}
+
+
+	@Override
+	protected void onDestroy() {
+		unregisterReceiver(broadcastReceiver);
+		super.onDestroy();
+	}
+
+	/**
+	 * description:注册广播 异步更新UI
+	 * auther：joahluo
+	 * time：2017/7/6 16:43
+	 */
+	private void initBroadCast() {
+		IntentFilter filter = new IntentFilter(SmartSwitchListActivity.action);
+		registerReceiver(broadcastReceiver, filter);
 	}
 
 	/**
@@ -110,6 +131,27 @@ public class SmartSwitchActivity extends GosBaseActivity {
 		switchInfo=dbAdapter.findSwitchInfoStatus(address);
 		//更新UI
 		upDataUI();
+	}
+
+
+	public class MyReceiver extends BroadcastReceiver {
+		//自定义一个广播接收器
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			// TODO Auto-generated method stub
+			System.out.println("OnReceiver");
+			//处理接收到的内容
+			//更新数据
+			Bundle bundle=intent.getExtras();
+			int a=bundle.getInt("i");
+			upData();
+		}
+		public MyReceiver(){
+			System.out.println("MyReceiver");
+			//构造函数，做一些初始化工作，本例中无任何作用
+
+		}
+
 	}
 
 	/**
@@ -383,7 +425,16 @@ public class SmartSwitchActivity extends GosBaseActivity {
 
 		
 	}
+	
+	BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
 
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			//UI更新
+			// TODO: 2017/7/6  
+			upData();
+		}
+	};
 
 	private void sendJson(String key, Object value) throws JSONException {
 		ConcurrentHashMap<String, Object> hashMap = new ConcurrentHashMap<String, Object>();

@@ -80,6 +80,9 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
           private static final String KUOZHAN = "kuozhan";
           private byte[] SEND_BROAD = {(byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0x15};
 
+          //UI更新广播
+          public static final String action = "com.luojie.action";
+
           @Override
           protected void onCreate(Bundle savedInstanceState) {
                     super.onCreate(savedInstanceState);
@@ -418,9 +421,10 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                                                             for (int j = 0; j < 4; j++) {
                                                                       deviceId[j] = bytes[j + 1 + i * 6];
                                                             }
-                                                            String mac = ConvertUtil.byteStringToHexString(deviceId);
+                                                            String mac = ConvertUtil.byteStringToHexString(deviceId).toUpperCase();
                                                             //获取数据库数据
                                                             switchInfo = dbAdapter.findSwitchInfoStatus(mac);
+
                                                             //开关类型 状态
                                                             switch (bytes[0+6*i]) {
                                                                       case ControlProtocol.DevType.SWITCH_THREE:
@@ -465,9 +469,11 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                                                              */
 //                                                            adapter.updateList(switchInfo, UPDATA_STATUS);
                                                   }
-                                                  Toast.makeText(getApplicationContext(), "状态更新"+sum+"条成功！",
+                                                  Toast.makeText(getApplicationContext(), "接收到"+sum+"条成功！",
                                                        Toast.LENGTH_SHORT).show();
-
+                                                  //发送广播，通知UI更新
+                                                  Intent intent = new Intent(action);
+                                                  sendBroadcast(intent);
 
                                         }
                               }
