@@ -60,12 +60,12 @@
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable\\tab_filelist.xml"
     },
     {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\png_left.png",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable\\png_left.png"
-    },
-    {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_tools.xml",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable\\tab_tools.xml"
+    },
+    {
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\png_left.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable\\png_left.png"
     },
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable\\plugin_camera_ok_btn_state.xml",

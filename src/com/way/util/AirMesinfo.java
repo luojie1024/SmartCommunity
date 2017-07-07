@@ -11,10 +11,11 @@ public class AirMesinfo {
 	private  String bindgiz;
 	private String userid;
 	private int flag;
+	private String device_id;
 	
 	public AirMesinfo(int _id, String name, int brand, int temperature,
 			int mode, int speed, int direction, String bindgiz, String userid,
-			int flag) {
+			int flag,String device_id) {
 		super();
 		this._id = _id;
 		this.name = name;
@@ -26,6 +27,7 @@ public class AirMesinfo {
 		this.bindgiz = bindgiz;
 		this.userid = userid;
 		this.flag = flag;
+		this.device_id=device_id;
 	}
 	
 	public AirMesinfo() {
@@ -33,7 +35,7 @@ public class AirMesinfo {
 	}
 	
 	public AirMesinfo(String name, int brand, int temperature, int mode,
-			int speed, int direction, String bindgiz, String userid, int flag) {
+			int speed, int direction, String bindgiz, String userid, int flag,String device_id) {
 		super();
 		this.name = name;
 		this.brand = brand;
@@ -44,6 +46,7 @@ public class AirMesinfo {
 		this.bindgiz = bindgiz;
 		this.userid = userid;
 		this.flag = flag;
+		this.device_id=device_id;
 	}
 	public int get_id() {
 		return _id;
@@ -111,9 +114,16 @@ public class AirMesinfo {
 				+ ", temperature=" + temperature + ", mode=" + mode
 				+ ", speed=" + speed + ", direction=" + direction
 				+ ", bindgiz=" + bindgiz + ", userid=" + userid + ", flag="
-				+ flag + "]";
+		+ flag +",device_id="
+		+ device_id + "]";
 	}
-	
-	
 
+
+	public String getDevice_id() {
+		return device_id;
+	}
+
+	public void setDevice_id(String device_id) {
+		this.device_id = device_id;
+	}
 }

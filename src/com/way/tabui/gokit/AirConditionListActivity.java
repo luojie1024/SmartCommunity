@@ -152,6 +152,7 @@ public class AirConditionListActivity extends GosBaseActivity {
 		c.close();
 		db.close();
 		mlist = dbAdapter.findbybindgizairmes(device.getMacAddress());
+		System.out.println(123);
 	}
 
 	private void initList() {
@@ -179,6 +180,7 @@ public class AirConditionListActivity extends GosBaseActivity {
 				intent.putExtra("speed", mlist.get(position).getSpeed());
 				intent.putExtra("direction", mlist.get(position).getDirection());
 				intent.putExtra("opcl", mlist.get(position).getFlag());
+				intent.putExtra("device_id", mlist.get(position).getDevice_id());
 				startActivity(intent);
 			}
 		});
@@ -248,7 +250,7 @@ public class AirConditionListActivity extends GosBaseActivity {
 									.getTemperature(), airMesinfo.getMode(),
 							airMesinfo.getSpeed(), airMesinfo.getDirection(),
 							airMesinfo.getBindgiz(), airMesinfo.getUserid(),
-							airMesinfo.getFlag());
+							airMesinfo.getFlag(),airMesinfo.getDevice_id());
 					dbAdapter.updateAirmes(airMesinfo2);
 					Toast.makeText(getApplicationContext(), "修改成功",
 							Toast.LENGTH_SHORT).show();

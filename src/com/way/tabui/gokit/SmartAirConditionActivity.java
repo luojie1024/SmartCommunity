@@ -28,8 +28,14 @@ import java.util.concurrent.ConcurrentHashMap;
 public class SmartAirConditionActivity extends GosBaseActivity {
     /**
      * 开 关 0:开 1：关
+     * 327432-->04FF08
+     * 262152-->040008
+     * TODO
      */
     private int[] OPCL = {327432, 262152};
+
+    private byte[] OPCL_OPEN = {(byte) 0x50, (byte) 0x02, (byte) 0x06, (byte) 0x00, (byte) 0x06};
+    private byte[] OPCL_CLOSE = {(byte) 0x50, (byte) 0x02, (byte) 0x06, (byte) 0x00, (byte) 0x06};
 
     @BindView(id = R.id.bt_open_close, click = true)
     private Button btOpCl;
@@ -156,6 +162,7 @@ public class SmartAirConditionActivity extends GosBaseActivity {
     private int brand;
     private int temperature;
     private int _id;
+    private String device_id;
 
     private DatabaseAdapter dbAdapter;
 
@@ -210,6 +217,7 @@ public class SmartAirConditionActivity extends GosBaseActivity {
         wdIndex = intent.getIntExtra("direction", 0);
         opcl = intent.getIntExtra("opcl", 0);
         _id = intent.getIntExtra("id", 0);
+        device_id= intent.getStringExtra("device_id");
     }
 
     private void initData() {
@@ -444,7 +452,7 @@ public class SmartAirConditionActivity extends GosBaseActivity {
     }
 
     private void updbData() {
-        AirMesinfo airMesinfo = new AirMesinfo(_id, name, brand, temperature, modIndex, wsIndex, wdIndex, mac, "Null", opcl);
+        AirMesinfo airMesinfo = new AirMesinfo(_id, name, brand, temperature, modIndex, wsIndex, wdIndex, mac, "Null", opcl,device_id);
         dbAdapter.updateAirmes(airMesinfo);
     }
 

@@ -75,6 +75,7 @@ public class DatabaseAdapter {
                     values.put(GizMetaData.Aircondition.GIZ_BINDGIZ, airMesinfo.getBindgiz());
                     values.put(GizMetaData.Aircondition.GIZ_USERID, airMesinfo.getUserid());
                     values.put(GizMetaData.Aircondition.GIZ_FLAG, airMesinfo.getFlag());
+                    values.put(GizMetaData.Aircondition.DEVICE_ID, airMesinfo.getDevice_id());
 
                     //参数说明(表名,可以为空的列名，ContentValues)
                     db.insert(GizMetaData.Aircondition.TABLE_NAME, null, values);
@@ -335,6 +336,7 @@ public class DatabaseAdapter {
                     values.put(GizMetaData.Aircondition.GIZ_BINDGIZ, airMesinfo.getBindgiz());
                     values.put(GizMetaData.Aircondition.GIZ_USERID, airMesinfo.getUserid());
                     values.put(GizMetaData.Aircondition.GIZ_FLAG, airMesinfo.getFlag());
+                    values.put(GizMetaData.Aircondition.DEVICE_ID, airMesinfo.getDevice_id());
                     String whereClause = GizMetaData.Aircondition._ID + "=?";
                     String[] whereArgs = {String.valueOf(airMesinfo.get_id())};
                     //参数说明(表名,ContentValues,条件，条件的值)
@@ -442,7 +444,7 @@ public class DatabaseAdapter {
                          GizMetaData.Aircondition.AIR_BRAND, GizMetaData.Aircondition.AIR_TEM,
                          GizMetaData.Aircondition.AIR_MODE, GizMetaData.Aircondition.AIR_WS,
                          GizMetaData.Aircondition.AIR_WD, GizMetaData.Aircondition.GIZ_BINDGIZ,
-                         GizMetaData.Aircondition.GIZ_USERID, GizMetaData.Aircondition.GIZ_FLAG};
+                         GizMetaData.Aircondition.GIZ_USERID, GizMetaData.Aircondition.GIZ_FLAG,GizMetaData.Aircondition.DEVICE_ID};
                     //参数说明(是否去除重复记录,表明,要查询的列，查询条件，查询条件的值，分组条件，分组条件的值，排序，排序条件)
                     Cursor c = db.query(true, GizMetaData.Aircondition.TABLE_NAME, columns, whereClause, whereArgs, null, null, GizMetaData.Aircondition._ID + " DESC", null);
                     ArrayList<AirMesinfo> alerts = new ArrayList<AirMesinfo>();
@@ -459,6 +461,7 @@ public class DatabaseAdapter {
                               airMesinfo.setBindgiz(c.getString(c.getColumnIndexOrThrow(GizMetaData.Aircondition.GIZ_BINDGIZ)));
                               airMesinfo.setUserid(c.getString(c.getColumnIndexOrThrow(GizMetaData.Aircondition.GIZ_USERID)));
                               airMesinfo.setFlag(c.getInt(c.getColumnIndexOrThrow(GizMetaData.Aircondition.GIZ_FLAG)));
+                              airMesinfo.setDevice_id(c.getString(c.getColumnIndexOrThrow(GizMetaData.Aircondition.DEVICE_ID)));
                               alerts.add(airMesinfo);
                     }
                     c.close();

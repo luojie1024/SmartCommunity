@@ -18,7 +18,7 @@ public class DatebaseHelper extends SQLiteOpenHelper {
           private static final String CREATE_TABLE_GIZ = "create table giz(id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,address TEXT,bindgiz TEXT,userid TEXT,flag INTEGER)";
           private static final String CREATE_TABLE_SWITCH = "create table switch(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,address TEXT,bindgiz TEXT,userid TEXT,flag INTEGER,type INTEGER,status1 INTEGER,status2 INTEGER,status3 INTEGER)";
           private static final String CREATE_TABLE_ALERT = "create table alert(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,time TEXT,bindgiz TEXT,userid TEXT,flag INTEGER)";
-          private static final String CREATE_TABLE_AIRMES = "create table airmes(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,brand INTEGER,temperature INTEGER,mode INTEGER,speed INTEGER,direction INTEGER,bindgiz TEXT,userid TEXT,flag INTEGER)";
+          private static final String CREATE_TABLE_AIRMES = "create table airmes(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,brand INTEGER,temperature INTEGER,mode INTEGER,speed INTEGER,direction INTEGER,bindgiz TEXT,userid TEXT,flag INTEGER,device_id TEXT)";
           private static final String CREATE_TABLE_CURTAIN = "create table curtain(_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,address TEXT,bindgiz TEXT,userid TEXT,flag INTEGER)";
           private static final String DROP_TABLE_GIZ = "DROP TABLE IF EXISTS giz";
           private static final String DROP_TABLE_ALERT = "DROP TABLE IF EXISTS alert";

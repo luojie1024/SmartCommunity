@@ -7,6 +7,9 @@ package com.way.util;
  */
 public class ControlProtocol {
 
+          public static final byte CMD=0x00;
+
+          //设备状态
           public class DevStatus {
                     //开
                     public static final byte SWITCH_OPEN=0x01;
@@ -14,6 +17,7 @@ public class ControlProtocol {
                     public static final byte SWITCH_CLOSE=0x00;
           }
 
+          //设备类型
           public class DevType{
                     //一位开关
                     public static final byte SWITCH_ONE=0x00;
@@ -37,6 +41,11 @@ public class ControlProtocol {
                     public static final byte CONTROL_LOCK=0x40;
                     //增氧机
                     public static final byte CONTROL_OXYGEN=0x50;
+          }
+          //指令长度
+          public class Instruction_Length{
+                    //空调指令长度 5字节
+                    public static final byte AIR_LENGTH=0x05;
           }
 
 }

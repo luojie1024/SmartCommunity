@@ -3,6 +3,7 @@ package com.way.tabui.gokit;
 import android.app.Service;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.Vibrator;
 import android.util.Log;
 import android.view.MenuItem;
@@ -59,6 +60,10 @@ public class SmartDoorActivity extends GosBaseActivity {
          (byte) 0x14, (byte) 0x47, (byte) 0x06, (byte) 0x69, (byte) 0x01, (byte) 0x37, (byte) 0x35, (byte) 0x30,
          (byte) 0x39, (byte) 0x31, (byte) 0x38, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0xc1
     };
+    private byte[] UP_STATUS = {(byte) 0x50,(byte) 0x02, (byte) 0x03, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x08, (byte) 0x44, (byte) 0x3F};
+
+
+    private Handler handler=new Handler();
 
 
     @Override
@@ -68,7 +73,18 @@ public class SmartDoorActivity extends GosBaseActivity {
         setActionBar(true, true, getResources().getString(R.string.title_activity_smart_door));
         initDevice();
         initView();
+        initHandler();
 
+    }
+
+    /**
+     * description:定时发送状态同步信息
+     * auther：joahluo
+     * time：2017/7/7 10:54
+     */
+    private void initHandler() {
+        //每10秒执行一次runnable
+        handler.postDelayed(runnable, 100);
     }
 
     private void initView() {
@@ -250,5 +266,26 @@ public class SmartDoorActivity extends GosBaseActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    protected void onDestroy() {
+        handler.removeCallbacks(runnable);
+        super.onDestroy();
+    }
+
+    //发送事件
+    Runnable runnable=new Runnable() {
+        @Override
+        public void run() {
+            //要做的事情
+            try {
+                sendJson(KUOZHAN, UP_STATUS);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            //每个10秒再次发送
+            handler.postDelayed(this, 10000);
+        }
+    };
 
 }
