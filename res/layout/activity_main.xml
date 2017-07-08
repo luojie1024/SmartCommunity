@@ -28,7 +28,7 @@
         android:layout_alignLeft="@id/switch_btn"
         android:layout_alignTop="@id/switch_btn"
         android:layout_gravity="bottom|left|center"
-        android:background="@drawable/viewpager_indicator_background9"
+        android:background="@drawable/viewpager_indicator_background"
         android:src="@drawable/ic_viewpager_switch_feedlist_indecator"
         android:visibility="gone" />
 

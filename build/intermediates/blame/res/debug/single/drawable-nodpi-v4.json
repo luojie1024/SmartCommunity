@@ -4,10 +4,6 @@
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\tab_filelist_checked.png"
     },
     {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\viewpager_indicator_background9.png",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\viewpager_indicator_background9.png"
-    },
-    {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\ic_main_bg.png",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\ic_main_bg.png"
     },
@@ -32,12 +28,12 @@
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\btn_viewpager_switch_selector.xml"
     },
     {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\ic_temity.png",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\ic_temity.png"
-    },
-    {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\new_quota_task_img.png",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\new_quota_task_img.png"
+    },
+    {
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\ic_temity.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\ic_temity.png"
     },
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\tab_hotresouce_normal.png",
@@ -92,10 +88,6 @@
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\transfer_titlebar_download_tab_normal.png"
     },
     {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\viewpager_background_pressed9.png",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\viewpager_background_pressed9.png"
-    },
-    {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\tab_transferlist_checked.png",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\tab_transferlist_checked.png"
     },
@@ -116,10 +108,6 @@
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\ic_humity.png"
     },
     {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\viewpager_background_normal9.png",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\viewpager_background_normal9.png"
-    },
-    {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\ic_viewpager_switch_flying_indicator.png",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\ic_viewpager_switch_flying_indicator.png"
     },
@@ -134,10 +122,6 @@
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\tab_tools_normal.png",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\tab_tools_normal.png"
-    },
-    {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\transfer_tab_uncheck9.png",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\transfer_tab_uncheck9.png"
     },
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\transfer_titlebar_download_tab_pressed.png",

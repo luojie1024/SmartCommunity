@@ -1,13 +1,5 @@
 [
     {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\viewpager_indicator_background.png",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\viewpager_indicator_background.png"
-    },
-    {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\viewpager_background_pressed.png",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\viewpager_background_pressed.png"
-    },
-    {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_main_bg.png",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_main_bg.png"
     },
@@ -96,10 +88,6 @@
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\arrow.png"
     },
     {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\all_item_bg_default.png",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\all_item_bg_default.png"
-    },
-    {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tab_transferlist_personal.png",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\tab_transferlist_personal.png"
     },
@@ -110,10 +98,6 @@
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\fourth.png",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\fourth.png"
-    },
-    {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\transfer_tab_uncheck.png",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\transfer_tab_uncheck.png"
     },
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_swipe_guide_right.png",
@@ -162,10 +146,6 @@
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\phone.png",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\phone.png"
-    },
-    {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tabbar_background.png",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\tabbar_background.png"
     },
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\barcode_laser_line.png",
@@ -270,10 +250,6 @@
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\logo3.png",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\logo3.png"
-    },
-    {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\viewpager_background_normal.png",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\viewpager_background_normal.png"
     },
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\new_quota_task_img.png",
