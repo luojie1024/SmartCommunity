@@ -28,7 +28,7 @@ import com.gizwits.gizwifisdk.api.GizWifiDevice;
 import com.way.adapter.DatabaseAdapter;
 import com.way.tabui.commonmodule.GosBaseActivity;
 import com.way.util.AirMesinfo;
-import com.way.util.ControlUtil;
+import com.way.util.AirControlUtil;
 import com.way.util.ConvertUtil;
 import com.way.util.ToastUtil;
 
@@ -190,7 +190,7 @@ public class AirMateActivity extends GosBaseActivity {
                                         device_id=ed_macaddress.getText().toString().toUpperCase();
                                         if (device_id.length() == 8) {
                                                   //获得数据头
-                                                  CONTROL_HEAD= ControlUtil.getAirControlHead(device_id);
+                                                  CONTROL_HEAD= AirControlUtil.getAirControlHead(device_id);
                                                   boolean isopen = false;
                                                   switch (event.getAction()) {
                                                             case MotionEvent.ACTION_DOWN:
@@ -287,19 +287,9 @@ public class AirMateActivity extends GosBaseActivity {
                               // 要做的事情
                               switch (msg.what) {
                                         case 1:
-                                                  byte[] brands;
                                                   try {
-                                                            if (brand <255) {//1字节转化
-                                                                      brands = ConvertUtil.intToByteArray(brand);
-                                                                      SET_TYPE[2]=brands[3];
-                                                            } else {//2字节转化
-                                                                      brands = ConvertUtil.intToByteArray(brand);
-                                                                      SET_TYPE[1]=brands[2];
-                                                                      SET_TYPE[2]=brands[3];
-                                                            }
-                                                            // TODO: 2017/7/7  空调类型异或校验
-                                                            SET_TYPE[4]= (byte) (SET_TYPE[0]^SET_TYPE[1]^SET_TYPE[2]^SET_TYPE[3]);
-                                                            sendJson(KEY_Sendair,ConvertUtil.byteMerger(CONTROL_HEAD,SET_TYPE));
+                                                            //机型信息
+                                                            sendJson(KEY_Sendair, AirControlUtil.getAirControlDate(CONTROL_HEAD,brand));
                                                             vSimple();
                                                   } catch (JSONException e) {
                                                             e.printStackTrace();
