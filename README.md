@@ -90,11 +90,6 @@
 ![](https://github.com/luojie1024/SmartCommunity/blob/master/screenshots/Screenshot_2017-07-11-09-53-19-443_com.way.tabui..png?raw=true)
 
 
-菜市场
-=====
-![](https://github.com/luojie1024/SmartCommunity/blob/master/screenshots/Screenshot_2017-07-11-09-53-19-443_com.way.tabui..png?raw=true)
-
-
 菜品列表
 =====
 ![](https://github.com/luojie1024/SmartCommunity/blob/master/screenshots/Screenshot_2017-07-11-09-53-24-123_com.way.tabui..png?raw=true)
