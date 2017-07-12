@@ -61,5 +61,17 @@ public class ConvertUtil {
           }
 
 
+          //两byte转int
+          public static int byte2ToInt(byte high,byte low) {
+                    int value;
+                    value = (int) ((low&0xFF)
+                         | ((high<<8) & 0xFF00)
+                         | ((0x0<<16)& 0xFF0000)
+                         | ((0x0<<24) & 0xFF000000));
+                    return value;
+          }
+
+
+
 
 }

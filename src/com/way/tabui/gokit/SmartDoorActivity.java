@@ -11,8 +11,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
+import com.gizwits.gizwifisdk.enumration.GizWifiErrorCode;
+import com.gizwits.gizwifisdk.listener.GizWifiDeviceListener;
 import com.way.tabui.commonmodule.GosBaseActivity;
 import com.way.util.ConvertUtil;
 import com.way.util.ToastUtil;
@@ -64,6 +67,29 @@ public class SmartDoorActivity extends GosBaseActivity {
 
 
     private Handler handler=new Handler();
+    private TextView tv_show_data;
+    //显示数据
+    private String data="";
+    //溶氧值
+    private float oxygen_vlaue=0;
+    //温度
+    private float temperature_vlaue=0;
+    //高吸值
+    private float high_suck=0;
+    //低吸值
+    private float low_suck=0;
+    //高断值
+    private float high_alert=0;
+    //低断值
+    private float low_alert=0;
+    //高报继电器状态
+    private String high_status="";
+    //低报继电器状态
+    private String low_status="";
+    //低报继电器状态
+    private String aotu_status="";
+
+
 
 
     @Override
@@ -74,7 +100,6 @@ public class SmartDoorActivity extends GosBaseActivity {
         initDevice();
         initView();
         initHandler();
-
     }
 
     /**
@@ -85,9 +110,25 @@ public class SmartDoorActivity extends GosBaseActivity {
     private void initHandler() {
         //每10秒执行一次runnable
         handler.postDelayed(runnable, 100);
+        //开启广播监听
+        initStatusListener();
     }
 
+
+    /**
+     * description:开启广播监听
+     * auther：joahluo
+     * time：2017/7/11 10:45
+     */
+    private void initStatusListener() {
+        //设置设备状态监听
+        device.setListener(mListener);
+    }
+
+
     private void initView() {
+        //数据显示控件
+        tv_show_data = (TextView) findViewById(R.id.tv_show_data);
         ib_unclock = (ImageButton) findViewById(R.id.ib_unclock);
         et_kuozhancode=(EditText)findViewById(R.id.et_kuozhancode);
         btn_sendcode=(Button)findViewById(R.id.btn_sendcode);
@@ -286,6 +327,76 @@ public class SmartDoorActivity extends GosBaseActivity {
             //每个10秒再次发送
             handler.postDelayed(this, 10000);
         }
+    };
+
+
+
+    /**
+     * description:获取设备状态,显示
+     * auther：joahluo
+     * time：2017/7/11 10:48
+     */
+    GizWifiDeviceListener mListener = new GizWifiDeviceListener() {
+        @Override
+        public void didReceiveData(GizWifiErrorCode result, GizWifiDevice device, ConcurrentHashMap<String, Object> dataMap, int sn) {
+            if (result == GizWifiErrorCode.GIZ_SDK_SUCCESS) {
+                // 已定义的设备数据点，有布尔、数值和枚举型数据
+                if (dataMap.get("data") != null) {
+                    ConcurrentHashMap<String, Object> map = (ConcurrentHashMap<String, Object>) dataMap.get("data");
+                    // 获得kuozhan类型数据
+                    byte[] bytes = (byte[]) map.get("kuozhan");
+                    //获得溶氧值
+                    oxygen_vlaue=(float) ConvertUtil.byte2ToInt(bytes[8],bytes[9])/100;
+
+                    //获得温度值
+                    temperature_vlaue=(float) ConvertUtil.byte2ToInt(bytes[10],bytes[11])/10;
+
+                    //获得溶氧高报警吸合值
+//                    bytes[12]*0x100+bytes[13]^0x2ff+1;
+                    high_suck=(float) ConvertUtil.byte2ToInt(bytes[12],bytes[13])/100;
+
+                    //获得溶氧高报警断开值
+                    high_alert=(float) ConvertUtil.byte2ToInt(bytes[14],bytes[15])/100;
+
+
+                    //获得溶氧高报警吸合值
+                    low_suck=(float) ConvertUtil.byte2ToInt(bytes[16],bytes[17])/100;
+
+                    //获得溶氧高报警断开值
+                    low_alert=(float) ConvertUtil.byte2ToInt(bytes[18],bytes[19])/100;
+
+
+                    //获得高报状态
+                    high_status=bytes[20]==0x00?"关":"开";
+
+                    //获得低报状态
+                    low_status=bytes[21]==0x00?"关":"开";
+
+
+                    //获得溶氧低报警断开值
+                    aotu_status=bytes[23]==0x00?"自动":"手动";
+                    if (aotu_status.equals("自动")) {
+                        auto_mod = true;
+                        bt_aer_mod.setText("自动模式");
+                        ToastUtil.ToastShow(SmartDoorActivity.this, "数据更新成功,当前为自动模式！");
+                        bt_aer_allopen.setVisibility(View.INVISIBLE);
+                        bt_aer_allclose.setVisibility(View.INVISIBLE);
+                        bt_aer_highopen.setVisibility(View.INVISIBLE);
+                        bt_aer_lowopen.setVisibility(View.INVISIBLE);
+                    } else {
+                        auto_mod = false;
+                        ToastUtil.ToastShow(SmartDoorActivity.this, "数据更新成功,当前为手动模式！");
+                    }
+                    data="溶氧值:"+ oxygen_vlaue+"，温度:"+temperature_vlaue+" ," +
+                         "高报吸合值:"+high_suck+"，高报断开值:"+high_alert+"\n" +
+                         "低报吸合值:"+low_suck+"，低报断开值:"+low_alert+" \n" +
+                         "高报继电器状态:"+high_status+"，低报继电器状态:"+low_status+"\n" +
+                         "手动或自动控制状态:"+aotu_status;
+                    tv_show_data.setText(data);
+                    }
+                }
+            }
+
     };
 
 }
