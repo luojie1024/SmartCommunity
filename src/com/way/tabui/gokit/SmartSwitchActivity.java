@@ -138,7 +138,6 @@ public class SmartSwitchActivity extends GosBaseActivity {
 		//自定义一个广播接收器
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			// TODO Auto-generated method stub
 			System.out.println("OnReceiver");
 			//处理接收到的内容
 			//更新数据
@@ -230,11 +229,11 @@ public class SmartSwitchActivity extends GosBaseActivity {
 				break;
 			case 4:
 				if (status1 == 1) {
-					btn_open4.setTextColor(getResources().getColor(R.color.golden));
-					btn_colse4.setTextColor(getResources().getColor(R.color.color_blue));
-				} else {
 					btn_colse4.setTextColor(getResources().getColor(R.color.golden));
 					btn_open4.setTextColor(getResources().getColor(R.color.color_blue));
+				} else {
+					btn_open4.setTextColor(getResources().getColor(R.color.golden));
+					btn_colse4.setTextColor(getResources().getColor(R.color.color_blue));
 				}
 				btn_open1.setVisibility(View.GONE);
 				btn_colse1.setVisibility(View.GONE);
@@ -380,6 +379,7 @@ public class SmartSwitchActivity extends GosBaseActivity {
 			public void onClick(View v) {
 				try {
 					BYTES_BESE[5]=0xC;
+					byte[] bytes_bese = BYTES_BESE;
 					sendJson(KEY_Sendair, BYTES_BESE);
 					btn_colse3.setTextColor(getResources().getColor(R.color.golden));
 					btn_open3.setTextColor(getResources().getColor(R.color.color_blue));
@@ -398,8 +398,8 @@ public class SmartSwitchActivity extends GosBaseActivity {
 				try {
 					BYTES_BESE[5]=0xD;
 					sendJson(KEY_Sendair, BYTES_BESE);
-					btn_open4.setTextColor(getResources().getColor(R.color.golden));
-					btn_colse4.setTextColor(getResources().getColor(R.color.color_blue));
+					btn_colse4.setTextColor(getResources().getColor(R.color.golden));
+					btn_open4.setTextColor(getResources().getColor(R.color.color_blue));
 				} catch (JSONException e) {
 					Toast.makeText(getApplicationContext(), "发送失败",
 					Toast.LENGTH_SHORT).show();
@@ -414,8 +414,8 @@ public class SmartSwitchActivity extends GosBaseActivity {
 				try {
 					BYTES_BESE[5]=0xE;
 					sendJson(KEY_Sendair, BYTES_BESE);
-					btn_colse4.setTextColor(getResources().getColor(R.color.golden));
-					btn_open4.setTextColor(getResources().getColor(R.color.color_blue));
+					btn_open4.setTextColor(getResources().getColor(R.color.golden));
+					btn_colse4.setTextColor(getResources().getColor(R.color.color_blue));
 				} catch (JSONException e) {
 					Toast.makeText(getApplicationContext(), "发送失败",
 					Toast.LENGTH_SHORT).show();

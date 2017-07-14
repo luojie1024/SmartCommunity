@@ -61,8 +61,8 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
           protected static final int UPDATA = 99;
           protected static final int DELETE = 100;
           //查询方式
-          private static final int UPDATA_STATUS=1;
-          private static final int UPDATA_INFO=0;
+          private static final int UPDATA_STATUS = 1;
+          private static final int UPDATA_INFO = 0;
 
           private LinearLayout bt_addCurtain;
           private View lldevice;
@@ -266,7 +266,7 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                                                   switchInfo.setAddress(address);
                                                   switchInfo.setName(name);
                                                   //数据更新
-                                                  if ((adapter.updateList(switchInfo,UPDATA_INFO).setDate(MacAddress)) == null) {
+                                                  if ((adapter.updateList(switchInfo, UPDATA_INFO).setDate(MacAddress)) == null) {
                                                             bt_addCurtain.setVisibility(View.VISIBLE);
                                                             svListGroup.setVisibility(View.GONE);
                                                   } else {
@@ -416,64 +416,72 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                                                   // 获得kuozhan类型数据
                                                   byte[] bytes = (byte[]) map.get("kuozhan");
                                                   byte[] deviceId = new byte[4];
-                                                  int sum=0;
-                                                  for (int i=0;i<10;i++) {
-                                                            for (int j = 0; j < 4; j++) {
-                                                                      deviceId[j] = bytes[j + 1 + i * 6];
-                                                            }
-                                                            String mac = ConvertUtil.byteStringToHexString(deviceId).toUpperCase();
-                                                            //获取数据库数据
-                                                            switchInfo = dbAdapter.findSwitchInfoStatus(mac);
+                                                  int sum = 0;
+                                                  for (int i = 0; i < 10; i++) {
+                                                            if (((bytes[5 + 6 * i] & 0xf0) == 0xf0)) {
 
-                                                            //开关类型 状态
-                                                            switch (bytes[0+6*i]) {
-                                                                      case ControlProtocol.DevType.SWITCH_THREE:
-                                                                                if ((bytes[5+6*i] & 0x4) == 0x4) {
-                                                                                          switchInfo.setStatus3(1);
-                                                                                } else {
-                                                                                          switchInfo.setStatus3(0);
-                                                                                }
-                                                                      case ControlProtocol.DevType.SWITCH_TWO:
-                                                                                if ((bytes[5+6*i] & 0x2) == 0x2) {
-                                                                                          switchInfo.setStatus2(1);
-                                                                                } else {
-                                                                                          switchInfo.setStatus2(0);
-                                                                                }
-                                                                      case ControlProtocol.DevType.SWITCH_ONE:
-                                                                                if (mac.equals("00000000")) {
+                                                                      for (int j = 0; j < 4; j++) {
+                                                                                deviceId[j] = bytes[j + 1 + i * 6];
+                                                                      }
+                                                                      String mac = ConvertUtil.byteStringToHexString(deviceId).toUpperCase();
+                                                                      //获取数据库数据
+                                                                      switchInfo = dbAdapter.findSwitchInfoStatus(mac);
+                                                                      int number = (int) bytes[0 + 6 * i];
+                                                                      int number2 = (int) ControlProtocol.DevType.SWITCH_THREE;
+                                                                      //开关类型 状态
+                                                                      switch ((int) bytes[0 + 6 * i]) {
+                                                                                case (int) ControlProtocol.DevType.SWITCH_THREE:
+                                                                                          if ((bytes[5 + 6 * i] & 0x4) == 0x4) {
+                                                                                                    switchInfo.setStatus3(1);
+                                                                                          } else {
+                                                                                                    switchInfo.setStatus3(0);
+                                                                                          }
+                                                                                case (int) ControlProtocol.DevType.SWITCH_TWO:
+                                                                                          if ((bytes[5 + 6 * i] & 0x2) == 0x2) {
+                                                                                                    switchInfo.setStatus2(1);
+                                                                                          } else {
+                                                                                                    switchInfo.setStatus2(0);
+                                                                                          }
+                                                                                case (int) ControlProtocol.DevType.SWITCH_ONE:
+                                                                                          if (mac.equals("00000000")) {
+                                                                                                    break;
+                                                                                          }
+                                                                                          if ((bytes[5 + 6 * i] & 0x1) == 0x1) {
+                                                                                                    switchInfo.setStatus1(1);
+                                                                                          } else {
+                                                                                                    switchInfo.setStatus1(0);
+                                                                                          }
+                                                                                          sum++;
+                                                                                          adapter.updateList(switchInfo, UPDATA_STATUS);
                                                                                           break;
-                                                                                }
-                                                                                if ((bytes[5+6*i] & 0x1) == 0x1) {
-                                                                                          switchInfo.setStatus1(1);
-                                                                                } else {
-                                                                                          switchInfo.setStatus1(0);
-                                                                                }
-                                                                                sum++;
-                                                                                adapter.updateList(switchInfo, UPDATA_STATUS);
-                                                                                break;
-                                                                      case ControlProtocol.DevType.PLUG_FIVE:
-                                                                                if ((bytes[5+6*i] & 0x1) == 0x1) {
-                                                                                          switchInfo.setStatus1(1);
-                                                                                } else {
-                                                                                          switchInfo.setStatus1(0);
-                                                                                }
-                                                                                sum++;
-                                                                                adapter.updateList(switchInfo, UPDATA_STATUS);
-                                                                                break;
-                                                            }
-                                                            //FIXME
-                                                            /**
-                                                             * description:保存状态信息
-                                                             * auther：joahluo
-                                                             * time：2017/6/27 21:19
-                                                             */
+                                                                                case (int) ControlProtocol.DevType.PLUG_FIVE:
+                                                                                          if ((bytes[5 + 6 * i] & 0x1) == 0x1) {
+                                                                                                    switchInfo.setStatus1(1);
+                                                                                          } else {
+                                                                                                    switchInfo.setStatus1(0);
+                                                                                          }
+                                                                                          sum++;
+                                                                                          adapter.updateList(switchInfo, UPDATA_STATUS);
+                                                                                          break;
+                                                                      }
+                                                                      //FIXME
+                                                                      /**
+                                                                       * description:保存状态信息
+                                                                       * auther：joahluo
+                                                                       * time：2017/6/27 21:19
+                                                                       */
 //                                                            adapter.updateList(switchInfo, UPDATA_STATUS);
+                                                            }
+
                                                   }
-                                                  Toast.makeText(getApplicationContext(), "接收到"+sum+"条成功！",
-                                                       Toast.LENGTH_SHORT).show();
-                                                  //发送广播，通知UI更新
-                                                  Intent intent = new Intent(action);
-                                                  sendBroadcast(intent);
+                                                  if (sum != 0) {
+                                                            Toast.makeText(getApplicationContext(), "接收到" + sum + "条成功！",
+                                                                 Toast.LENGTH_SHORT).show();
+                                                            //发送广播，通知UI更新
+                                                            Intent intent = new Intent(action);
+                                                            sendBroadcast(intent);
+                                                  }
+
 
                                         }
                               }
