@@ -31,6 +31,7 @@ import com.way.tabui.view.SlideListView2;
 import com.way.util.ControlProtocol;
 import com.way.util.ConvertUtil;
 import com.way.util.GizMetaData;
+import com.way.util.StringUtils;
 import com.way.util.SwitchInfo;
 
 import org.json.JSONException;
@@ -234,16 +235,16 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                     Window window = dialog.getWindow();
                     window.setContentView(R.layout.alert_curtain_set_mes);
                     final EditText etAlias;
-                    final EditText etBrand;
+                    final EditText etMAC;
                     etAlias = (EditText) window.findViewById(R.id.etAlias);
-                    etBrand = (EditText) window.findViewById(R.id.etBrand);
+                    etMAC = (EditText) window.findViewById(R.id.etBrand);
                     LinearLayout llNo, llSure;
                     llNo = (LinearLayout) window.findViewById(R.id.llNo);
                     llSure = (LinearLayout) window.findViewById(R.id.llSure);
                     if (switchInfo.getName() != null) {
                               etAlias.setText(switchInfo.getName());
                     }
-                    etBrand.setText("" + switchInfo.getAddress());
+                    etMAC.setText("" + switchInfo.getAddress());
                     // }
 
                     llNo.setOnClickListener(new View.OnClickListener() {
@@ -259,27 +260,32 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                               @Override
                               public void onClick(View v) {
                                         ;
-                                        try {
-                                                  String name = etAlias.getText().toString();
-                                                  String address = etBrand.getText().toString();
-
-                                                  switchInfo.setAddress(address);
-                                                  switchInfo.setName(name);
-                                                  //数据更新
-                                                  if ((adapter.updateList(switchInfo, UPDATA_INFO).setDate(MacAddress)) == null) {
-                                                            bt_addCurtain.setVisibility(View.VISIBLE);
-                                                            svListGroup.setVisibility(View.GONE);
-                                                  } else {
-                                                            bt_addCurtain.setVisibility(View.GONE);
-                                                            svListGroup.setVisibility(View.VISIBLE);
+                                        String name = etAlias.getText().toString();
+                                        String address = etMAC.getText().toString();
+                                        if (StringUtils.checkNum(address)) {
+                                                  try {
+                                                            switchInfo.setAddress(address);
+                                                            switchInfo.setName(name);
+                                                            //数据更新
+                                                            if ((adapter.updateList(switchInfo, UPDATA_INFO).setDate(MacAddress)) == null) {
+                                                                      bt_addCurtain.setVisibility(View.VISIBLE);
+                                                                      svListGroup.setVisibility(View.GONE);
+                                                            } else {
+                                                                      bt_addCurtain.setVisibility(View.GONE);
+                                                                      svListGroup.setVisibility(View.VISIBLE);
+                                                            }
+                                                            Toast.makeText(getApplicationContext(), "修改成功",
+                                                                 Toast.LENGTH_SHORT).show();
+                                                            dialog.cancel();
+                                                  } catch (Exception e) {
+                                                            Toast.makeText(getApplicationContext(), "修改失败",
+                                                                 Toast.LENGTH_SHORT).show();
+                                                            dialog.cancel();
                                                   }
-                                                  Toast.makeText(getApplicationContext(), "修改成功",
+
+                                        } else {
+                                                  Toast.makeText(getApplicationContext(), "修改失败！地址必须为不带任何标点符号的8位16进制数",
                                                        Toast.LENGTH_SHORT).show();
-                                                  dialog.cancel();
-                                        } catch (Exception e) {
-                                                  Toast.makeText(getApplicationContext(), "修改失败",
-                                                       Toast.LENGTH_SHORT).show();
-                                                  dialog.cancel();
                                         }
 
                               }

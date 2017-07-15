@@ -80,6 +80,8 @@
             android:textSize="15sp"
             android:gravity="center"
             />
+
+        <!--android:inputType="number"-->
         <EditText
             android:id="@+id/etBrand"
             style="@style/EditTextStyle"
@@ -89,7 +91,6 @@
             android:ems="10"
             android:hint="输入地址码"
             android:textColor="@color/black"
-            android:inputType="number"
             android:textColorHint="@color/text_gray_light"
             android:textSize="14sp" />
     </LinearLayout>

@@ -29,6 +29,7 @@ import com.way.tabui.controlmodule.GosControlModuleBaseActivity;
 import com.way.tabui.view.SlideListView2;
 import com.way.util.CurtainInfo;
 import com.way.util.GizMetaData;
+import com.way.util.StringUtils;
 
 import org.json.JSONException;
 
@@ -145,7 +146,6 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
 
                               @Override
                               public void onClick(View v) {
-                                        // TODO Auto-generated method stub
                                         if (!checkNetwork(SmartCurtainListActivity.this)) {
                                                   Toast.makeText(SmartCurtainListActivity.this, R.string.network_error,
                                                        Toast.LENGTH_SHORT).show();
@@ -191,32 +191,37 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
                               }
                     });
 
+                    //滑动修改
                     llSure.setOnClickListener(new View.OnClickListener() {
                               @Override
                               public void onClick(View v) {
-                                        ;
-                                        try {
-                                                  String name = etAlias.getText().toString();
-                                                  String  address = etBrand.getText().toString();
-                                                  curtainInfo.setAddress(address);
-                                                  curtainInfo.setName(name);
+                                        String name = etAlias.getText().toString();
+                                        String  address = etBrand.getText().toString();
+                                        if (StringUtils.checkNum(address)) {
+                                                  try {
 
+                                                            curtainInfo.setAddress(address);
+                                                            curtainInfo.setName(name);
 
-                                                  if((adapter.updateList(curtainInfo).setDate(MacAddress))==null){
-                                                            bt_addCurtain.setVisibility(View.VISIBLE);
-                                                            svListGroup.setVisibility(View.GONE);
-                                                  }else {
-                                                            bt_addCurtain.setVisibility(View.GONE);
-                                                            svListGroup.setVisibility(View.VISIBLE);
+                                                            if ((adapter.updateList(curtainInfo).setDate(MacAddress)) == null) {
+                                                                      bt_addCurtain.setVisibility(View.VISIBLE);
+                                                                      svListGroup.setVisibility(View.GONE);
+                                                            } else {
+                                                                      bt_addCurtain.setVisibility(View.GONE);
+                                                                      svListGroup.setVisibility(View.VISIBLE);
+                                                            }
+                                                            Toast.makeText(getApplicationContext(), "修改成功",
+                                                                 Toast.LENGTH_SHORT).show();
+                                                            dialog.cancel();
+                                                  } catch (Exception e) {
+                                                            // TODO: handle exception
+                                                            Toast.makeText(getApplicationContext(), "修改失败",
+                                                                 Toast.LENGTH_SHORT).show();
+                                                            dialog.cancel();
                                                   }
-                                                  Toast.makeText(getApplicationContext(), "修改成功",
+                                        }else {
+                                                  Toast.makeText(getApplicationContext(), "修改失败！地址必须为不带任何标点符号的8位16进制数",
                                                        Toast.LENGTH_SHORT).show();
-                                                  dialog.cancel();
-                                        } catch (Exception e) {
-                                                  // TODO: handle exception
-                                                  Toast.makeText(getApplicationContext(), "修改失败",
-                                                       Toast.LENGTH_SHORT).show();
-                                                  dialog.cancel();
                                         }
 
                               }

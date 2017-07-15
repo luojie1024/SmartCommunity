@@ -81,7 +81,6 @@ public class SmartCurtainActivity extends GosBaseActivity {
 			
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				try {
 					BYTES_BESE[8]=10;
 					sendJson(KEY_Sendair, BYTES_BESE);
@@ -89,7 +88,6 @@ public class SmartCurtainActivity extends GosBaseActivity {
 					initTextColor();
 					btn_open.setTextColor(getResources().getColor(R.color.golden));
 				} catch (JSONException e) {
-					// TODO Auto-generated catch block
 					Toast.makeText(getApplicationContext(), "发送失败",
 							Toast.LENGTH_SHORT).show();
 				}
@@ -100,8 +98,7 @@ public class SmartCurtainActivity extends GosBaseActivity {
 			
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				
+
 				try {
 					BYTES_BESE[8]=11;
 					sendJson(KEY_Sendair, BYTES_BESE);
@@ -109,7 +106,6 @@ public class SmartCurtainActivity extends GosBaseActivity {
 					initTextColor();
 					btn_stop.setTextColor(getResources().getColor(R.color.golden));
 				} catch (JSONException e) {
-					// TODO Auto-generated catch block
 					Toast.makeText(getApplicationContext(), "发送失败",
 							Toast.LENGTH_SHORT).show();
 				}
@@ -121,7 +117,6 @@ public class SmartCurtainActivity extends GosBaseActivity {
 			
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				try {
 					BYTES_BESE[8]=12;
 					sendJson(KEY_Sendair, BYTES_BESE);

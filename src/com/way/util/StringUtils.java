@@ -160,4 +160,18 @@ public class StringUtils {
   	  }
   	  return true;
 	}
+
+
+	//检查是否为16进制数，长度是否为8
+    public static boolean checkNum(String number)
+    {
+        boolean flag = false;
+        String regString = "[a-f0-9A-F]{8}";
+        if (Pattern.matches(regString, number)) {
+            //匹配成功
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
