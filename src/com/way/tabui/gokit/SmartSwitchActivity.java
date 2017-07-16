@@ -443,4 +443,9 @@ public class SmartSwitchActivity extends GosBaseActivity {
 		Log.i("==", hashMap.toString());
 	}
 
+          @Override
+          protected void onPause() {
+                    super.onPause();
+                    finish();
+          }
 }

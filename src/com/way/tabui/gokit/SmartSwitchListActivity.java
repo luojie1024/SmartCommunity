@@ -432,8 +432,6 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                                                                       String mac = ConvertUtil.byteStringToHexString(deviceId).toUpperCase();
                                                                       //获取数据库数据
                                                                       switchInfo = dbAdapter.findSwitchInfoStatus(mac);
-                                                                      int number = (int) bytes[0 + 6 * i];
-                                                                      int number2 = (int) ControlProtocol.DevType.SWITCH_THREE;
                                                                       //开关类型 状态
                                                                       switch ((int) bytes[0 + 6 * i]) {
                                                                                 case (int) ControlProtocol.DevType.SWITCH_THREE:
@@ -458,7 +456,7 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                                                                                                     switchInfo.setStatus1(0);
                                                                                           }
                                                                                           sum++;
-                                                                                          adapter.updateList(switchInfo, UPDATA_STATUS);
+                                                                                          adapter.updateList(SmartSwitchListActivity.this.switchInfo, UPDATA_STATUS);
                                                                                           break;
                                                                                 case (int) ControlProtocol.DevType.PLUG_FIVE:
                                                                                           if ((bytes[5 + 6 * i] & 0x1) == 0x1) {
@@ -467,16 +465,9 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                                                                                                     switchInfo.setStatus1(0);
                                                                                           }
                                                                                           sum++;
-                                                                                          adapter.updateList(switchInfo, UPDATA_STATUS);
+                                                                                          adapter.updateList(SmartSwitchListActivity.this.switchInfo, UPDATA_STATUS);
                                                                                           break;
                                                                       }
-                                                                      //FIXME
-                                                                      /**
-                                                                       * description:保存状态信息
-                                                                       * auther：joahluo
-                                                                       * time：2017/6/27 21:19
-                                                                       */
-//                                                            adapter.updateList(switchInfo, UPDATA_STATUS);
                                                             }
 
                                                   }
