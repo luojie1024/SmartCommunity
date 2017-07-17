@@ -245,6 +245,22 @@
                 android:layout_height="1dp"
                 android:background="@color/color_line_gray"
                 />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ll_curtain_list"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/list_curtain"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_line_gray"
+            />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -23,7 +23,6 @@ import java.util.ArrayList;
 
 public class CurtianAdapter extends BaseAdapter {
     private Context mContext;
-    //	private ArrayList<LightInfo> mList;
     private ArrayList<CurtainInfo> mList;
 
     private DatabaseAdapter dbAdapter;
