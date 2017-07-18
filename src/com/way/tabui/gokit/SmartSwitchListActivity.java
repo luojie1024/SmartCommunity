@@ -456,7 +456,7 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                                                                                                     switchInfo.setStatus1(0);
                                                                                           }
                                                                                           sum++;
-                                                                                          adapter.updateList(SmartSwitchListActivity.this.switchInfo, UPDATA_STATUS);
+                                                                                          adapter.updateList(switchInfo, UPDATA_STATUS);
                                                                                           break;
                                                                                 case (int) ControlProtocol.DevType.PLUG_FIVE:
                                                                                           if ((bytes[5 + 6 * i] & 0x1) == 0x1) {
@@ -465,7 +465,7 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                                                                                                     switchInfo.setStatus1(0);
                                                                                           }
                                                                                           sum++;
-                                                                                          adapter.updateList(SmartSwitchListActivity.this.switchInfo, UPDATA_STATUS);
+                                                                                          adapter.updateList(switchInfo, UPDATA_STATUS);
                                                                                           break;
                                                                       }
                                                             }
