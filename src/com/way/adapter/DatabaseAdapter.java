@@ -175,12 +175,12 @@ public class DatabaseAdapter {
           public void updateSwitchStatusInfo(SwitchInfo switchInfo) {
                     SQLiteDatabase db = dbHelper.getWritableDatabase();
                     ContentValues values = new ContentValues();
-                    values.put(GizMetaData.SwitchTable.CURTAIN_NAME, switchInfo.getName());
-                    values.put(GizMetaData.SwitchTable.CURTAIN_ADDRESS, switchInfo.getAddress());
-                    values.put(GizMetaData.SwitchTable.GIZ_BINDGIZ, switchInfo.getBindgiz());
-                    values.put(GizMetaData.SwitchTable.GIZ_FLAG, switchInfo.getFlag());
-                    values.put(GizMetaData.SwitchTable.GIZ_USERID, switchInfo.getUserid());
-                    values.put(GizMetaData.SwitchTable.GIZ_TYPE, switchInfo.getType());
+//                    values.put(GizMetaData.SwitchTable.CURTAIN_NAME, switchInfo.getName());
+//                    values.put(GizMetaData.SwitchTable.CURTAIN_ADDRESS, switchInfo.getAddress());
+//                    values.put(GizMetaData.SwitchTable.GIZ_BINDGIZ, switchInfo.getBindgiz());
+//                    values.put(GizMetaData.SwitchTable.GIZ_FLAG, switchInfo.getFlag());
+//                    values.put(GizMetaData.SwitchTable.GIZ_USERID, switchInfo.getUserid());
+//                    values.put(GizMetaData.SwitchTable.GIZ_TYPE, switchInfo.getType());
                     values.put(GizMetaData.SwitchTable.GIZ_STATUS1, switchInfo.getStatus1());
                     values.put(GizMetaData.SwitchTable.GIZ_STATUS2, switchInfo.getStatus2());
                     values.put(GizMetaData.SwitchTable.GIZ_STATUS3, switchInfo.getStatus3());
