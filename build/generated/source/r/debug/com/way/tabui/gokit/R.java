@@ -753,8 +753,8 @@ containing a value of this type.
         public static final int edtApPassword=0x7f0801d4;
         public static final int encode_failed=0x7f080004;
         public static final int encode_succeeded=0x7f080005;
-        public static final int etAlias=0x7f0801b7;
-        public static final int etBrand=0x7f0801b8;
+        public static final int et_Alias =0x7f0801b7;
+        public static final int et_Brand =0x7f0801b8;
         public static final int etCode=0x7f0800a2;
         public static final int etName=0x7f08009f;
         public static final int etPsw=0x7f08005d;

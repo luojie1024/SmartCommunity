@@ -236,8 +236,8 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                     window.setContentView(R.layout.alert_curtain_set_mes);
                     final EditText etAlias;
                     final EditText etMAC;
-                    etAlias = (EditText) window.findViewById(R.id.etAlias);
-                    etMAC = (EditText) window.findViewById(R.id.etBrand);
+                    etAlias = (EditText) window.findViewById(R.id.et_Alias);
+                    etMAC = (EditText) window.findViewById(R.id.et_Brand);
                     LinearLayout llNo, llSure;
                     llNo = (LinearLayout) window.findViewById(R.id.llNo);
                     llSure = (LinearLayout) window.findViewById(R.id.llSure);
@@ -423,7 +423,8 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                                                   byte[] bytes = (byte[]) map.get("kuozhan");
                                                   byte[] deviceId = new byte[4];
                                                   int sum = 0;
-                                                  for (int i = 0; i < 10; i++) {
+                                                  int len = bytes.length / 6;
+                                                  for (int i = 0; i < bytes.length/8; i++) {
                                                             if (((bytes[5 + 6 * i] & 0xf0) == 0xf0)) {
 
                                                                       for (int j = 0; j < 4; j++) {

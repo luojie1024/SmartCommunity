@@ -172,8 +172,8 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
                     window.setContentView(R.layout.alert_curtain_set_mes);
                     final EditText etAlias;
                     final EditText etBrand;
-                    etAlias = (EditText) window.findViewById(R.id.etAlias);
-                    etBrand = (EditText) window.findViewById(R.id.etBrand);
+                    etAlias = (EditText) window.findViewById(R.id.et_Alias);
+                    etBrand = (EditText) window.findViewById(R.id.et_Brand);
                     LinearLayout llNo, llSure;
                     llNo = (LinearLayout) window.findViewById(R.id.llNo);
                     llSure = (LinearLayout) window.findViewById(R.id.llSure);

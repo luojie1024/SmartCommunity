@@ -2,7 +2,6 @@ package com.way.tabui.controlmodule;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.json.JSONException;
@@ -40,8 +39,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
-import com.gizwits.gizwifisdk.enumration.GizWifiDeviceNetStatus;
-import com.gizwits.gizwifisdk.enumration.GizWifiErrorCode;
 import com.way.tabui.actity.GizService;
 import com.way.tabui.gokit.R;
 
@@ -926,7 +923,7 @@ public class GosDeviceControlActivity extends GosControlModuleBaseActivity imple
 
 		final EditText etAlias;
 		final EditText etRemark;
-		etAlias = (EditText) window.findViewById(R.id.etAlias);
+		etAlias = (EditText) window.findViewById(R.id.et_Alias);
 		etRemark = (EditText) window.findViewById(R.id.etRemark);
 
 		LinearLayout llNo, llSure;

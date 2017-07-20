@@ -83,7 +83,6 @@ public class AirConditionListActivity extends GosBaseActivity {
 
 	@Override
 	protected void onResume() {
-		// TODO Auto-generated method stub
 		setProgressDialog("获取数据中...");
 		progressDialog.show();
 		initData();
@@ -214,9 +213,11 @@ public class AirConditionListActivity extends GosBaseActivity {
 
 		final EditText etAlias;
 		final EditText etBrand;
+		final EditText etAddress;
 
-		etAlias = (EditText) window.findViewById(R.id.etAlias);
-		etBrand = (EditText) window.findViewById(R.id.etBrand);
+		etAlias = (EditText) window.findViewById(R.id.et_Alias);
+		etBrand = (EditText) window.findViewById(R.id.et_Brand);
+		etAddress = (EditText) window.findViewById(R.id.et_address);
 
 		LinearLayout llNo, llSure;
 
@@ -228,7 +229,7 @@ public class AirConditionListActivity extends GosBaseActivity {
 		// if (mlist.get(position).getBrand()!=null) {
 		etBrand.setText("" + airMesinfo.getBrand());
 		// }
-
+		etAddress.setText(""+airMesinfo.get_id());
 		llNo.setOnClickListener(new OnClickListener() {
 
 			@Override

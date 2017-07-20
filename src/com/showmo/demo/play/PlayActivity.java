@@ -830,7 +830,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                                                   byte[] bytes = (byte[]) map.get("kuozhan");
                                                   byte[] deviceId = new byte[4];
                                                   int sum = 0;
-                                                  for (int i = 0; i < 10; i++) {
+                                                  for (int i = 0; i < bytes.length/6; i++) {
                                                             if ((bytes[5 + 6 * i] & 0xf0) == 0xf0) {
 
                                                                       for (int j = 0; j < 4; j++) {

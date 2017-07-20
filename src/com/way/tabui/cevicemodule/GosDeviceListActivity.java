@@ -889,7 +889,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 
 		final EditText etAlias;
 		final EditText etRemark;
-		etAlias = (EditText) window.findViewById(R.id.etAlias);
+		etAlias = (EditText) window.findViewById(R.id.et_Alias);
 		etRemark = (EditText) window.findViewById(R.id.etRemark);
 
 		LinearLayout llNo, llSure;

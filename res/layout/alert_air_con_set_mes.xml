@@ -46,7 +46,7 @@
             android:gravity="center"
             />
         <EditText
-            android:id="@+id/etAlias"
+            android:id="@+id/et_Alias"
             style="@style/EditTextStyle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -54,6 +54,43 @@
             android:ems="10"
             android:hint="自定义名称"
             android:textColor="@color/black"
+            android:textColorHint="@color/text_gray_light"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_gray"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="地址码:"
+            android:textSize="15sp"
+            android:gravity="center"
+        />
+        <EditText
+            android:id="@+id/et_address"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:ems="8"
+            android:hint="输入红外遥控码"
+            android:textColor="@color/black"
+            android:maxLength="4"
             android:textColorHint="@color/text_gray_light"
             android:textSize="14sp" />
     </LinearLayout>
@@ -81,7 +118,7 @@
             android:gravity="center"
             />
         <EditText
-            android:id="@+id/etBrand"
+            android:id="@+id/et_Brand"
             style="@style/EditTextStyle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
