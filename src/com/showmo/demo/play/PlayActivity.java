@@ -785,7 +785,8 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                                                             tx_oc.setVisibility(View.VISIBLE);
                                                   }
                                                   ll_oc_list.setVisibility(View.VISIBLE);
-                                                  ll_curtain.setVisibility(View.VISIBLE);
+                                                  //关闭空调按钮
+//                                                  ll_curtain.setVisibility(View.VISIBLE);
                                                   ll_curtain_list.setVisibility(View.VISIBLE);
                                         }
                                         break;

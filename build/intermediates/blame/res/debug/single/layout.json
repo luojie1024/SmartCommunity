@@ -20,12 +20,12 @@
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\layout\\activity_baoxiushenqing.xml"
     },
     {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_air_con_mes.xml",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\layout\\item_air_con_mes.xml"
-    },
-    {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_sample.xml",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\layout\\fragment_sample.xml"
+    },
+    {
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_air_con_mes.xml",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\layout\\item_air_con_mes.xml"
     },
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\viewpager_menu.xml",
@@ -48,12 +48,12 @@
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\layout\\activity_promail.xml"
     },
     {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\alert_curtain_set_mes.xml",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\layout\\alert_curtain_set_mes.xml"
-    },
-    {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register2.xml",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\layout\\activity_register2.xml"
+    },
+    {
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\alert_curtain_set_mes.xml",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\layout\\alert_curtain_set_mes.xml"
     },
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_popupwindows.xml",

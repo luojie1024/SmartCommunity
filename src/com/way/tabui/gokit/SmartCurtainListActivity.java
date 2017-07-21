@@ -196,7 +196,7 @@ public class SmartCurtainListActivity extends GosControlModuleBaseActivity {
                               @Override
                               public void onClick(View v) {
                                         String name = etAlias.getText().toString();
-                                        String  address = etBrand.getText().toString();
+                                        String  address = etBrand.getText().toString().toUpperCase();
                                         if (StringUtils.checkNum(address)) {
                                                   try {
 

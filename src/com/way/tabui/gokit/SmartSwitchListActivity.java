@@ -261,7 +261,7 @@ public class SmartSwitchListActivity extends GosControlModuleBaseActivity {
                               public void onClick(View v) {
                                         ;
                                         String name = etAlias.getText().toString();
-                                        String address = etMAC.getText().toString();
+                                        String address = etMAC.getText().toString().toUpperCase();
                                         if (StringUtils.checkNum(address)) {
                                                   try {
                                                             switchInfo.setAddress(address);

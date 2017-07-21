@@ -30,6 +30,7 @@ import com.way.tabui.commonmodule.GosBaseActivity;
 import com.way.tabui.view.SlideListView2;
 import com.way.util.AirMesinfo;
 import com.way.util.GizMetaData;
+import com.way.util.StringUtils;
 
 import java.util.ArrayList;
 
@@ -229,7 +230,7 @@ public class AirConditionListActivity extends GosBaseActivity {
 		// if (mlist.get(position).getBrand()!=null) {
 		etBrand.setText("" + airMesinfo.getBrand());
 		// }
-		etAddress.setText(""+airMesinfo.get_id());
+		etAddress.setText(""+airMesinfo.getDevice_id());
 		llNo.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -244,30 +245,36 @@ public class AirConditionListActivity extends GosBaseActivity {
 			public void onClick(View v) {
 				String name = etAlias.getText().toString();
 				int brand;
-				try {
-					brand = Integer.parseInt(etBrand.getText().toString());
-					AirMesinfo airMesinfo2 = new AirMesinfo(
-							airMesinfo.get_id(), name, brand, airMesinfo
-									.getTemperature(), airMesinfo.getMode(),
-							airMesinfo.getSpeed(), airMesinfo.getDirection(),
-							airMesinfo.getBindgiz(), airMesinfo.getUserid(),
-							airMesinfo.getFlag(),airMesinfo.getDevice_id());
-					dbAdapter.updateAirmes(airMesinfo2);
-					Toast.makeText(getApplicationContext(), "修改成功",
-							Toast.LENGTH_SHORT).show();
-					setProgressDialog("刷新数据中...");
-					progressDialog.show();
-					initData();
-					initList();
-					initEvent();
-					progressDialog.cancel();
-					dialog.cancel();
+				String device_id;
+				brand = Integer.parseInt(etBrand.getText().toString());
+				device_id=etAddress.getText().toString().toUpperCase();
+				if (StringUtils.checkNum(device_id)) {
+					try {
+						AirMesinfo airMesinfo2 = new AirMesinfo(
+						airMesinfo.get_id(), name, brand, airMesinfo
+						.getTemperature(), airMesinfo.getMode(),
+						airMesinfo.getSpeed(), airMesinfo.getDirection(),
+						airMesinfo.getBindgiz(), airMesinfo.getUserid(),
+						airMesinfo.getFlag(), device_id);
+						dbAdapter.updateAirmes(airMesinfo2);
+						Toast.makeText(getApplicationContext(), "修改成功",
+						Toast.LENGTH_SHORT).show();
+						setProgressDialog("刷新数据中...");
+						progressDialog.show();
+						initData();
+						initList();
+						initEvent();
+						progressDialog.cancel();
+						dialog.cancel();
 
-				} catch (Exception e) {
-					// TODO: handle exception
-					Toast.makeText(getApplicationContext(), "修改失败",
-							Toast.LENGTH_SHORT).show();
-					dialog.cancel();
+					} catch (Exception e) {
+						Toast.makeText(getApplicationContext(), "修改失败",
+						Toast.LENGTH_SHORT).show();
+						dialog.cancel();
+					}
+				} else {
+					Toast.makeText(getApplicationContext(), "修改失败！地址必须为不带任何标点符号的8位16进制数",
+					Toast.LENGTH_SHORT).show();
 				}
 
 			}

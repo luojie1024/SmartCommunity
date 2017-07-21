@@ -15,13 +15,13 @@ public final class R {
         public static final int bdp_update_progress_download = 0x7f020010;
     }
     public static final class id {
-        public static final int btn_action_1 = 0x7f0801c5;
-        public static final int lin_other_btns = 0x7f0801c6;
-        public static final int txt_action_2 = 0x7f0801c7;
-        public static final int txt_action_3 = 0x7f0801c8;
-        public static final int txt_main_tip = 0x7f0801c3;
-        public static final int txt_minor_tip = 0x7f0801c4;
-        public static final int txt_title = 0x7f0801c2;
+        public static final int btn_action_1 = 0x7f0801c6;
+        public static final int lin_other_btns = 0x7f0801c7;
+        public static final int txt_action_2 = 0x7f0801c8;
+        public static final int txt_action_3 = 0x7f0801c9;
+        public static final int txt_main_tip = 0x7f0801c4;
+        public static final int txt_minor_tip = 0x7f0801c5;
+        public static final int txt_title = 0x7f0801c3;
     }
     public static final class layout {
         public static final int bdp_update_activity_confirm_dialog = 0x7f030058;
