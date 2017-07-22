@@ -49,7 +49,6 @@ public class SmartSwitchActivity extends GosBaseActivity {
 	private  int type;
 
 
-	/** 指令代码0:开 1：停止  2：关 3：换向 */
 	private byte[] BYTES_ID = new byte[4];
 	private byte[] BYTES_BESE=new byte[7];
 

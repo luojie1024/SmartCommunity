@@ -1,7 +1,15 @@
 [
     {
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\anim\\basepopup_fade_out.xml",
+        "source": "F:\\android-sdk\\Android\\.android\\build-cache\\66c660a458074cbbea4a475a7b3fcd5c13495e52\\output\\res\\anim\\basepopup_fade_out.xml"
+    },
+    {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\anim\\activity_translate_out.xml",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\anim\\activity_translate_out.xml"
+    },
+    {
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\anim\\basepopup_fade_in.xml",
+        "source": "F:\\android-sdk\\Android\\.android\\build-cache\\66c660a458074cbbea4a475a7b3fcd5c13495e52\\output\\res\\anim\\basepopup_fade_in.xml"
     },
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\anim\\activity_translate_in.xml",

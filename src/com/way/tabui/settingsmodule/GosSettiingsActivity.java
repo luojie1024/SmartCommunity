@@ -256,7 +256,7 @@ public class GosSettiingsActivity extends GosBaseActivity implements
         String mac=device.getMacAddress();
 
 //        String text = "http://blog.csdn.net/gao36951";
-        String url = "type=bang"+"&mac="+mac+"&productKey="+ GosConstant.device_ProductKey
+        String url = "type=bang"+"&mac="+mac+"&productKey="+ GosConstant.Product_Key
                 +"&productSecret="+GosConstant.Product_Secret;
 
         Log.i("xxs", "url::::"+url);

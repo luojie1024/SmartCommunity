@@ -44,16 +44,20 @@
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\layout\\activity_smart_list_curtain.xml"
     },
     {
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\popupwindow_device_control_switch.xml",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\layout\\popupwindow_device_control_switch.xml"
+    },
+    {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_promail.xml",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\layout\\activity_promail.xml"
     },
     {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register2.xml",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\layout\\activity_register2.xml"
-    },
-    {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\alert_curtain_set_mes.xml",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\layout\\alert_curtain_set_mes.xml"
+    },
+    {
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register2.xml",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\layout\\activity_register2.xml"
     },
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\item_popupwindows.xml",
@@ -258,6 +262,10 @@
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_alertmes.xml",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\layout\\activity_alertmes.xml"
+    },
+    {
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\popupwindow_device_control.xml",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\layout\\popupwindow_device_control.xml"
     },
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\layout\\activity_order.xml",

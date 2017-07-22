@@ -231,6 +231,7 @@
     <color name="yi_edittext_disable">#66474747</color>
     <color name="yi_edittext_normal">#ff474747</color>
     <color name="yi_edittext_press">#ff474747</color>
+    <declare-styleable name="SwitchButton"><attr format="reference|dimension" name="sb_shadow_radius"/><attr format="reference|dimension" name="sb_shadow_offset"/><attr format="reference|color" name="sb_shadow_color"/><attr format="reference|color" name="sb_uncheck_color"/><attr format="reference|color" name="sb_checked_color"/><attr format="reference|dimension" name="sb_border_width"/><attr format="reference|color" name="sb_checkline_color"/><attr format="reference|dimension" name="sb_checkline_width"/><attr format="reference|color" name="sb_uncheckcircle_color"/><attr format="reference|dimension" name="sb_uncheckcircle_width"/><attr format="reference|dimension" name="sb_uncheckcircle_radius"/><attr format="reference|boolean" name="sb_checked"/><attr format="reference|boolean" name="sb_shadow_effect"/><attr format="reference|integer" name="sb_effect_duration"/><attr format="reference|color" name="sb_button_color"/><attr format="reference|boolean" name="sb_show_indicator"/><attr format="reference|color" name="sb_background"/><attr format="reference|boolean" name="sb_enable_effect"/></declare-styleable>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="addressbox_height_size">30.0dip</dimen>
@@ -1601,6 +1602,10 @@ UID：{4}"</string>
     </style>
     <style name="NetDisk.Unified.Smaller.Red2TabBarGray" parent="@style/NetDisk.Unified.Smaller">
         <item name="android:textColor">@drawable/red_tabbargray_reverse_drawable</item>
+    </style>
+    <style name="PopupAnimaFade" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/basepopup_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/basepopup_fade_out</item>
     </style>
     <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>

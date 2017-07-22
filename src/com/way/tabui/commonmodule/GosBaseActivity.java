@@ -46,7 +46,7 @@ public class GosBaseActivity extends FragmentActivity {
 //        GizWifiSDK.sharedInstance().setListener(mListener);
 // 设置要过滤的设备 productKey 列表。不需要过滤则不用定义此变量直接传 null
         List<String> specialProductKeys = new ArrayList<String> ();
-        addProductKey(GosConstant.device_ProductKey);
+        addProductKey(GosConstant.Product_Key);
 // 指定要切换的域名信息。使用机智云生产环境的 App 则不用定义此变量直接传 null
 //        ConcurrentHashMap<String, Object> cloudServiceInfo = new
 //                ConcurrentHashMap<String, Object>();

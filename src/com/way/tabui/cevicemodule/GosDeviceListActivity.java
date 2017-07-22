@@ -575,7 +575,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		uid = spf.getString("Uid", "");
 		token = spf.getString("Token", "");
 		// 可以在此处把关心的设备productKey加入到过滤列表中
-		addProductKey(GosConstant.device_ProductKey);
+		addProductKey(GosConstant.Product_Key);
 		if (uid.isEmpty() && token.isEmpty()) {
 			loginStatus = 0;
 		}

@@ -238,9 +238,9 @@ public class GizService extends Service {
 //					"a61ed92da3764cca848f3dbab8481149");
 //			GosConstant.App_Screct = spf.getString("appscrect",
 //					"57c13265403549ac83d828e50639c37a");
-//			GosConstant.device_ProductKey = spf.getString("prroductkey",
+//			GosConstant.Product_Key = spf.getString("prroductkey",
 //					"330b43e5cd9b4aa9a03fc97c5f6f52a4");
-//            GosConstant.device_ProductKey="69353614e549438ead162509abefd243";
+//            GosConstant.Product_Key="69353614e549438ead162509abefd243";
 //            GosConstant.App_ID = "84ec3257a927470e97c7d66ff0558dc8";
 //            GosConstant.App_Screct="beaca00e79a546f3b393ffdc81fdef72";
             // 启动SDK

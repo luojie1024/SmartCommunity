@@ -28,16 +28,18 @@ import com.gizwits.gizwifisdk.api.GizWifiDevice;
 import com.gizwits.gizwifisdk.enumration.GizWifiErrorCode;
 import com.gizwits.gizwifisdk.listener.GizWifiDeviceListener;
 import com.showmo.demo.util.spUtil;
+import com.showmo.demo.view.DialogPopupCurtain;
+import com.showmo.demo.view.DialogPopupSwitch;
 import com.way.adapter.CurtianAdapter;
 import com.way.adapter.DatabaseAdapter;
 import com.way.adapter.SmartSwitchListAdapter;
 import com.way.tabui.commonmodule.GosBaseActivity;
 import com.way.tabui.gokit.R;
-import com.way.tabui.gokit.SmartCurtainActivity;
-import com.way.tabui.gokit.SmartSwitchActivity;
 import com.way.util.ControlProtocol;
 import com.way.util.ConvertUtil;
+import com.way.util.CurtainControlUtils;
 import com.way.util.Gizinfo;
+import com.way.util.SwitchControlUtils;
 import com.way.util.SwitchInfo;
 import com.xmcamera.core.model.XmErrInfo;
 import com.xmcamera.core.model.XmStreamMode;
@@ -59,6 +61,9 @@ import org.json.JSONException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
+
+import static com.way.tabui.gokit.R.id.glview;
+
 
 /**
  * Created by Administrator on 2016/6/20.
@@ -117,7 +122,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
 
           int playId;
           IXmTalkManager talkma;
-          private ListView list_oc,list_curtain;
+          private ListView list_oc, list_curtain;
           private MyReceiver receiver = null;
           private SmartSwitchListAdapter adapter;
           private LinearLayout ll_curtain;
@@ -130,6 +135,9 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
           private TextView tx_curtain;
           private CurtianAdapter curtain_adapter;
           private LinearLayout ll_curtain_list;
+          private CurtainControlUtils curtainControlUtils;
+          private SwitchControlUtils switchControlUtils;
+
 
           @Override
           protected void onCreate(Bundle savedInstanceState) {
@@ -157,7 +165,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                     talkma = xmSystem.xmGetTalkManager(cameraid);
 
                     glView = new XmGlView(this, null);
-                    playContent = (FrameLayout) findViewById(R.id.glview);
+                    playContent = (FrameLayout) findViewById(glview);
                     LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                          LinearLayout.LayoutParams.WRAP_CONTENT,
                          LinearLayout.LayoutParams.WRAP_CONTENT);
@@ -195,14 +203,14 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                     ll_curtain.setVisibility(View.GONE);
                     ll_oc_list = (LinearLayout) findViewById(R.id.ll_oc_list);
                     ll_oc_list.setVisibility(View.GONE);
-                    ll_curtain_list =(LinearLayout) findViewById(R.id.ll_curtain_list);
+                    ll_curtain_list = (LinearLayout) findViewById(R.id.ll_curtain_list);
                     ll_curtain_list.setVisibility(View.GONE);
 
                     list_oc = (ListView) findViewById(R.id.list_oc);
-                    list_curtain=(ListView)findViewById(R.id.list_curtain);
+                    list_curtain = (ListView) findViewById(R.id.list_curtain);
 
-                    curtain_adapter = new CurtianAdapter(mHander,this);
-                    adapter = new SmartSwitchListAdapter(mHander,this);
+                    curtain_adapter = new CurtianAdapter(mHander, this);
+                    adapter = new SmartSwitchListAdapter(mHander, this);
 
                     list_oc.setAdapter(adapter);
                     list_curtain.setAdapter(curtain_adapter);
@@ -226,7 +234,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                     SLrecordclose.setOnClickListener(this);
                     //show = (TextView) findViewById(R.id.show);
 
-//        mHander.sendEmptyMessage(0x126);
+                    //        mHander.sendEmptyMessage(0x126);
                     sp = new spUtil(this);
           }
 
@@ -235,51 +243,68 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                     IntentFilter filter = new IntentFilter();
                     filter.addAction("com.way.tabui.actity.GosDeviceListActivityReceviver");
                     filter.addAction("com.way.tabui.actity.GizServiceTOAST");
+                    filter.addAction("com.device.control.curtain.action");
+                    filter.addAction("com.device.control.switch.action");
                     registerReceiver(receiver, filter);
           }
 
           private void initEvent() {
-                    //窗帘Item点击事件
+                    //窗帘Item点击事件 FIXME
                     list_curtain.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                               @Override
                               public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                                        String name, address;
-                                        int type;
-                                        //address地址代码
-                                        name = adapter.getmList().get(position).getName();
-                                        //address地址代码
-                                        address = adapter.getmList().get(position).getAddress();
-                                        type = adapter.getmList().get(position).getType();
-                                        Intent intent = new Intent(PlayActivity.this, SmartCurtainActivity.class);
-                                        intent.putExtra("name", name);
-                                        intent.putExtra("address", address);
-                                        Bundle bundle = new Bundle();
-                                        //传设备
-                                        bundle.putParcelable("GizWifiDevice", device);
-                                        intent.putExtras(bundle);
-                                        startActivityForResult(intent, 1000);
+                                        curtainControlUtils = new CurtainControlUtils();
+                                        curtainControlUtils.setCurtainAddress(curtain_adapter.getmList().get(position).getAddress());
+                                        DialogPopupCurtain popup = new DialogPopupCurtain(PlayActivity.this);
+                                        //显示
+                                        popup.showPopupWindow(glview);
+
+//                                        String name, address;
+//                                        int type;
+//                                        //address地址代码
+//                                        name = adapter.getmList().get(position).getName();
+//                                        //address地址代码
+//                                        address = adapter.getmList().get(position).getAddress();
+//                                        type = adapter.getmList().get(position).getType();
+//                                        Intent intent = new Intent(PlayActivity.this, SmartCurtainActivity.class);
+//                                        intent.putExtra("name", name);
+//                                        intent.putExtra("address", address);
+//                                        Bundle bundle = new Bundle();
+//                                        //传设备
+//                                        bundle.putParcelable("GizWifiDevice", device);
+//                                        intent.putExtras(bundle);
+//                                        startActivityForResult(intent, 1000);
                               }
                     });
-                    //插座Item点击事件
+
+                    //开关Item点击事件
                     list_oc.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                               @Override
                               public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                                        String name, address;
-                                        int type;
-                                        //address地址代码
-                                        name = adapter.getmList().get(position).getName();
-                                        //address地址代码
-                                        address = adapter.getmList().get(position).getAddress();
-                                        type = adapter.getmList().get(position).getType();
-                                        Intent intent = new Intent(PlayActivity.this, SmartSwitchActivity.class);
-                                        intent.putExtra("name", name);
-                                        intent.putExtra("address", address);
-                                        intent.putExtra("type", type);
-                                        Bundle bundle = new Bundle();
-                                        //传设备
-                                        bundle.putParcelable("GizWifiDevice", device);
-                                        intent.putExtras(bundle);
-                                        startActivityForResult(intent, 1000);
+                                        switchControlUtils = new SwitchControlUtils();
+                                        //设置地址
+                                        switchControlUtils.setSwitchAddress(adapter.getmList().get(position).getAddress());
+                                        //设置开关类型
+                                        switchControlUtils.setSwitchType(adapter.getmList().get(position).getType());
+                                        DialogPopupSwitch popup = new DialogPopupSwitch(PlayActivity.this,adapter.getmList().get(position).getType());
+                                        //显示
+                                        popup.showPopupWindow(glview);
+//                                        String name, address;
+//                                        int type;
+//                                        //address地址代码
+//                                        name = adapter.getmList().get(position).getName();
+//                                        //address地址代码
+//                                        address = adapter.getmList().get(position).getAddress();
+//                                        type = adapter.getmList().get(position).getType();
+//                                        Intent intent = new Intent(PlayActivity.this, SmartSwitchActivity.class);
+//                                        intent.putExtra("name", name);
+//                                        intent.putExtra("address", address);
+//                                        intent.putExtra("type", type);
+//                                        Bundle bundle = new Bundle();
+//                                        //传设备
+//                                        bundle.putParcelable("GizWifiDevice", device);
+//                                        intent.putExtras(bundle);
+//                                        startActivityForResult(intent, 1000);
                               }
                     });
 
@@ -287,13 +312,11 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                     btn_open.setOnClickListener(new View.OnClickListener() {
                               @Override
                               public void onClick(View v) {
-                                        // TODO Auto-generated method stub
 
                                         try {
                                                   sendJson(KEY_Sendair, con_mes[0]);
                                                   //  btn_open.setTextColor(getResources().getColor(R.color.golden));
                                         } catch (JSONException e) {
-                                                  // TODO Auto-generated catch block
                                                   Toast.makeText(getApplicationContext(), "发送失败",
                                                        Toast.LENGTH_SHORT).show();
                                         }
@@ -394,7 +417,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
 
                                    @Override
                                    public void onStartErr(XmErrInfo errcode) {
-//                        showTV("errId:" + errcode.errId + ",errCode:"
+//                                 showTV("errId:" + errcode.errId + ",errCode:"
 //                                + errcode.errCode + ",errdiscribe:"
 //                                + errcode.discribe);
                                              showTV("播放失败");
@@ -435,39 +458,31 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
 
                               @Override
                               public void onSuc() {
-                                        // TODO Auto-generated method stub
                                         mHander.sendEmptyMessage(0x131);
                               }
 
                               @Override
                               public void onOpenTalkErr(XmErrInfo arg0) {
-                                        // TODO Auto-generated method stub
                                         mHander.sendEmptyMessage(0x129);
                               }
 
                               @Override
                               public void onNoRecordPermission() {
-                                        // TODO Auto-generated method stub
 
                               }
 
                               @Override
                               public void onIPCIsTalking() {
-                                        // TODO Auto-generated method stub
 
                               }
 
                               @Override
                               public void onAlreadyTalking() {
-                                        // TODO Auto-generated method stub
-
                               }
                     }, new OnXmTalkVolumListener() {
 
                               @Override
                               public void onVolumeChange(int arg0) {
-                                        // TODO Auto-generated method stub
-
                               }
                     });
 
@@ -639,6 +654,11 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                     sendBroadcast(intent);
           }
 
+          /**
+           * description:广播接收，响应
+           * auther：joahluo
+           * time：2017/7/22 11:28
+           */
           public class MyReceiver extends BroadcastReceiver {
                     @Override
                     public void onReceive(Context context, Intent intent) {
@@ -652,8 +672,46 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                                         fixListViewHeight(list_curtain);
                                         ll_show.setVisibility(View.VISIBLE);
                                         //开启广播获取状态
-                                        // TODO: 2017/7/16
                                         initStatusListener();
+                              } else if (action.equals("com.device.control.curtain.action")) {
+                                        int control = intent.getIntExtra("control", 0);
+                                        //窗帘控制响应
+                                        try {
+                                                  switch (control) {
+                                                            case CurtainControlUtils.OPEN:
+                                                                      Toast.makeText(PlayActivity.this, "--OPEN", Toast.LENGTH_SHORT)
+                                                                           .show();
+                                                                      sendJson("kuozhan", curtainControlUtils.getControlCommand(CurtainControlUtils.OPEN));
+                                                                      break;
+                                                            case CurtainControlUtils.CLOSE:
+                                                                      Toast.makeText(PlayActivity.this, "--CLOSE", Toast.LENGTH_SHORT)
+                                                                           .show();
+                                                                      sendJson("kuozhan", curtainControlUtils.getControlCommand(CurtainControlUtils.CLOSE));
+                                                                      break;
+                                                            case CurtainControlUtils.REDIC:
+                                                                      Toast.makeText(PlayActivity.this, "--REDIC", Toast.LENGTH_SHORT)
+                                                                           .show();
+                                                                      sendJson("kuozhan", curtainControlUtils.getControlCommand(CurtainControlUtils.REDIC));
+                                                                      break;
+                                                            case CurtainControlUtils.STOP:
+                                                                      Toast.makeText(PlayActivity.this, "--STOP", Toast.LENGTH_SHORT)
+                                                                           .show();
+                                                                      sendJson("kuozhan", curtainControlUtils.getControlCommand(CurtainControlUtils.STOP));
+                                                                      break;
+                                                  }
+                                        } catch (JSONException e) {
+                                                  e.printStackTrace();
+                                        }
+                              } else if (action.equals("com.device.control.switch.action")) {
+                                        boolean isChecked = intent.getBooleanExtra("isChecked", false);
+                                        int no_switch = intent.getIntExtra("switch", 1);
+                                        try {
+                                                  sendJson("kuozhan", switchControlUtils.getControlCommand(isChecked, no_switch));
+                                        } catch (JSONException e) {
+                                                  e.printStackTrace();
+                                        }
+                                        Toast.makeText(PlayActivity.this, "switch" + no_switch + "-->" + isChecked, Toast.LENGTH_SHORT)
+                                             .show();
                               }
                     }
           }
@@ -831,7 +889,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                                                   byte[] bytes = (byte[]) map.get("kuozhan");
                                                   byte[] deviceId = new byte[4];
                                                   int sum = 0;
-                                                  for (int i = 0; i < bytes.length/6; i++) {
+                                                  for (int i = 0; i < bytes.length / 6; i++) {
                                                             if ((bytes[5 + 6 * i] & 0xf0) == 0xf0) {
 
                                                                       for (int j = 0; j < 4; j++) {
@@ -921,7 +979,6 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                               e.printStackTrace();
                     }
           }
-
 
 
 }

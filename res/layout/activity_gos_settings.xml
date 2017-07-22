@@ -67,9 +67,8 @@
         android:layout_marginTop="30dp"
         android:background="@color/white"
         android:gravity="center_vertical"
-        android:visibility="gone"
         android:paddingBottom="10dp"
-        android:paddingTop="10dp" >
+        android:paddingTop="10dp">
 
         <TextView
             android:id="@+id/setbundmes"
@@ -79,14 +78,14 @@
             android:layout_weight="1"
             android:text="设置绑定信息"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginRight="10dp"
-            android:src="@drawable/right_icon" />
+            android:src="@drawable/right_icon"/>
     </LinearLayout>
 
     <LinearLayout

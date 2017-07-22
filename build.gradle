@@ -11,6 +11,15 @@ dependencies {
     compile fileTree(include: '*.jar', dir: 'libs')
     compile 'com.android.support:support-v4:26.0.0-alpha1'
     compile project(':bDIntegrationSDK_LibProject')
+    compile 'com.github.razerdp:BasePopup:v1.8.0'
+    compile 'com.github.zcweng:switch-button:0.0.3@aar'
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
 }
 
 android {
@@ -41,6 +50,9 @@ android {
     tasks.withType(JavaCompile) {
         compileTask -> compileTask.dependsOn(nativeLibsToJar)
     }
+
+
+
 
     sourceSets {
         main {

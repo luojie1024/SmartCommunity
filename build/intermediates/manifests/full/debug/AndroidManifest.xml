@@ -110,6 +110,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme" >
 
         <!-- &lt;!&ndash; 百度自动更新SDK   Appid配置,AppKey配置&ndash;&gt; -->
