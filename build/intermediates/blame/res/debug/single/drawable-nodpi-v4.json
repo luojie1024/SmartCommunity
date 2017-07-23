@@ -28,12 +28,12 @@
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\btn_viewpager_switch_selector.xml"
     },
     {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\ic_temity.png",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\ic_temity.png"
-    },
-    {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\new_quota_task_img.png",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\new_quota_task_img.png"
+    },
+    {
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\ic_temity.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-nodpi\\ic_temity.png"
     },
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\tab_hotresouce_normal.png",

@@ -15,6 +15,7 @@ ADDED from D:\space\NO10\SmartCommunity\AndroidManifest.xml:2:1-692:12
 		ADDED from D:\space\NO10\SmartCommunity\AndroidManifest.xml:3:11-69
 uses-sdk
 ADDED from D:\space\NO10\SmartCommunity\AndroidManifest.xml:7:5-9:40
+MERGED from [com.android.support:multidex:1.0.1] F:\android-sdk\Android\.android\build-cache\7e7a6e7bdd63d947fb0a58a84c6b95f398af2e39\output\AndroidManifest.xml:18:5-42
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\096641a7d774aa85f9f8346512efaa4ee1c92efd\output\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\9a101c4b0d8866e701ff7567e0c6985eb5e8ae58\output\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\fb4155bc867aa0e063f56bf3319689282758532b\output\AndroidManifest.xml:21:5-23:60
