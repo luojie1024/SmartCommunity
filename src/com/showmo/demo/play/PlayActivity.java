@@ -76,7 +76,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
           private static final int UPDATA_STATUS = 1;
           private static final int UPDATA_INFO = 0;
           //UI更新广播
-          public static final String action = "com.luojie.action";
+          public static final String action = "com.device.status.update.action";
           //发送状态更新广播
           private static final String KUOZHAN = "kuozhan";
           private byte[] SEND_BROAD = {(byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0x15};
@@ -286,8 +286,10 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                                         switchControlUtils.setSwitchAddress(adapter.getmList().get(position).getAddress());
                                         //设置开关类型
                                         switchControlUtils.setSwitchType(adapter.getmList().get(position).getType());
-                                        DialogPopupSwitch popup = new DialogPopupSwitch(PlayActivity.this,adapter.getmList().get(position).getType());
-                                        //显示
+                                        DialogPopupSwitch popup = new DialogPopupSwitch(PlayActivity.this,adapter.getmList().get(position).getType(),adapter.getmList().get(position).getAddress());
+                                        //设置开关状态
+                                        popup.setDeviceStutas(adapter.getmList().get(position).getStatus1(),adapter.getmList().get(position).getStatus2(),adapter.getmList().get(position).getStatus3());
+                                        //显示在glview下方
                                         popup.showPopupWindow(glview);
 //                                        String name, address;
 //                                        int type;
@@ -617,7 +619,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                                         case 0x126:
                                                   Toast.makeText(PlayActivity.this, logtext, Toast.LENGTH_LONG)
                                                        .show();
-//                    show.setText(logtext);
+                                        //                    show.setText(logtext);
                                                   break;
                                         case 0x127:
                                                   Toast.makeText(PlayActivity.this, "你没有权限，请先注册登录~",
@@ -834,8 +836,6 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                                                   ll_curtain_list.setVisibility(View.GONE);
                                                   //scrollView.scrollTo(50,0);
                                         } else {
-                                                  //发送状态同步广播
-                                                  sendBroadreceive();
                                                   isshow = true;
                                                   tv_show.setText("-关闭实时演示板-");
                                                   tx_curtain.setVisibility(View.VISIBLE);
@@ -898,6 +898,8 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                                                                       String mac = ConvertUtil.byteStringToHexString(deviceId).toUpperCase();
                                                                       //获取数据库数据
                                                                       switchInfo = dbAdapter.findSwitchInfoStatus(mac);
+                                                                      //广播intent
+                                                                      Intent intent = new Intent(action);
                                                                       //开关类型 状态
                                                                       switch ((int) bytes[0 + 6 * i]) {
                                                                                 case (int) ControlProtocol.DevType.SWITCH_THREE:
@@ -923,6 +925,12 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                                                                                           }
                                                                                           sum++;
                                                                                           adapter.updateList(PlayActivity.this.switchInfo, UPDATA_STATUS);
+                                                                                          //发送广播，通知UI更新
+                                                                                          intent.putExtra("address",switchInfo.getAddress());
+                                                                                          intent.putExtra("stutas1",switchInfo.getStatus1());
+                                                                                          intent.putExtra("stutas2",switchInfo.getStatus2());
+                                                                                          intent.putExtra("stutas3",switchInfo.getStatus3());
+                                                                                          sendBroadcast(intent);
                                                                                           break;
                                                                                 case (int) ControlProtocol.DevType.PLUG_FIVE:
                                                                                           if ((bytes[5 + 6 * i] & 0x1) == 0x1) {
@@ -932,6 +940,10 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                                                                                           }
                                                                                           sum++;
                                                                                           adapter.updateList(PlayActivity.this.switchInfo, UPDATA_STATUS);
+                                                                                          //发送广播，通知UI更新
+                                                                                          intent.putExtra("address",switchInfo.getAddress());
+                                                                                          intent.putExtra("stutas1",switchInfo.getStatus1());
+                                                                                          sendBroadcast(intent);
                                                                                           break;
                                                                       }
                                                             }
@@ -940,9 +952,6 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                                                   if (sum != 0) {
                                                             Toast.makeText(getApplicationContext(), "接收到" + sum + "条成功！",
                                                                  Toast.LENGTH_SHORT).show();
-                                                            //发送广播，通知UI更新
-                                                            Intent intent = new Intent(action);
-                                                            sendBroadcast(intent);
                                                   }
 
 
