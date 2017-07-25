@@ -277,7 +277,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                               }
                     });
 
-                    //开关Item点击事件
+                    //开关 Item点击事件
                     list_oc.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                               @Override
                               public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -287,8 +287,9 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                                         //设置开关类型
                                         switchControlUtils.setSwitchType(adapter.getmList().get(position).getType());
                                         DialogPopupSwitch popup = new DialogPopupSwitch(PlayActivity.this,adapter.getmList().get(position).getType(),adapter.getmList().get(position).getAddress());
+                                        switchInfo = dbAdapter.findSwitchInfoStatus(adapter.getmList().get(position).getAddress());
                                         //设置开关状态
-                                        popup.setDeviceStutas(adapter.getmList().get(position).getStatus1(),adapter.getmList().get(position).getStatus2(),adapter.getmList().get(position).getStatus3());
+                                        popup.setDeviceStutas(switchInfo.getStatus1(),switchInfo.getStatus2(),switchInfo.getStatus3());
                                         //显示在glview下方
                                         popup.showPopupWindow(glview);
 //                                        String name, address;
