@@ -290,6 +290,8 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                                         switchInfo = dbAdapter.findSwitchInfoStatus(adapter.getmList().get(position).getAddress());
                                         //设置开关状态
                                         popup.setDeviceStutas(switchInfo.getStatus1(),switchInfo.getStatus2(),switchInfo.getStatus3());
+                                        //初始化事件
+                                        popup.init();
                                         //显示在glview下方
                                         popup.showPopupWindow(glview);
 //                                        String name, address;
@@ -943,7 +945,7 @@ public class PlayActivity extends GosBaseActivity implements View.OnClickListene
                                                                                           adapter.updateList(PlayActivity.this.switchInfo, UPDATA_STATUS);
                                                                                           //发送广播，通知UI更新
                                                                                           intent.putExtra("address",switchInfo.getAddress());
-                                                                                          intent.putExtra("stutas1",switchInfo.getStatus1());
+                                                                                          intent.putExtra("stutas4",switchInfo.getStatus1());
                                                                                           sendBroadcast(intent);
                                                                                           break;
                                                                       }

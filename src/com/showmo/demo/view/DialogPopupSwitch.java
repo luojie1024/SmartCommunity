@@ -50,16 +50,12 @@ public class DialogPopupSwitch extends BasePopupWindow implements View.OnClickLi
                     this.type = type;
                     this.address = address;
                     intent = new Intent(switch_action);
-                    ok = (TextView) findViewById(R.id.ok);
-                    cancel = (TextView) findViewById(R.id.cancel);
-                    switch_btn1 = (SwitchButton) findViewById(R.id.switch1_button);
-                    switch_btn2 = (SwitchButton) findViewById(R.id.switch2_button);
-                    switch_btn3 = (SwitchButton) findViewById(R.id.switch3_button);
-                    switch_btn4 = (SwitchButton) findViewById(R.id.switch4_button);
-                    ll_switch1 = (LinearLayout) findViewById(R.id.ll_switch1);
-                    ll_switch2 = (LinearLayout) findViewById(R.id.ll_switch2);
-                    ll_switch3 = (LinearLayout) findViewById(R.id.ll_switch3);
-                    ll_switch4 = (LinearLayout) findViewById(R.id.ll_switch4);
+
+
+          }
+
+          //初始化
+          public void init() {
                     initSwitchView();
                     initUI();
                     initEvent();
@@ -116,6 +112,16 @@ public class DialogPopupSwitch extends BasePopupWindow implements View.OnClickLi
 
           //根据开关类型隐藏布局
           private void initSwitchView() {
+                    ok = (TextView) findViewById(R.id.ok);
+                    cancel = (TextView) findViewById(R.id.cancel);
+                    switch_btn1 = (SwitchButton) findViewById(R.id.switch1_button);
+                    switch_btn2 = (SwitchButton) findViewById(R.id.switch2_button);
+                    switch_btn3 = (SwitchButton) findViewById(R.id.switch3_button);
+                    switch_btn4 = (SwitchButton) findViewById(R.id.switch4_button);
+                    ll_switch1 = (LinearLayout) findViewById(R.id.ll_switch1);
+                    ll_switch2 = (LinearLayout) findViewById(R.id.ll_switch2);
+                    ll_switch3 = (LinearLayout) findViewById(R.id.ll_switch3);
+                    ll_switch4 = (LinearLayout) findViewById(R.id.ll_switch4);
                     switch (this.type) {
                               case 1:
                                         ll_switch2.setVisibility(View.GONE);
