@@ -1,9 +1,5 @@
 package com.way.tabui.settingsmodule;
 
-import android.app.AlarmManager;
-import android.app.PendingIntent;
-import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -66,20 +62,20 @@ public class SetBundMesActivity extends GosBaseActivity {
 
 
 				Toast.makeText(getApplicationContext(),
-						"存储信息完毕,重新启动APP中...请稍等候..", Toast.LENGTH_SHORT).show();
+						"存储信息完毕,重启后生效...", Toast.LENGTH_SHORT).show();
 
-				Intent reintent = getBaseContext().getPackageManager()
-						.getLaunchIntentForPackage(
-								getBaseContext().getPackageName());
-				PendingIntent restartIntent = PendingIntent.getActivity(
-						getApplicationContext(), 0, reintent,
-						PendingIntent.FLAG_ONE_SHOT);
-				AlarmManager mgr = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-				mgr.set(AlarmManager.RTC, System.currentTimeMillis(),
-						restartIntent);
-				Intent intent = new Intent();
-				intent.setAction("com.way.util.exit_app");
-				sendBroadcast(intent);
+//				Intent reintent = getBaseContext().getPackageManager()
+//						.getLaunchIntentForPackage(
+//								getBaseContext().getPackageName());
+//				PendingIntent restartIntent = PendingIntent.getActivity(
+//						getApplicationContext(), 0, reintent,
+//						PendingIntent.FLAG_ONE_SHOT);
+//				AlarmManager mgr = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+//				mgr.set(AlarmManager.RTC, System.currentTimeMillis(),
+//						restartIntent);
+//				Intent intent = new Intent();
+//				intent.setAction("com.way.util.exit_app");
+//				sendBroadcast(intent);
 			}
 		});
 	} 
