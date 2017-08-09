@@ -360,7 +360,8 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
 			startActivity(intent);
 			break;
 		case R.id.llPass://匿名登录响应
-            spf.edit().putString("UserName","").commit();
+			// TODO: 2017/8/8
+			spf.edit().putString("UserName","").commit();
             spf.edit().putString("PassWord", "").commit();
 			intent = new Intent(GosUserLoginActivity.this, GosDeviceListActivity.class);
 			startActivity(intent);

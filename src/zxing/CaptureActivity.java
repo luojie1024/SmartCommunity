@@ -102,6 +102,7 @@ public final class CaptureActivity extends Activity implements
         }
 
 	};
+
     private String type;
     private String code;
 
@@ -133,7 +134,7 @@ public final class CaptureActivity extends Activity implements
     /**
 	 * 设备绑定回调
 	 * 
-	 * @param result
+	 * @param
 	 * @param did
 	 */
 	protected void didBindDevice(int error, String errorMessage,
@@ -228,10 +229,10 @@ public final class CaptureActivity extends Activity implements
         @Override
         public void didAcceptDeviceSharingByQRCode(GizWifiErrorCode result) {
             if (result == GizWifiErrorCode.GIZ_SDK_SUCCESS) {
-// 成功
+				// 成功
                 handler.sendEmptyMessage(handler_key.SUCCESS.ordinal());
             } else {
-// 失败
+				// 失败
                 handler.sendEmptyMessage(handler_key.FAILED.ordinal());
             }
         }
@@ -248,8 +249,6 @@ public final class CaptureActivity extends Activity implements
 			String productKey, String productSecret) {
 		GizWifiSDK.sharedInstance().bindRemoteDevice(uid, token, mac,
 				productKey, productSecret);
-
-
 	}
 
 	private Rect mCropRect = null;

@@ -35,6 +35,7 @@ import com.gizwits.gizwifisdk.api.GizWifiSDK;
 import com.gizwits.gizwifisdk.enumration.GizWifiDeviceNetStatus;
 import com.gizwits.gizwifisdk.enumration.GizWifiErrorCode;
 import com.gizwits.gizwifisdk.listener.GizWifiDeviceListener;
+import com.gizwits.gizwifisdk.listener.GizWifiSDKListener;
 import com.way.tabui.actity.GizService;
 import com.way.tabui.actity.MainActivity;
 import com.way.tabui.commonmodule.GosConstant;
@@ -579,6 +580,17 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		if (uid.isEmpty() && token.isEmpty()) {
 			loginStatus = 0;
 		}
+
+		initbind();
+	}
+
+
+	//初始化绑定 FIXME
+	private void initbind() {
+		startBind(uid, token, "A020A62F1A8D", GosConstant.Product_Key, GosConstant.Product_Secret);
+		startBind(uid, token, "5CCF7F16685A", GosConstant.Product_Key, GosConstant.Product_Secret);
+		startBind(uid, token, "5CCF7F391EB9", GosConstant.Product_Key, GosConstant.Product_Secret);
+		startBind(uid, token, "A020A62EDB98", GosConstant.Product_Key, GosConstant.Product_Secret);
 	}
 
 	private void initReceiver(){
@@ -604,6 +616,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
             spf.edit().putString("Uid", uid).commit();
             spf.edit().putString("Token", token).commit();
             Toast.makeText(getApplicationContext(), "匿名登入成功", Toast.LENGTH_SHORT).show();
+
         } else {
             // 登录失败
             Log.i("xxxs", "didUserLogin: "+result);
@@ -712,7 +725,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 				handler.sendEmptyMessage(GETLIST);
 			}
 			break;
-		case R.id.action_QR_code:
+		case R.id.action_QR_code://扫码添加设备
 			intent = new Intent(GosDeviceListActivity.this, CaptureActivity.class);
 			startActivity(intent);
 			break;
@@ -1074,6 +1087,41 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
         startActivity(intent);
         stopsevice();
         finish();
+	}
+
+	//绑定设备 FIXME
+	private void startBind(String uid, String token, String mac,
+						   String productKey, String productSecret) {
+		GizWifiSDK.sharedInstance().bindRemoteDevice(uid, token, mac,
+		productKey, productSecret);
+	}
+	//绑定设备回调 FIXME
+	private GizWifiSDKListener gizWifiSDKListener = new GizWifiSDKListener() {
+
+		public void didBindDevice(int error, String errorMessage, String did) {
+			this.didBindDevice(error,errorMessage, did);
+		}
+
+		public void didBindDevice(GizWifiErrorCode result, String did) {
+			this.didBindDevice(result, did);
+		}
+
+	};
+
+
+	/**
+	 * 设备绑定回调
+	 *
+	 * @param
+	 * @param did FIXME
+	 */
+	protected void didBindDevice(int error, String errorMessage,
+								 java.lang.String did) {
+		if (error == 0) {
+			Toast.makeText(this, "添加成功", Toast.LENGTH_SHORT).show();
+		} else {
+			Toast.makeText(this, "初始化失败", Toast.LENGTH_SHORT).show();
+		}
 	}
 
 
