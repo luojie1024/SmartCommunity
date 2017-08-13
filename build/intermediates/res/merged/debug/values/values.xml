@@ -315,6 +315,7 @@
     <string name="account_not_activate">帐号未激活，请查收验证邮件</string>
     <string name="action_settings">设置</string>
     <string name="action_settings_inls">配置设备wifi</string>
+    <string name="addDeviceTitle">设备</string>
     <string name="add_device">添加设备</string>
     <string name="add_email">输入地址 (使用回车来分割地址)</string>
     <string name="add_failed">添加失败，请返回重试</string>
@@ -982,6 +983,7 @@
     <string name="pull_to_refresh_refreshing_label">正在更新列表…</string>
     <string name="pull_to_refresh_release_label">松开即可刷新</string>
     <string name="pull_to_refresh_unlash_to_refresh">松开即可刷新</string>
+    <string name="push_type_string">推送功能仅限于企业开发者使用，目前版本暂不支持推送</string>
     <string name="qr_code_tips">将二维码放入框内，即刻自动扫描</string>
     <string name="quick_action_delete">删除</string>
     <string name="quick_action_download">下载</string>

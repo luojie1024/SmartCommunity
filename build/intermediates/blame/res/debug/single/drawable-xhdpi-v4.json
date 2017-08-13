@@ -24,12 +24,12 @@
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_gas_a.jpg"
     },
     {
-        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_viewpager_switch_feedlist.png",
-        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_viewpager_switch_feedlist.png"
-    },
-    {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\right_icon.png",
         "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\right_icon.png"
+    },
+    {
+        "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_viewpager_switch_feedlist.png",
+        "source": "D:\\space\\NO10\\SmartCommunity\\res\\drawable-xhdpi\\ic_viewpager_switch_feedlist.png"
     },
     {
         "merged": "D:\\space\\NO10\\SmartCommunity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_smoke_a.png",

@@ -4,20 +4,25 @@ import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.text.TextUtils;
 import android.widget.Toast;
 
 import com.gizwits.gizwifisdk.api.GizWifiSDK;
 import com.gizwits.gizwifisdk.enumration.GizPushType;
 import com.way.tabui.commonmodule.GosConstant;
+import com.way.tabui.commonmodule.GosDeploy;
 import com.way.tabui.pushmodule.GosPushManager;
 import com.way.tabui.settingsmodule.GosSettiingsActivity;
+
+import java.util.concurrent.ConcurrentHashMap;
 
 public class GosApplication extends Application {
 
    GosPushManager gosPushManager;
    public SharedPreferences spf;
-	
-   public void onCreate() {
+	private GosDeploy gosDeploy;
+
+	public void onCreate() {
 //		
 //		setDevice(device);
 		spf = getSharedPreferences(GosConstant.SPF_Name, Context.MODE_PRIVATE);
@@ -33,16 +38,36 @@ public class GosApplication extends Application {
 				String prroductscrect = spf.getString("prroductscrect", "0");
 				GosConstant.Product_Secret=spf.getString("prroductscrect", "ff1a9d62c35b4a4b9ca0c8eea0d120a2");
 			}
-//            GosConstant.Product_Key="69353614e549438ead162509abefd243";
-//            GosConstant.App_ID = "84ec3257a927470e97c7d66ff0558dc8";
-//            GosConstant.App_Screct="beaca00e79a546f3b393ffdc81fdef72";
+
             // 启动SDK
+			gosDeploy = new GosDeploy(getApplicationContext());
+			ConcurrentHashMap<String, String> serverMap = new ConcurrentHashMap<String, String>();
+
+			serverMap.put("openAPIInfo", TextUtils.isEmpty((String) GosDeploy.infoMap.get("openAPI_URL"))
+			? "api.gizwits.com" : (String) GosDeploy.infoMap.get("openAPI_URL"));
+			serverMap.put("siteInfo", TextUtils.isEmpty((String) GosDeploy.infoMap.get("site_URL")) ? "site.gizwits.com"
+			: (String) GosDeploy.infoMap.get("site_URL"));
+			serverMap.put("pushInfo", (String) GosDeploy.infoMap.get("push_URL"));
+
+
             GizWifiSDK.sharedInstance().startWithAppID(getApplicationContext(), GosConstant.App_ID,
-                    GosConstant.App_Screct, null,null, false);
+                    GosConstant.App_Screct, GosDeploy.setProductKeyList(),serverMap, false);
+
+//			// 启动SDK
+//            ConcurrentHashMap<String, String> serverMap = new ConcurrentHashMap<String, String>();
+//
+//            serverMap.put("openAPIInfo", "api.gizwits.com");
+//            serverMap.put("siteInfo", "site.gizwits.com");
+//            serverMap.put("pushInfo", "");
+
+
+//			GizWifiSDK.sharedInstance().startWithAppID(getApplicationContext(),"5f32deaad91649f9b6aca1b2d17dce39",
+//			"90aeab855e1f4f45b20f80052dee5964", GosDeploy.setProductKeyList(),serverMap, false);
+//GosConstant
+			System.out.println(123);
 			// 只能选择支持其中一种
 			 gosPushManager=new GosPushManager(GizPushType.GizPushJiGuang,this);//极光推送
 		} catch (Exception e) {
-			// TODO: handle exception
 			Toast.makeText(getApplicationContext(), "设备配置错误，请重新配置绑定", Toast.LENGTH_LONG).show();
 			Intent intent = new Intent(getApplicationContext(), GosSettiingsActivity.class);
 			startActivity(intent);

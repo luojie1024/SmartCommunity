@@ -27,25 +27,25 @@ public final class R {
         public static final int bdp_update_activity_confirm_dialog = 0x7f030058;
     }
     public static final class string {
-        public static final int bdp_update_action_download = 0x7f090470;
-        public static final int bdp_update_action_install = 0x7f090471;
-        public static final int bdp_update_as_action_cancel = 0x7f090472;
-        public static final int bdp_update_as_action_install = 0x7f090473;
-        public static final int bdp_update_as_download_complete = 0x7f090474;
-        public static final int bdp_update_as_install_tip = 0x7f090475;
-        public static final int bdp_update_as_notify_tip = 0x7f090476;
-        public static final int bdp_update_as_notify_title = 0x7f090477;
-        public static final int bdp_update_download_complete = 0x7f090478;
-        public static final int bdp_update_download_main_tip = 0x7f090479;
-        public static final int bdp_update_ignore = 0x7f09047a;
-        public static final int bdp_update_install_main_tip = 0x7f09047b;
-        public static final int bdp_update_minor_tip = 0x7f09047c;
-        public static final int bdp_update_new_download = 0x7f09047d;
-        public static final int bdp_update_not_now = 0x7f09047e;
-        public static final int bdp_update_request_net_error = 0x7f09047f;
-        public static final int bdp_update_title_as = 0x7f090480;
-        public static final int bdp_update_title_download = 0x7f090481;
-        public static final int bdp_update_title_install = 0x7f090482;
+        public static final int bdp_update_action_download = 0x7f090471;
+        public static final int bdp_update_action_install = 0x7f090472;
+        public static final int bdp_update_as_action_cancel = 0x7f090473;
+        public static final int bdp_update_as_action_install = 0x7f090474;
+        public static final int bdp_update_as_download_complete = 0x7f090475;
+        public static final int bdp_update_as_install_tip = 0x7f090476;
+        public static final int bdp_update_as_notify_tip = 0x7f090477;
+        public static final int bdp_update_as_notify_title = 0x7f090478;
+        public static final int bdp_update_download_complete = 0x7f090479;
+        public static final int bdp_update_download_main_tip = 0x7f09047a;
+        public static final int bdp_update_ignore = 0x7f09047b;
+        public static final int bdp_update_install_main_tip = 0x7f09047c;
+        public static final int bdp_update_minor_tip = 0x7f09047d;
+        public static final int bdp_update_new_download = 0x7f09047e;
+        public static final int bdp_update_not_now = 0x7f09047f;
+        public static final int bdp_update_request_net_error = 0x7f090480;
+        public static final int bdp_update_title_as = 0x7f090481;
+        public static final int bdp_update_title_download = 0x7f090482;
+        public static final int bdp_update_title_install = 0x7f090483;
     }
     public static final class style {
         public static final int bdp_update_dialog_style = 0x7f0a0013;

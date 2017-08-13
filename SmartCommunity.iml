@@ -85,6 +85,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/shaders" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/sourceFolderJavaResources" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
@@ -94,15 +95,13 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="kjframe" level="project" />
     <orderEntry type="library" exported="" name="Native_Libs2" level="project" />
-    <orderEntry type="library" exported="" name="support-core-ui-26.0.0-alpha1" level="project" />
     <orderEntry type="library" exported="" name="okio-1.7.0" level="project" />
     <orderEntry type="library" exported="" name="mail" level="project" />
     <orderEntry type="library" exported="" name="xmcameracore" level="project" />
-    <orderEntry type="library" exported="" name="support-fragment-26.0.0-alpha1" level="project" />
+    <orderEntry type="library" exported="" name="android-support-v4" level="project" />
     <orderEntry type="library" exported="" name="BLEasyConfig" level="project" />
     <orderEntry type="library" exported="" name="andbase" level="project" />
-    <orderEntry type="library" exported="" name="support-v4-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" exported="" name="support-media-compat-26.0.0-alpha1" level="project" />
+    <orderEntry type="library" exported="" name="libammsdk" level="project" />
     <orderEntry type="library" exported="" name="zxing" level="project" />
     <orderEntry type="library" exported="" name="pushservice-5.0.0.66" level="project" />
     <orderEntry type="library" exported="" name="BmobSDK_3.5.5_20170420" level="project" />
@@ -114,8 +113,8 @@
     <orderEntry type="library" exported="" name="BasePopup-v1.8.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="multidex-instrumentation-1.0.1" level="project" />
     <orderEntry type="library" exported="" name="additionnal" level="project" />
-    <orderEntry type="library" exported="" name="support-core-utils-26.0.0-alpha1" level="project" />
     <orderEntry type="library" exported="" name="libForEElink" level="project" />
+    <orderEntry type="library" exported="" name="VoiceRecognition-2.1.20" level="project" />
     <orderEntry type="library" exported="" name="rxjava-1.1.6" level="project" />
     <orderEntry type="library" exported="" name="rxandroid-1.2.0" level="project" />
     <orderEntry type="library" exported="" name="switch-button-0.0.3" level="project" />
@@ -129,8 +128,6 @@
     <orderEntry type="library" exported="" name="OneShotConfig" level="project" />
     <orderEntry type="library" exported="" name="open_sdk_r5756" level="project" />
     <orderEntry type="library" exported="" name="org.apache.http.legacy" level="project" />
-    <orderEntry type="library" exported="" name="support-compat-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" exported="" name="support-annotations-26.0.0-alpha1" level="project" />
     <orderEntry type="library" exported="" name="simpleconfigwizardlib" level="project" />
     <orderEntry type="library" exported="" name="activation" level="project" />
     <orderEntry type="library" exported="" name="Lark7618SDK_noudp1606031910_0101" level="project" />

@@ -34,7 +34,7 @@
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="3bdd8e84081b0fd2a33222177badb55057f86406">
+        sha1="a2c060c22d0f410b3eaf288d68473ffc3acd7e31">
         <dex dex="D:\space\NO10\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\GizWifiSDK_3a53b731ff0695dfb3a0fbd0aa6aea05541793ad\classes.dex" />
     </item>
     <item
@@ -201,6 +201,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\space\NO10\SmartCommunity\libs\android-support-v4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3e4e879d0b3dc11f2feb3f55e77e3b5bd82c4a28">
+        <dex dex="D:\space\NO10\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\android-support-v4_9449446e5383db0a98bb87bca1b56cb898a1bc76\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\space\NO10\SmartCommunity\libs\VoiceRecognition-2.1.20.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44148c0546fbd278516c9d243326d309ccaaf7a9">
+        <dex dex="D:\space\NO10\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\VoiceRecognition-2.1.20_a914cf9082b17d051e96ad22886d602a043ed934\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\space\NO10\SmartCommunity\bDIntegrationSDK_LibProject\build\intermediates\bundles\default\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -243,6 +261,15 @@
         revision="25.0.0"
         sha1="19047bdb6a4fc00a44124f64ca98e88fc204e7e3">
         <dex dex="D:\space\NO10\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\okhttp-3.3.1_f36d3501c8720f4a06b2e15e610b291993a35f48\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\space\NO10\SmartCommunity\libs\libammsdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="11b09244aedaa51bfd09269637be7c32c60da314">
+        <dex dex="D:\space\NO10\SmartCommunity\build\intermediates\transforms\dex\debug\folders\1000\2\libammsdk_950602159cc24a15882a6fa239bbf2841c960bd4\classes.dex" />
     </item>
     <item
         is-multidex="true"

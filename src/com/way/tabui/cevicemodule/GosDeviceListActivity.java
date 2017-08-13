@@ -591,6 +591,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		startBind(uid, token, "5CCF7F16685A", GosConstant.Product_Key, GosConstant.Product_Secret);
 		startBind(uid, token, "5CCF7F391EB9", GosConstant.Product_Key, GosConstant.Product_Secret);
 		startBind(uid, token, "A020A62EDB98", GosConstant.Product_Key, GosConstant.Product_Secret);
+		startBind("123456", "47kPV9t3EVDmm2NM2QCFt4");
 	}
 
 	private void initReceiver(){
@@ -1089,12 +1090,7 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
         finish();
 	}
 
-	//绑定设备 FIXME
-	private void startBind(String uid, String token, String mac,
-						   String productKey, String productSecret) {
-		GizWifiSDK.sharedInstance().bindRemoteDevice(uid, token, mac,
-		productKey, productSecret);
-	}
+
 	//绑定设备回调 FIXME
 	private GizWifiSDKListener gizWifiSDKListener = new GizWifiSDKListener() {
 
@@ -1124,5 +1120,16 @@ public class GosDeviceListActivity extends GosDeviceModuleBaseActivity implement
 		}
 	}
 
+	//绑定设备 FIXME
+	private void startBind(String uid, String token, String mac,
+						   String productKey, String productSecret) {
+		GizWifiSDK.sharedInstance().bindRemoteDevice(uid, token, mac,
+		productKey, productSecret);
+	}
+	private void startBind(final String passcode, final String did) {
+
+		GizWifiSDK.sharedInstance().bindDevice(spf.getString("Uid", ""),
+		spf.getString("Token", ""), did, passcode, null);
+	}
 
 }

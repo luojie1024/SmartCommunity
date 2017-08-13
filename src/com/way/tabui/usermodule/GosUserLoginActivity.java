@@ -1,7 +1,6 @@
 package com.way.tabui.usermodule;
 
 import android.annotation.SuppressLint;
-import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -24,7 +23,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.baidu.autoupdatesdk.BDAutoUpdateSDK;
 import com.baidu.autoupdatesdk.UICheckUpdateCallback;
 import com.gizwits.gizwifisdk.api.GizWifiDevice;
 import com.gizwits.gizwifisdk.api.GizWifiSDK;
@@ -193,13 +191,13 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
         }
 		// TODO: 2017/6/18
 		//检查自动更新，默认UI
-		dialog = new ProgressDialog(this);
-		dialog.setIndeterminate(true);
-		dialog.setTitle("正在检查更新！");
-		dialog.setProgressStyle(Dialog.BUTTON_NEGATIVE);
-		dialog.show();
+//		dialog = new ProgressDialog(this);
+//		dialog.setIndeterminate(true);
+//		dialog.setTitle("正在检查更新！");
+//		dialog.setProgressStyle(Dialog.BUTTON_NEGATIVE);
+//		dialog.show();
 		//检测更新
-		BDAutoUpdateSDK.uiUpdateAction(GosUserLoginActivity.this, new MyUICheckUpdateCallback());
+//		BDAutoUpdateSDK.uiUpdateAction(GosUserLoginActivity.this, new MyUICheckUpdateCallback());
 
 	}
 
@@ -220,6 +218,7 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
         intent.setAction("com.way.tabui.actity.GosDeviceListActivity");
         sendBroadcast(intent);
     }
+
     private GizWifiDevice device;
     public class MyReceiver extends BroadcastReceiver {
         @Override
@@ -368,32 +367,6 @@ public class GosUserLoginActivity extends GosUserModuleBaseActivity implements O
             finish();
 
 			break;
-
-//		case R.id.llQQ:
-//			listener = new BaseUiListener() {
-//				protected void doComplete(JSONObject values) {
-//					Message msg = new Message();
-//					try {
-//						if (values.getInt("ret") == 0) {
-//							msg.what = handler_key.THRED_LOGIN.ordinal();
-//							String[] openIDAndToken = { values.getString("openid").toString(),
-//									(String) values.getString("access_token").toString() };
-//							msg.obj = openIDAndToken;
-//							handler.sendMessage(msg);
-//						} else {
-//							msg.what = handler_key.LOGIN_FAIL.ordinal();
-//							String loginFailed = (String) getText(R.string.toast_login_failed);
-//							msg.obj = loginFailed + "\n loginWithThirdAccount Failed";
-//							handler.sendMessage(msg);
-//						}
-//					} catch (JSONException e) {
-//						e.printStackTrace();
-//					}
-//				}
-//			};
-//			mTencent.login(this, Scope, listener);
-//			break;
-
 		}
 	}
 

@@ -1258,5 +1258,7 @@ UID：{4}"</string>
     <string name="no_photo">相册没有图片</string>
     <string name="title_activity_curtain_device_list">curtainDeviceListActivity</string>
     <string name="initkuozhancode">请按十六进制大写输入</string>
+    <string name="push_type_string">推送功能仅限于企业开发者使用，目前版本暂不支持推送</string>
 
+    <string name="addDeviceTitle">设备</string>
 </resources>

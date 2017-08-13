@@ -15,16 +15,9 @@ ADDED from D:\space\NO10\SmartCommunity\AndroidManifest.xml:2:1-692:12
 		ADDED from D:\space\NO10\SmartCommunity\AndroidManifest.xml:3:11-69
 uses-sdk
 ADDED from D:\space\NO10\SmartCommunity\AndroidManifest.xml:7:5-9:40
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\096641a7d774aa85f9f8346512efaa4ee1c92efd\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\9a101c4b0d8866e701ff7567e0c6985eb5e8ae58\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\fb4155bc867aa0e063f56bf3319689282758532b\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\39e740e84a5cf90d594589f93b1becb858f7c07e\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\16ce81626314ff52ee138903957e17eed347e69e\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\86110d1206ef0a0580e7190ce2f00cafd00c7ce9\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:multidex:1.0.1] F:\android-sdk\Android\.android\build-cache\7e7a6e7bdd63d947fb0a58a84c6b95f398af2e39\output\AndroidManifest.xml:18:5-42
 MERGED from [com.github.razerdp:BasePopup:v1.8.0] F:\android-sdk\Android\.android\build-cache\66c660a458074cbbea4a475a7b3fcd5c13495e52\output\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.zcweng:switch-button:0.0.3] F:\android-sdk\Android\.android\build-cache\a748b73f82df55ed76100346abd3ddd9225fa352\output\AndroidManifest.xml:7:5-9:41
-	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\096641a7d774aa85f9f8346512efaa4ee1c92efd\output\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		ADDED from D:\space\NO10\SmartCommunity\AndroidManifest.xml:9:9-38
 	android:minSdkVersion
@@ -202,12 +195,6 @@ ADDED from D:\space\NO10\SmartCommunity\AndroidManifest.xml:102:5-74
 		ADDED from D:\space\NO10\SmartCommunity\AndroidManifest.xml:102:22-72
 application
 ADDED from D:\space\NO10\SmartCommunity\AndroidManifest.xml:104:5-690:19
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\096641a7d774aa85f9f8346512efaa4ee1c92efd\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\9a101c4b0d8866e701ff7567e0c6985eb5e8ae58\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\fb4155bc867aa0e063f56bf3319689282758532b\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\39e740e84a5cf90d594589f93b1becb858f7c07e\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\16ce81626314ff52ee138903957e17eed347e69e\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\86110d1206ef0a0580e7190ce2f00cafd00c7ce9\output\AndroidManifest.xml:29:5-20
 MERGED from [SmartCommunity:bDIntegrationSDK_LibProject:unspecified] D:\space\NO10\SmartCommunity\bDIntegrationSDK_LibProject\build\intermediates\bundles\default\AndroidManifest.xml:17:5-63:19
 MERGED from [com.github.razerdp:BasePopup:v1.8.0] F:\android-sdk\Android\.android\build-cache\66c660a458074cbbea4a475a7b3fcd5c13495e52\output\AndroidManifest.xml:11:5-15:19
 	android:label
@@ -1079,17 +1066,6 @@ action#com.baidu.android.pushservice.action.notification.CLICK
 ADDED from D:\space\NO10\SmartCommunity\AndroidManifest.xml:682:17-97
 	android:name
 		ADDED from D:\space\NO10\SmartCommunity\AndroidManifest.xml:682:25-95
-meta-data#android.support.VERSION
-ADDED from [com.android.support:support-v4:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\096641a7d774aa85f9f8346512efaa4ee1c92efd\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\9a101c4b0d8866e701ff7567e0c6985eb5e8ae58\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\fb4155bc867aa0e063f56bf3319689282758532b\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\39e740e84a5cf90d594589f93b1becb858f7c07e\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\16ce81626314ff52ee138903957e17eed347e69e\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\86110d1206ef0a0580e7190ce2f00cafd00c7ce9\output\AndroidManifest.xml:25:5-27:41
-	android:value
-		ADDED from [com.android.support:support-v4:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\096641a7d774aa85f9f8346512efaa4ee1c92efd\output\AndroidManifest.xml:27:9-38
-	android:name
-		ADDED from [com.android.support:support-v4:26.0.0-alpha1] F:\android-sdk\Android\.android\build-cache\096641a7d774aa85f9f8346512efaa4ee1c92efd\output\AndroidManifest.xml:26:9-47
 meta-data#BaiduMobAd_EXCEPTION_LOG
 ADDED from [SmartCommunity:bDIntegrationSDK_LibProject:unspecified] D:\space\NO10\SmartCommunity\bDIntegrationSDK_LibProject\build\intermediates\bundles\default\AndroidManifest.xml:27:9-29:36
 	android:value
